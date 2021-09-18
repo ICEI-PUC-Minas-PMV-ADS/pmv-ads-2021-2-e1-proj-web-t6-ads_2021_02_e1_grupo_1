@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Plataforma de venda de alimentos prontos por microempreendedores
 
 `CURSO`
 
