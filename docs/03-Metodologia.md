@@ -43,6 +43,11 @@ Além disso, como forma de aprimorar sua organização, cada nova tarefa criada 
 
 A equipe está organizada de acordo com o organograma a seguir:
 
+-	`Scrum Master`: Nathalia Assis Valentim
+-	`Product Owner`: Sérgio Luiz de Menezes Filho
+-	`Equipe de Desenvolvimento`: Mauro Jorge de Albuquerque Barreto, Heloisa Soares Ferreira, Raphael do Carmo Latini, Lucas Junior dos Santos, Flávia Cristina de Gomes Souza
+-	`Equipe de Design`: Guilherme da Silva Moreira
+
 **DEFINIR**
 
 ### Ferramentas
