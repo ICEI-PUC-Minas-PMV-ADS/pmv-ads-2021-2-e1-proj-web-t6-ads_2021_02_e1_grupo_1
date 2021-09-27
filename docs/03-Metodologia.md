@@ -1,77 +1,53 @@
-
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+escrevemos nesta seção as ferramentas utilizadas na manutenção dos códigos e outros artefatos, além da gestão do projeto e suas tarefas.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+## Relação de ambientes de trabalho
 
-## Controle de Versão
+Os artefatos do projeto são elaborados prioritariamente por meio da plataforma GitHub e suas ferramentas internas para diferentes propósitos, com exceção da plataforma utilizada para projeto de interface e wireframes,  conforme descrito na tabela a seguir.
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+- `Repositório de código fonte`: [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1)
+- `Documentos do projeto': [GitHub Docs](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/tree/main/docs)
+- `Gerenciamento do projeto`: [GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/projects/2)
+- `Projeto de Interface e Wireframes`: [MarvelApp](https://marvelapp.com/prototype/ci07gg3)
 
-O projeto segue a seguinte convenção para o nome de branches:
+## Gestão de código fonte 
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+A gestão do código fonte da aplicação web desenvlvida pela equipe segue a mesma estratégia de utilizar o ferramental da plataforma GitHub. Desta forma, o grupo utiliza um processo baseado no GitHub Flow, em que, para cada nova alteração no código é criada uma nova branch a partir da branch principal. Nesta nova branch, a alteração passa pelas etapas de commits, pull requests, discuss and review e deploy, para somente então ser considerada verificada, passando a ser implementada na branch principal do código. Uma breve explicação do GitHub Flow está disponível na seção de [Guias do site do GitHub](https://guides.github.com/introduction/flow/).
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+![image](https://user-images.githubusercontent.com/90944344/134842060-a529ca50-9cb4-46d6-b176-d141450627e2.png)
+- `Imagem` - Fluxo de controle do código fonte utilizando o GitHub Flow
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+## Gerenciamento do projeto
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+A equipe segue como referência as metodologias ágeis, mais especificamente a metodologia Scrum, aplicando-a à ferramenta Projects da plataforma GitHub para a gestão do projeto e distribuição do fluxo de tarefas entre a equipe. Neste ambiente, as tarefas são organizadas em diferentes colunas de acordo com sua etapa, seguindo o Scrum:
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+- `Product Backlog`: representa a lista geral de atividades para desenvolvimento no projeto.
+- `To Do`: atividades a serem atribuídas a um ou mais integrantes da equipe para terem seu desenvolvimento iniciado em seguida.
+- `In Progress`: ativiades que estão em processo de desenvolvimento, por um ou mais integrantes da equipe.
+- `In Test`: atividades já desenvolvidas, e então movidas para a etapa de testagem e verificação de funcionalidade.
+- `Done`: atividades desenvolvidas e testadas, assinaladas como concluídas para que sejam incorporadas à branch principal do produto.
+- `Blocked`: atividades bloqueadas por algum impedimento técnico. Devem ser acompanhadas de comentário detalhado descrevendo o motivo do impedimento para ajudar em sua resolução.
 
-## Gerenciamento de Projeto
+O quadro de tarefas do grupo está disponível [neste link na plataforma GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/projects/2) e pode ser visualizado na figura a seguir.
+
+![image](https://user-images.githubusercontent.com/90944344/134843373-37333cb7-5247-4f78-b575-90c436f3cfeb.png)
+- `Imagem` - Quadro de tarefas utilizado pelo grupo com base na metodologia Scrum
+
+Além disso, como forma de aprimorar sua organização, cada nova tarefa criada é etiquetada recebendo uma das "labels" oferecidas por padrão pelo GitHub Projects, conforme lista a seguir:
+
+![image](https://user-images.githubusercontent.com/90944344/134843150-97cbe441-701d-4429-92d4-f37842f01eae.png)
+- `Imagem` - Lista de etiquetas de tarefas disponibilizadas pelo GitHub Projects
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe está organizada de acordo com o organograma a seguir:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
-### Processo
-
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+**DEFINIR**
 
 ### Ferramentas
-
-As ferramentas empregadas no projeto são:
-
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+> - [Microsoft Teams](https://teams.microsoft.com/)
+> - [WhatsApp](https://web.whatsapp.com/)
+> - [Visual Studio Code](https://code.visualstudio.com/)
