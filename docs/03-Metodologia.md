@@ -7,7 +7,7 @@ escrevemos nesta seção as ferramentas utilizadas na manutenção dos códigos 
 Os artefatos do projeto são elaborados prioritariamente por meio da plataforma GitHub e suas ferramentas internas para diferentes propósitos, com exceção da plataforma utilizada para projeto de interface e wireframes,  conforme descrito na tabela a seguir.
 
 - `Repositório de código fonte`: [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1)
-- `Documentos do projeto': [GitHub Docs](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/tree/main/docs)
+- `Documentos do Projeto`: [GitHub Docs](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/tree/main/docs)
 - `Gerenciamento do projeto`: [GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/projects/2)
 - `Projeto de Interface e Wireframes`: [MarvelApp](https://marvelapp.com/prototype/ci07gg3)
 
