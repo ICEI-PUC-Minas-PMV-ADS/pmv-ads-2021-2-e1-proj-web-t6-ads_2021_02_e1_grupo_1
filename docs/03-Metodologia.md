@@ -48,8 +48,6 @@ A equipe está organizada de acordo com o organograma a seguir:
 -	`Equipe de Desenvolvimento`: Mauro Jorge de Albuquerque Barreto, Heloisa Soares Ferreira, Raphael do Carmo Latini, Lucas Junior dos Santos, Flávia Cristina de Gomes Souza
 -	`Equipe de Design`: Guilherme da Silva Moreira
 
-**DEFINIR**
-
 ### Ferramentas
  
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
