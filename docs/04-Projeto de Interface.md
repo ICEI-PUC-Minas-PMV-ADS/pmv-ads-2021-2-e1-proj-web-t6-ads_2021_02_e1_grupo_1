@@ -7,7 +7,7 @@ As prioridades centrais do projeto consistem em disponibilizar uma plataforma si
 
 A figura abaixo descreve o fluxo de interação do usuário através das diferentes telas do sistema. Uma descrição detalhada de cada tela e suas funcionalidades está presente na seção de Wireframes deste documento. Um wireframe interativo deste projeto pode ser acessado no ambiente MarvelApp do projeto.
 
-[userflow figure_ADS_2021/2_T6_Grupo1](https://user-images.githubusercontent.com/74699119/135296806-aaaa143a-e8c5-4284-8a29-0909174df9ef.png)
+![userflow figure_ADS_20212_T6_Grupo1](https://user-images.githubusercontent.com/74699119/135297279-2acf754f-2c5e-4d8a-895a-9d11b0c76718.png)
 *Figura X - Fluxo de telas do usuário*
 
 
