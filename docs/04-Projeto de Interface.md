@@ -149,7 +149,9 @@ Tela inicial do “mini-website” contendo as informações para a loja daquele
 -	Redes sociais: Redireciona o usuário para uma págia contendo as informações das redes sociais da loja.
 -	Contato: Redireciona o usuário para a página de enviar mensagem para o vendedor.
 -	Monte seu pedido: Redireciona o usuário para a tela montagem do pedido.
+
 Há também o elemento de “Favoritar vendedor”, que permite ao usuário salvar a página do vendedor em seus favoritos. 
+
 Quando acessada através da conta do vendedor dono da loja em questão, os seguintes elementos apresentarão a opção de serem editados:
 -	Nome fantasia da loja do vendedor
 -	Imagem escolhida pelo vendedor
@@ -168,6 +170,7 @@ Quando acessada através da conta do vendedor dono da loja em questão, as segui
 -	Adicionar novo produto
 -	Deletar produto existente
 -	Alterar preço, nome ou descrição de produto existente
+
 Ao adicionar um novo produto ou alterar um produto existente, o vendedor será redirecionado à tela de detalhes do produto para que possa completar as informações nela também.
 
 ![Miniwebsite - produtos](https://user-images.githubusercontent.com/74699119/135301909-10ebc7bc-004f-46cb-b55b-2a418ff36eeb.png)
@@ -180,6 +183,7 @@ Ao adicionar um novo produto ou alterar um produto existente, o vendedor será r
 Tela do mini-website acessada através do catálogo de produtos. Contém a descrição mais detalhada do produto selecionado e os seguintes elementos adicionais:
 -	Favoritar produtos: Adiciona o produto em questão à lista de favoritos.
 -	Adicionar ao pedido: Abre uma janela adicional que permite ao usuário escolher a quantidade, sabor e detalhes do produto que deseja adicionar à lista de compras.
+
 Quando acessada através da conta do vendedor dono da loja em questão, os seguintes campos serão editáveis.
 -	Foto do produto
 -	Nome do produto
