@@ -1,15 +1,14 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+As prioridades centrais do projeto consistem em disponibilizar uma plataforma simples e intuitiva para a localização de vendedores locais para o usuário interessado em comprar e em facilitar a inserção de pequenos vendedores no ambiente online. Para isto, o sistema é dividido em duas grandes categorias, a primeira sendo focada em um sistema de busca e sugestões de vendedores próximos para o comprador e a segunda em um “mini-website” de fácil gerenciamento para o vendedor anunciar seus produtos e modelo de negócio. Embora a disposição dos elementos seja diferente nessas duas categorias, tentou-se manter um padrão similar entre as duas, com um cabeçalho fixo em todas as páginas e a sessão abaixo do cabeçalho contendo os botões de navegação entre as páginas.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+A figura abaixo descreve o fluxo de interação do usuário através das diferentes telas do sistema. Uma descrição detalhada de cada tela e suas funcionalidades está presente na seção de Wireframes deste documento. Um wireframe interativo deste projeto pode ser acessado no ambiente MarvelApp do projeto.
+
+![Figura X - Fluxo de telas do usuário]![userflow max size figure](https://user-images.githubusercontent.com/74699119/135296806-aaaa143a-e8c5-4284-8a29-0909174df9ef.png)
+
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
