@@ -1,6 +1,6 @@
 # Metodologia
 
-escrevemos nesta seção as ferramentas utilizadas na manutenção dos códigos e outros artefatos, além da gestão do projeto e suas tarefas.
+Nesta seção estão descritas as ferramentas utilizadas na manutenção dos códigos e outros artefatos, além da gestão do projeto e suas tarefas.
 
 ## Relação de ambientes de trabalho
 
@@ -16,7 +16,9 @@ Os artefatos do projeto são elaborados prioritariamente por meio da plataforma 
 A gestão do código fonte da aplicação web desenvlvida pela equipe segue a mesma estratégia de utilizar o ferramental da plataforma GitHub. Desta forma, o grupo utiliza um processo baseado no GitHub Flow, em que, para cada nova alteração no código é criada uma nova branch a partir da branch principal. Nesta nova branch, a alteração passa pelas etapas de commits, pull requests, discuss and review e deploy, para somente então ser considerada verificada, passando a ser implementada na branch principal do código. Uma breve explicação do GitHub Flow está disponível na seção de [Guias do site do GitHub](https://guides.github.com/introduction/flow/).
 
 ![image](https://user-images.githubusercontent.com/90944344/134842060-a529ca50-9cb4-46d6-b176-d141450627e2.png)
-- `Imagem` - Fluxo de controle do código fonte utilizando o GitHub Flow
+<p align="center">
+<b>Figura: Fluxo de controle do código fonte utilizando o GitHub Flow</b>
+</p>
 
 ## Gerenciamento do projeto
 
@@ -32,12 +34,16 @@ A equipe segue como referência as metodologias ágeis, mais especificamente a m
 O quadro de tarefas do grupo está disponível [neste link na plataforma GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/projects/2) e pode ser visualizado na figura a seguir.
 
 ![image](https://user-images.githubusercontent.com/90944344/134843373-37333cb7-5247-4f78-b575-90c436f3cfeb.png)
-- `Imagem` - Quadro de tarefas utilizado pelo grupo com base na metodologia Scrum
+<p align="center">
+<b>Figura: Quadro de tarefas utilizado pelo grupo com base na metodologia Scrum</b>
+</p>
 
 Além disso, como forma de aprimorar sua organização, cada nova tarefa criada é etiquetada recebendo uma das "labels" oferecidas por padrão pelo GitHub Projects, conforme lista a seguir:
 
-![image](https://user-images.githubusercontent.com/90944344/134843150-97cbe441-701d-4429-92d4-f37842f01eae.png)
-- `Imagem` - Lista de etiquetas de tarefas disponibilizadas pelo GitHub Projects
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/90944344/134843150-97cbe441-701d-4429-92d4-f37842f01eae.png"><br>
+ <b>Figura: Lista de etiquetas de tarefas disponibilizadas pelo GitHub Projects</b>
+</p>
 
 ### Divisão de Papéis
 
