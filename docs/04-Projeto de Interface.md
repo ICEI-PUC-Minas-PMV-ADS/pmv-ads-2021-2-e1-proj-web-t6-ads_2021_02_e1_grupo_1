@@ -7,7 +7,8 @@ As prioridades centrais do projeto consistem em disponibilizar uma plataforma si
 
 A figura abaixo descreve o fluxo de interação do usuário através das diferentes telas do sistema. Uma descrição detalhada de cada tela e suas funcionalidades está presente na seção de Wireframes deste documento. Um wireframe interativo deste projeto pode ser acessado no ambiente MarvelApp do projeto.
 
-![Figura X - Fluxo de telas do usuário]![userflow max size figure](https://user-images.githubusercontent.com/74699119/135296806-aaaa143a-e8c5-4284-8a29-0909174df9ef.png)
+[userflow figure_ADS_2021/2_T6_Grupo1](https://user-images.githubusercontent.com/74699119/135296806-aaaa143a-e8c5-4284-8a29-0909174df9ef.png)
+*Figura X - Fluxo de telas do usuário*
 
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
