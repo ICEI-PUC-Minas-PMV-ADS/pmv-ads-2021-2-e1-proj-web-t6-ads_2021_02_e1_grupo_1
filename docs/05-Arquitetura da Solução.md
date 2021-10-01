@@ -2,11 +2,11 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Neste segmento estão presentes os detalhes técnicos criados pelo grupo, abordando  os itens que fazem parte da solução  e do ambiente de hospedagem da solução.
 
 ## Diagrama de componentes
 
-Diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
+Os itens que fazem parte da  solução estão ilustrados  na Figura abaixo.
 
 Exemplo: 
 
