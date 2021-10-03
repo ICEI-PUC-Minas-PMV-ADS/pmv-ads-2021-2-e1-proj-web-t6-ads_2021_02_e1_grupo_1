@@ -1,46 +1,30 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A pandemia do coronavírus, cujos impactos puderam ser sentidos no Brasil a partir de fevereiro de 2020, provocou e segue provocando uma série de mudanças profundas nos hábitos de consumo da população. Com o isolamento social, que transitou de 30% a 60% da população brasileira no período de fevereiro de 2020 a fevereiro de 2021 (INCOGNIA, 2021), uma parcela expressiva dos habitantes passou a trabalhar em esquema de home office, evitando ainda bares e restaurantes, o que causou um aumento na compra de alimentos na modalidade delivery. De acordo com Fernando Blower, diretor-executivo da Associação Nacional de Restaurantes (ANR), a participação da modalidade delivery no faturamento de restaurantes passou de 11% antes da pandemia para 21% ao final de 2020 (ZOCCHIO, 2021).
+Aliado a isso, o desemprego no Brasil aumentou de 11% em janeiro de 2020 - antes do impacto da pandemia - a 14% em agosto de 2021, resultando em 14,4 milhões de pessoas sem emprego no País (IBGE, 2021). Tal cenário contribui para o aumento da economia informal e do pequeno empreendedorismo. Segundo o boletim Mapa de Empresas, divulgado pelo Governo Federal, a categoria de empresa que mais cresceu no ano passado em relação a 2019 foi a “Fornecimento de alimentos preparados preponderantemente para consumo domiciliar – ocupações MEI de doceiro, marmiteiro etc. “, com alta de 47,7% no número de novos negócios. Este número continuou crescendo no primeiro quadrimestre de 2021, com alta de 30,9% em relação ao mesmo período do ano anterior (MINISTÉRIO DA ECONOMIA, 2021).
+Segundo dados da empresa Mobills, gastos com apps de delivery, como Rappi, iFood e Uber Eats, cresceram 187% em 2020 (RIBEIRO, 2021). Com uma população cada vez mais habituada ao delivery e com o crescente desemprego, mais pessoas e famílias se veem diante da alternativa de iniciar produções caseiras de alimentos para compor sua renda, muitas vezes totalmente carentes de pessoal qualificado e recursos para investir na divulgação de seu negócio, ou até mesmo para competir em termos de visibilidade com restaurantes e estabelecimentos mais bem estruturados na vitrine virtual dos aplicativos de delivery.
+Diante disso, surge a necessidade de uma plataforma focada no micro empreendedor individual (MEI) do ramo da alimentação (tal qual o “doceiro, marmiteiro etc.” descrito no Mapa de Empresas) para que possa oferecer seus serviços no ambiente online, unificando as funções de uma plataforma de delivery com as de um site comercial, vindo a servir como uma vitrine ou cartão de apresentação desses pequenos negócios, além de conectá-los diretamente ao seu público-alvo.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme exposto, a adversidade que se busca resolver com este projeto é a desigualdade para com os meios de divulgação de trabalho, realidade dos microempreendedores alimentícios, que se veem escassos de recursos onlines e acessíveis que os ajudem na venda e propaganda de seus produtos caseiros.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo geral deste trabalho é a criação de uma plataforma com interface acessível, que facilite a venda e divulgação de produtos alimentícios caseiros por parte de microempreendedores individuais.
+Como objetivos específicos, podemos ressaltar:
+- Prover aos pequenos vendedores de alimentos (microempreendedores individuais) uma plataforma de vendas e entregas simplificada, que os permita apresentar de maneira atrativa seus produtos aos consumidores no ambiente online.
+- Fornecer ao consumidor uma plataforma com ferramentas simplificadas de busca e filtros, onde ele achará com facilidade o alimento que for de seu interesse, assim como informações a respeito do produto e seu vendedor.
+- Disponibilizar uma página de apresentação do negócio de cada microempreendedor, com galeria de fotos dos produtos, nome fantasia, logotipo (quando houver) e um breve texto ou vídeo de apresentação.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A vasta maioria das empresas que operam no Brasil consiste em micro e pequenas empresas, parte delas sendo do setor de alimentos para consumo doméstico (DATASEBRAE, 2020). A presença online, tanto para divulgação e aumento de visibilidade do negócio quanto para a venda online facilitada de seus produtos é um aspecto importante deste empreendimento nos dias de hoje. Ainda que existam pequenas e até microempresas que possuem website próprio e realizam entregas por aplicativos, uma pesquisa realizada pelo Sebrae em 2018 mostrou que grande parte dos microempreendedores do setor do comércio não possuíam presença online para exposição e venda de produtos, sendo a venda online de produtos e a exposição do negócio as duas maiores áreas nas quais estes empreendedores gostariam de expandir sua presença online (SEBRAE, 2018). 
+É possível imaginar que para empreendimentos menores consistindo em uma ou poucas pessoas produzindo alimentos em pequena escala em suas casas (bolos, doces, massas congeladas, etc), essa ausência de presença online (salvo uma possível divulgação em mídias sociais como o Instagram e Facebook) seja ainda mais prevalente. Com a pandemia do Coronavirus em 2020, a expansão do modelo de negócios para o espaço online se tornou ainda mais essencial para o sucesso e viabilidade dos negócios, com grande parte das empresas se vendo obrigadas a adaptar seu modelo de negócios para trabalhar apenas com entregas durante o início da pandemia (SEBRAE, 2020a). Embora essa adaptação já esteja em curso, com 7 a cada 10 empresas entrevistadas afirmando realizar vendas online ao final de 2020, a grande maioria destas vendas se dá por aplicativos como Whatsapp e Instagram, com apenas 23% possuindo website próprio e 7% utilizando aplicativos de entrega já disponíveis no mercado (SEBRAE, 2020b), O que sugere que o acesso a estes recursos ainda é bastante limitado para empresas de pequeno porte e microempreendedores. 
+Deste modo, a disponibilização de uma plataforma simples e acessível onde microempreendedores possam anunciar e vender seus produtos e seu modelo de negócio através de um modelo de “mini-website” simplificado com sistema de venda e entrega seria de potencial interesse para empreendedores que não possuem escala ou capital necessários para investir na expansão de sua presença online através da criação de website próprio e divulgação fora das mídias sociais, além de facilitar a entrada de novos interessados em se tornarem empreendedores da área. 
+Nosso projeto busca suprir essa demanda disponibilizando uma plataforma onde os clientes possam localizar estes pequenos serviços de venda de alimentos próximos a sua localidade e não apenas realizar a compra dos produtos online, mas também conhecer o modelo de negócio e os produtos do vendedor por meio de uma interface que funcione como um “mini-website”, fornecendo assim tanto o serviço de vendas online quanto a exposição do negócio para o microempreendedor cadastrado.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Apesar de ser um projeto aberto para todo o público do ramo alimentício caseiro, o foco deste trabalho é facilitar a venda e propagação de alimentos pelo indivíduo que trabalha por conta própria - especialmente microempreendedores individuais - e, que muitas vezes, não tem uma boa adaptação com os aplicativos de comida famosos, que geralmente dão mais visibilidade para empreendedores e estabelecimentos que estão há mais tempo no mercado e têm mais público, ou que possuem maior estrutura. O projeto também é de interesse para consumidores entusiastas de produtos alimentícios caseiros que queiram encontrar bons fornecedores perto de sua localidade para obter seus produtos, seja pelo possível menor custo, pelo sabor diferenciado ou pelo desejo de apoiar pequenos empreendimentos.
