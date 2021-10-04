@@ -1,7 +1,13 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+-	DATASEBRAE. DataSebrae Painel de Empresas. 11 de maio de 2020. Disponível em: <https://datasebrae.com.br/totaldeempresas-11-05-2020/>. Acesso em: 06/09/2021.
+-	IBGE. PNAD Contínua Mensal. 31 de agosto de 2021. Disponível em: <https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/r
+-	INCOGNIA. Mapa brasileiro da COVID-19. 23 de março de 2021. Disponível em: <https://mapabrasileirodacovid.inloco.com.br/pt/>. Acesso em: 06/09//2021.
+-	MINISTÉRIO DA ECONOMIA. Mapa de Empresas - Boletim do 3º quadrimestre/2020. 2 de fevereiro de 2021. Disponível em: <https://www.gov.br/governodigital/pt-br/mapa-de-empresas/boletins/mapa-de-empresas-boletim-do-3o-quadrimestre-de-2020.pdf>. Acesso em: 06/09/2021.
+-	eleases/31479-pnad-continua-mensal-taxa-de-desocupacao-e-de-14-1-e-taxa-de-subutilizacao-e-de-28-6-no-trimestre-encerrado-em-junho>. Acesso em: 06/09/2021.
+-	RIBEIRO, Diana. Efeito pandemia: gastos com delivery crescem 187% em 2020. 6 Minutos, 2021.  Disponível em: 
+-	<https://6minutos.uol.com.br/minhas-financas/efeito-pandemia-gastos-com-delivery-crescem-187-em-2020/>. Acesso em: 06/09/2021.
+-	SEBRAE. UGE – Unidade de Gestão Estratégica. O Impacto da pandemia de coronavírus nos Pequenos Negócios – 2ª edição. 3 a 7 de abril de 2020. Pesquisa. Disponível em: <https://datasebrae.com.br/wp-content/uploads/2020/04/Impacto-do-coronav%C3%ADrus-nas-MPE-2%C2%AAedicao_geral-v4-1.pdf>. Acesso em: 06/09/2021.
+-	SEBRAE. UGE – Unidade de Gestão Estratégica. O Impacto da pandemia de coronavírus nos Pequenos Negócios – 9ª edição. 20 a 24 de novembro de 2020. Pesquisa. Disponível em:  <https://fgvprojetos.fgv.br/sites/fgvprojetos.fgv.br/files/impacto_coronavirus_nas_mpe_9aedicao_diretoria_v3_1.pdf>. Acesso em: 06/09/2021.
+-	SEBRAE. Transformação Digital nas MPE. Julho de 2018. Pesquisa. Disponível em: <https://datasebrae.com.br/transformacao-digital-das-mpe/>. Acesso em: 06/09/2021.
+-	ZOCCHIO, Guilherme. Pandemia força adesão ao delivery e torna restaurantes reféns de aplicativos. O joio e o trigo, 2021. Disponível em:  <https://ojoioeotrigo.com.br/2021/06/delivery-restaurantes-aplicativos-pandemia/>. Acesso em: 06/09/2021
