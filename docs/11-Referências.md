@@ -2,7 +2,7 @@
 
 -	DATASEBRAE. **DataSebrae Painel de Empresas**. 11 de maio de 2020. Disponível em: <https://datasebrae.com.br/totaldeempresas-11-05-2020/>. Acesso em: 06/09/2021.
 -	IBGE. **PNAD Contínua Mensal**. 31 de agosto de 2021. Disponível em: <https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/r
--	INCOGNIA. Mapa brasileiro da COVID-19. 23 de março de 2021. Disponível em: <https://mapabrasileirodacovid.inloco.com.br/pt/>. Acesso em: 06/09//2021.
+-	INCOGNIA. **Mapa brasileiro da COVID-19**. 23 de março de 2021. Disponível em: <https://mapabrasileirodacovid.inloco.com.br/pt/>. Acesso em: 06/09//2021.
 -	MINISTÉRIO DA ECONOMIA. **Mapa de Empresas - Boletim do 3º quadrimestre/2020**. 2 de fevereiro de 2021. Disponível em: <https://www.gov.br/governodigital/pt-br/mapa-de-empresas/boletins/mapa-de-empresas-boletim-do-3o-quadrimestre-de-2020.pdf>. Acesso em: 06/09/2021.
 -	eleases/31479-pnad-continua-mensal-taxa-de-desocupacao-e-de-14-1-e-taxa-de-subutilizacao-e-de-28-6-no-trimestre-encerrado-em-junho>. Acesso em: 06/09/2021.
 -	RIBEIRO, Diana. **Efeito pandemia: gastos com delivery crescem 187% em 2020. 6 Minutos**, 2021.  Disponível em: 
