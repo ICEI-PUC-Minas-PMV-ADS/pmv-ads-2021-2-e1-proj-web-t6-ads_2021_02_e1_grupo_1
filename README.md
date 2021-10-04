@@ -1,23 +1,26 @@
 # Plataforma de venda de alimentos prontos por microempreendedores
 
-`CURSO`
+`CURSO`: Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA`: Projeto: Desenvolvimento de Aplicação Web Front-End
 
-`SEMESTRE`
+`SEMESTRE`: 1º Semestre (2021/2)
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Plataforma destinada a clientes que desejam localizar e comprar produtos alimentícios produzidos por microempreendedores do ramo próximos à sua localidade. Tem como objetivo fornecer a fácil inserção de microempreendedores alimetícios no espaço online através do cadastro de sua loja na plataforma e permitir que possíveis clientes interessados tenham acesso ao seu catálogo de produtos e possam realizar pedidos online.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Sérgio Luiz de Menezes Filho
+* Mauro Jorge de Albuquerque Barreto
+* Heloisa Soares Ferreira
+* Raphael do Carmo Latini
+* Lucas Junio dos Santos
+* Flávia Cristina de Gomes Souza
+* Guilherme da Silva Moreira
 
 ## Orientador
 
-* Nome completo do professor 1
+* Nathalia Assis Valentim
 
 ## Instruções de utilização
 
