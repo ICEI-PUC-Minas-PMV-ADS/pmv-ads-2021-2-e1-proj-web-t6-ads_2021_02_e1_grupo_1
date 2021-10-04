@@ -17,7 +17,7 @@ A gestão do código fonte da aplicação web desenvlvida pela equipe segue a me
 
 ![image](https://user-images.githubusercontent.com/90944344/134842060-a529ca50-9cb4-46d6-b176-d141450627e2.png)
 <p align="center">
-<b>Figura: Fluxo de controle do código fonte utilizando o GitHub Flow</b>
+<b>Figura - Fluxo de controle do código fonte utilizando o GitHub Flow</b>
 </p>
 
 ## Gerenciamento do projeto
@@ -35,14 +35,14 @@ O quadro de tarefas do grupo está disponível [neste link na plataforma GitHub 
 
 ![image](https://user-images.githubusercontent.com/90944344/134843373-37333cb7-5247-4f78-b575-90c436f3cfeb.png)
 <p align="center">
-<b>Figura: Quadro de tarefas utilizado pelo grupo com base na metodologia Scrum</b>
+<b>Figura - Quadro de tarefas utilizado pelo grupo com base na metodologia Scrum</b>
 </p>
 
 Além disso, como forma de aprimorar sua organização, cada nova tarefa criada é etiquetada recebendo uma das "labels" oferecidas por padrão pelo GitHub Projects, conforme lista a seguir:
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/90944344/134843150-97cbe441-701d-4429-92d4-f37842f01eae.png"><br>
- <b>Figura: Lista de etiquetas de tarefas disponibilizadas pelo GitHub Projects</b>
+ <b>Figura - Lista de etiquetas de tarefas disponibilizadas pelo GitHub Projects</b>
 </p>
 
 ### Divisão de Papéis
