@@ -9,7 +9,7 @@ A figura abaixo descreve o fluxo de interação do usuário através das diferen
 
 ![userflow figure_ADS_20212_T6_Grupo1](https://user-images.githubusercontent.com/74699119/135297724-7a86f729-b4e8-4a16-9717-8ca6ed74b59e.png)
 <p align="center">
-   <b>Figura X - Fluxo de telas do usuário</b>
+   <b>Figura - Fluxo de telas do usuário</b>
 </p>
  
 ## Wireframes
@@ -21,7 +21,7 @@ Esta seção apresenta uma descrição mais detalhada das telas apresentadas ant
 
 ![Estrutura do site](https://user-images.githubusercontent.com/74699119/135298749-2b3afa97-3e5c-4de6-9f97-b061af540f90.png)
 <p align="center">
-   <b>Figura X - Estrutura geral do site</b>
+   <b>Figura - Estrutura geral do site</b>
 </p>
 
 
@@ -34,7 +34,7 @@ A tela de homepage apresenta ao usuário os recursos necessários para localizar
 
 ![Homepage](https://user-images.githubusercontent.com/74699119/135298849-900d5da1-ee64-4f5e-941c-8cb11bd73f36.png)
 <p align="center">
-   <b>Figura X - Tela Inicial – Busca e sugestão de vendedores</b>
+   <b>Figura - Tela Inicial – Busca e sugestão de vendedores</b>
 </p>
 
 
@@ -46,7 +46,7 @@ Link para cadastrar uma nova conta com o texto “Não possui uma conta? Cadastr
 
 ![Login](https://user-images.githubusercontent.com/74699119/135299742-f99cf96c-8f2b-4560-b4ee-cf4fed06a2ff.png)
 <p align="center">
-   <b>Figura X - Tela de Login da conta</b>
+   <b>Figura - Tela de Login da conta</b>
 </p>
 
 
@@ -56,7 +56,7 @@ Tela de recuperação de senha onde o usuário já cadastrado pode inserir seu e
 
 ![Recuperar senha](https://user-images.githubusercontent.com/74699119/135299968-f980e06e-9a35-41eb-98cf-4b2ff7e8e041.png)
 <p align="center">
-   <b>Figura X - Tela de recuperação de senha</b>
+   <b>Figura - Tela de recuperação de senha</b>
 </p>
 
 
@@ -65,7 +65,7 @@ Essa tela apresenta o formulário requisitado para o cadastro do usuário como c
 
 ![Cadastro cliente](https://user-images.githubusercontent.com/74699119/135300081-622aa840-88c1-4128-ba38-2e29a15e19c7.png)
 <p align="center">
-   <b>Figura X - Tela de cadastro do usuário como cliente</b>
+   <b>Figura - Tela de cadastro do usuário como cliente</b>
 </p>
 
 
@@ -74,7 +74,7 @@ Nesta tela são requisitadas as informações necessárias para o cadastro do us
 
 ![Cadastro vendedor](https://user-images.githubusercontent.com/74699119/135300481-2d48898f-8227-4011-b97b-03598fd1aca6.png)
 <p align="center">
-   <b>Figura X – Tela de cadastro de usuário como vendedor</b>
+   <b>Figura – Tela de cadastro de usuário como vendedor</b>
 </p>
 
 
@@ -83,7 +83,7 @@ Caso o usuário já possua uma conta e já esteja logado no sistema, clicar na o
 
 ![minha conta](https://user-images.githubusercontent.com/74699119/135300920-3308c680-d5d5-4cef-a7f6-f993d8b1fd29.png)
 <p align="center">
-   <b>Figura X – Menu da conta do usuário</b>
+   <b>Figura – Menu da conta do usuário</b>
 </p>
 
 
@@ -92,7 +92,7 @@ Tela acessada através do menu da conta do usuário que contém os dados do usu�
 
 ![dados pessoais](https://user-images.githubusercontent.com/74699119/135301051-e682fe83-266f-4454-acd0-7c1bff8f50fb.png)
 <p align="center">
-   <b>Figura X – Tela de dados da conta do usuário</b>
+   <b>Figura – Tela de dados da conta do usuário</b>
 </p>
 
 
@@ -101,7 +101,7 @@ Tela acessada através do menu da conta do usuário contendo o histórico dos pe
 
 ![Historico](https://user-images.githubusercontent.com/74699119/135301168-fe9c1d06-2d00-4c8c-aeb5-ccf31aa7b0fc.png)
 <p align="center">
-   <b>Figura X – Tela do histórico de pedidos</b>
+   <b>Figura – Tela do histórico de pedidos</b>
 </p>
 
 
@@ -110,7 +110,7 @@ Tela acessada através do menu da conta do usuário contendo todos os vendedores
 
 ![Favoritos](https://user-images.githubusercontent.com/74699119/135301310-a0ce1887-b47c-4835-931b-fa4599c07acc.png)
 <p align="center">
-   <b>Figura X – Tela de vendedores e produtos favoritados</b>
+   <b>Figura – Tela de vendedores e produtos favoritados</b>
 </p>
 
 
@@ -119,7 +119,7 @@ Tela acessada através do menu da conta do usuário contendo todos os cartões s
 
 ![formas pagamento](https://user-images.githubusercontent.com/74699119/135301451-bd5e7064-768e-4ddd-9817-e01f7ba5023b.png)
 <p align="center">
-   <b>Figura X – Tela de formas de pagamento salvas</b>
+   <b>Figura – Tela de formas de pagamento salvas</b>
 </p>
 
 
@@ -128,7 +128,7 @@ A tela de selecionar localização poderá ser acessada através do cabeçalho g
 
 ![Localizacao](https://user-images.githubusercontent.com/74699119/135301539-32af57f2-7d84-4062-976f-0083446d9f1d.png)
 <p align="center">
-   <b>Figura X - Tela de selecionar endereço</b>
+   <b>Figura - Tela de selecionar endereço</b>
 </p>
 
 
@@ -139,7 +139,7 @@ Tela aonde são apresentados os resultados da busca feita pelo usuário, apresen
 
 ![Busca](https://user-images.githubusercontent.com/74699119/135301645-f39c31c8-3634-4b7a-8272-fdbc1551f00d.png)
 <p align="center">
-   <b>Figura X - Tela de resultados da busca de vendedores</b>
+   <b>Figura - Tela de resultados da busca de vendedores</b>
 </p>
 
 
@@ -160,7 +160,7 @@ Quando acessada através da conta do vendedor dono da loja em questão, os segui
 
 ![Miniwebsite](https://user-images.githubusercontent.com/74699119/135301798-9236ea8d-dd4a-4db1-9a04-ee0d1482a7f9.png)
 <p align="center">
-   <b>Figura X – Tela inicial do mini-website do vendedor contendo a apresentação da loja</b>
+   <b>Figura – Tela inicial do mini-website do vendedor contendo a apresentação da loja</b>
 </p>
 
 
@@ -175,7 +175,7 @@ Ao adicionar um novo produto ou alterar um produto existente, o vendedor será r
 
 ![Miniwebsite - produtos](https://user-images.githubusercontent.com/74699119/135301909-10ebc7bc-004f-46cb-b55b-2a418ff36eeb.png)
 <p align="center">
-   <b>Figura X – Tela de catálogo de produtos do mini-website</b>
+   <b>Figura – Tela de catálogo de produtos do mini-website</b>
 </p>
 
 
@@ -193,7 +193,7 @@ Quando acessada através da conta do vendedor dono da loja em questão, os segui
 
 ![Miniwebsite - produtos - mais detalhes](https://user-images.githubusercontent.com/74699119/135302052-23c8f061-dfea-4964-8bb8-4d73d81d44a0.png)
 <p align="center">
-   <b>Figura X – Janela de mais detalhes do catálogo de produtos</b>
+   <b>Figura – Janela de mais detalhes do catálogo de produtos</b>
 </p>
 
 
@@ -202,7 +202,7 @@ Tela do mini-website que permite ao usuário selecionar o sabor e quantidade do 
 
 ![Miniwebsite - produtos - mais detalhes - adicionar ao pedido](https://user-images.githubusercontent.com/74699119/135302175-615b41c9-e955-4222-88c0-33cafd8e3314.png)
 <p align="center">
-   <b>Figura X – Janela de adicionar produto à lista de compras</b>
+   <b>Figura – Janela de adicionar produto à lista de compras</b>
 </p>
 
 
@@ -211,7 +211,7 @@ Tela do mini-website que exibe os links para as redes sociais da loja do vendedo
 
 ![Miniwebsite - redes sociais](https://user-images.githubusercontent.com/74699119/135302275-12c22a9b-87d7-4c6c-9318-d5556c28c1ef.png)
 <p align="center">
-   <b>Figura X – Tela de links de redes sociais do mini-website da loja</b>
+   <b>Figura – Tela de links de redes sociais do mini-website da loja</b>
 </p>
 
 
@@ -220,7 +220,7 @@ Tela do mini-website que permite ao usuário entrar em contato com o vendedor. A
 
  ![Miniwebsite - contato](https://user-images.githubusercontent.com/74699119/135302394-dcf1b653-f425-46d4-a8c2-26797a3cb257.png)
 <p align="center">
-   <b>Figura X – Tela de links de redes sociais do mini-website da loja</b>
+   <b>Figura – Tela de links de redes sociais do mini-website da loja</b>
 </p>
 
 
@@ -229,7 +229,7 @@ Tela onde o usuário pode ver todos os produtos adicionados à lista de compras,
 
 ![Miniwebsite - pedido](https://user-images.githubusercontent.com/74699119/135302454-3bf3fe11-2d3a-4638-bc3a-5db88f740c6a.png)
 <p align="center">
-   <b>Figura X – Tela da lista de compras dos produtos da loja</b>
+   <b>Figura – Tela da lista de compras dos produtos da loja</b>
 </p>
 
 
@@ -238,7 +238,7 @@ Tela onde o usuário pode revisar o pedido (mostrado na mesma barra lateral à d
 
 ![Miniwebsite - pedido - pagamento](https://user-images.githubusercontent.com/74699119/135302550-db495c8e-2e4c-40c0-82d1-6d4c5b6f46d1.png)
 <p align="center">
-   <b>Figura X – Tela de finalização da compra dos produtos</b>
+   <b>Figura – Tela de finalização da compra dos produtos</b>
 </p>
 
 
@@ -247,7 +247,7 @@ Janela de mensagem aberta para confirmar que o pedido foi realizado com sucesso.
 
 ![confirmacao pedido](https://user-images.githubusercontent.com/74699119/135302660-6c712e9f-b363-4427-a522-0f4984b36a18.png)
 <p align="center">
-   <b>Figura X – Mensagem de confirmação do pedido</b>
+   <b>Figura – Mensagem de confirmação do pedido</b>
 </p>
 
 
@@ -256,7 +256,7 @@ Janela de mensagem aberta para confirmar que o item em questão foi salvo nos fa
 
 ![confirmacao favoritos](https://user-images.githubusercontent.com/74699119/135302782-b118649d-9111-483d-9a78-3cc8b46f2e87.png)
 <p align="center">
-   <b>Figura X – Mensagem de confirmação de adição aos favoritos</b>
+   <b>Figura – Mensagem de confirmação de adição aos favoritos</b>
 </p>
 
 
@@ -265,7 +265,7 @@ Tela exclusiva para o vendedor da loja, ao clicar em “monte seu pedido”, o u
 
 ![Miniwebsite - área do vendedor - pagamentos](https://user-images.githubusercontent.com/74699119/135302912-3da45ba3-b01d-4f68-9a75-9347fe3efa63.png)
 <p align="center">
-   <b>Figura X – Tela de customização das opções de venda e entrega dos produtos (acessível somente para a conta do dono da loja)</b>
+   <b>Figura – Tela de customização das opções de venda e entrega dos produtos (acessível somente para a conta do dono da loja)</b>
 </p>
 
 
