@@ -44,20 +44,12 @@ No diagrama a seguir, está a representação da interação entre usuário e a 
  
 
 - Local Storage: armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em HTML, CSS, JavaScript. São eles: 
-
- 
-
-Dados do cadastro: dados fornecidos pelo usuário ao criar uma conta; 
-
-Favoritos: lista de vendedores e produtos favoritados pelo usuário; 
-
-Histórico de pedidos: registro dos pedidos feitos pelo usuário (ou de compras feitas em sua loja para o usuário logado como vendedor); 
-
-Formas de pagamento: registro dos cartões de crédito salvos pelo usuário para uso nas compras; 
-
-Itens da lista de compras: lista de produtos que o usuário adicionou à lista de compras do seu pedido; 
-
-Edições no “mini-website” pelo vendedor dono da loja: modificações feitas pelo usuário logado como dono da página da loja feitas a fim de customizá-lo (adição / remoção de itens ao catálogo de produtos, mudança do texto, imagens e vídeo da tela inicial, links para suas redes sociais, formas de pagamento etc.). 
+  - Dados do cadastro: dados fornecidos pelo usuário ao criar uma conta; 
+  - Favoritos: lista de vendedores e produtos favoritados pelo usuário; 
+  - Histórico de pedidos: registro dos pedidos feitos pelo usuário (ou de compras feitas em sua loja para o usuário logado como vendedor); 
+  - Formas de pagamento: registro dos cartões de crédito salvos pelo usuário para uso nas compras; 
+  - Itens da lista de compras: lista de produtos que o usuário adicionou à lista de compras do seu pedido; 
+  - Edições no “mini-website” pelo vendedor dono da loja: modificações feitas pelo usuário logado como dono da página da loja feitas a fim de customizá-lo (adição / remoção de   itens ao catálogo de produtos, mudança do texto, imagens e vídeo da tela inicial, links para suas redes sociais, formas de pagamento etc.). 
 
 ## Hospedagem:
 A hospedagem da plataforma será implementada via GitHub Pages na fase de desenvolvimento da solução. 
