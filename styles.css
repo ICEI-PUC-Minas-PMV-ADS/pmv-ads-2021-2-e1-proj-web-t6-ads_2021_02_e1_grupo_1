@@ -1,0 +1,220 @@
+.no-decoration a:hover {
+      text-decoration: none;
+}
+.conteudo_header img {
+    height: 26px;
+}
+.itens_menu {
+    margin-left: -30px;
+}
+.itens_menu img {
+    margin-left: -20px;
+    height: 24px;
+}
+.itens_menu a {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 6px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px;
+    border-radius: 5px;
+    border-color: #343a40;
+}
+#header_sobrescrito {
+    margin-left: 2px;
+    margin-top: -14px;
+    position: absolute;
+}
+#endereco_icone {
+    margin-right: -4px;
+    margin-top: -18px;
+}
+.location_web {
+    margin-top: 8px;
+   }
+.location_mobile {
+    display: none;
+   }
+#conteudo_pagina {
+    background-color: #f8f8f8;
+    color: #222222;
+    padding: 0px;
+    text-align: center;
+}
+#conteudo_footer {
+    background-color: #eeeeee;
+    color: #222222;
+    padding: 0px;
+    text-align: center;
+}
+#busca_homepage {
+    margin-top: 24px;
+    margin-bottom: 92px;
+    background-color: #eeeeee;
+    height: 80px;
+    width: 100%;
+}
+#busca_homepage input {
+    height: 48px;
+    margin-top: 16px;
+}
+#busca_homepage button {
+    background-color: #ffffff;
+    border-color: #ced4da;
+    height: 48px;
+    width: 48px;
+    margin-top: 16px;
+}
+#busca_homepage button:hover {
+    background-color: #dddddd;
+}
+#busca_homepage img {
+    height: 32px;
+    width: 32px;
+    margin-left: -5px;
+    margin-top: 2px;
+}
+#recomendacoes {
+    background-color: #ffffff;
+}
+#recomendacoes a {
+    color: #222222;
+}
+#recomendacoes a:hover {
+    transform: scale(105%);
+    transition: transform 100ms ease-in-out;
+}
+.carrossel-conteudo {
+    margin-top: 16px;
+    display: inline-block;
+    position: relative;
+    height: 295px;
+    width: 100%; 
+    overflow: hidden;
+}
+.carrossel-texto {
+    margin-left: 0px;
+    position: relative;
+    height: 48px;
+    margin-top: -6px;
+    font-size: 24px;
+    width: 100%; 
+    overflow: hidden;
+}
+.carrossel-seta-left {
+    width: 8px;
+    position: absolute;
+    left: 3px;
+    top: 40%;
+}
+.carrossel-seta-left img {
+    width: 20px;
+    margin-left: -16px;
+}
+.carrossel-seta-right {
+    width: 8px;
+    position: absolute;
+    right: 3px;
+    top: 40%;
+}
+.carrossel-seta-right img {
+    width: 20px;
+    margin-left: -4px;
+}
+#carrossel_item0 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -921px;
+    bottom: 0px;
+}
+#carrossel_item0 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item1 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -548px;
+    bottom: 0px;
+}
+#carrossel_item1 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item2 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    bottom: 0px;
+}
+#carrossel_item2 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item3 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: 198px;
+    bottom: 0px;
+}
+#carrossel_item3 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item4 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: 571px;
+    bottom: 0px;
+}
+#carrossel_item4 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+    .itens_menu {
+        margin-left: 0px;
+        background-color:#343a40;
+        border: none;
+    }
+    .location_web {
+     display: none;
+    }
+    .location_mobile {
+        display:flex;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    #header_sobrescrito {
+        margin-left: 23px;
+        margin-top: -14px;
+        position: absolute;
+    }
+    #endereco_icone {
+        margin-right: 0px;
+        margin-top: -8px;
+    }
+}
+footer {
+    background-color: #dddddd;
+}
+#footer-redes-sociais i {
+    color: #aaaaaa;
+    padding: 8px;
+}
+#footer-redes-sociais i:hover {
+    color: #222222;
+    text-decoration: none;
+}
