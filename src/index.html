@@ -47,11 +47,11 @@
                                 Minha conta
                             </a>
                             <div class="itens_menu dropdown-menu">
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_dadospessoais.png"> Dados Pessoais</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_historico.png"> Histórico</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_favoritos.png"> Favoritos</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_pagamentos.png"> Pagamentos</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_sair.png"> Sair</a>
+                                <a class="dropdown-item" href="#"> <i class="far fa-user-circle fa-lg"></i> Dados Pessoais</a>
+                                <a class="dropdown-item" href="#"> <i class="fas fa-history fa-lg"></i> Histórico</a>
+                                <a class="dropdown-item" href="#"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
+                                <a class="dropdown-item" href="#"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
+                                <a class="dropdown-item" href="#"> <i class="far fa-times-circle fa-lg"></i> Sair</a>
                             </div>
                         </li>
                     </ul>
@@ -65,10 +65,10 @@
             <div class="col-lg-10 mx-auto">
                 <form>
                     <div class="input-group">
-                        <input type="text" placeholder="Digite o tipo de comida ou nome do vendedor" class="form-control">
+                        <input type="text" placeholder="Digite o tipo de comida ou nome da loja/vendedor" class="form-control">
                         <div class="input-group-append">
                             <button class="btn btn-secondary" type="button">
-                              <img src="imagens/icon_procurar.png">
+                              <i class="fas fa-search fa-2x"></i>
                             </button>
                           </div>
                     </div>
@@ -78,41 +78,39 @@
         <div class="no-decoration" id="recomendacoes">
             <h2>Vendedores recomendados na sua região </h2>     
             <div class="carrossel-conteudo">
-                <div class="carrosel_item" id="carrossel_item0"><a href="aaa"><img src="imagens/loja_cupcakes.jpg"><h4>Loja 4</h4></a>
+                <div class="carrossel_item" id="carrossel_item0"><a href="aaa"><img src="imagens/loja_cupcakes.jpg"><h4 id="nome-loja0">Loja 4</h4></a>
                 </div>
-                <div class="carrosel_item" id="carrossel_item1"><a href="aaa"><img src="imagens/loja_doces.jpg"><h4>Loja 1</h4></a>
+                <div class="carrossel_item" id="carrossel_item1"><a href="aaa"><img src="imagens/loja_doces.jpg"><h4 id="nome-loja1">Loja 1</h4></a>
                 </div>
-                <div class="carrosel_item" id="carrossel_item2"><a href="aaa"><img src="imagens/loja_massas.jpg"><h4>Loja 2</h4></a>
+                <div class="carrossel_item" id="carrossel_item2"><a href="aaa"><img src="imagens/loja_massas.jpg"><h4 id="nome-loja2">Loja 2</h4></a>
                 </div>
-                <div class="carrosel_item" id="carrossel_item3"><a href="aaa"><img src="imagens/loja_vegan.jpg"><h4>Loja 3</h4></a>
+                <div class="carrossel_item" id="carrossel_item3"><a href="aaa"><img src="imagens/loja_vegan.jpg"><h4 id="nome-loja3">Loja 3</h4></a>
                 </div>
-                <div class="carrosel_item" id="carrossel_item4"><a href="aaa"><img src="imagens/loja_cupcakes.jpg"><h4>Loja 4</h4></a>
+                <div class="carrossel_item" id="carrossel_item4"><a href="aaa"><img src="imagens/loja_cupcakes.jpg"><h4 id="nome-loja4">Loja 4</h4></a>
                 </div>
-                <button class="carrossel-seta-left btn bg-transparent"><img src="imagens/seta_esquerda.png"></button>
-                <button class="carrossel-seta-right btn bg-transparent"><img src="imagens/seta_direita.png"></button>
+                <button class="carrossel-seta-left btn bg-transparent" onclick="carrossel('left')"><i class="fas fa-chevron-left fa-2x"></i></button>
+                <button class="carrossel-seta-right btn bg-transparent" onclick="carrossel('right')"><i class="fas fa-chevron-right fa-2x"></i></button>
             </div>
         </div>
         <div style="height: 268px;"></div>
     </div>
     <footer class="text-center text-lg-start" id="conteudo_footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <div class="container me-5 d-none d-lg-block no-decoration" id="footer-redes-sociais">
+          <div class="container me-5 d-lg-block no-decoration" id="footer-redes-sociais">
             <h4>Siga-nos nas nossas redes sociais</h4>
             <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-facebook-f fa-2x""></i>
+              <i class="fab fa-facebook-f fa-2x"></i>
             </a>
             <a href="https://www.twitter.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-twitter fa-2x""></i>
+              <i class="fab fa-twitter fa-2x"></i>
             </a>
             <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-instagram fa-2x""></i>
+              <i class="fab fa-instagram fa-2x"></i>
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-linkedin fa-2x""></i>
+            <a href="https://www.youtube.com/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-youtube fa-2x"></i>
             </a>
-            <a href="https://www.github.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-github fa-2x""></i>
-            </a>
+
           </div>
         </section>
 
