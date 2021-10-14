@@ -1,5 +1,5 @@
 .no-decoration a:hover {
-      text-decoration: none;
+    text-decoration: none;
 }
 .conteudo_header img {
     height: 26px;
@@ -23,7 +23,7 @@
     border-color: #343a40;
 }
 #header_sobrescrito {
-    margin-left: 2px;
+    margin-left: -3px;
     margin-top: -14px;
     position: absolute;
 }
@@ -51,8 +51,8 @@
 }
 #busca_homepage {
     margin-top: 24px;
-    margin-bottom: 92px;
     background-color: #eeeeee;
+    border-radius: 12px;
     height: 80px;
     width: 100%;
 }
@@ -93,16 +93,7 @@
     display: inline-block;
     position: relative;
     height: 295px;
-    width: 100%; 
-    overflow: hidden;
-}
-.carrossel-texto {
-    margin-left: 0px;
-    position: relative;
-    height: 48px;
-    margin-top: -6px;
-    font-size: 24px;
-    width: 100%; 
+    width: 100%;
     overflow: hidden;
 }
 .carrossel-seta-left {
@@ -214,6 +205,11 @@
     #endereco_icone {
         margin-right: 0px;
         margin-top: -8px;
+    }
+}
+@media (max-width: 575px) {
+    #busca_homepage {
+    border-radius: 0px;
     }
 }
 footer {

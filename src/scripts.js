@@ -29,6 +29,8 @@ document.querySelector("#carrossel_item2").numero_lista=associateListNumber(1);
 document.querySelector("#carrossel_item3").numero_lista=associateListNumber(2);
 document.querySelector("#carrossel_item4").numero_lista=associateListNumber(3);
 
+updateListInfo();
+
 function associateListNumber(list_number) {
     if (list_number < 0) {
         list_number = listaVendedores.length -1;
@@ -39,8 +41,6 @@ function associateListNumber(list_number) {
     }
     return list_number;    
 }
-
-updateListInfo();
 
 function updateListInfo() {
     update(0);

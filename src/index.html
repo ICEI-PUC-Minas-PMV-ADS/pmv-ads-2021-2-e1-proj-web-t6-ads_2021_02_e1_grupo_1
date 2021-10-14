@@ -18,11 +18,11 @@
                 
                 <ul class="conteudo_header navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="location_mobile nav-link" href="#">
+                      <button type="button" class="location_mobile nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
                             <img id="endereco_icone" src="imagens/location_icon.png">
                             <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
-                            Selecionar endereço
-                        </a>
+                            <span class="endereco_atual">Selecionar endereço</span>
+                      </button>
                     </li>
                 </ul>
                 
@@ -40,7 +40,11 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="location_web nav-link" href="#"><img id="endereco_icone" src="imagens/location_icon.png"><span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span> Selecionar endereço</a>
+                            <button type="button" class="location_web nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
+                              <img id="endereco_icone" src="imagens/location_icon.png">
+                              <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span> 
+                              <span class="endereco_atual">Selecionar endereço</span>
+                            </button>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
@@ -58,25 +62,57 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container" id="conteudo_pagina">
-        <h1><br>Buscar Vendedores</h1>
-        <div id="busca_homepage">
-            <div class="col-lg-10 mx-auto">
-                <form>
-                    <div class="input-group">
-                        <input type="text" placeholder="Digite o tipo de comida ou nome da loja/vendedor" class="form-control">
-                        <div class="input-group-append">
-                            <button class="btn btn-secondary" type="button">
-                              <i class="fas fa-search fa-2x"></i>
-                            </button>
-                          </div>
-                    </div>
-                </form>
+        
+        <div class="modal fade" id="selecionar_endereco" tabindex="-1" role="dialog" aria-labelledby="selecionar_enderecoTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="selecionar_enderecoTitle">Selecionar Endereço</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <h5>Endereço Atual</h5>
+                <span class="endereco_atual"> Nenhum endereço selecionado </span>
+                <h5><br>Buscar meu endereço</h5>
+                <div class="col-lg-10 mx-auto">
+                  <form>
+                      <div class="input-group">
+                          <input type="text" placeholder="Digite o endereço que procura" class="form-control" style="margin-bottom: 16px;">
+                      </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-dark">Confirmar Endereço</button>
+              </div>
             </div>
+          </div>
         </div>
+
+    </header>
+    <div class="text-center" id="conteudo_pagina">
+      <h1><br>Buscar Vendedores</h1>
+      <div class="container" id="busca_homepage">
+          <div class="col-lg-10 mx-auto">
+              <form>
+                  <div class="input-group">
+                      <input type="text" placeholder="Digite o tipo de comida ou nome da loja/vendedor" class="form-control">
+                      <div class="input-group-append">
+                          <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-search fa-2x"></i>
+                          </button>
+                        </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div style="height: 92px;"></div>
+    </div>
+    <div class="container" id="conteudo_pagina">
         <div class="no-decoration" id="recomendacoes">
-            <h2>Vendedores recomendados na sua região </h2>     
+            <h2><br>Vendedores recomendados na sua região </h2>     
             <div class="carrossel-conteudo">
                 <div class="carrossel_item" id="carrossel_item0"><a href="aaa"><img src="imagens/loja_cupcakes.jpg"><h4 id="nome-loja0">Loja 4</h4></a>
                 </div>
@@ -92,7 +128,7 @@
                 <button class="carrossel-seta-right btn bg-transparent" onclick="carrossel('right')"><i class="fas fa-chevron-right fa-2x"></i></button>
             </div>
         </div>
-        <div style="height: 268px;"></div>
+        <div style="height: 180px; background-color: #ffffff;"></div>
     </div>
     <footer class="text-center text-lg-start" id="conteudo_footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
