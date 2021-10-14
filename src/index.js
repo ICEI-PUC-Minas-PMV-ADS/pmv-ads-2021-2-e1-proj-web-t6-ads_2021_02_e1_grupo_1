@@ -1,26 +1,3 @@
-let listaVendedores = [
-    {
-        "numero_lista" : 1,
-        "nome" : "Loja 1",
-        "imagem" : "imagens/loja_doces.jpg",
-    },
-    {
-        "numero_lista" : 2,
-        "nome" : "Loja 2",
-        "imagem" : "imagens/loja_massas.jpg",
-    },
-    {
-        "numero_lista" : 3,
-        "nome" : "Loja 3",
-        "imagem" : "imagens/loja_vegan.jpg",
-    },
-    {
-        "numero_lista" : 4,
-        "nome" : "Loja 4",
-        "imagem" : "imagens/loja_cupcakes.jpg",
-    },
-  ]
-
 /*carrossel homepage*/
 
 document.querySelector("#carrossel_item0").numero_lista=associateListNumber(-1);
@@ -48,10 +25,10 @@ function updateListInfo() {
     update(2);
     update(3);
     update(4);
-    function update(numero_item) {
-        item_carrossel = document.querySelector(`#carrossel_item${numero_item}`);
-        document.querySelector(`#carrossel_item${numero_item} a img`).src = listaVendedores[item_carrossel.numero_lista].imagem;
-        document.querySelector(`#nome-loja${numero_item}`).textContent = listaVendedores[item_carrossel.numero_lista].nome;
+    function update(numeroItem) {
+        item_carrossel = document.querySelector(`#carrossel_item${numeroItem}`);
+        document.querySelector(`#carrossel_item${numeroItem} a img`).src = listaVendedores[item_carrossel.numero_lista].imagem;
+        document.querySelector(`#nome-loja${numeroItem}`).textContent = listaVendedores[item_carrossel.numero_lista].nome;
     }
 }
 
@@ -98,17 +75,17 @@ function carrossel(direction) {
     else if (direction == "right") {
         moveRight(numero_painel);   
     }
-    function moveRight (numero_item) {
-        item_carrossel = document.querySelector(`#carrossel_item${numero_item} a`);
+    function moveRight (numeroItem) {
+        item_carrossel = document.querySelector(`#carrossel_item${numeroItem} a`);
         style = window.getComputedStyle(item_carrossel);     
         if (style.marginLeft == "-921px") {   
             item_carrossel.style.transition= "none";
             item_carrossel.style.marginLeft= "571px";
-            nextItem = numero_item - 1;
-            if (numero_item == 0) {
+            nextItem = numeroItem - 1;
+            if (numeroItem == 0) {
                 nextItem = 4;
             }
-            document.querySelector(`#carrossel_item${numero_item}`).numero_lista = associateListNumber(document.querySelector(`#carrossel_item${nextItem}`).numero_lista + 1);
+            document.querySelector(`#carrossel_item${numeroItem}`).numero_lista = associateListNumber(document.querySelector(`#carrossel_item${nextItem}`).numero_lista + 1);
         } 
         else {
             item_carrossel.style.transition= carrosselTransition;
@@ -116,17 +93,17 @@ function carrossel(direction) {
         }
             
     }
-    function moveLeft (numero_item) {
-        item_carrossel = document.querySelector(`#carrossel_item${numero_item} a`);
+    function moveLeft (numeroItem) {
+        item_carrossel = document.querySelector(`#carrossel_item${numeroItem} a`);
         style = window.getComputedStyle(item_carrossel);    
         if (style.marginLeft == "571px") {   
             item_carrossel.style.transition= "none";
             item_carrossel.style.marginLeft= "-921px";
-            nextItem = numero_item + 1;
-            if (numero_item == 4) {
+            nextItem = numeroItem + 1;
+            if (numeroItem == 4) {
                 nextItem = 0;
             }
-            document.querySelector(`#carrossel_item${numero_item}`).numero_lista = associateListNumber(document.querySelector(`#carrossel_item${nextItem}`).numero_lista - 1);
+            document.querySelector(`#carrossel_item${numeroItem}`).numero_lista = associateListNumber(document.querySelector(`#carrossel_item${nextItem}`).numero_lista - 1);
         } 
         else {
             item_carrossel.style.transition= carrosselTransition;

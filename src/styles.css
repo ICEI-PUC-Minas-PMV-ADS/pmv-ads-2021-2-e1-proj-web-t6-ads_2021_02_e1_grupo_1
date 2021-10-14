@@ -22,10 +22,34 @@
     border-radius: 5px;
     border-color: #343a40;
 }
+#header_sobrescrito_conta {
+    margin-left: -5px;
+    margin-top: -14px;
+    position: absolute;
+}
 #header_sobrescrito {
     margin-left: -3px;
     margin-top: -14px;
     position: absolute;
+}
+.caixa_endereco {
+    max-width: 180px;
+    min-width: 120px;
+    margin-right: 12px;
+    text-align: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.caixa_usuario {
+    min-width: 120px;
+    max-width: 150px;
+    text-align: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.modal-body {
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 #endereco_icone {
     margin-right: -4px;
@@ -178,6 +202,19 @@
     border-radius: 8px;
 }
 
+.logo_login {
+    padding: 10px;
+    background-color: #343a40;
+    width: 300px;
+    margin-top: 16px;
+    border-radius: 12px;
+    border: 1px solid #222222;
+    text-align: center;
+}
+.logo_login img {
+    width: 256px;
+}
+
 @media (max-width: 767px) {
     .itens_menu {
         margin-left: 0px;
@@ -201,6 +238,9 @@
         margin-left: 23px;
         margin-top: -14px;
         position: absolute;
+    }
+    #header_sobrescrito_conta {
+        margin-left: 0px;
     }
     #endereco_icone {
         margin-right: 0px;

@@ -1,0 +1,1 @@
+localStorage.setItem('idUsuarioLogado', JSON.stringify(1));
