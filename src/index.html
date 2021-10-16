@@ -18,11 +18,11 @@
                 
                 <ul class="conteudo_header navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="location_mobile nav-link" href="#">
+                      <button type="button" class="location_mobile caixa_endereco nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
                             <img id="endereco_icone" src="imagens/location_icon.png">
                             <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
-                            Selecionar endereço
-                        </a>
+                            <span class="endereco_atual">Selecionar endereço</span>
+                      </button>
                     </li>
                 </ul>
                 
@@ -32,91 +32,138 @@
                 
                 <div class="conteudo_header collapse navbar-collapse" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Cadastre sua loja
-                            </a>
-                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html" onclick="redirectClienteOuVendedor(cliente_vendedor = 'cliente')">
+                           Crie sua conta
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html" onclick="redirectClienteOuVendedor(cliente_vendedor = 'vendedor')">
+                            Cadastre sua loja
+                        </a>
+                      </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="location_web nav-link" href="#"><img id="endereco_icone" src="imagens/location_icon.png"><span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span> Selecionar endereço</a>
+                            <button type="button" class="location_web caixa_endereco nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
+                              <img id="endereco_icone" src="imagens/location_icon.png">
+                              <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span> 
+                              <span class="endereco_atual">Selecionar endereço</span>
+                            </button>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
-                                Minha conta
+                        <li class="nav-item dropdown navDrop-login">
+                            <a class="nav-link caixa_usuario" href="login.html" style="margin-top: 5px;">
+                              <span class="nome_usuario">Fazer login</span>
                             </a>
-                            <div class="itens_menu dropdown-menu">
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_dadospessoais.png"> Dados Pessoais</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_historico.png"> Histórico</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_favoritos.png"> Favoritos</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_pagamentos.png"> Pagamentos</a>
-                                <a class="dropdown-item" href="#"> <img src="imagens/icon_sair.png"> Sair</a>
-                            </div>
                         </li>
+                        <li class="nav-item dropdown navDrop-logado">
+                          <a class="nav-link caixa_usuario dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop" style="margin-top: 9px;">
+                            <span id="header_sobrescrito_conta" style="font-size: 14px">Minha conta</span> 
+                            <span class="nome_usuario">Seu nome</span>
+                          </a>
+                          <div class="itens_menu dropdown-menu navDrop-conta">
+                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-user-circle fa-lg"></i> Dados Pessoais</a>
+                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="fas fa-history fa-lg"></i> Histórico</a>
+                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
+                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
+                              <a class="dropdown-item item-menu-usuario" href="#" onclick="logOut()"> <i class="far fa-times-circle fa-lg"></i> Sair</a>
+                          </div>
+                      </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        
+        <div class="modal fade" id="selecionar_endereco" tabindex="-1" role="dialog" aria-labelledby="selecionar_enderecoTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="selecionar_enderecoTitle">Selecionar Endereço</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <h5>Endereço Atual</h5>
+                <span class="endereco_atual"> Nenhum endereço selecionado </span>
+                <h5><br>Inserir meu endereço</h5>
+                <div class="col-lg-10 mx-auto">
+                  <form>
+                      <div class="input-group">
+                          <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;">
+                      </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-dark" onclick="mudarEndereco()">Mudar Endereço</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </header>
-    <div class="container" id="conteudo_pagina">
+    <main>
+      <div class="text-center" id="conteudo_pagina">
         <h1><br>Buscar Vendedores</h1>
-        <div id="busca_homepage">
+        <div class="container" id="busca_homepage">
             <div class="col-lg-10 mx-auto">
                 <form>
                     <div class="input-group">
-                        <input type="text" placeholder="Digite o tipo de comida ou nome do vendedor" class="form-control">
+                        <input type="text" placeholder="Digite o tipo de comida ou nome da loja" class="form-control">
                         <div class="input-group-append">
                             <button class="btn btn-secondary" type="button">
-                              <img src="imagens/icon_procurar.png">
+                              <i class="fas fa-search fa-2x"></i>
                             </button>
                           </div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="no-decoration" id="recomendacoes">
-            <h2>Vendedores recomendados na sua região </h2>     
-            <div class="carrossel-conteudo">
-                <div class="carrosel_item" id="carrossel_item0"><a href="aaa"><img src="imagens/loja_cupcakes.jpg"><h4>Loja 4</h4></a>
-                </div>
-                <div class="carrosel_item" id="carrossel_item1"><a href="aaa"><img src="imagens/loja_doces.jpg"><h4>Loja 1</h4></a>
-                </div>
-                <div class="carrosel_item" id="carrossel_item2"><a href="aaa"><img src="imagens/loja_massas.jpg"><h4>Loja 2</h4></a>
-                </div>
-                <div class="carrosel_item" id="carrossel_item3"><a href="aaa"><img src="imagens/loja_vegan.jpg"><h4>Loja 3</h4></a>
-                </div>
-                <div class="carrosel_item" id="carrossel_item4"><a href="aaa"><img src="imagens/loja_cupcakes.jpg"><h4>Loja 4</h4></a>
-                </div>
-                <button class="carrossel-seta-left btn bg-transparent"><img src="imagens/seta_esquerda.png"></button>
-                <button class="carrossel-seta-right btn bg-transparent"><img src="imagens/seta_direita.png"></button>
-            </div>
-        </div>
-        <div style="height: 268px;"></div>
-    </div>
+        <div style="height: 92px;"></div>
+      </div>
+      <div class="container" id="conteudo_pagina">
+          <div class="no-decoration" id="recomendacoes">
+              <h2><br>Vendedores recomendados na sua região </h2>     
+              <div class="carrossel-conteudo">
+                  <div class="carrossel_item" id="carrossel_item0"><a href="aaa"><img src=""><h4 id="nome-loja0"></h4></a>
+                  </div>
+                  <div class="carrossel_item" id="carrossel_item1"><a href="aaa"><img src=""><h4 id="nome-loja1"></h4></a>
+                  </div>
+                  <div class="carrossel_item" id="carrossel_item2"><a href="aaa"><img src=""><h4 id="nome-loja2"></h4></a>
+                  </div>
+                  <div class="carrossel_item" id="carrossel_item3"><a href="aaa"><img src=""><h4 id="nome-loja3"></h4></a>
+                  </div>
+                  <div class="carrossel_item" id="carrossel_item4"><a href="aaa"><img src=""><h4 id="nome-loja4"></h4></a>
+                  </div>
+                  <button class="carrossel-seta-left btn bg-transparent" onclick="carrossel('left')"><i class="fas fa-chevron-left fa-2x"></i></button>
+                  <button class="carrossel-seta-right btn bg-transparent" onclick="carrossel('right')"><i class="fas fa-chevron-right fa-2x"></i></button>
+              </div>
+          </div>
+          <div style="height: 180px; background-color: #ffffff;"></div>
+      </div>
+    </main>
     <footer class="text-center text-lg-start" id="conteudo_footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <div class="container me-5 d-none d-lg-block no-decoration" id="footer-redes-sociais">
+          <div class="container me-5 d-lg-block no-decoration" id="footer-redes-sociais">
             <h4>Siga-nos nas nossas redes sociais</h4>
             <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-facebook-f fa-2x""></i>
+              <i class="fab fa-facebook-f fa-2x"></i>
             </a>
             <a href="https://www.twitter.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-twitter fa-2x""></i>
+              <i class="fab fa-twitter fa-2x"></i>
             </a>
             <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-instagram fa-2x""></i>
+              <i class="fab fa-instagram fa-2x"></i>
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-linkedin fa-2x""></i>
+            <a href="https://www.youtube.com/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-youtube fa-2x"></i>
             </a>
-            <a href="https://www.github.com/" target="_blank" class="me-4 text-reset">
-              <i class="fab fa-github fa-2x""></i>
-            </a>
+
           </div>
         </section>
 
-        <section class="">
+        <section>
           <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -162,6 +209,7 @@
       </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+    <script src="common.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

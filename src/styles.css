@@ -1,5 +1,5 @@
 .no-decoration a:hover {
-      text-decoration: none;
+    text-decoration: none;
 }
 .conteudo_header img {
     height: 26px;
@@ -7,9 +7,10 @@
 .itens_menu {
     margin-left: -30px;
 }
-.itens_menu img {
+.itens_menu i {
+    width: 28px;
+    margin-top: 5px;
     margin-left: -20px;
-    height: 24px;
 }
 .itens_menu a {
     width: 90%;
@@ -21,10 +22,37 @@
     border-radius: 5px;
     border-color: #343a40;
 }
-#header_sobrescrito {
-    margin-left: 2px;
+#header_sobrescrito_conta {
+    margin-left: -5px;
     margin-top: -14px;
     position: absolute;
+}
+#header_sobrescrito {
+    margin-left: -3px;
+    margin-top: -14px;
+    position: absolute;
+}
+.caixa_endereco {
+    max-width: 200px;
+    min-width: 120px;
+    margin-right: 12px;
+    text-align: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.caixa_usuario {
+    min-width: 120px;
+    max-width: 150px;
+    text-align: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.navDrop-logado {
+    display: none;
+}
+.modal-body {
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 #endereco_icone {
     margin-right: -4px;
@@ -50,8 +78,8 @@
 }
 #busca_homepage {
     margin-top: 24px;
-    margin-bottom: 92px;
     background-color: #eeeeee;
+    border-radius: 12px;
     height: 80px;
     width: 100%;
 }
@@ -69,7 +97,8 @@
 #busca_homepage button:hover {
     background-color: #dddddd;
 }
-#busca_homepage img {
+#busca_homepage i {
+    color: #222222;
     height: 32px;
     width: 32px;
     margin-left: -5px;
@@ -81,25 +110,17 @@
 #recomendacoes a {
     color: #222222;
 }
-#recomendacoes a:hover {
-    transform: scale(105%);
-    transition: transform 100ms ease-in-out;
+#recomendacoes a img:hover {
+    transform: scale(105%) translateY(-2%);
+    transition: 100ms ease-in-out;
+    box-shadow: 5px 5px 8px #888888;;
 }
 .carrossel-conteudo {
     margin-top: 16px;
     display: inline-block;
     position: relative;
     height: 295px;
-    width: 100%; 
-    overflow: hidden;
-}
-.carrossel-texto {
-    margin-left: 0px;
-    position: relative;
-    height: 48px;
-    margin-top: -6px;
-    font-size: 24px;
-    width: 100%; 
+    width: 100%;
     overflow: hidden;
 }
 .carrossel-seta-left {
@@ -108,9 +129,8 @@
     left: 3px;
     top: 40%;
 }
-.carrossel-seta-left img {
-    width: 20px;
-    margin-left: -16px;
+.carrossel-seta-left i {
+    margin-left: -17px;
 }
 .carrossel-seta-right {
     width: 8px;
@@ -118,9 +138,11 @@
     right: 3px;
     top: 40%;
 }
-.carrossel-seta-right img {
-    width: 20px;
-    margin-left: -4px;
+.carrossel-seta-right i {
+    margin-left: -2px;
+}
+.carrossel_item a {
+    transition: 200ms ease-in-out;
 }
 #carrossel_item0 a {
     position: absolute;
@@ -183,11 +205,58 @@
     border-radius: 8px;
 }
 
+.logo_login {
+    padding: 10px;
+    background-color: #343a40;
+    width: 300px;
+    margin-top: 16px;
+    border-radius: 12px;
+    border: 1px solid #222222;
+    text-align: center;
+}
+.logo_login img {
+    width: 256px;
+}
+#login { 
+    text-align: center;
+    margin-top: 32px;
+    padding: 32px;
+    width: 360px;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    line-height: 32px;
+}
+#login input { 
+    height: 48px;
+    margin-bottom: 16px;
+}
+#login button { 
+    margin-top: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 21px;
+}
+#cadastro { 
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    width: 360px;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    line-height: 32px;
+}
 @media (max-width: 767px) {
     .itens_menu {
         margin-left: 0px;
         background-color:#343a40;
         border: none;
+    }
+    .itens_menu i {
+        width: 25px;
+        margin-top: 5px;
+        margin-left: -16px;
     }
     .location_web {
      display: none;
@@ -202,9 +271,17 @@
         margin-top: -14px;
         position: absolute;
     }
+    #header_sobrescrito_conta {
+        margin-left: 0px;
+    }
     #endereco_icone {
         margin-right: 0px;
         margin-top: -8px;
+    }
+}
+@media (max-width: 575px) {
+    #busca_homepage {
+    border-radius: 0px;
     }
 }
 footer {
