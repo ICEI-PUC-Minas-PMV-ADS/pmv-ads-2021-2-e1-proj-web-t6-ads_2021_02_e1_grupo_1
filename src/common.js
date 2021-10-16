@@ -22,6 +22,8 @@ let listaVendedores = [
   ]
 let enderecoAtual = "Selecionar endereço";
 
+let listaUsuarios = [{}];
+
 let idUsuarioLogado = {"id": -1, "nome" : "Seu nome", "tipo": "none"}; /*id : -1 = nenhum usuário logado; tipo = cliente/vendedor */
 
 updateLocalStorage();
@@ -37,13 +39,19 @@ function updateLocalStorage(){
     if (localStorage.getItem('enderecoAtual') == null) {
         localStorage.setItem('enderecoAtual', JSON.stringify(enderecoAtual));
     }
+    if (localStorage.getItem('listaUsuarios') == null) {
+        localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
+    }
     if (localStorage.getItem('idUsuarioLogado') == null) {
         localStorage.setItem('idUsuarioLogado', JSON.stringify(idUsuarioLogado));
     }
+    if (localStorage.getItem('clienteOuVendedor') == null) {
+        localStorage.setItem('clienteOuVendedor', "cliente");
+    }
     listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
     enderecoAtual = JSON.parse(localStorage.getItem('enderecoAtual'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
     idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
-    console.log(idUsuarioLogado);
 
     /* Update address */
     let endereco = document.querySelectorAll(".endereco_atual");
@@ -75,4 +83,7 @@ function logOut() {
     idUsuarioLogado = {"id": -1, "nome" : "Seu nome", "tipo": "none"};
     localStorage.setItem('idUsuarioLogado', JSON.stringify(idUsuarioLogado));
     updateLocalStorage();
+}
+function redirectClienteOuVendedor(cliente_vendedor = "cliente") {
+    localStorage.setItem("clienteOuVendedor", cliente_vendedor);
 }

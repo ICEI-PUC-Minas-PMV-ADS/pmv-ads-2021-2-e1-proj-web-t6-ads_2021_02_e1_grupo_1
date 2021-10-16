@@ -10,18 +10,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container d-flex justify-content-center" id="loginbox">
-    <div class="logo_login">
-      <a href="index.html"><img src="imagens/logo.png"></a>;
-    </div>
-    
+  <div class="container d-flex justify-content-center">
+    <a class="logo_login" href="index.html"><img src="imagens/logo.png"></a>
   </div>
   <main>
-
+    <div class="container" id="login">
+      <div>
+        <h4>Fazer Login</h4><br>
+        <div style="text-align: left;">
+          Email <input type="text" placeholder="exemplo@email.com" class="form-control text-align-center">
+          Senha <input type="password" placeholder="" class="form-control text-align-center">
+        </div>
+        <button type="button" class="btn btn-dark" onclick="login()">Entrar</button><br>
+        <a href="cadastro.html" onclick="redirectClienteOuVendedor(cliente_vendedor = 'cliente')"> Não possui uma conta? Cadastre-se</a><br>
+        <a href="#"> Esqueci minha senha</a><br>
+      </div>
+         
+    </div>
+    <main>
   </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
     <script src="login.js"></script>
-    <script src="index.js"></script>
 </body>
 </html>

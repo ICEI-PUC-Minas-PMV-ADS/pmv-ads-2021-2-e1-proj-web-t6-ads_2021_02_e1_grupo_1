@@ -33,7 +33,7 @@
     position: absolute;
 }
 .caixa_endereco {
-    max-width: 180px;
+    max-width: 200px;
     min-width: 120px;
     margin-right: 12px;
     text-align: left;
@@ -46,6 +46,9 @@
     text-align: left;
     white-space:nowrap;
     overflow: hidden;
+}
+.navDrop-logado {
+    display: none;
 }
 .modal-body {
     overflow: hidden;
@@ -214,7 +217,36 @@
 .logo_login img {
     width: 256px;
 }
-
+#login { 
+    text-align: center;
+    margin-top: 32px;
+    padding: 32px;
+    width: 360px;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    line-height: 32px;
+}
+#login input { 
+    height: 48px;
+    margin-bottom: 16px;
+}
+#login button { 
+    margin-top: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 21px;
+}
+#cadastro { 
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    width: 360px;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    line-height: 32px;
+}
 @media (max-width: 767px) {
     .itens_menu {
         margin-left: 0px;
