@@ -15,22 +15,22 @@
   </div>
   <main>
     <div class="container" id="cadastro">
-      <div>
+      <form id="cadastro-form" action="cadastrado.html" method="get">
         <h4>Quero me cadastrar como:</h4>
-        <input type="radio" name="cliente-vendedor" value="cliente" id="radio-cliente" onclick="updateCadastro('cliente')"> <label for="radio-cliente"> Cliente </label> &nbsp; 
-        <input type="radio" name="cliente-vendedor" value="vendedor" id="radio-vendedor" onclick="updateCadastro('vendedor')"> <label for="radio-vendedor"> Vendedor </label>
+        <input type="radio" name="clienteVendedor" value="cliente" id="radio-cliente" onclick="updateCadastro('cliente')"> <label for="radio-cliente"> Cliente </label> &nbsp; 
+        <input type="radio" name="clienteVendedor" value="vendedor" id="radio-vendedor" onclick="updateCadastro('vendedor')"> <label for="radio-vendedor"> Vendedor </label>
         <div style="text-align: left;">
-          <span class="opcoes-vendedor" style="display: none;">CNPJ <input type="text" placeholder="Primeiro nome" class="form-control text-align-center"></span>
-          <span class="opcoes-vendedor" style="display: none;">Nome da Loja <input type="text" placeholder="Primeiro nome" class="form-control text-align-center"></span>
-          Nome <input type="text" placeholder="Primeiro nome" class="form-control text-align-center">
-          Sobrenome <input type="text" placeholder="Sobrenome" class="form-control">
-          Data de nascimento <input type="date" placeholder="dd-mm-yyyy" class="form-control">
-          E-mail <input type="text" placeholder="exemplo@email.com" class="form-control">
-          Senha <input type="password" placeholder="" class="form-control">
-          Repita sua senha <input type="password" placeholder="" class="form-control"><br>
+          <span class="opcoes-vendedor" style="display: none;">CNPJ <input type="text" name="cnpj" placeholder="Primeiro nome" class="form-control text-align-center" id="cnpj-form" required></span>
+          <span class="opcoes-vendedor" style="display: none;">Nome da Loja <input type="text" name="nomeLoja" placeholder="Primeiro nome" class="form-control text-align-center" id="nome-loja-form" required></span>
+          Nome <input type="text" name="nome" placeholder="Primeiro nome" class="form-control text-align-center" required>
+          Sobrenome <input type="text" name="sobrenome" placeholder="Sobrenome" class="form-control" required>
+          Data de nascimento <input type="date" name="nascimento" placeholder="dd-mm-yyyy" class="form-control" required>
+          E-mail <input type="email" name="email" placeholder="exemplo@email.com" class="form-control" required>
+          Senha <input type="password" name="senha" placeholder="" class="form-control" required>
+          Repita sua senha <input type="password" name="confirmaSenha" placeholder="" class="form-control" required><br>
         </div>
-        <button type="button" class="btn btn-dark" onclick="cadastrar()">Concluir cadastro</button>
-      </div>   
+        <button type="submit" class="btn btn-dark" onclick="">Concluir cadastro</button>
+      </form>   
     </div>
   </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

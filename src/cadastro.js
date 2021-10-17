@@ -9,6 +9,8 @@ function updateCadastro(cliente_vendedor) {
         opcoes = document.querySelectorAll(".opcoes-vendedor")
         for (let element = 0; element < opcoes.length; element++) {
             opcoes[element].style.display = "none";
+            document.querySelector("#cnpj-form").value = "None";
+            document.querySelector("#nome-loja-form").value = "None";
           }
     }
     else if (localStorage.getItem('clienteOuVendedor') == "vendedor") {
@@ -16,6 +18,8 @@ function updateCadastro(cliente_vendedor) {
         opcoes = document.querySelectorAll(".opcoes-vendedor")
         for (let element = 0; element < opcoes.length; element++) {
             opcoes[element].style.display = "block";
+            document.querySelector("#cnpj-form").value = "";
+            document.querySelector("#nome-loja-form").value = "";
           } 
     }
 }

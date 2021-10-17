@@ -30,6 +30,8 @@ updateLocalStorage();
 
 /* Send to local storage */
 function updateLocalStorage(){
+    let endereco;
+    let nomeUsuario;
     if (localStorage.getItem('listaVendedores') == null) {
         localStorage.setItem('listaVendedores', JSON.stringify(listaVendedores));
     }
@@ -54,9 +56,13 @@ function updateLocalStorage(){
     idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
 
     /* Update address */
-    let endereco = document.querySelectorAll(".endereco_atual");
+    endereco = document.querySelectorAll(".endereco_atual");
     for (let element = 0; element < endereco.length; element++) {
         endereco[element].textContent = enderecoAtual;   
+      } 
+    nomeUsuario = document.querySelectorAll(".nome_usuario");
+    for (let element = 0; element < nomeUsuario.length; element++) {
+        nomeUsuario[element].textContent = idUsuarioLogado.nome;   
       } 
     /* Update user menu items */
     if (idUsuarioLogado.id == -1) {
