@@ -2,11 +2,8 @@ let newEntry = {};
 let getListaUsuarios;
 let lengthListaUsuarios;
 let findIndex;
-/* const resultsList = document.getElementById('results');
-new URLSearchParams(window.location.search).forEach((value,name) => {resultsList.append(`${name}: ${value}`) 
-resultsList.append(document.createElement('br'))}) */
-
 let formInfo = new URLSearchParams(window.location.search);
+
 formInfo.forEach(function(value,name) {
 Object.assign(newEntry, {[name]: value});
 });
@@ -19,8 +16,14 @@ if (findIndex == -1) {
         getListaUsuarios.push({});
         localStorage.setItem('listaUsuarios', JSON.stringify(getListaUsuarios));
         alert('Usuário cadastrado com sucesso!')
-        window.location = "login.html";
-    }
+        idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+        if (idUsuarioLogado.id == -1) {
+            window.location = "login.html";
+        }
+        else {
+            window.location = "index.html";
+        }
+            }
     else {
         alert('A senha digitada em "repita a senha" não bate com a do campo "senha"!')
         window.location = "cadastro.html";
