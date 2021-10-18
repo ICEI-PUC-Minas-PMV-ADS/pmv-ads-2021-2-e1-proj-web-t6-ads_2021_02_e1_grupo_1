@@ -20,14 +20,14 @@
         <input type="radio" name="clienteVendedor" value="cliente" id="radio-cliente" onclick="updateCadastro('cliente')"> <label for="radio-cliente"> Cliente </label> &nbsp; 
         <input type="radio" name="clienteVendedor" value="vendedor" id="radio-vendedor" onclick="updateCadastro('vendedor')"> <label for="radio-vendedor"> Vendedor </label>
         <div style="text-align: left;">
-          <span class="opcoes-vendedor" style="display: none;">CNPJ <input type="text" name="cnpj" placeholder="XX.XXX.XXX/0001-XX" class="form-control text-align-center" id="cnpj-form" required></span>
-          <span class="opcoes-vendedor" style="display: none;">Nome da Loja <input type="text" name="nomeLoja" placeholder="Nome da Loja" class="form-control text-align-center" id="nome-loja-form" required></span>
-          Nome <input type="text" name="nome" placeholder="Primeiro nome" class="form-control text-align-center" required>
-          Sobrenome <input type="text" name="sobrenome" placeholder="Sobrenome" class="form-control" required>
-          Data de nascimento <input type="date" name="nascimento" placeholder="dd-mm-yyyy" class="form-control" required>
-          E-mail <input type="email" name="email" placeholder="exemplo@email.com" class="form-control" required>
-          Senha <input type="password" name="senha" placeholder="" class="form-control" required>
-          Repita sua senha <input type="password" name="confirmaSenha" placeholder="" class="form-control" required><br>
+          <span class="opcoes-vendedor" style="display: none;"><label for="cnpj-form" style="margin-bottom: 0px;">CNPJ</label> <input type="text" name="cnpj" placeholder="XX.XXX.XXX/0001-XX" class="form-control text-align-center" id="cnpj-form" required></span>
+          <span class="opcoes-vendedor" style="display: none;"><label for="nome-loja-form" style="margin-bottom: 0px;">Nome da loja</label> <input type="text" name="nomeLoja" placeholder="Nome da Loja" class="form-control text-align-center" id="nome-loja-form" required></span>
+          <label for="nome" style="margin-bottom: 0px;">Nome</label><input type="text" name="nome" id="nome" placeholder="Primeiro nome" class="form-control text-align-center" required>
+          <label for="sobrenome" style="margin-bottom: 0px;">Sobrenome</label> <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="form-control" required>
+          <label for="nascimento" style="margin-bottom: 0px;">Data de Nascimento</label><input type="date" name="nascimento" id="nascimento" placeholder="dd-mm-yyyy" class="form-control" required>
+          <label for="email" style="margin-bottom: 0px;">E-mail</label> <input type="email" name="email" id="email" placeholder="exemplo@email.com" class="form-control" required>
+          <label for="senha" style="margin-bottom: 0px;">Senha</label> <input type="password" name="senha" id="senha" placeholder="" class="form-control" required>
+          <label for="confirmaSenha" style="margin-bottom: 0px;">Repita sua senha</label> <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="" class="form-control" required><br>
         </div>
         <button type="submit" class="btn btn-dark" onclick="">Concluir cadastro</button>
       </form>   
