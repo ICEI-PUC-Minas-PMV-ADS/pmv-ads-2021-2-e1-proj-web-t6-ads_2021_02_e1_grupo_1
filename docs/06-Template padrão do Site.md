@@ -2,7 +2,7 @@
 
 O layout utilizado no site foi criado tendo-se como base a estrutura apresentada na seção “projeto de interface”, acrescido da seção “footer” conforme a figura a seguir:
 
-![Template_rascunho](https://user-images.githubusercontent.com/74699119/138289420-d58219d2-d2b6-444b-b004-52476a914e5c.png)
+![Template_rascunho](https://user-images.githubusercontent.com/74699119/138326211-fd73fc7f-3bc8-4b9e-be22-e97843e32325.png)
 
 O template criado está disponível https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/tree/main/src/templates em e consiste nos layouts a seguir: 
 
