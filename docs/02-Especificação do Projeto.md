@@ -72,7 +72,7 @@ A tabela abaixo contém os requisitos funcionais do projeto e a prioridade com a
 |RF-008| O site deve permitir que o microempreendedor submeta durante o cadastro as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” | ALTA|
 |RF-009| O site deve permitir que microempreendedor cadastre seus produtos e forneça possíveis informações relevantes sobre os mesmos para constar na descrição | ALTA |
 |RF-010| O site deve permitir que microempreendedor cadastrado informe a quantidade de produtos em estoque para evitar pedidos maiores do que é capaz de fornecer naquele período | BAIXA |
-|RF-011| O site deve fornecer uma plataforma de vendas e entregapara o microempreendedor, de modo que os pedidos submetidos pelo cliente sejam encaminhados para o e-mail ou whatsapp do vendedor com todas as informações necessárias para organizar a entrega e receber o dinheiro pelo modo de pagamento desejado | ALTA|
+|RF-011| O site deve fornecer uma plataforma de vendas e entrega para o microempreendedor, de modo que os pedidos submetidos pelo cliente sejam encaminhados para o e-mail ou whatsapp do vendedor com todas as informações necessárias para organizar a entrega e receber o dinheiro pelo modo de pagamento desejado | ALTA|
 |RF-012| A plataforma deve oferecer a opção de um sistema de pagamentos interno caso o vendedor deseje automatizar os pagamentos em vez de gerenciá-los por conta própria. | BAIXA |
 |RF-013| A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) | MÉDIA |
 
