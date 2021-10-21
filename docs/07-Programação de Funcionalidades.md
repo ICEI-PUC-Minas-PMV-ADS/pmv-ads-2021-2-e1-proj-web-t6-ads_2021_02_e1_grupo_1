@@ -49,7 +49,7 @@ A recomendação de vendedores ocorre na tela principal do sistema por meio da e
 1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
 2.	Descompacte o arquivo em uma pasta específica;
 3.	Abra o Visual Studio Code e execute o Live Server;
-4.	Abra um navegador de Internet e informe a seguinte URL:
+4.	Abra um navegador de Internet e informe a seguinte URL:Cancel changes
 http://localhost:5500/index.html 
 5.	A recomendação de vendedores aparece na página inicial “index.html” logo abaixo do texto “Vendedores recomendados na sua região”.
 
@@ -100,22 +100,22 @@ A tela de cadastro permite que o usuário crie uma conta afim de guardar suas in
 "listaUsuarios" : [
     {
         "clienteVendedor" : "cliente"
-  "cnpj" : "none"
+        "cnpj" : "none"
         "email" : "usuario1@email.com"
         "nascimento" : "2021-10-01"
         "nome" : "Usuario 1"
         "nomeLoja" : "none"
-  "senha" : "senha"
+        "senha" : "senha"
         "sobrenome" : "Usuario 1"
     },
     {
         "clienteVendedor" : "vendedor"
-  "cnpj" : "99.999.999/0001-99"
+        "cnpj" : "99.999.999/0001-99"
         "email" : "usuario2@email.com"
         "nascimento" : "2021-10-01"
         "nome" : "Usuario 2"
         "nomeLoja" : "Loja do Usuario 2"
-  "senha" : "senha2"
+        "senha" : "senha2"
         "sobrenome" : "Usuario 2"    
      },
   ]
