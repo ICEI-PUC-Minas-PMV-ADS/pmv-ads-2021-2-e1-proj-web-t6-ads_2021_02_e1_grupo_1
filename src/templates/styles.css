@@ -1,0 +1,293 @@
+.no-decoration a:hover {
+    text-decoration: none;
+}
+.conteudo_header img {
+    height: 26px;
+}
+.itens_menu {
+    margin-left: -30px;
+}
+.itens_menu i {
+    width: 28px;
+    margin-top: 5px;
+    margin-left: -20px;
+}
+.itens_menu a {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 6px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px;
+    border-radius: 5px;
+    border-color: #343a40;
+}
+#header_sobrescrito_conta {
+    margin-left: -5px;
+    margin-top: -14px;
+    position: absolute;
+}
+#header_sobrescrito {
+    margin-left: -3px;
+    margin-top: -14px;
+    position: absolute;
+}
+.caixa_endereco {
+    max-width: 200px;
+    min-width: 120px;
+    margin-right: 12px;
+    text-align: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.caixa_usuario {
+    min-width: 120px;
+    max-width: 150px;
+    text-align: left;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.navDrop-logado {
+    display: none;
+}
+.modal-body {
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+#endereco_icone {
+    margin-right: -4px;
+    margin-top: -18px;
+}
+.location_mobile {
+    display: none;
+   }
+#conteudo_pagina {
+    background-color: #f8f8f8;
+    color: #222222;
+    padding: 0px;
+    text-align: center;
+}
+#conteudo_footer {
+    background-color: #eeeeee;
+    color: #222222;
+    padding: 0px;
+    text-align: center;
+}
+#busca_homepage {
+    margin-top: 24px;
+    background-color: #eeeeee;
+    border-radius: 12px;
+    height: 80px;
+    width: 100%;
+}
+#busca_homepage input {
+    height: 48px;
+    margin-top: 16px;
+}
+#busca_homepage button {
+    background-color: #ffffff;
+    border-color: #ced4da;
+    height: 48px;
+    width: 48px;
+    margin-top: 16px;
+}
+#busca_homepage button:hover {
+    background-color: #dddddd;
+}
+#busca_homepage i {
+    color: #222222;
+    height: 32px;
+    width: 32px;
+    margin-left: -5px;
+    margin-top: 2px;
+}
+#recomendacoes {
+    background-color: #ffffff;
+}
+#recomendacoes a {
+    color: #222222;
+}
+#recomendacoes a img:hover {
+    transform: scale(105%) translateY(-2%);
+    transition: 100ms ease-in-out;
+    box-shadow: 5px 5px 8px #888888;;
+}
+.carrossel-conteudo {
+    margin-top: 16px;
+    display: inline-block;
+    position: relative;
+    height: 295px;
+    width: 100%;
+    overflow: hidden;
+}
+.carrossel-seta-left {
+    width: 8px;
+    position: absolute;
+    left: 3px;
+    top: 40%;
+}
+.carrossel-seta-left i {
+    margin-left: -17px;
+}
+.carrossel-seta-right {
+    width: 8px;
+    position: absolute;
+    right: 3px;
+    top: 40%;
+}
+.carrossel-seta-right i {
+    margin-left: -2px;
+}
+.carrossel_item a {
+    transition: 200ms ease-in-out;
+}
+#carrossel_item0 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -921px;
+    bottom: 0px;
+}
+#carrossel_item0 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item1 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -548px;
+    bottom: 0px;
+}
+#carrossel_item1 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item2 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    bottom: 0px;
+}
+#carrossel_item2 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item3 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: 198px;
+    bottom: 0px;
+}
+#carrossel_item3 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+#carrossel_item4 a {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: 571px;
+    bottom: 0px;
+}
+#carrossel_item4 img {
+    width: 350px;
+    border:2px solid #dddddd;
+    border-radius: 8px;
+}
+
+.logo_login {
+    padding: 10px;
+    background-color: #343a40;
+    width: 300px;
+    margin-top: 16px;
+    border-radius: 12px;
+    border: 1px solid #222222;
+    text-align: center;
+}
+.logo_login img {
+    width: 256px;
+}
+#login { 
+    text-align: center;
+    margin-top: 32px;
+    padding: 32px;
+    width: 360px;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    line-height: 32px;
+}
+#login input { 
+    height: 48px;
+    margin-bottom: 16px;
+}
+#login button { 
+    margin-top: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 21px;
+}
+#cadastro { 
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    width: 360px;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    line-height: 32px;
+}
+@media (max-width: 767px) {
+    .itens_menu {
+        margin-left: 0px;
+        background-color:#343a40;
+        border: none;
+    }
+    .itens_menu i {
+        width: 25px;
+        margin-top: 5px;
+        margin-left: -16px;
+    }
+    .location_web {
+     display: none;
+    }
+    .location_mobile {
+        display:flex;
+        margin-right: 10px;
+    }
+    #header_sobrescrito {
+        margin-left: 23px;
+        margin-top: -14px;
+        position: absolute;
+    }
+    #header_sobrescrito_conta {
+        margin-left: 0px;
+    }
+    #endereco_icone {
+        margin-right: 0px;
+        margin-top: -8px;
+    }
+}
+@media (max-width: 575px) {
+    #busca_homepage {
+    border-radius: 0px;
+    }
+}
+footer {
+    background-color: #dddddd;
+}
+#footer-redes-sociais i {
+    color: #aaaaaa;
+    padding: 8px;
+}
+#footer-redes-sociais i:hover {
+    color: #222222;
+    text-decoration: none;
+}
