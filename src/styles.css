@@ -295,3 +295,41 @@ footer {
     color: #222222;
     text-decoration: none;
 }
+#rmdoces{
+    padding: 50px 400px;
+    font-size: 1em;
+    margin: 5px;
+    float: left;
+    clear: both;
+}
+#fotosrm{
+    max-width: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.menuloja{
+    width: 200px;
+   padding: 10px;
+   margin: 30px;
+   
+   border: 1px solid #c3c3c3;
+   float: left;
+
+}
+#lojarmprincipal{
+    width: 100%;
+    border: 1px solid red;
+}
+.redesocial{
+    padding: 15px;
+    text-align: center;
+    clear: both;
+    max-width: 100%;
+
+}#redefotos{
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
