@@ -83,21 +83,21 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body text-center">
-                <h5>Endereço Atual</h5>
-                <span class="endereco_atual"> Nenhum endereço selecionado </span>
-                <h5><br>Inserir meu endereço</h5>
-                <div class="col-lg-10 mx-auto">
-                  <form>
-                      <div class="input-group">
-                          <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;">
-                      </div>
-                  </form>
+              <form onsubmit="mudarEndereco()">
+                <div class="modal-body text-center">
+                  <h5>Endereço Atual</h5>
+                  <span class="endereco_atual"> Nenhum endereço selecionado </span>
+                  <h5><br>Inserir meu endereço</h5>
+                  <div class="col-lg-10 mx-auto">
+                    <div class="input-group">
+                        <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;" required>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-dark" onclick="mudarEndereco()">Mudar Endereço</button>
-              </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="submit" class="btn btn-dark">Mudar Endereço</button>
+                </div>
+            </form>
             </div>
           </div>
         </div>
@@ -121,7 +121,19 @@
       </div>
       <div class="container" style="padding: 0px;">  
         <div class="display_resultados">
-          <div class="opcoes_busca"> <h4 class="text-center">Filtros de Pesquisa</h4></div>
+          <div class="opcoes_busca">
+            <form>
+              <h4 class="text-center" style="margin-bottom: 16px;">Filtros de Pesquisa</h4>
+              <ul class="list-unstyled opcoes_busca_boxes">
+                <li>
+                  <input type="checkbox" id="opcao-endereco" checked> <label for="opcao-endereco"> Entrega para meu endereço</label>
+                </li>
+                <li>
+                  <input type="checkbox"id="opcao-avaliacao4estrelas" onclick="updateResultadosDaBusca()"> <label for="opcao-avaliacao4estrelas"> Avaliação de 4 estrelas ou mais</label>
+                </li>
+              </ul>
+            </form>
+          </div>
           <div>
             <h3 class="text-center" style="margin-top: 10px;"> Vendedores encontrados </h3>
             <div class="lista_busca">

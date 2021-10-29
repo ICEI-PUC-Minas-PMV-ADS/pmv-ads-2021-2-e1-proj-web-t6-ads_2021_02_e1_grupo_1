@@ -83,65 +83,78 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <form onsubmit="mudarEndereco()">
-                <div class="modal-body text-center">
-                  <h5>Endereço Atual</h5>
-                  <span class="endereco_atual"> Nenhum endereço selecionado </span>
-                  <h5><br>Inserir meu endereço</h5>
-                  <div class="col-lg-10 mx-auto">
-                    <div class="input-group">
-                        <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;" required>
-                    </div>
-                  </div>
+              <div class="modal-body text-center">
+                <h5>Endereço Atual</h5>
+                <span class="endereco_atual"> Nenhum endereço selecionado </span>
+                <h5><br>Inserir meu endereço</h5>
+                <div class="col-lg-10 mx-auto">
+                  <form>
+                      <div class="input-group">
+                          <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;">
+                      </div>
+                  </form>
                 </div>
-                <div class="modal-footer justify-content-center">
-                  <button type="submit" class="btn btn-dark">Mudar Endereço</button>
-                </div>
-            </form>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-dark" onclick="mudarEndereco()">Mudar Endereço</button>
+              </div>
             </div>
           </div>
         </div>
 
     </header>
-    <main>
-      <div class="text-center" id="conteudo_pagina">
-        <label for="buscar_vendedores"><h1><br>Buscar Vendedores</h1></label>
-        <div class="container" id="busca_homepage">
-            <div class="col-lg-10 mx-auto">
-                    <form class="input-group" action="busca.html" method="get">
-                        <input type="text" name="busca" placeholder="Digite o tipo de comida ou nome da loja" class="form-control" id="buscar_vendedores" required>
-                        <div class="input-group-append">
-                            <button class="btn btn-secondary" type="submit">
-                              <i class="fas fa-search fa-2x"></i>
-                            </button>
-                          </div>
-                    </form>
-            </div>
-        </div>
-        <div style="height: 92px;"></div>
-      </div>
-      <div class="container" id="conteudo_pagina">
-          <div class="no-decoration" id="recomendacoes">
-              <h2><br>Vendedores recomendados na sua região </h2>     
-              <div class="carrossel-conteudo">
-                  <div class="carrossel_item" id="carrossel_item0"><a href="#" id="anchor-loja0"><img src=""><h4 id="nome-loja0"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item1"><a href="#" id="anchor-loja1"><img src=""><h4 id="nome-loja1"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item2"><a href="#" id="anchor-loja2"><img src=""><h4 id="nome-loja2"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item3"><a href="#" id="anchor-loja3"><img src=""><h4 id="nome-loja3"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item4"><a href="#" id="anchor-loja4"><img src=""><h4 id="nome-loja4"></h4></a>
-                  </div>
-                  <button class="carrossel-seta-left btn bg-transparent" onclick="carrossel('left')"><i class="fas fa-chevron-left fa-2x"></i></button>
-                  <button class="carrossel-seta-right btn bg-transparent" onclick="carrossel('right')"><i class="fas fa-chevron-right fa-2x"></i></button>
-              </div>
-          </div>
-          <div style="height: 180px; background-color: #ffffff;"></div>
-      </div>
-    </main>
-    <footer class="text-center text-lg-start" id="conteudo_footer">
+   <div id="lojarmprincipal">
+       
+     <div class="menuloja">
+           <h3>Brigadeiro</h3>   
+        <img src="imagens/brigadeiro.jpg" id="fotosrm">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, voluptatum.</p>
+        <p style="font-weight: 900;">R$80.00 o cento</p>
+        <a href="login.html">Adicionar ao carrinho</a>
+     </div>
+     
+     <div class="menuloja">
+        <h3>Pudim</h3>
+        <img src="imagens/pudim.jpg" 100*100 id="fotosrm" >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, itaque.</p>
+        <p style="font-weight: 900;">R$35.00 a unidade</p>
+        <a href="login.html">Adicionar ao carrinho</a>
+     </div>
+     
+     <div class="menuloja">
+         <h3>Bombom </h3>
+        
+        <img src="imagens/bombom.jpg" id="fotosrm" >
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, expedita.</p>
+        <p style="font-weight: 900;">R$120.00 o cento</p>
+        <a href="login.html">Adicionar ao carrinho</a>
+     </div>
+     
+     <div class="menuloja">
+        <h3>Quindim</h3>
+        <img src="imagens/quindim.jpeg" id="fotosrm" >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, cupiditate?</p>
+        <p style="font-weight: 900;">R$25.00 a unidade</p>
+        <a href="login.html">Adicionar ao carrinho</a>
+     </div>
+     <div class="menuloja">
+        <h3>Bolo no pote </h3>
+        <img src="imagens/bolo.jpg" id="fotosrm" >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, cupiditate?</p>
+        <p style="font-weight: 900;">R$15.00 a unidade</p>
+        <a href="login.html">Adicionar ao carrinho</a>
+     </div>
+
+   </div>
+
+   <div class="redesocial">
+    <h3>Redes sociais RM doces</h3>
+    <a href="http://instagram.com.br"><img id="redefotos" src="imagens/instagram.jpg" ></a>
+    <a href="http://facebook.com.br"><img id="redefotos" src= "imagens/facebook.jpg"></a>
+    <a href="http://whatsapp.com"> <img id="redefotos" src="imagens/whats.jpg" ></a>
+
+   </div>
+    <footer style="clear: both;" class="text-center text-lg-start" id="conteudo_footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div class="container me-5 d-lg-block no-decoration" id="footer-redes-sociais">
             <h4>Siga-nos nas nossas redes sociais</h4>
