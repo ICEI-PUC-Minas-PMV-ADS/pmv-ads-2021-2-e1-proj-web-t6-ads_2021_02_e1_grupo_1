@@ -293,7 +293,7 @@
 .avaliacao_texto {
     position: absolute;
     width: 196px;
-    right: 0px;
+    right: 64px;
     bottom: 2px;
     font-size: 18px;
 }
@@ -324,7 +324,7 @@
         justify-content: space-evenly;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .itens_menu {
         margin-left: 0px;
         background-color:#343a40;

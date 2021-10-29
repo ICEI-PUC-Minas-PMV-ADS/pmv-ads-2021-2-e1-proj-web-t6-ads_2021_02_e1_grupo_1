@@ -8,7 +8,7 @@ let numeroEstrelas;
 updateResultadosDaBusca();
 
 function updateResultadosDaBusca() {
-    
+
     resultadosVendedores = [{"empty" : true},];
     buscaInfo = new URLSearchParams(window.location.search);
 
@@ -42,6 +42,11 @@ function updateResultadosDaBusca() {
         let descricaoResultado = resultadosVendedores[i].descricao;
         let avaliacaoResultado = resultadosVendedores[i].avaliacao;
         let linkResultado = resultadosVendedores[i].link;
+        avaliacaoResultado = Number(avaliacaoResultado)*5;
+        avaliacaoResultado = avaliacaoResultado.toFixed(2);
+        avaliacaoResultado = String(avaliacaoResultado);
+        avaliacaoResultado = avaliacaoResultado.replace(".", ",");
+
         if (resultadosVendedores[0].empty) {
             resultado = `<div class="alert-danger" style="padding: 8px; margin-top: 16px"><h4 class="text-center"> Nenhum vendedor encontrado </h4></div>`
         }
@@ -50,7 +55,7 @@ function updateResultadosDaBusca() {
                                 <a href="mini-website.html${linkResultado}" class="card_vendedor">
                                     <img src="${imagemResultado}"><br><h4 class="text-center">${nomeResultado}</h4>
                                 </a><p class="descricao_busca"><b>Descrição:</b> ${descricaoResultado}</p>
-                                <div class="avaliacao_texto"> <b>Avaliação</b></div>
+                                <div class="avaliacao_texto"> <b>Avaliação ${avaliacaoResultado}/5</b></div>
                                 <div class="avaliacao"> <img src="imagens/starzero.png"</img></div>
                                 <div class="avaliacao avaliacao_max"> <img src="imagens/starfive.png"</img></div>
                             </div>`;
