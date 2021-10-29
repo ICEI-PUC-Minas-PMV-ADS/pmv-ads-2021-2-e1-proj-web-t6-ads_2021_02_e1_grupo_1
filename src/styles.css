@@ -247,6 +247,78 @@
     border-radius: 5px;
     line-height: 32px;
 }
+/* Pagina de busca */
+.display_resultados { 
+    display: grid;
+    grid-template-columns: 330px auto;
+}
+.opcoes_busca { 
+    background-color: #f8f8f8;
+    margin-top: 10px;
+    padding: 16px;
+    width: 320px;
+    height: 640px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.resultado_busca {
+    position: relative;
+    text-align: justify;
+    display: flex;
+    padding: 16px;
+    padding-top: 32px;
+    margin-top: 10px;
+    height: 240px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+}   
+.resultado_busca a {
+    color: #222222;
+}
+.descricao_busca { 
+    height: 165px;
+    overflow: hidden;
+}
+.card_vendedor {
+    height: 240px;
+    width: 240px;
+    margin-right: 20px;
+}
+.card_vendedor img { 
+    height: 160px;
+    border-radius: 5px;
+}
+.avaliacao_texto {
+    position: absolute;
+    width: 196px;
+    right: 0px;
+    bottom: 2px;
+    font-size: 18px;
+}
+.avaliacao {
+    overflow: hidden;
+    position: absolute;
+    width: 112px;
+    right: 4px;
+    bottom: 2px;
+}
+.avaliacao img {
+    width: 107px;
+    margin: 4px;
+    margin-top: -2px;
+}
+
+@media (max-width: 1199px) {
+    .display_resultados { 
+        display: block;
+    }
+    .opcoes_busca { 
+        margin-bottom: 32px;
+        width: 100%;
+        height: 120px;
+    }
+}
 @media (max-width: 767px) {
     .itens_menu {
         margin-left: 0px;
@@ -278,13 +350,21 @@
         margin-right: 0px;
         margin-top: -8px;
     }
+    .resultado_busca p {
+        font-size: 12px;
+    }
 }
 @media (max-width: 575px) {
     #busca_homepage {
     border-radius: 0px;
     }
+    .opcoes_busca { 
+        margin-top: 0px;
+        border-radius: 0px;
+    }
 }
 footer {
+    margin-top: 10px;
     background-color: #dddddd;
 }
 #footer-redes-sociais i {

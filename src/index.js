@@ -28,6 +28,7 @@ function updateListInfo() {
     function update(numeroItem) {
         item_carrossel = document.querySelector(`#carrossel_item${numeroItem}`);
         document.querySelector(`#carrossel_item${numeroItem} a img`).src = listaVendedores[item_carrossel.numero_lista].imagem;
+        document.querySelector(`#anchor-loja${numeroItem}`).href = listaVendedores[item_carrossel.numero_lista].link; 
         document.querySelector(`#nome-loja${numeroItem}`).textContent = listaVendedores[item_carrossel.numero_lista].nome;
     }
 }

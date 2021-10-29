@@ -118,28 +118,18 @@
                     </form>
             </div>
         </div>
-        <div style="height: 92px;"></div>
       </div>
-      <div class="container" id="conteudo_pagina">
-          <div class="no-decoration" id="recomendacoes">
-              <h2><br>Vendedores recomendados na sua região </h2>     
-              <div class="carrossel-conteudo">
-                  <div class="carrossel_item" id="carrossel_item0"><a href="#" id="anchor-loja0"><img src=""><h4 id="nome-loja0"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item1"><a href="#" id="anchor-loja1"><img src=""><h4 id="nome-loja1"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item2"><a href="#" id="anchor-loja2"><img src=""><h4 id="nome-loja2"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item3"><a href="#" id="anchor-loja3"><img src=""><h4 id="nome-loja3"></h4></a>
-                  </div>
-                  <div class="carrossel_item" id="carrossel_item4"><a href="#" id="anchor-loja4"><img src=""><h4 id="nome-loja4"></h4></a>
-                  </div>
-                  <button class="carrossel-seta-left btn bg-transparent" onclick="carrossel('left')"><i class="fas fa-chevron-left fa-2x"></i></button>
-                  <button class="carrossel-seta-right btn bg-transparent" onclick="carrossel('right')"><i class="fas fa-chevron-right fa-2x"></i></button>
-              </div>
-          </div>
-          <div style="height: 180px; background-color: #ffffff;"></div>
-      </div>
+      <div class="container" style="padding: 0px;">  
+        <div class="display_resultados">
+          <div class="opcoes_busca"> <h4 class="text-center">Filtros de Pesquisa</h4></div>
+          <div>
+            <h3 class="text-center" style="margin-top: 10px;"> Vendedores encontrados </h3>
+            <div class="lista_busca">
+              <!-- Resultados serão inseridos aqui via Javascript -->
+            </div>
+        </div>
+        </div>
+      </div>  
     </main>
     <footer class="text-center text-lg-start" id="conteudo_footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -208,6 +198,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="common.js"></script>
-    <script src="index.js"></script>
+    <script src="busca.js"></script>
 </body>
 </html>

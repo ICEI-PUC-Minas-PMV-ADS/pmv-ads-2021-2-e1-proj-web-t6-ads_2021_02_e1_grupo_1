@@ -1,23 +1,35 @@
 let listaVendedores = [
     {
         "numero_lista" : 1,
-        "nome" : "Loja 1",
+        "nome" : "Doces Caseiros",
         "imagem" : "imagens/loja_doces.jpg",
+        "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quibusdam porro. Ea tenetur consequuntur sed doloribus magni repellendus, asperiores, facilis est maiores obcaecati molestias perspiciatis accusantium consequatur, esse culpa nisi itaque. Vitae iure id et delectus deserunt officiis sunt numquam quas rerum quaerat! In, architecto! Minus eos voluptate facere! Provident.",
+        "avaliacao" : "0.92",   /* Porcentagem de 0 até 1 */
+        "link" : "#doces_caseiros",
     },
     {
         "numero_lista" : 2,
-        "nome" : "Loja 2",
+        "nome" : "Massas Congeladas",
         "imagem" : "imagens/loja_massas.jpg",
+        "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quibusdam porro. Ea tenetur consequuntur sed doloribus magni repellendus, asperiores, facilis est maiores obcaecati molestias perspiciatis accusantium consequatur, esse culpa nisi itaque. Vitae iure id et delectus deserunt officiis sunt numquam quas rerum quaerat! In, architecto! Minus eos voluptate facere! Provident.",
+        "avaliacao" : "0.85",    /* Porcentagem de 0 até 1 */
+        "link" : "#massas_congeladas",
     },
     {
         "numero_lista" : 3,
-        "nome" : "Loja 3",
+        "nome" : "Marmitas Vegan",
         "imagem" : "imagens/loja_vegan.jpg",
+        "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quibusdam porro. Ea tenetur consequuntur sed doloribus magni repellendus, asperiores, facilis est maiores obcaecati molestias perspiciatis accusantium consequatur, esse culpa nisi itaque. Vitae iure id et delectus deserunt officiis sunt numquam quas rerum quaerat! In, architecto! Minus eos voluptate facere! Provident.",
+        "avaliacao" : "0.67",     /* Porcentagem de 0 até 1 */
+        "link" : "#marmitas_vegan",
     },
     {
         "numero_lista" : 4,
-        "nome" : "Loja 4",
+        "nome" : "Cupcakes Variados",
         "imagem" : "imagens/loja_cupcakes.jpg",
+        "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quibusdam porro. Ea tenetur consequuntur sed doloribus magni repellendus, asperiores, facilis est maiores obcaecati molestias perspiciatis accusantium consequatur, esse culpa nisi itaque. Vitae iure id et delectus deserunt officiis sunt numquam quas rerum quaerat! In, architecto! Minus eos voluptate facere! Provident.",
+        "avaliacao" : "0.8",    /* Porcentagem de 0 até 1 */
+        "link" : "#cupcakes_variados",
     },
   ]
 let enderecoAtual = "Selecionar endereço";

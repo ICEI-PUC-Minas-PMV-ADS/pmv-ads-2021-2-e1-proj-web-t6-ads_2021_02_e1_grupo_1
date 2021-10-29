@@ -1,3 +1,4 @@
+
 .no-decoration a:hover {
     text-decoration: none;
 }
@@ -244,6 +245,7 @@
     border-radius: 5px;
     line-height: 32px;
 }
+
 @media (max-width: 767px) {
     .itens_menu {
         margin-left: 0px;
@@ -291,3 +293,5 @@ footer {
     color: #222222;
     text-decoration: none;
 }
+
+
