@@ -74,6 +74,7 @@
     background-color: #eeeeee;
     color: #222222;
     padding: 0px;
+    padding-top: 24px;
     text-align: center;
 }
 #busca_homepage {
@@ -251,11 +252,13 @@
 .display_resultados { 
     display: grid;
     grid-template-columns: 330px auto;
+    margin-bottom: 16px;
 }
 .opcoes_busca { 
     background-color: #f8f8f8;
     margin-top: 10px;
-    padding: 16px;
+    padding: 32px;
+    padding-top: 16px;
     width: 320px;
     height: 640px;
     border: 1px solid #dddddd;
@@ -271,7 +274,6 @@
     height: 240px;
     border: 1px solid #dddddd;
     border-radius: 5px;
-    overflow: hidden;
 }   
 .resultado_busca a {
     color: #222222;
@@ -292,7 +294,7 @@
 .avaliacao_texto {
     position: absolute;
     width: 196px;
-    right: 0px;
+    right: 64px;
     bottom: 2px;
     font-size: 18px;
 }
@@ -308,7 +310,102 @@
     margin: 4px;
     margin-top: -2px;
 }
-
+/* */
+.nav_mini_website { 
+    padding: 0px;
+    max-width: 100%;
+}
+#container_nav_mini_website {
+    margin-top: 24px;
+    padding: 0px;
+    border-radius: 12px;
+    height: 80px;
+    width: 100%;
+}
+.nav_mini_website { 
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+.nav_mini_website button { 
+    margin: 10px;
+    width: 128px;
+    padding: 0px;
+    height: 60px;
+    color: #343a40;
+}
+.botao_nav_mini_website {
+    font-size: 18px;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.botao_nav_mini_website:hover {
+    background-color: #ced4da;
+}
+#mini_website_quem_somos {
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    flex-wrap:nowrap;
+    min-height: 600px;
+}
+#mini_website_quem_somos img {
+    height: 240px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    float: left;
+}
+#mini_website_quem_somos p {
+    text-align: justify;
+    text-indent: 2em;
+}
+#mini_website_produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+}
+.card_produto {
+    position: relative;
+    height: 450px;
+    width: 300px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.card_produto img {
+    width: 260px;
+    margin: 20px;
+    margin-bottom: 4px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.card_produto_descricao {
+    margin: 20px;
+    margin-top: 0px;
+    text-align: justify;
+}
+.card_produto_descricao p {
+    font-size: 14px;
+}
+.card_produto_preco {
+    font-size: 18px;
+    position: absolute;
+    bottom: 6px;
+    left: 20px;
+}
+.card_produto_detalhes {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+.card_produto_detalhes button {
+    padding: 4px;
+}
 @media (max-width: 1199px) {
     .display_resultados { 
         display: block;
@@ -316,10 +413,15 @@
     .opcoes_busca { 
         margin-bottom: 32px;
         width: 100%;
-        height: 120px;
+        height: auto;
+    }
+    .opcoes_busca_boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .itens_menu {
         margin-left: 0px;
         background-color:#343a40;
@@ -350,8 +452,16 @@
         margin-right: 0px;
         margin-top: -8px;
     }
+}
+@media (max-width: 767px) {
     .resultado_busca p {
         font-size: 12px;
+    }
+    .botao_nav_mini_website {
+        font-size: 16px;
+    }
+    .nav_mini_website button { 
+        width: 100%;
     }
 }
 @media (max-width: 575px) {
@@ -362,9 +472,21 @@
         margin-top: 0px;
         border-radius: 0px;
     }
+    #container_nav_mini_website {
+        border-radius: 0px;
+    }
+    .botao_nav_mini_website {
+        font-size: 14px;
+    }
+    #mini_website_quem_somos img {
+        display: flex;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 12px;
+        float: none;
+    }
 }
 footer {
-    margin-top: 10px;
     background-color: #dddddd;
 }
 #footer-redes-sociais i {
