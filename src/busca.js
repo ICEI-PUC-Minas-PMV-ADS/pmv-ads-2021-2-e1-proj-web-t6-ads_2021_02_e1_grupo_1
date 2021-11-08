@@ -39,7 +39,7 @@ function updateResultadosDaBusca() {
     for (let i = 0; i < (resultadosVendedores.length -1); i++) {
         let imagemResultado = resultadosVendedores[i].imagem;
         let nomeResultado = resultadosVendedores[i].nome;
-        let descricaoResultado = resultadosVendedores[i].descricao;
+        let descricaoResultado = resultadosVendedores[i].descricaoResumo;
         let avaliacaoResultado = resultadosVendedores[i].avaliacao;
         let linkResultado = resultadosVendedores[i].link;
         avaliacaoResultado = Number(avaliacaoResultado)*5;
