@@ -7,6 +7,32 @@ let listaVendedores = [
         "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deserunt repellat totam libero porro consectetur dolorem dolor eligendi ratione, quia, corporis aliquam qui ea et iste quasi obcaecati, dolores eveniet vel sed autem. Distinctio nostrum quidem dolorum nam neque magni eos labore ipsa, culpa saepe, at repellendus inventore dolores provident dicta numquam sunt repudiandae doloribus quis? Alias ipsa iusto provident hic voluptatibus repellendus deleniti atque enim natus repellat veritatis, ab incidunt quia libero laboriosam iure amet ullam eveniet delectus cupiditate omnis dicta! Nihil quis veniam aspernatur incidunt sint. Architecto, a provident? Dolorem quasi ut cumque consequuntur veniam. Beatae quia facilis laudantium commodi laborum deleniti atque alias, nemo assumenda? Nam delectus iusto totam perferendis, distinctio repudiandae? Quas deserunt libero eos deleniti, error, sequi recusandae amet ratione est aliquid nam perspiciatis a non praesentium dolores sint fugiat vero tenetur ducimus cumque corporis! Aliquid quo labore rerum doloribus animi quos quam quidem accusamus totam facere ut, eveniet, molestiae beatae aliquam commodi nostrum sapiente vel! Asperiores beatae ratione culpa ipsum architecto assumenda reprehenderit officiis recusandae expedita voluptatum voluptas laborum, labore voluptatibus vero dolorum magnam. Inventore incidunt libero eius facere consequatur, odio vitae odit consequuntur aperiam dolorum exercitationem rerum tempora! Sunt earum officia cupiditate ex vitae nobis est. Maxime, consequuntur soluta aliquid cumque dicta culpa harum reprehenderit dolore impedit quibusdam asperiores quidem praesentium alias quas, facere hic unde eum ea beatae possimus? Labore dolorum sit asperiores eligendi odio quam quas, distinctio velit nisi id saepe dicta adipisci reiciendis nemo repellat, autem doloribus ipsum temporibus sapiente? Quas enim quisquam ipsum sed, eos atque accusamus, nesciunt tempora voluptas eligendi error, ullam deserunt voluptatibus dolor in. Earum quaerat laudantium, rem delectus fuga mollitia expedita assumenda repellendus eius, tenetur ullam, incidunt obcaecati beatae ut. Eveniet corrupti veniam incidunt odit, alias quaerat esse architecto natus, suscipit quasi quibusdam ut! Nesciunt!",
         "avaliacao" : "0.92",   /* Porcentagem de 0 até 1 */
         "link" : "?loja=doces-caseiros",
+        "catalogo" : [
+            {
+                "nome": "Brigadeiro",
+                "imagem": "imagens/produtos/brigadeiro.jpg", 
+                "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis quibusdam doloribus hic maxime amet? Architecto earum officia quos nesciunt?",
+                "preco": "2,00",
+            },
+            {
+                "nome": "Mini torta", 
+                "imagem": "imagens/produtos/torta.jpg",
+                "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis quibusdam doloribus hic maxime amet? Architecto earum officia quos nesciunt?",
+                "preco": "7,00",
+            },
+            {
+                "nome": "Mousse de chocolate", 
+                "imagem": "imagens/produtos/mousse.jpg",
+                "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis quibusdam doloribus hic maxime amet? Architecto earum officia quos nesciunt?",
+                "preco": "5,50",
+            },
+            {
+                "nome": "Rosquinhas", 
+                "imagem": "imagens/produtos/rosquinha.jpg",
+                "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis quibusdam doloribus hic maxime amet? Architecto earum officia quos nesciunt?",
+                "preco": "4,00",
+            },
+        ],
     },
     {
         "numero_lista" : 2,

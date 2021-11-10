@@ -114,7 +114,7 @@
 #recomendacoes a img:hover {
     transform: scale(105%) translateY(-2%);
     transition: 100ms ease-in-out;
-    box-shadow: 5px 5px 8px #888888;;
+    box-shadow: 5px 5px 8px #888888;
 }
 .carrossel-conteudo {
     margin-top: 16px;
@@ -285,7 +285,7 @@
 .card_vendedor {
     height: 240px;
     width: 240px;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 .card_vendedor img { 
     height: 160px;
@@ -376,6 +376,11 @@
     margin-bottom: 12px;
     border: 1px solid #dddddd;
     border-radius: 5px;
+    box-shadow: 4px 4px 6px #ced4da;
+}
+.card_produto:hover {
+    transition: 100ms ease-in-out;
+    box-shadow: 4px 4px 6px #aaaaaa;
 }
 .card_produto img {
     width: 260px;
@@ -462,6 +467,16 @@
     }
     .nav_mini_website button { 
         width: 100%;
+    }
+    .card_produto {
+        width: 450px;
+        height: 512px;
+    }
+    .card_produto img {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 65px;
+        width: 320px;
     }
 }
 @media (max-width: 575px) {

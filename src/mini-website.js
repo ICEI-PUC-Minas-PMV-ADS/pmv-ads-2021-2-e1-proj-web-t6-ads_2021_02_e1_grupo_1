@@ -5,7 +5,6 @@ if (lojaInfo != null) {
 }
 
 let lojaAtual = JSON.parse(localStorage.getItem('lojaAtual'));
-console.log(lojaAtual);
 
 /* Exibe o nome da loja escolhida */
 
@@ -15,8 +14,6 @@ findIndex = listaVendedores.findIndex(x => x.link === linkDaLojaNaLista);
 if (findIndex == -1) {
     window.location = "mini-website-nao-encontrado.html";
 }
-console.log(findIndex);
-console.log(linkDaLojaNaLista);
 
 document.querySelector("#nome_loja").innerText = listaVendedores[findIndex].nome;
 document.querySelector("#texto_mini_website").innerText = listaVendedores[findIndex].descricao;
