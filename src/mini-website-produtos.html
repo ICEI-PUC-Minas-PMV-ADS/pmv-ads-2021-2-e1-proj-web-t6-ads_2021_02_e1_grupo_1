@@ -105,7 +105,10 @@
 </header>
     <main>
         <div class="text-center" id="conteudo_pagina">
-        <div style="margin-bottom: 0.5rem; display: inline-block;"><h1 id="nome_loja" style="padding-top: 48px;"> <br> </h1></div>
+        <div class="container" id="mini_website_nome_loja">
+          <h1 id="nome_loja"> <br> </h1>
+          <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos">Favoritar vendedor</button>
+        </div>
         <div class="container" id="container_nav_mini_website">
             <div class="col-lg-10 mx-auto btn-group nav_mini_website">
               <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
@@ -117,24 +120,44 @@
         </div>
       </div>
       <div class="container"  id="mini_website_produtos">
-        
-        <!--        
-          <div class="card_produto">
-          <img src="imagens/produtos/brigadeiro.jpg">
-          <div class="card_produto_descricao">
-            <h4 class="text-center">Brigadeiro</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis quibusdam doloribus hic maxime amet? Architecto earum officia quos nesciunt?</p>
-          </div>
-          <div class="card_produto_preco">
-            <b>R$ 4,00</b>
-          </div>
-          <div class="card_produto_detalhes">
-            <button class="btn btn-primary" type="button" onclick="detalhesProduto('Brigadeiro')"> Mais detalhes</button>
+        <!-- Seção de produtos (Inserida com Javascript)-->
+      </div>
+
+      <!-- Tela de "Mais Detalhes"-->
+      
+      <div class="modal fade" id="mais_detalhes" tabindex="-1" role="dialog" aria-labelledby="mais_detalhes" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content" id="modal_mais_detalhes">
+              <div class="modal-header">
+                <h5 class="modal-title" id="mais_detalhes">Detalhes do produto</h5> 
+                <button class="btn btn-primary" type="button" id="modal_botao_favoritos">Favoritar produto</button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div id="modal_informacoes_produto">
+                <div class="text-center">
+                <img id="informacoes_imagem_produto" src="">
+                <h4 id="informacoes_nome_produto"> <!-- Nome do Produto --> </h4>
+                <span id="informacoes_preco_produto"> <!-- Preço do Produto --></span>
+                </div>
+                <div class="text-justify">
+                  <div id="informacoes_descricao_produto">
+                    <!-- Descrição -->
+                  </div>
+                  <div id="informacoes_sabores_produto">
+                    <!-- Sabores --> 
+                  </div>
+                  <div id="informacoes_outras_produto">
+                    <!-- Outras informações -->
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="button" id="modal_botao_adicionar_produto">Adicionar ao carrinho</button>
+              </div>
+            </div>
           </div>
         </div>
-        -->
 
-      </div>
     </main>
     <footer class="text-center text-lg-start" id="conteudo_footer">
       <div class="container text-center text-md-start mt-5">

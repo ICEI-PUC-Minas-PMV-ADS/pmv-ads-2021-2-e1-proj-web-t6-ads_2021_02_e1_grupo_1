@@ -1,6 +1,11 @@
+/* Geral */
+
 .no-decoration a:hover {
     text-decoration: none;
 }
+/* ----- */
+
+/* Header */
 .conteudo_header img {
     height: 26px;
 }
@@ -64,19 +69,34 @@
 .location_mobile {
     display: none;
    }
+
+/* ----- */
+
+/* Main */
+
 #conteudo_pagina {
     background-color: #f8f8f8;
     color: #222222;
     padding: 0px;
     text-align: center;
 }
+
+/* ----- */
+
+/* Footer */
+
 #conteudo_footer {
     background-color: #eeeeee;
     color: #222222;
     padding: 0px;
     padding-top: 24px;
     text-align: center;
+
 }
+/* ----- */
+
+/* Homepage(Index.html) */
+
 #busca_homepage {
     margin-top: 24px;
     background-color: #eeeeee;
@@ -105,6 +125,11 @@
     margin-left: -5px;
     margin-top: 2px;
 }
+
+/* ----- */
+
+/* Carrossel da Homepage (index.html) */
+
 #recomendacoes {
     background-color: #ffffff;
 }
@@ -206,6 +231,10 @@
     border-radius: 8px;
 }
 
+/* ----- */
+
+/* Página de login (login.html) */
+
 .logo_login {
     padding: 10px;
     background-color: #343a40;
@@ -238,6 +267,11 @@
     width: 100%;
     font-size: 21px;
 }
+
+/* ----- */
+
+/* Página de Cadastro (cadastro.html) */
+
 #cadastro { 
     text-align: center;
     margin-top: 32px;
@@ -248,7 +282,11 @@
     border-radius: 5px;
     line-height: 32px;
 }
-/* Pagina de busca */
+
+/* ----- */
+
+/* Pagina de busca (busca.html) */
+
 .display_resultados { 
     display: grid;
     grid-template-columns: 330px auto;
@@ -310,7 +348,11 @@
     margin: 4px;
     margin-top: -2px;
 }
-/* */
+
+/* ----- */
+
+/* mini-website do vendedor (mini-website.html) */
+/* > Geral  */
 .nav_mini_website { 
     padding: 0px;
     max-width: 100%;
@@ -344,6 +386,20 @@
 .botao_nav_mini_website:hover {
     background-color: #ced4da;
 }
+#mini_website_nome_loja {
+    margin-top: 48px;
+    margin-bottom: 0.5rem; 
+    display: inline-block; 
+    position: relative;
+}
+#mini_website_botao_favoritos {
+    position: absolute; 
+    right: 4%;
+    top: 8px;
+}
+
+/* > Quem somos */
+
 #mini_website_quem_somos {
     font-size: 16px;
     text-align: justify;
@@ -363,6 +419,9 @@
     text-align: justify;
     text-indent: 2em;
 }
+
+/* > Produtos */
+
 #mini_website_produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, auto));
@@ -411,6 +470,50 @@
 .card_produto_detalhes button {
     padding: 4px;
 }
+
+/* > Produtos > Modal de detalhes do produto */
+
+#modal_mais_detalhes {
+    width: 960px;
+    height: 640px;
+    top: 130px;
+    left: 50%;
+    margin-left: -472px;
+}
+#modal_botao_favoritos {
+    position: absolute; 
+    right: 64px;
+}
+#modal_botao_adicionar_produto {
+    position: absolute; 
+    right: 32px;
+    bottom: 32px;
+}
+#modal_informacoes_produto {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 262px auto;
+}
+#modal_informacoes_produto img {
+    height: 240px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+#informacoes_preco_produto {
+    font-size: 18px;
+}
+#informacoes_descricao_produto {
+    height: 240px;
+}
+#informacoes_sabores_produto {
+    height: 120px;
+    overflow: wrap;
+}
+
+/* ----- */
+
+/* Media querys (responsividade) */
+
 @media (max-width: 1199px) {
     .display_resultados { 
         display: block;
@@ -457,6 +560,16 @@
         margin-right: 0px;
         margin-top: -8px;
     }
+    #modal_mais_detalhes {
+        width: 640px;
+        height: 960px;
+        top: 130px;
+        left: 50%;
+        margin-left: -312px;
+    }
+    #informacoes_descricao_produto {
+        height: 480px;
+    }
 }
 @media (max-width: 767px) {
     .resultado_busca p {
@@ -478,6 +591,24 @@
         margin-left: 65px;
         width: 320px;
     }
+    #mini_website_botao_favoritos {
+        position: relative;
+        right: 0px;
+    }
+    #modal_mais_detalhes {
+        width: 470px;
+        height: 1120px;
+        top: 0px;
+        left: 50%;
+        margin-left: -227px;
+    }    
+    #informacoes_descricao_produto {
+        height: 360px;
+    }
+    #modal_informacoes_produto {
+        padding: 32px;
+        display: block;
+        grid-template-columns: 262px auto;
 }
 @media (max-width: 575px) {
     #busca_homepage {
@@ -512,3 +643,5 @@ footer {
     color: #222222;
     text-decoration: none;
 }
+
+/* ----- */
