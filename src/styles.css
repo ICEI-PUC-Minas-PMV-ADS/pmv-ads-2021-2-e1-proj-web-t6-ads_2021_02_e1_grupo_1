@@ -377,7 +377,7 @@
     color: #343a40;
 }
 .botao_nav_mini_website {
-    font-size: 18px;
+    font-size: 20px;
     background-color: #f8f8f8;
     border: none;
     border-radius: 20px;
@@ -479,6 +479,7 @@
     top: 130px;
     left: 50%;
     margin-left: -472px;
+    background-color: #eeeeee;
 }
 #modal_botao_favoritos {
     position: absolute; 
@@ -509,7 +510,17 @@
     height: 120px;
     overflow: wrap;
 }
-
+#informacoes_adicionar_carrinho {
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 240px;
+    width: 670px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
 /* ----- */
 
 /* Media querys (responsividade) */
@@ -576,7 +587,7 @@
         font-size: 12px;
     }
     .botao_nav_mini_website {
-        font-size: 16px;
+        font-size: 18px;
     }
     .nav_mini_website button { 
         width: 100%;
@@ -622,7 +633,7 @@
         border-radius: 0px;
     }
     .botao_nav_mini_website {
-        font-size: 14px;
+        font-size: 16px;
     }
     #mini_website_quem_somos img {
         display: flex;

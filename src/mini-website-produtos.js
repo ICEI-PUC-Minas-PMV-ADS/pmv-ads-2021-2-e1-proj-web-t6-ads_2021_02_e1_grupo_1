@@ -47,6 +47,10 @@ function detalhesProduto(detalhes) {
     }
 }
 
+function informacoesAdicionarCarrinho() {
+    document.querySelector("#informacoes_adicionar_carrinho").innerHTML = 
+}
+
 /* Exibe os produtos disponiveis no catalogo */
 function updateListaProdutos() { 
     let mostrarProdutos = document.querySelector("#mini_website_produtos");
