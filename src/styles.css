@@ -3,6 +3,10 @@
 .no-decoration a:hover {
     text-decoration: none;
 }
+.h4_sub {
+    font-size: 1.25em;
+    font-weight: 500;
+}
 /* ----- */
 
 /* Header */
@@ -397,7 +401,24 @@
     right: 4%;
     top: 8px;
 }
-
+#carrinho_contador_box {
+    position: relative;
+}
+#carrinho_contador {
+    position: absolute;
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    left: 20px;
+    bottom: -12px;
+    display: none;
+}
+#carrinho_contador p {
+    margin: auto;
+    font-weight: 200;
+    color: white;
+}
 /* > Quem somos */
 
 #mini_website_quem_somos {
@@ -425,6 +446,7 @@
 #mini_website_produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+    min-height: 600px;
 }
 .card_produto {
     position: relative;
@@ -513,14 +535,79 @@
 #informacoes_adicionar_carrinho {
     display: none;
     position: absolute;
-    right: 0px;
-    bottom: 0px;
-    height: 240px;
+    right: 16px;
+    bottom: 16px;
+    height: 270px;
     width: 670px;
+    padding: 12px;
     background-color: #ffffff;
     border: 1px solid #ced4da;
     border-radius: 5px;
 }
+#informacoes_adicionar_carrinho p {
+    font-size: 18px;
+    line-height: 100%;
+}
+#informacoes_adicionar_carrinho img {
+    height: 216px;
+}
+#informacoes_adicionar_carrinho textarea {
+    margin-top: -20px;
+    width: 376px;
+    resize: none;
+}
+#informacoes_botao_adicionar_produto {
+    position: absolute; 
+    right: 32px;
+    bottom: 32px;
+    margin-right: -17px;
+    margin-bottom: -17px;
+}
+#card_adicionar_produto {
+    display: grid;
+    grid-template-columns: 240px auto;
+}
+#selecionar_sabor {
+    width: 160px;
+    margin-right: 8px;
+}
+#selecionar_quantidade {
+    width: 48px;
+}
+/* ----- */
+
+/* > Produtos > Modal de detalhes do produto */
+#mini_website_carrinho {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#lista_carrinho {
+    position: relative;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    min-height: 600px;
+    margin-bottom: 16px;
+}
+#lista_carrinho_bottom {
+    position: absolute;
+    text-align: right;
+    bottom: 0px;
+    left: 2.5%;
+    height: 120px;
+    width: 95%;
+    border-top: 1px solid #aaaaaa;
+}
+#lista_carrinho_bottom button {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: 64px;
+    width: 100%;
+    font-size: 21px;
+    border-top: 1px solid #aaaaaa;
+}
+
+
 /* ----- */
 
 /* Media querys (responsividade) */
@@ -581,6 +668,18 @@
     #informacoes_descricao_produto {
         height: 480px;
     }
+    #informacoes_adicionar_carrinho {
+        width: 605px;
+    }
+    #selecionar_sabor {
+        width: 105px;
+        margin-right: 8px;
+    }
+    #informacoes_adicionar_carrinho textarea {
+        margin-top: -20px;
+        width: 321px;
+        resize: none;
+    }
 }
 @media (max-width: 767px) {
     .resultado_busca p {
@@ -620,6 +719,25 @@
         padding: 32px;
         display: block;
         grid-template-columns: 262px auto;
+    }
+    #informacoes_adicionar_carrinho {
+        width: 436px;
+    }
+    #informacoes_adicionar_carrinho img {
+        display: none;
+    }
+    #card_adicionar_produto {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #selecionar_sabor {
+        width: 160px;
+    }
+    #informacoes_adicionar_carrinho textarea {
+        margin-top: -20px;
+        width: 375px;
+        resize: none;
+    }
 }
 @media (max-width: 575px) {
     #busca_homepage {

@@ -78,16 +78,16 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="selecionar_enderecoTitle">Selecionar Endereço</h5>
+            <span class="modal-title h4" id="selecionar_enderecoTitle">Selecionar Endereço</span>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <form onsubmit="mudarEndereco();return false">
             <div class="modal-body text-center">
-              <h5>Endereço Atual</h5>
+              <span class="h4">Endereço Atual</span>
               <span class="endereco_atual"> Nenhum endereço selecionado </span>
-              <h5><br>Inserir meu endereço</h5>
+              <span class="h4"><br>Inserir meu endereço</span>
               <div class="col-lg-10 mx-auto">
                 <div class="input-group">
                     <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;" required>
@@ -115,7 +115,16 @@
               <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
               <a href="#"><button class="botao_nav_mini_website">Redes Sociais</button></a>
               <a href="#"><button class="botao_nav_mini_website">Contato</button></a>
-              <a href="#"><button class="botao_nav_mini_website">Montar Pedido</button></a>
+              <a href="mini-website-carrinho.html">
+                <button class="botao_nav_mini_website">Carrinho 
+                  <span id="carrinho_contador_box">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    <span id="carrinho_contador">
+                      <p id="numero_itens_carrinho">0</p>
+                    </span>
+                  </span>
+                </button>
+              </a>
             </div>
         </div>
       </div>
@@ -182,6 +191,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="common.js"></script>
+    <script src="mini-website-common.js"></script>
     <script src="mini-website.js"></script>
 </body>
 </html>

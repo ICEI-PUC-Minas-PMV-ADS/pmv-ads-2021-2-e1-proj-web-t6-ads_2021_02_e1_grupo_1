@@ -103,15 +103,15 @@
     </div>
 
 </header>
-    <main>
-        <div class="text-center" id="conteudo_pagina">
-        <div class="container" id="mini_website_nome_loja">
-          <h1 id="nome_loja"> <br> </h1>
-          <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos">Favoritar vendedor</button>
-        </div>
-        <div class="container" id="container_nav_mini_website">
-            <div class="col-lg-10 mx-auto btn-group nav_mini_website">
-              <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
+<main>
+  <div class="text-center" id="conteudo_pagina">
+  <div class="container" id="mini_website_nome_loja">
+    <h1 id="nome_loja"> <br> </h1>
+    <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos">Favoritar vendedor</button>
+  </div>
+  <div class="container" id="container_nav_mini_website">
+      <div class="col-lg-10 mx-auto btn-group nav_mini_website">
+        <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
               <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
               <a href="#"><button class="botao_nav_mini_website">Redes Sociais</button></a>
               <a href="#"><button class="botao_nav_mini_website">Contato</button></a>
@@ -128,74 +128,20 @@
             </div>
         </div>
       </div>
-      <div class="container"  id="mini_website_produtos">
-        <!-- Seção de produtos (Inserida com Javascript)-->
-      </div>
+      <div class="container" id="mini_website_carrinho">
+        <div>
 
-      <!-- Tela de "Mais Detalhes"-->
-      
-      <div class="modal fade" id="mais_detalhes" tabindex="-1" role="dialog" aria-labelledby="mais_detalhes" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content" id="modal_mais_detalhes">
-              <div class="modal-header">
-                <span class="modal-title h4" id="mais_detalhes">Detalhes do produto</span> 
-                <button class="btn btn-primary" type="button" id="modal_botao_favoritos">Favoritar produto</button>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div id="modal_informacoes_produto">
-                <div class="text-center">
-                <img class="informacoes_imagem_produto" src="">
-                <span class="informacoes_nome_produto h4"> <!-- Nome do Produto --> </span><br>
-                <span class="informacoes_preco_produto h4_sub"> <!-- Preço do Produto --></span>
-                </div>
-                <div class="text-justify">
-                  <div id="informacoes_descricao_produto">
-                    <!-- Descrição -->
-                  </div>
-                  <div id="informacoes_sabores_produto">
-                    <!-- Sabores --> 
-                  </div>
-                  <div id="informacoes_outras_produto">
-                    <!-- Outras informações -->
-                  </div>
-                </div>
-                <button class="btn btn-primary" type="button" id="modal_botao_adicionar_produto" onclick="informacoesAdicionarCarrinho('open')">Adicionar ao carrinho</button>
-                <div id="informacoes_adicionar_carrinho"> 
-                  <button type="button" class="close" aria-label="Close" onclick="informacoesAdicionarCarrinho('close')">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <div id="card_adicionar_produto">
-                    <img class="informacoes_imagem_produto">
-                    <div>
-                      <span class="informacoes_nome_produto h4"></span>
-                      <p class="informacoes_preco_produto"> <!-- Preço do Produto --></p>
-                      <form>
-                        <div>
-                          <label for="selecionar_sabor"><p>Sabor:</p></label>
-                          <select name="selecionar_sabor" id="selecionar_sabor">
-                            <!-- Adicionados via Javascript -->
-                          </select>
-                          <label for="selecionar_quantidade"><p>Quantidade:</p></label>
-                          <input type="number" id="selecionar_quantidade" value="1" min="1">
-                          <label for="comentario_pedido" class="mr-left"><p>Comentários:</p></label>
-                          <div>
-                            <textarea class="mr-right" id="comentario_pedido" name="comentarios" rows="2" cols="46 "></textarea>
-                          </div>
-                          
-                        </div>
-                        <button class="btn btn-primary" type="button" id="informacoes_botao_adicionar_produto" onclick="adicionarCarrinho()">Adicionar ao carrinho</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div>
+          <div class="h4 text-center">Lista de compras</div>
+          <div id="lista_carrinho">
+            <div id="lista_carrinho_bottom">
+              <span class="h4_sub">Total XX,XX R$</span>
+              <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos">Finalizar pedido</button>
             </div>
           </div>
         </div>
-    <!-------------------------------------------------------------------------------------------------------------------------------->
-
+      </div>
     </main>
     <footer class="text-center text-lg-start" id="conteudo_footer">
       <div class="container text-center text-md-start mt-5">
@@ -256,6 +202,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="common.js"></script>
     <script src="mini-website-common.js"></script>
-    <script src="mini-website-produtos.js"></script>
+    <script src="mini-website-carrinho.js"></script>
 </body>
 </html>
