@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppLanches (Projeto PUC-MG ADS 2021-2)</title>
-    <script src="https://kit.fontawesome.com/32c4dbd12a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppLanches (Projeto PUC-MG ADS 2021-2)</title>
+  <script src="https://kit.fontawesome.com/32c4dbd12a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+      <div class="container">
 
-            <a class="conteudo_header navbar-brand mb-0" href="index.html"><img src="imagens/logo.png"></a>
-            
-            <ul class="conteudo_header navbar-nav ml-auto">
-                <li class="nav-item">
-                  <button type="button" class="location_mobile caixa_endereco nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
-                        <img id="endereco_icone" src="imagens/location_icon.png">
-                        <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
-                        <span class="endereco_atual">Selecionar endereço</span>
-                  </button>
-                </li>
-            </ul>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                <span class="navbar-toggler-icon"></span>
+        <a class="conteudo_header navbar-brand mb-0" href="index.html"><img src="imagens/logo.png"></a>
+
+        <ul class="conteudo_header navbar-nav ml-auto">
+          <li class="nav-item">
+            <button type="button" class="location_mobile caixa_endereco nav-link btn bg-transparent" data-toggle="modal"
+              data-target="#selecionar_endereco">
+              <img id="endereco_icone" src="imagens/location_icon.png">
+              <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
+              <span class="endereco_atual">Selecionar endereço</span>
             </button>
-            
-            <div class="conteudo_header collapse navbar-collapse" id="navbarSite">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="cadastro.html" onclick="redirectClienteOuVendedor(cliente_vendedor = 'cliente')">
-                       Crie sua conta
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="cadastro.html" onclick="redirectClienteOuVendedor(cliente_vendedor = 'vendedor')">
-                        Cadastre sua loja
-                    </a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <button type="button" class="location_web caixa_endereco nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
-                          <img id="endereco_icone" src="imagens/location_icon.png">
-                          <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span> 
-                          <span class="endereco_atual">Selecionar endereço</span>
-                        </button>
-                    </li>
-                    <li class="nav-item dropdown navDrop-login">
-                        <a class="nav-link caixa_usuario" href="login.html" style="margin-top: 5px;">
-                          <span>Fazer login</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown navDrop-logado">
-                      <a class="nav-link caixa_usuario dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop" style="margin-top: 9px;">
-                        <span id="header_sobrescrito_conta" style="font-size: 14px">Minha conta</span> 
-                        <span class="nome_usuario"></span>
-                      </a>
-                      <div class="itens_menu dropdown-menu navDrop-conta">
-                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-user-circle fa-lg"></i> Dados Pessoais</a>
-                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="fas fa-history fa-lg"></i> Histórico</a>
-                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
-                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
-                          <a class="dropdown-item item-menu-usuario" href="#" onclick="logOut()"> <i class="far fa-times-circle fa-lg"></i> Sair</a>
-                      </div>
-                  </li>
-                </ul>
-            </div>
+          </li>
+        </ul>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="conteudo_header collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html"
+                onclick="redirectClienteOuVendedor(cliente_vendedor = 'cliente')">
+                Crie sua conta
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html"
+                onclick="redirectClienteOuVendedor(cliente_vendedor = 'vendedor')">
+                Cadastre sua loja
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <button type="button" class="location_web caixa_endereco nav-link btn bg-transparent" data-toggle="modal"
+                data-target="#selecionar_endereco">
+                <img id="endereco_icone" src="imagens/location_icon.png">
+                <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
+                <span class="endereco_atual">Selecionar endereço</span>
+              </button>
+            </li>
+            <li class="nav-item dropdown navDrop-login">
+              <a class="nav-link caixa_usuario" href="login.html" style="margin-top: 5px;">
+                <span>Fazer login</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown navDrop-logado">
+              <a class="nav-link caixa_usuario dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop"
+                style="margin-top: 9px;">
+                <span id="header_sobrescrito_conta" style="font-size: 14px">Minha conta</span>
+                <span class="nome_usuario"></span>
+              </a>
+              <div class="itens_menu dropdown-menu navDrop-conta">
+                <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-user-circle fa-lg"></i> Dados
+                  Pessoais</a>
+                <a class="dropdown-item item-menu-usuario" href="#"> <i class="fas fa-history fa-lg"></i> Histórico</a>
+                <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
+                <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-credit-card fa-lg"></i>
+                  Pagamentos</a>
+                <a class="dropdown-item item-menu-usuario" href="#" onclick="logOut()"> <i
+                    class="far fa-times-circle fa-lg"></i> Sair</a>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
-    <div class="modal fade" id="selecionar_endereco" tabindex="-1" role="dialog" aria-labelledby="selecionar_enderecoTitle" aria-hidden="true">
+
+    <div class="modal fade" id="selecionar_endereco" tabindex="-1" role="dialog"
+      aria-labelledby="selecionar_enderecoTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -90,108 +102,196 @@
               <h5><br>Inserir meu endereço</h5>
               <div class="col-lg-10 mx-auto">
                 <div class="input-group">
-                    <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;" required>
+                  <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco"
+                    style="margin-bottom: 16px;" required>
                 </div>
               </div>
             </div>
             <div class="modal-footer justify-content-center">
               <button type="submit" class="btn btn-dark">Mudar Endereço</button>
             </div>
-        </form>
+          </form>
         </div>
       </div>
     </div>
 
-</header>
-    <main>
-        <div class="text-center" id="conteudo_pagina">
-        <div style="margin-bottom: 0.5rem; display: inline-block;"><h1 id="nome_loja" style="padding-top: 48px;"> <br> </h1></div>
+  </header>
+  <main>
+    <div class="text-center" id="conteudo_pagina">
+      <div class="container" id="mini_website_nome_loja">
+        <h1 id="nome_loja"> <br> </h1>
+        <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos">Favoritar vendedor</button>
+      </div>
+      <nav>
         <div class="container" id="container_nav_mini_website">
-            <div class="col-lg-10 mx-auto btn-group nav_mini_website">
-              <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
-              <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
-              <a href="#"><button class="botao_nav_mini_website">Redes Sociais</button></a>
-              <a href="#"><button class="botao_nav_mini_website">Contato</button></a>
-              <a href="#"><button class="botao_nav_mini_website">Montar Pedido</button></a>
-            </div>
+          <div class="col-lg-10 mx-auto btn-group nav_mini_website">
+            <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
+            <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
+            <a href="#"><button class="botao_nav_mini_website">Redes Sociais</button></a>
+            <a href="#"><button class="botao_nav_mini_website">Contato</button></a>
+            <a href="mini-website-carrinho.html">
+              <button class="botao_nav_mini_website">Carrinho
+                <span id="carrinho_contador_box">
+                  <i class="fas fa-shopping-cart fa-lg"></i>
+                  <span id="carrinho_contador">
+                    <p id="numero_itens_carrinho">0</p>
+                  </span>
+                </span>
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="container"  id="mini_website_produtos">
+      </nav>
+    </div>
+    <div class="container" id="mini_website_produtos">
+      <!-- Seção de produtos (Inserida com Javascript)-->
+    </div>
+    <!-- Tela de "Mais Detalhes"-->
 
-        <div class="card_produto">
-          <img src="imagens/produtos/brigadeiro.jpg">
-          <div class="card_produto_descricao">
-            <h4 class="text-center">Brigadeiro</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis quibusdam doloribus hic maxime amet? Architecto earum officia quos nesciunt?</p>
+    <div class="modal fade" id="mais_detalhes" tabindex="-1" role="dialog" aria-labelledby="mais_detalhes"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" id="modal_mais_detalhes">
+          <div class="modal-header">
+            <span class="modal-title h4" id="mais_detalhes">Detalhes do produto</span>
+            <button class="btn btn-primary" type="button" id="modal_botao_favoritos">Favoritar produto</button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="card_produto_preco">
-            <b>R$ 5,00</b>
-          </div>
-          <div class="card_produto_detalhes">
-            <button class="btn btn-primary" type="button" onclick="detalhesProduto('Brigadeiro')"> Mais detalhes</button>
-          </div>
-        </div>
+          <div id="modal_informacoes_produto">
+            <div class="text-center">
+              <img class="informacoes_imagem_produto" src="">
+              <span class="informacoes_nome_produto h4">
+                <!-- Nome do Produto -->
+              </span><br>
+              <span class="informacoes_preco_produto h4_sub">
+                <!-- Preço do Produto -->
+              </span>
+            </div>
+            <div class="text-justify">
+              <div id="informacoes_descricao_produto">
+                <!-- Descrição -->
+              </div>
+              <div id="informacoes_sabores_produto">
+                <!-- Sabores -->
+              </div>
+              <div id="informacoes_outras_produto">
+                <!-- Outras informações -->
+              </div>
+            </div>
+            <button class="btn btn-primary" type="button" id="modal_botao_adicionar_produto"
+              onclick="informacoesAdicionarCarrinho('open')">Adicionar ao carrinho</button>
+            <div id="informacoes_adicionar_carrinho">
+              <button type="button" class="close" aria-label="Close" onclick="informacoesAdicionarCarrinho('close')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div id="card_adicionar_produto">
+                <img class="informacoes_imagem_produto">
+                <div>
+                  <span class="informacoes_nome_produto h4"></span>
+                  <p class="informacoes_preco_produto">
+                    <!-- Preço do Produto -->
+                  </p>
+                  <form>
+                    <div>
+                      <label for="selecionar_sabor">
+                        <p>Sabor:</p>
+                      </label>
+                      <select name="selecionar_sabor" class="selecionar_sabor" id="selecionar_sabor">
+                        <!-- Adicionados via Javascript -->
+                      </select>
+                      <label for="selecionar_quantidade">
+                        <p>Quantidade:</p>
+                      </label>
+                      <input type="number" class="selecionar_quantidade" id="selecionar_quantidade" value="1" min="1">
+                      <label for="comentario_pedido" class="mr-left">
+                        <p>Comentários:</p>
+                      </label>
+                      <div>
+                        <textarea class="mr-right" id="comentario_pedido" name="comentarios" rows="2"
+                          cols="46 "></textarea>
+                      </div>
 
-      </div>
-    </main>
-    <footer class="text-center text-lg-start" id="conteudo_footer">
-      <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <img src="imagens/logo.png" style="width: 240px">
-            </h6>
-            <div class="container me-5 d-lg-block no-decoration" id="footer-redes-sociais">
-              <p>Siga nossas redes sociais</p>
-              <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
-                <i class="fab fa-facebook-f fa-lg"></i>
-              </a>
-              <a href="https://www.twitter.com/" target="_blank" class="me-4 text-reset">
-                <i class="fab fa-twitter fa-lg"></i>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
-                <i class="fab fa-instagram fa-lg"></i>
-              </a>
-              <a href="https://www.youtube.com/" target="_blank" class="me-4 text-reset">
-                <i class="fab fa-youtube fa-lg"></i>
-              </a>
+                    </div>
+                    <span id="container_informacoes_botao_adicionar_produto">
+                      <button class="btn btn-primary" type="button" id="informacoes_botao_adicionar_produto">Adicionar ao carrinho</button>
+                    </span>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              Links úteis
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Termos e condições</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Ajuda</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Segurança</a>
-            </p>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              Contato
-            </h6>
-            <p><i class="fas fa-home me-3"></i> Rua XXXX, nº XXXX, Bairro XXXX, Belo Horizonte - MG</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              email@email.com.br
-            </p>
-            <p><i class="fas fa-phone me-3"></i> +55 31 XXXX-XXXX</p>
-          </div>
         </div>
       </div>
-      </section>
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright: XXXX
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+
+  </main>
+  <footer class="text-center text-lg-start" id="conteudo_footer">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="imagens/logo.png" style="width: 240px">
+          </h6>
+          <div class="container me-5 d-lg-block no-decoration" id="footer-redes-sociais">
+            <p>Siga nossas redes sociais</p>
+            <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="me-4 text-reset">
+              <i class="fab fa-youtube fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Links úteis
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Termos e condições</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Ajuda</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Segurança</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contato
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Rua XXXX, nº XXXX, Bairro XXXX, Belo Horizonte - MG</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            email@email.com.br
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +55 31 XXXX-XXXX</p>
+        </div>
       </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="common.js"></script>
-    <script src="mini-website-produtos.js"></script>
+    </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright: XXXX
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="common.js"></script>
+  <script src="mini-website-common.js"></script>
+  <script src="mini-website-produtos.js"></script>
 </body>
+
 </html>

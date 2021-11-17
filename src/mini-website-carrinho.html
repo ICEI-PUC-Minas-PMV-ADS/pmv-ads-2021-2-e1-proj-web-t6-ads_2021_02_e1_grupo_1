@@ -90,16 +90,16 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <span class="modal-title h4" id="selecionar_enderecoTitle">Selecionar Endereço</span>
+            <h5 class="modal-title" id="selecionar_enderecoTitle">Selecionar Endereço</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <form onsubmit="mudarEndereco();return false">
             <div class="modal-body text-center">
-              <span class="h4">Endereço Atual</span>
+              <h5>Endereço Atual</h5>
               <span class="endereco_atual"> Nenhum endereço selecionado </span>
-              <span class="h4"><br>Inserir meu endereço</span>
+              <h5><br>Inserir meu endereço</h5>
               <div class="col-lg-10 mx-auto">
                 <div class="input-group">
                   <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco"
@@ -143,11 +143,22 @@
         </div>
       </nav>
     </div>
-    <div class="container" id="mini_website_quem_somos">
-      <img src="" id="imagem_mini_website">
-      <p id="texto_mini_website">
-        <!-- Texto de descrição da loja -->
-      </p>
+    <div class="container" id="mini_website_carrinho">
+      <div id="carrinho_adicionar_produtos">
+        <!-- Inserido com Javascript -->
+      </div>
+      <div id="container_lista_carrinho">
+        <div class="h4 text-center">Lista de compras</div>
+        <div id="lista_carrinho">
+          <div id="lista_carrinho_upper">
+            <!-- Inserido com Javascript -->
+          </div>
+          <div id="lista_carrinho_bottom">
+            <span class="h4_sub" id="lista_carrinho_preco_total">Total: 0,00 R$</span>
+            <button class="btn btn-primary" type="button">Finalizar pedido</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="text-center text-lg-start" id="conteudo_footer">
@@ -213,7 +224,7 @@
     crossorigin="anonymous"></script>
   <script src="common.js"></script>
   <script src="mini-website-common.js"></script>
-  <script src="mini-website.js"></script>
+  <script src="mini-website-carrinho.js"></script>
 </body>
 
 </html>

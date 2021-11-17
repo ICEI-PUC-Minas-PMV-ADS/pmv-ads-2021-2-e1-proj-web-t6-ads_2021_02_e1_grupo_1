@@ -1,6 +1,15 @@
+/* Geral */
+
 .no-decoration a:hover {
     text-decoration: none;
 }
+.h4_sub {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+/* ----- */
+
+/* Header */
 .conteudo_header img {
     height: 26px;
 }
@@ -64,19 +73,34 @@
 .location_mobile {
     display: none;
    }
+
+/* ----- */
+
+/* Main */
+
 #conteudo_pagina {
     background-color: #f8f8f8;
     color: #222222;
     padding: 0px;
     text-align: center;
 }
+
+/* ----- */
+
+/* Footer */
+
 #conteudo_footer {
     background-color: #eeeeee;
     color: #222222;
     padding: 0px;
     padding-top: 24px;
     text-align: center;
+
 }
+/* ----- */
+
+/* Homepage(Index.html) */
+
 #busca_homepage {
     margin-top: 24px;
     background-color: #eeeeee;
@@ -105,6 +129,11 @@
     margin-left: -5px;
     margin-top: 2px;
 }
+
+/* ----- */
+
+/* Carrossel da Homepage (index.html) */
+
 #recomendacoes {
     background-color: #ffffff;
 }
@@ -114,7 +143,7 @@
 #recomendacoes a img:hover {
     transform: scale(105%) translateY(-2%);
     transition: 100ms ease-in-out;
-    box-shadow: 5px 5px 8px #888888;;
+    box-shadow: 5px 5px 8px #888888;
 }
 .carrossel-conteudo {
     margin-top: 16px;
@@ -206,6 +235,10 @@
     border-radius: 8px;
 }
 
+/* ----- */
+
+/* Página de login (login.html) */
+
 .logo_login {
     padding: 10px;
     background-color: #343a40;
@@ -238,6 +271,11 @@
     width: 100%;
     font-size: 21px;
 }
+
+/* ----- */
+
+/* Página de Cadastro (cadastro.html) */
+
 #cadastro { 
     text-align: center;
     margin-top: 32px;
@@ -248,7 +286,11 @@
     border-radius: 5px;
     line-height: 32px;
 }
-/* Pagina de busca */
+
+/* ----- */
+
+/* Pagina de busca (busca.html) */
+
 .display_resultados { 
     display: grid;
     grid-template-columns: 330px auto;
@@ -285,7 +327,7 @@
 .card_vendedor {
     height: 240px;
     width: 240px;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 .card_vendedor img { 
     height: 160px;
@@ -310,7 +352,11 @@
     margin: 4px;
     margin-top: -2px;
 }
-/* */
+
+/* ----- */
+
+/* mini-website do vendedor (mini-website.html) */
+/* > Geral  */
 .nav_mini_website { 
     padding: 0px;
     max-width: 100%;
@@ -335,7 +381,7 @@
     color: #343a40;
 }
 .botao_nav_mini_website {
-    font-size: 18px;
+    font-size: 20px;
     background-color: #f8f8f8;
     border: none;
     border-radius: 20px;
@@ -344,6 +390,37 @@
 .botao_nav_mini_website:hover {
     background-color: #ced4da;
 }
+#mini_website_nome_loja {
+    margin-top: 48px;
+    margin-bottom: 0.5rem; 
+    display: inline-block; 
+    position: relative;
+}
+#mini_website_botao_favoritos {
+    position: absolute; 
+    right: 4%;
+    top: 8px;
+}
+#carrinho_contador_box {
+    position: relative;
+}
+#carrinho_contador {
+    position: absolute;
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    left: 20px;
+    bottom: -12px;
+    display: none;
+}
+#carrinho_contador p {
+    margin: auto;
+    font-weight: 200;
+    color: white;
+}
+/* > Quem somos */
+
 #mini_website_quem_somos {
     font-size: 16px;
     text-align: justify;
@@ -363,9 +440,13 @@
     text-align: justify;
     text-indent: 2em;
 }
+
+/* > Produtos */
+
 #mini_website_produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+    min-height: 600px;
 }
 .card_produto {
     position: relative;
@@ -376,6 +457,11 @@
     margin-bottom: 12px;
     border: 1px solid #dddddd;
     border-radius: 5px;
+    box-shadow: 4px 4px 6px #ced4da;
+}
+.card_produto:hover {
+    transition: 100ms ease-in-out;
+    box-shadow: 4px 4px 6px #aaaaaa;
 }
 .card_produto img {
     width: 260px;
@@ -406,6 +492,220 @@
 .card_produto_detalhes button {
     padding: 4px;
 }
+
+/* > Produtos > Modal de detalhes do produto */
+
+#modal_mais_detalhes {
+    width: 960px;
+    height: 640px;
+    top: 130px;
+    left: 50%;
+    margin-left: -472px;
+    background-color: #eeeeee;
+}
+#modal_botao_favoritos {
+    position: absolute; 
+    right: 64px;
+}
+#modal_botao_adicionar_produto {
+    position: absolute; 
+    right: 32px;
+    bottom: 32px;
+}
+#modal_informacoes_produto {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 262px auto;
+}
+#modal_informacoes_produto img {
+    height: 240px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+#informacoes_preco_produto {
+    font-size: 18px;
+}
+#informacoes_descricao_produto {
+    height: 240px;
+}
+#informacoes_sabores_produto {
+    height: 120px;
+    overflow: wrap;
+}
+#informacoes_adicionar_carrinho {
+    display: none;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    height: 270px;
+    width: 670px;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+#informacoes_adicionar_carrinho p {
+    font-size: 18px;
+    line-height: 100%;
+}
+#informacoes_adicionar_carrinho img {
+    height: 216px;
+}
+#informacoes_adicionar_carrinho textarea {
+    margin-top: -20px;
+    width: 376px;
+    resize: none;
+}
+#informacoes_botao_adicionar_produto {
+    position: absolute; 
+    right: 32px;
+    bottom: 32px;
+    margin-right: -17px;
+    margin-bottom: -17px;
+}
+#card_adicionar_produto {
+    display: grid;
+    grid-template-columns: 240px auto;
+}
+.selecionar_sabor {
+    width: 160px;
+    margin-right: 8px;
+}
+.selecionar_quantidade {
+    width: 48px;
+}
+/* ----- */
+
+/* Carrinho */
+#mini_website_carrinho {
+    display: grid;
+    grid-template-columns: auto 400px;
+}
+#container_lista_carrinho {
+    margin-top: 12px;
+}
+#lista_carrinho {
+    position: relative;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 400px;
+    min-height: 600px;
+    margin-bottom: 16px;
+    padding-bottom: 130px;
+}
+#lista_carrinho_bottom {
+    position: absolute;
+    text-align: right;
+    bottom: 0px;
+    left: 2.5%;
+    height: 120px;
+    width: 95%;
+    border-top: 1px solid #aaaaaa;
+    margin-top: 12px;
+}
+#lista_carrinho_bottom button {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: 64px;
+    width: 100%;
+    font-size: 21px;
+    border-top: 1px solid #aaaaaa;
+}
+.produto_carrinho {
+    position: relative;
+    display: grid;
+    grid-template-columns: 108px auto;
+    padding: 4px;
+    height: 118px;
+    border-bottom: 1px solid #ced4da;
+}
+.produto_carrinho img {
+    height: 96px;
+    margin: 6px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.produto_carrinho button {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    padding: 2px;
+    right: 0px;
+    bottom: 0px;
+}
+#produto_carrinho_centro {
+    width: 228px;
+    overflow: hidden;
+}
+#produto_carrinho_nome {
+    font-size: 20px;
+    font-weight: 500;
+}
+#produto_carrinho_preco {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+#produto_carrinho_sabor, #produto_carrinho_quantidade, #produto_carrinho_comentarios {
+    font-size: 12px;
+}
+#carrinho_adicionar_produtos {
+    width: 98%;
+    max-width: 720px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+#carrinho_card_adicionar_produto {
+    display: grid;
+    grid-template-columns: 200px auto;
+    position: relative;
+    padding: 20px;
+    min-height: 270px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+#carrinho_card_adicionar_produto_quantidade input {
+    margin-top: -2px;
+}
+#carrinho_card_adicionar_produto textarea {
+    margin-top: -20px;
+    width: 480px;
+    resize: none;
+}
+#carrinho_card_adicionar_produto p {
+    font-size: 18px;
+    line-height: 100%;    
+}
+/* ----- */
+#carrinho_adicionar_imagem {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    margin-top: -32px;
+    padding: 0px;
+}
+#carrinho_adicionar_imagem img {
+    height: 185px;
+    width: 185px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+#carrinho_adicionar_imagem button {
+    width: 160px;
+    margin: auto;
+    margin-top: 11px;
+    margin-bottom: -11px;
+}
+#carrinho_card_botao_favoritos {
+    position: absolute;
+    left: 40px;
+    bottom: 16px;
+}
+
 @media (max-width: 1199px) {
     .display_resultados { 
         display: block;
@@ -419,6 +719,18 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+    #mini_website_carrinho {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #container_lista_carrinho {
+        margin: auto;
+        margin-top: 12px;
+    }
+    #carrinho_adicionar_produtos {
+        margin: auto;
+        margin-top: 12px;
     }
 }
 @media (max-width: 991px) {
@@ -452,16 +764,116 @@
         margin-right: 0px;
         margin-top: -8px;
     }
+    #modal_mais_detalhes {
+        width: 640px;
+        height: 960px;
+        top: 130px;
+        left: 50%;
+        margin-left: -312px;
+    }
+    #informacoes_descricao_produto {
+        height: 480px;
+    }
+    #informacoes_adicionar_carrinho {
+        width: 605px;
+    }
+    #selecionar_sabor {
+        width: 105px;
+        margin-right: 8px;
+    }
+    #informacoes_adicionar_carrinho textarea {
+        margin-top: -20px;
+        width: 321px;
+        resize: none;
+    }
+    #carrinho_card_adicionar_produto textarea {
+        margin-top: -20px;
+        width: 435px;
+        resize: none;
+    }
 }
 @media (max-width: 767px) {
     .resultado_busca p {
         font-size: 12px;
     }
     .botao_nav_mini_website {
-        font-size: 16px;
+        font-size: 18px;
     }
     .nav_mini_website button { 
         width: 100%;
+    }
+    .card_produto {
+        width: 450px;
+        height: 512px;
+    }
+    .card_produto img {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 65px;
+        width: 320px;
+    }
+    #mini_website_botao_favoritos {
+        position: relative;
+        right: 0px;
+    }
+    #modal_mais_detalhes {
+        width: 470px;
+        height: 1120px;
+        top: 0px;
+        left: 50%;
+        margin-left: -227px;
+    }    
+    #informacoes_descricao_produto {
+        height: 360px;
+    }
+    #modal_informacoes_produto {
+        padding: 32px;
+        display: block;
+        grid-template-columns: 262px auto;
+    }
+    #informacoes_adicionar_carrinho {
+        width: 436px;
+    }
+    #informacoes_adicionar_carrinho img {
+        display: none;
+    }
+    #card_adicionar_produto {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #selecionar_sabor {
+        width: 160px;
+    }
+    #informacoes_adicionar_carrinho textarea {
+        margin-top: -20px;
+        width: 375px;
+        resize: none;
+    }
+    #carrinho_card_adicionar_produto {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+        position: relative;
+        padding: 20px;
+        min-height: 540px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        margin-bottom: 12px;
+    }
+    #carrinho_adicionar_imagem {
+        margin-bottom: -32px;
+    }
+    #carrinho_adicionar_imagem img {
+        height: 240px;
+        width: 240px;
+    }
+    #carrinho_adicionar_info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #carrinho_card_botao_favoritos {
+        left: 16px;
     }
 }
 @media (max-width: 575px) {
@@ -476,7 +888,7 @@
         border-radius: 0px;
     }
     .botao_nav_mini_website {
-        font-size: 14px;
+        font-size: 16px;
     }
     #mini_website_quem_somos img {
         display: flex;
@@ -497,3 +909,5 @@ footer {
     color: #222222;
     text-decoration: none;
 }
+
+/* ----- */
