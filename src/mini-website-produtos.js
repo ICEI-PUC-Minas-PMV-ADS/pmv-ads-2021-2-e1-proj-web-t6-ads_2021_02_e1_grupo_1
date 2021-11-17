@@ -35,54 +35,6 @@ function detalhesProduto(detalhes) {
     }
 }
 
-function informacoesAdicionarCarrinho(open_close) {
-    if (open_close === "open") {
-        document.querySelector("#informacoes_adicionar_carrinho").style.display = "block";
-
-        /* Resetar valores do formulário */
-        let detalhes = JSON.parse(localStorage.getItem('maisDetalhesAtual'));
-        let findIndexProduto = listaVendedores[findIndex].catalogo.findIndex(x => x.nome === detalhes);
-        document.querySelector("#selecionar_sabor").value = listaVendedores[findIndex].catalogo[findIndexProduto].sabores[0];
-        document.querySelector("#selecionar_quantidade").value = 1;
-        document.querySelector("#comentario_pedido").value = "";
-        /* ---------------------------- */
-    }
-    else if (open_close === "close") {
-        document.querySelector("#informacoes_adicionar_carrinho").style.display = "none";
-    }
-}
-
-function adicionarCarrinho () {
-    let entryCarrinho = {};
-    let detalhes = JSON.parse(localStorage.getItem('maisDetalhesAtual'));
-    let findIndexProduto = listaVendedores[findIndex].catalogo.findIndex(x => x.nome === detalhes);
-    entryCarrinho.nome = detalhes;
-    entryCarrinho.sabor = document.querySelector("#selecionar_sabor").value;
-    entryCarrinho.quantidade = document.querySelector("#selecionar_quantidade").value;
-    entryCarrinho.comentarios = document.querySelector("#comentario_pedido").value;
-    entryCarrinho.preco = parseFloat(listaVendedores[findIndex].catalogo[findIndexProduto].preco) * parseInt(entryCarrinho.quantidade);
-    entryCarrinho.id = entryCarrinho.nome + entryCarrinho.sabor + entryCarrinho.comentarios;
-    
-    /* Checa se o mesmo produto já foi pedido e soma as quantidades caso verifique que sim */
-
-    let checkRepetition = listaVendedores[findIndex].carrinho.findIndex(x => x.id === entryCarrinho.id);
-    console.log(checkRepetition);
-    if (checkRepetition == -1) { 
-        listaVendedores[findIndex].carrinho[listaVendedores[findIndex].carrinho.length - 1] = entryCarrinho;
-        listaVendedores[findIndex].carrinho.push({});
-    } 
-    else {
-        entryCarrinho.quantidade = parseInt(entryCarrinho.quantidade) + parseInt(listaVendedores[findIndex].carrinho[checkRepetition].quantidade);
-        entryCarrinho.preco = parseFloat(listaVendedores[findIndex].catalogo[findIndexProduto].preco) * parseInt(entryCarrinho.quantidade);
-        listaVendedores[findIndex].carrinho[checkRepetition] = entryCarrinho;
-    }
-    console.log(listaVendedores[findIndex].carrinho);
-    updateLocalStorage();
-    updateCarrinho();   
-    informacoesAdicionarCarrinho("close");
-    window.alert("Pedido adicionado ao carrinho com sucesso!");
-}
-
 /* Exibe os produtos disponiveis no catalogo */
 function updateListaProdutos() { 
     let mostrarProdutos = document.querySelector("#mini_website_produtos");

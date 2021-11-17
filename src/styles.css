@@ -567,26 +567,31 @@
     display: grid;
     grid-template-columns: 240px auto;
 }
-#selecionar_sabor {
+.selecionar_sabor {
     width: 160px;
     margin-right: 8px;
 }
-#selecionar_quantidade {
+.selecionar_quantidade {
     width: 48px;
 }
 /* ----- */
 
-/* > Produtos > Modal de detalhes do produto */
+/* Carrinho */
 #mini_website_carrinho {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto 400px;
+}
+#container_lista_carrinho {
+    margin-top: 12px;
 }
 #lista_carrinho {
     position: relative;
     border: 1px solid #dddddd;
     border-radius: 5px;
+    width: 400px;
     min-height: 600px;
     margin-bottom: 16px;
+    padding-bottom: 130px;
 }
 #lista_carrinho_bottom {
     position: absolute;
@@ -596,6 +601,7 @@
     height: 120px;
     width: 95%;
     border-top: 1px solid #aaaaaa;
+    margin-top: 12px;
 }
 #lista_carrinho_bottom button {
     position: absolute;
@@ -606,11 +612,99 @@
     font-size: 21px;
     border-top: 1px solid #aaaaaa;
 }
-
-
+.produto_carrinho {
+    position: relative;
+    display: grid;
+    grid-template-columns: 108px auto;
+    padding: 4px;
+    height: 118px;
+    border-bottom: 1px solid #ced4da;
+}
+.produto_carrinho img {
+    height: 96px;
+    margin: 6px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.produto_carrinho button {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    padding: 2px;
+    right: 0px;
+    bottom: 0px;
+}
+#produto_carrinho_centro {
+    width: 228px;
+    overflow: hidden;
+}
+#produto_carrinho_nome {
+    font-size: 20px;
+    font-weight: 500;
+}
+#produto_carrinho_preco {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+#produto_carrinho_sabor, #produto_carrinho_quantidade, #produto_carrinho_comentarios {
+    font-size: 12px;
+}
+#carrinho_adicionar_produtos {
+    width: 98%;
+    max-width: 720px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+#carrinho_card_adicionar_produto {
+    display: grid;
+    grid-template-columns: 200px auto;
+    position: relative;
+    padding: 20px;
+    min-height: 270px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+#carrinho_card_adicionar_produto_quantidade input {
+    margin-top: -2px;
+}
+#carrinho_card_adicionar_produto textarea {
+    margin-top: -20px;
+    width: 480px;
+    resize: none;
+}
+#carrinho_card_adicionar_produto p {
+    font-size: 18px;
+    line-height: 100%;    
+}
 /* ----- */
-
-/* Media querys (responsividade) */
+#carrinho_adicionar_imagem {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    margin-top: -32px;
+    padding: 0px;
+}
+#carrinho_adicionar_imagem img {
+    height: 185px;
+    width: 185px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+#carrinho_adicionar_imagem button {
+    width: 160px;
+    margin: auto;
+    margin-top: 11px;
+    margin-bottom: -11px;
+}
+#carrinho_card_botao_favoritos {
+    position: absolute;
+    left: 40px;
+    bottom: 16px;
+}
 
 @media (max-width: 1199px) {
     .display_resultados { 
@@ -625,6 +719,18 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+    #mini_website_carrinho {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #container_lista_carrinho {
+        margin: auto;
+        margin-top: 12px;
+    }
+    #carrinho_adicionar_produtos {
+        margin: auto;
+        margin-top: 12px;
     }
 }
 @media (max-width: 991px) {
@@ -678,6 +784,11 @@
     #informacoes_adicionar_carrinho textarea {
         margin-top: -20px;
         width: 321px;
+        resize: none;
+    }
+    #carrinho_card_adicionar_produto textarea {
+        margin-top: -20px;
+        width: 435px;
         resize: none;
     }
 }
@@ -737,6 +848,32 @@
         margin-top: -20px;
         width: 375px;
         resize: none;
+    }
+    #carrinho_card_adicionar_produto {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+        position: relative;
+        padding: 20px;
+        min-height: 540px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        margin-bottom: 12px;
+    }
+    #carrinho_adicionar_imagem {
+        margin-bottom: -32px;
+    }
+    #carrinho_adicionar_imagem img {
+        height: 240px;
+        width: 240px;
+    }
+    #carrinho_adicionar_info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #carrinho_card_botao_favoritos {
+        left: 16px;
     }
 }
 @media (max-width: 575px) {
