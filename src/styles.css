@@ -522,6 +522,9 @@
     border: 1px solid #ced4da;
     border-radius: 5px;
 }
+.informacoes_nome_produto {
+    margin-bottom: 6px;
+}
 #informacoes_preco_produto {
     font-size: 18px;
 }

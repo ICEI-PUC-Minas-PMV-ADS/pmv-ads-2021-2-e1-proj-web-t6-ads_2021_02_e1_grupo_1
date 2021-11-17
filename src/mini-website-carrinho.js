@@ -43,10 +43,12 @@ function updateListaCarrinho() {
 function updateListaProdutosPaginaCarrinho() {
     listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
     let catalogo = listaVendedores[findIndex].catalogo;
-
     let listaProdutosPaginaCarrinho = `<div class="h4 text-center">Adicionar produtos</div>`;
     
     for (let i = 0; i < catalogo.length; i++) {
+        let imagemProduto = catalogo[i].imagem;
+        let nomeProduto = catalogo[i].nome;
+        let precoProduto = "Preço: R$ " + catalogo[i].preco.replace(".",",") + "/Unidade";
         let sabores = catalogo[i].sabores;
         let selecSabores = ``;
         for (let j = 0; j < sabores.length; j++) {
@@ -56,12 +58,12 @@ function updateListaProdutosPaginaCarrinho() {
         `
         <div id="carrinho_card_adicionar_produto">
           <div id="carrinho_adicionar_imagem">
-            <img class="informacoes_imagem_produto" src="imagens/produtos/brigadeiro.jpg">
+            <img class="informacoes_imagem_produto" src="${imagemProduto}">
           </div>
           <div id="carrinho_adicionar_info">
-            <span class="informacoes_nome_produto h4">Brigadeiro</span>
+            <div class="informacoes_nome_produto h4">${nomeProduto}</div>
             <p class="informacoes_preco_produto">
-              Preço: 2,00 R$/Unidade
+              ${precoProduto}
             </p>
             <form>
               <div class="text-left">
