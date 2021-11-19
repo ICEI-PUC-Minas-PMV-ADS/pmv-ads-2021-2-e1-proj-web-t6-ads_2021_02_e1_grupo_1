@@ -15,107 +15,97 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
+        <div class="container">
 
-        <a class="conteudo_header navbar-brand mb-0" href="index.html"><img src="imagens/logo.png"></a>
-
-        <ul class="conteudo_header navbar-nav ml-auto">
-          <li class="nav-item">
-            <button type="button" class="location_mobile caixa_endereco nav-link btn bg-transparent" data-toggle="modal"
-              data-target="#selecionar_endereco">
-              <img id="endereco_icone" src="imagens/location_icon.png">
-              <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
-              <span class="endereco_atual">Selecionar endereço</span>
+            <a class="conteudo_header navbar-brand mb-0" href="index.html"><img src="imagens/logo.png"></a>
+            
+            <ul class="conteudo_header navbar-nav ml-auto">
+                <li class="nav-item">
+                  <button type="button" class="location_mobile caixa_endereco nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
+                        <img id="endereco_icone" src="imagens/location_icon.png">
+                        <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
+                        <span class="endereco_atual">Selecionar endereço</span>
+                  </button>
+                </li>
+            </ul>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </li>
-        </ul>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="conteudo_header collapse navbar-collapse" id="navbarSite">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="cadastro.html"
-                onclick="redirectClienteOuVendedor(cliente_vendedor = 'cliente')">
-                Crie sua conta
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cadastro.html"
-                onclick="redirectClienteOuVendedor(cliente_vendedor = 'vendedor')">
-                Cadastre sua loja
-              </a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <button type="button" class="location_web caixa_endereco nav-link btn bg-transparent" data-toggle="modal"
-                data-target="#selecionar_endereco">
-                <img id="endereco_icone" src="imagens/location_icon.png">
-                <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span>
-                <span class="endereco_atual">Selecionar endereço</span>
-              </button>
-            </li>
-            <li class="nav-item dropdown navDrop-login">
-              <a class="nav-link caixa_usuario" href="login.html" style="margin-top: 5px;">
-                <span>Fazer login</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown navDrop-logado">
-              <a class="nav-link caixa_usuario dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop"
-                style="margin-top: 9px;">
-                <span id="header_sobrescrito_conta" style="font-size: 14px">Minha conta</span>
-                <span class="nome_usuario"></span>
-              </a>
-              <div class="itens_menu dropdown-menu navDrop-conta">
-                <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-user-circle fa-lg"></i> Dados
-                  Pessoais</a>
-                <a class="dropdown-item item-menu-usuario" href="#"> <i class="fas fa-history fa-lg"></i> Histórico</a>
-                <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
-                <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-credit-card fa-lg"></i>
-                  Pagamentos</a>
-                <a class="dropdown-item item-menu-usuario" href="#" onclick="logOut()"> <i
-                    class="far fa-times-circle fa-lg"></i> Sair</a>
-              </div>
-            </li>
-          </ul>
+            
+            <div class="conteudo_header collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html" onclick="redirectClienteOuVendedor(cliente_vendedor = 'cliente')">
+                       Crie sua conta
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html" onclick="redirectClienteOuVendedor(cliente_vendedor = 'vendedor')">
+                        Cadastre sua loja
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button type="button" class="location_web caixa_endereco nav-link btn bg-transparent" data-toggle="modal" data-target="#selecionar_endereco">
+                          <img id="endereco_icone" src="imagens/location_icon.png">
+                          <span id="header_sobrescrito" style="font-size: 14px">Entrega para:</span> 
+                          <span class="endereco_atual">Selecionar endereço</span>
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown navDrop-login">
+                        <a class="nav-link caixa_usuario" href="login.html" style="margin-top: 5px;">
+                          <span>Fazer login</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown navDrop-logado">
+                      <a class="nav-link caixa_usuario dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop" style="margin-top: 9px;">
+                        <span id="header_sobrescrito_conta" style="font-size: 14px">Minha conta</span> 
+                        <span class="nome_usuario"></span>
+                      </a>
+                      <div class="itens_menu dropdown-menu navDrop-conta">
+                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-user-circle fa-lg"></i> Dados Pessoais</a>
+                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="fas fa-history fa-lg"></i> Histórico</a>
+                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
+                          <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
+                          <a class="dropdown-item item-menu-usuario" href="#" onclick="logOut()"> <i class="far fa-times-circle fa-lg"></i> Sair</a>
+                      </div>
+                  </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-
-    <div class="modal fade" id="selecionar_endereco" tabindex="-1" role="dialog"
-      aria-labelledby="selecionar_enderecoTitle" aria-hidden="true">
+    
+    <div class="modal fade" id="selecionar_endereco" tabindex="-1" role="dialog" aria-labelledby="selecionar_enderecoTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <span class="modal-title h4" id="selecionar_enderecoTitle">Selecionar Endereço</span>
+            <h5 class="modal-title" id="selecionar_enderecoTitle">Selecionar Endereço</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <form onsubmit="mudarEndereco();return false">
             <div class="modal-body text-center">
-              <span class="h4">Endereço Atual</span>
+              <h5>Endereço Atual</h5>
               <span class="endereco_atual"> Nenhum endereço selecionado </span>
-              <span class="h4"><br>Inserir meu endereço</span>
+              <h5><br>Inserir meu endereço</h5>
               <div class="col-lg-10 mx-auto">
                 <div class="input-group">
-                  <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco"
-                    style="margin-bottom: 16px;" required>
+                    <input type="text" placeholder="Digite seu endereço" class="form-control" id="input_modal_endereco" style="margin-bottom: 16px;" required>
                 </div>
               </div>
             </div>
             <div class="modal-footer justify-content-center">
               <button type="submit" class="btn btn-dark">Mudar Endereço</button>
             </div>
-          </form>
+        </form>
         </div>
       </div>
     </div>
 
-  </header>
+</header>
   <main>
     <div class="text-center" id="conteudo_pagina">
       <div class="container" id="mini_website_nome_loja">
@@ -127,8 +117,8 @@
           <div class="col-lg-10 mx-auto btn-group nav_mini_website">
             <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
             <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
-            <a href="#"><button class="botao_nav_mini_website">Redes Sociais</button></a>
-            <a href="#"><button class="botao_nav_mini_website">Contato</button></a>
+            <a href="mini-website-redes-sociais.html"><button class="botao_nav_mini_website">Redes Sociais</button></a>
+            <a href="mini-website-contato.html"><button class="botao_nav_mini_website">Contato</button></a>
             <a href="mini-website-carrinho.html">
               <button class="botao_nav_mini_website">Carrinho
                 <span id="carrinho_contador_box">
