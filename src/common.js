@@ -60,6 +60,18 @@ function setLocalStorage(){
                 "carrinho" : [
                     {},
                 ],
+                "precoEntrega" : "12,00",
+                "formasPagamento" : {
+                    "online" : ["Cartão", "Pix"],
+                    "naEntrega" : ["Cartão", "Dinheiro"],
+                },
+                "redesSociais" : {
+                    "facebook" : "facebook.com",
+                    "instagram": "instagram.com",
+                    "twitter" : "twitter.com",
+                    "tiktok" : "tiktok.com",
+                    "youtube" : "youtube.com",
+                },
             },
             {
                 "numero_lista" : 2,
@@ -187,7 +199,11 @@ function updateLocalStorage(){
 
 function mudarEndereco() {
     enderecoAtual = document.querySelector("#input_modal_endereco").value;
+    document.querySelector("#input_modal_endereco").value = "";
     updateLocalStorage();
+    if (typeof updateListaProdutosPaginaCarrinho == 'function') { 
+        updateListaProdutosPaginaCarrinho();
+      }
 }
 
 function logOut() {
