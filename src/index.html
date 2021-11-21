@@ -62,10 +62,11 @@
                             <span class="nome_usuario"></span>
                           </a>
                           <div class="itens_menu dropdown-menu navDrop-conta">
-                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-user-circle fa-lg"></i> Dados Pessoais</a>
-                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="fas fa-history fa-lg"></i> Histórico</a>
-                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
-                              <a class="dropdown-item item-menu-usuario" href="#"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
+                              <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirMenuUsuario(1)"> <i class="far fa-user-circle fa-lg"></i> Dados Pessoais</a>
+                              <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirMenuUsuario(2)" id="opcao_gerenciar_loja"> <i class="fas fa-store fa-lg"></i> Gerenciar Loja</a>
+                              <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirMenuUsuario(3)"> <i class="fas fa-history fa-lg"></i> Histórico</a>
+                              <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirMenuUsuario(4)"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
+                              <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirMenuUsuario(5)"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
                               <a class="dropdown-item item-menu-usuario" href="#" onclick="logOut()"> <i class="far fa-times-circle fa-lg"></i> Sair</a>
                           </div>
                       </li>
@@ -74,6 +75,8 @@
             </div>
         </nav>
         
+        <!-- Modal de seleção de endereço-->
+
         <div class="modal fade" id="selecionar_endereco" tabindex="-1" role="dialog" aria-labelledby="selecionar_enderecoTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -102,6 +105,56 @@
           </div>
         </div>
 
+        <!---------------------------------->
+        
+        <!-- Menu do usuário -->
+
+        <!-- Modal de dados do usuário -->
+
+        <div class="modal fade" id="dados_pessoais" tabindex="-1" role="dialog" aria-labelledby="dados_pessoaisTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content" id="menu_dados_usuario">
+              <div class="modal-header">
+                <h5 class="modal-title" id="selecionar_enderecoTitle">Dados pessoais</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                <div class="modal-body">
+                  <div class="h4">Identidade</div>
+                  <div class="bottom_border_dark bottom_border_menu">
+                    <span class="h4_sub">Nome </span>
+                    <span class="menu_usuario_info" id="menu_dados_usuario_nome"> <!--Nome--> </span>
+                  </div>
+                  <div class="bottom_border_dark bottom_border_menu">
+                    <span class="h4_sub">Data de nascimento </span>
+                    <span class="menu_usuario_info" id="menu_dados_usuario_nascimento"> <!--Nome--> </span>
+                  </div>
+                  <br>
+                  <div class="h4">Segurança e contato</div>
+                  <div class="bottom_border_dark bottom_border_menu">
+                    <form onsubmit="mudarDadosPesoais();return false">
+                      <label for="menu_dados_usuario_nome_de_usuario" class="h4_sub">Nome de usuário </label>
+                      <input type = "text" class="menu_usuario_input" id="menu_dados_usuario_nome_de_usuario" required> <!--Nome--> </input>
+                      <button type="submit" class="menu_usuario_botao_alterar">Alterar</button>
+                    </form>  
+                  </div>
+                  <div class="bottom_border_dark bottom_border_menu">
+                    <form onsubmit="mudarDadosPesoais();return false">
+                      <label for="menu_dados_usuario_email" class="h4_sub">E-mail </label>
+                      <input type = "e-mail" class="menu_usuario_input" id="menu_dados_usuario_email" required> <!--Nome--> </input>
+                      <button type="submit" class="menu_usuario_botao_alterar">Alterar</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="submit" class="btn btn-dark">Alterar Dados</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <!---------------------------------->
     </header>
     <main>
       <div class="text-center" id="conteudo_pagina">

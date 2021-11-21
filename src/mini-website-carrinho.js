@@ -73,7 +73,7 @@ function updateListaProdutosPaginaCarrinho() {
       let formasPagamentoDisponiveis = `
       <ul class="list-group list-group-horizontal">
         <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_cartao" name="forma_pagamento" required> <label for="forma_pagamento_cartao"> Cartao <label></input>
+          <input type="radio" id="forma_pagamento_cartao" name="forma_pagamento" required> <label for="forma_pagamento_cartao"> Cartão <label></input>
         </li>
         <li class="list-group-item  border-0">
           <input type="radio" id="forma_pagamento_pix" name="forma_pagamento"> <label for="forma_pagamento_pix"> Pix <label></input>
@@ -83,7 +83,7 @@ function updateListaProdutosPaginaCarrinho() {
       let formasPagamentoDisponiveisNaEntrega = `
       <ul class="list-group list-group-horizontal">
         <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_cartao_entrega" name="forma_pagamento"> <label for="forma_pagamento_cartao_entrega"> Cartao <label></input>
+          <input type="radio" id="forma_pagamento_cartao_entrega" name="forma_pagamento"> <label for="forma_pagamento_cartao_entrega"> Cartão <label></input>
         </li>
         <li class="list-group-item  border-0">
           <input type="radio" id="forma_pagamento_dinheiro_entrega" name="forma_pagamento"> <label for="forma_pagamento_dinheiro_entrega"> Dinheiro <label></input>
@@ -207,12 +207,14 @@ function finalizarPedidoCarrinho() {
     else {
       window.alert("Faça login para finalizar o pedido!")
     }
+    finalizarPedidoReverseWrap()
     updateListaProdutosPaginaCarrinho();
   }
 }
 
 function voltarPedido() {
   finalizarPedido = false;
+  finalizarPedidoReverseWrap()
   selecionarEntrega();
   updateListaProdutosPaginaCarrinho();
 }
@@ -234,4 +236,13 @@ function pedidoSubmetido() {
   listaVendedores[findIndex].carrinho = carrinhoVendedorAtual;
   updateLocalStorage();
   window.alert("Pedido submetido!");
+}
+
+function finalizarPedidoReverseWrap() {
+  if (finalizarPedido) {
+    document.querySelector("#mini_website_carrinho").style = "flex-wrap: wrap";
+  }
+  else {
+  document.querySelector("#mini_website_carrinho").style = "flex-wrap: reverse-wrap";
+  }
 }

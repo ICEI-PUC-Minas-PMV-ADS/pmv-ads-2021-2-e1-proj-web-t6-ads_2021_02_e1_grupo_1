@@ -191,6 +191,12 @@ function updateLocalStorage(){
     else {
         document.querySelector(".navDrop-logado").style.display = "block";
         document.querySelector(".navDrop-login").style.display = "none";
+        if (idUsuarioLogado.tipo == "vendedor") {
+            document.querySelector("#opcao_gerenciar_loja").style.display = "block";
+        }
+        else {
+            document.querySelector("#opcao_gerenciar_loja").style.display = "none";
+        }
     }
 }
 
@@ -212,4 +218,32 @@ function logOut() {
 }
 function redirectClienteOuVendedor(cliente_vendedor = "cliente") {
     localStorage.setItem("clienteOuVendedor", cliente_vendedor);
+}
+
+function abrirMenuUsuario(option = 0) {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let dadosUsuario = listaUsuarios[idUsuarioLogado.id];
+    if (option == 1) {
+        document.querySelector("#menu_dados_usuario_nome").innerText = `${dadosUsuario.nome} ${dadosUsuario.sobrenome}`;
+        let nascimento = dadosUsuario.nascimento;
+        nascimento = mudarFormatoData(nascimento);
+        document.querySelector("#menu_dados_usuario_nascimento").innerText = `${nascimento}`;
+        document.querySelector("#menu_dados_usuario_nome_de_usuario").value = `${dadosUsuario.nome}`;
+        document.querySelector("#menu_dados_usuario_email").value = `${dadosUsuario.email}`;
+    }
+    else {
+        document.querySelector("#menu_dados_usuario_nome").innerHTML = `<h1>TESTE${option}</h1>`;
+    }
+}
+
+function mudarFormatoData (data) {
+    /* Muda o formato da data de AAAA-MM-DD para DD-MM-AAAA */
+    let novaData = "";
+    novaData += `${data.substr(8,2)}/${data.substr(5,2)}/${data.substr(0,4)}`;
+    return novaData;
+}
+
+function mudarDadosPesoais() {
+    window.alert("Teste");
 }
