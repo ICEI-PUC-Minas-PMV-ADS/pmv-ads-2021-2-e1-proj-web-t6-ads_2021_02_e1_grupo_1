@@ -7,6 +7,8 @@ updateListaProdutosPaginaCarrinho();
 
 function updateListaCarrinho() {
     let listaCarrinho = ``;
+    let guardarHistorico = {};
+    let guardarHistoricoDetalhes = ``
     let carrinhoVendedorAtual = listaVendedores[findIndex].carrinho;
     let precoTotal = 0;
     document.querySelector("#botao_finalizar_pedido").type = "button";
@@ -39,18 +41,40 @@ function updateListaCarrinho() {
                 </div>
             </div>
         `;
+        guardarHistoricoDetalhes += `            
+        <div class="produto_carrinho">
+            <img src=${imagemListaCarrinho}> 
+            <div id="produto_carrinho_centro">
+                <div>
+                    <span id="produto_carrinho_nome">${nomeListaCarrinho}</span>
+                <div>
+                    <span id="produto_carrinho_sabor"><b>Sabor:</b> ${saborListaCarrinho}</span>
+                    <span id="produto_carrinho_quantidade"><b>Quantidade:</b> ${quantidadeListaCarrinho}</span>
+                </div>
+                <span id="produto_carrinho_comentarios"><b>Comentários:</b> ${comentarioListaCarrinho} </span>
+                <span id="produto_carrinho_preco"> ${precoListaCarrinho} R$ </span> 
+                </div>
+            </div>
+        </div>
+    `;
     }
     precoEntrega = parseInt(precoEntrega);
     if (precoEntrega != null && precoEntrega > 0) {
       precoTotal += precoEntrega;
       precoEntrega = precoEntrega.toFixed(2).replace(".",",");
       listaCarrinho += `<div class="h4_sub" id="preco_entrega">Entrega: ${precoEntrega} R$</div>`;
+      guardarHistoricoDetalhes += `<div class="h4_text text-right">Entrega: ${precoEntrega} R$</div>`
     }
     
     document.querySelector("#lista_carrinho_upper").innerHTML = listaCarrinho;
     precoTotal = precoTotal.toFixed(2);
     precoTotal = precoTotal.replace(".",",");
     document.querySelector("#lista_carrinho_preco_total").innerHTML = `Total: ${precoTotal} R$`;
+
+    guardarHistorico.detalhes = guardarHistoricoDetalhes;
+    guardarHistorico.preco = precoTotal;
+    guardarHistorico.repetir = carrinhoVendedorAtual;
+    localStorage.setItem('formatoGuardarHistorico', JSON.stringify(guardarHistorico));
 }
 
 function updateListaProdutosPaginaCarrinho() {
@@ -234,6 +258,32 @@ function pedidoSubmetido() {
   let carrinhoVendedorAtual = listaVendedores[findIndex].carrinho;
   carrinhoVendedorAtual = [{}];
   listaVendedores[findIndex].carrinho = carrinhoVendedorAtual;
+  guardarHistorico()
+  function guardarHistorico() {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let guardarHistorico = JSON.parse(localStorage.getItem('formatoGuardarHistorico'));
+
+    let lojaAtual = listaVendedores[findIndex];
+    let numeroPedido = listaUsuarios[idUsuarioLogado.id].historicoDePedidos.length;
+    /* Informações gerais */
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].numeroDoPedido = numeroPedido;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].nomeVendedor = lojaAtual.nome;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].valorDaCompra = guardarHistorico.preco;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].detalhes = guardarHistorico.detalhes;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].repetir = guardarHistorico.repetir;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].idLoja = JSON.parse(localStorage.getItem('lojaAtual'));;
+    /* > Data da compra */
+    let dataHoje = new Date();
+    let dd = String(dataHoje.getDate()).padStart(2, '0');
+    let mm = String(dataHoje.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = dataHoje.getFullYear();
+    dataHoje = dd + '/' + mm + '/' + yyyy;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].dataCompra = dataHoje;
+    /* ----------------- */
+
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos.push({});
+  }
   updateLocalStorage();
   window.alert("Pedido submetido!");
 }

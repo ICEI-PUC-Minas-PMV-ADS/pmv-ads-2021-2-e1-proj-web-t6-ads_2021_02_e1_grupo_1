@@ -7,6 +7,10 @@ let formInfo = new URLSearchParams(window.location.search);
 formInfo.forEach(function(value,name) {
 Object.assign(newEntry, {[name]: value});
 });
+newEntry.nomeUsuario = newEntry.nome;
+newEntry.telefone = "";
+newEntry.endereco = "Selecionar endereço";
+newEntry.historicoDePedidos = [{},];
 getListaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
 findIndex = getListaUsuarios.findIndex(x => x.email === newEntry.email);
 if (findIndex == -1) {
