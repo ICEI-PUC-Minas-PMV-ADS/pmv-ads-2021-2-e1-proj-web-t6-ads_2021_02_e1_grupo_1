@@ -333,46 +333,140 @@ function abrirFavoritosUsuario() {
     idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
     listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
     let favoritos = listaUsuarios[idUsuarioLogado.id].favoritos;
-    let listaFavoritos = ``;
+    let listaVendedoresFavoritos = ``;
     for (let i = (favoritos.vendedores.length -2); i >= 0; i--) {
-        listaFavoritos += favoritos.vendedores[i].info;
+        listaVendedoresFavoritos += favoritos.vendedores[i].info;
     }
-    if (favoritos.vendedores.length > 1) {
-        document.querySelector("#vendedores_favoritos").innerHTML = listaFavoritos;
+    if (favoritos.vendedores.length == 1) {
+        listaVendedoresFavoritos = 
+        `
+            <div class="center_padding">
+                <span class="h4_sub">Nenhum vendedor favoritado</span>
+            </div>
+        `;
     }
+    document.querySelector("#vendedores_favoritos").innerHTML = listaVendedoresFavoritos;
+    let listaProdutosFavoritos = ``;
+    for (let i = (favoritos.produtos.length -2); i >= 0; i--) {
+        listaProdutosFavoritos += favoritos.produtos[i].info;
+    }
+    if (favoritos.produtos.length == 1) {
+        listaProdutosFavoritos = 
+        `
+            <div class="center_padding">
+                <span class="h4_sub">Nenhum vendedor favoritado</span>
+            </div>
+        `;
+    }
+    document.querySelector("#produtos_favoritos").innerHTML = listaProdutosFavoritos;
 }
 
 function favoritarVendedor() {
-    let lojaAtual = JSON.parse(localStorage.getItem('lojaAtual'));
-    listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
     idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
     listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
-    let indexLoja = procurarIdLoja(lojaAtual);
-    let loja = listaVendedores[indexLoja];
+    if (idUsuarioLogado.id != -1) {
+        let lojaAtual = JSON.parse(localStorage.getItem('lojaAtual'));
+        let indexLoja = procurarIdLoja(lojaAtual);
+        let loja = listaVendedores[indexLoja];
 
-    let vendedoresFavoritos = listaUsuarios[idUsuarioLogado.id].favoritos.vendedores;
-    let indexFavorito = vendedoresFavoritos.findIndex(x => x.idLoja === lojaAtual);
-    
-    if (indexFavorito == -1) {
-    let adicionarFavoritos = `
-            <div class="lista_favoritos"> 
-                <div class="card_vendedor_favoritos">
-                    <img src="${loja.imagem}"><br><div class="h4_sub text-center">${loja.nome}</div>
-                </div><p class="descricao_busca"><b>Descrição:</b> ${loja.descricaoResumo}</p>
-                <a href="mini-website.html${loja.link}"><button type="button" class="btn btn-primary text-right">Ir para página</button></a>
-            </div>
-            `;
+        let vendedoresFavoritos = listaUsuarios[idUsuarioLogado.id].favoritos.vendedores;
+        let indexFavorito = vendedoresFavoritos.findIndex(x => x.idLoja === lojaAtual);
         
-        vendedoresFavoritos[vendedoresFavoritos.length - 1].info = adicionarFavoritos;
-        vendedoresFavoritos[vendedoresFavoritos.length - 1].idLoja = lojaAtual;
-        vendedoresFavoritos.push({},);
-        listaUsuarios[idUsuarioLogado.id].favoritos.vendedores = vendedoresFavoritos;
-        window.alert("Vendedor adicionado aos favoritos!");
+        if (indexFavorito == -1) {
+            let adicionarFavoritos = `
+                    <div class="lista_favoritos"> 
+                        <div class="card_vendedor_favoritos">
+                            <img src="${loja.imagem}"><br><div class="h4_sub text-center">${loja.nome}</div>
+                        </div><p class="descricao_busca"><b>Descrição:</b> ${loja.descricaoResumo}</p>
+                        <button type="button" class="btn btn-secondary text-right" id="botao_remover_favoritos" onclick="removerFavorito('${loja.link}', 'vendedor')">Remover</button>
+                        <a href="mini-website.html${loja.link}"><button type="button" class="btn btn-primary text-right">Ir para página</button></a>
+                    </div>
+                    `;
+            vendedoresFavoritos[vendedoresFavoritos.length - 1].idLoja = lojaAtual;
+            vendedoresFavoritos[vendedoresFavoritos.length - 1].info = adicionarFavoritos;
+            vendedoresFavoritos.push({},);
+            listaUsuarios[idUsuarioLogado.id].favoritos.vendedores = vendedoresFavoritos;
+            window.alert("Vendedor adicionado aos favoritos!");
+        }
+        else {
+            window.alert("Vendedor já favoritado anteriormente");
+        }
+        updateLocalStorage();
+        }
+    else {
+        window.alert("Faça login para favoritar produtos!");
+    }
+}
+
+function favoritarProduto(idProduto = -1) {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    if (idUsuarioLogado.id != -1) {
+        let lojaAtual = JSON.parse(localStorage.getItem('lojaAtual'));
+        let indexLoja = procurarIdLoja(lojaAtual);
+        let loja = listaVendedores[indexLoja];
+        if (idProduto == -1) {
+            let nomeProduto = document.querySelectorAll(".informacoes_nome_produto")[0].innerText;
+            idProduto = listaVendedores[indexLoja].catalogo.findIndex(x => x.nome === nomeProduto);
+        }
+        let produto = listaVendedores[indexLoja].catalogo[idProduto];
+
+        let idLojaProduto = lojaAtual + produto.nome;
+        let produtosFavoritos = listaUsuarios[idUsuarioLogado.id].favoritos.produtos;
+        let indexFavorito = produtosFavoritos.findIndex(x => x.idProduto === idLojaProduto);
+
+        if (indexFavorito == -1) {
+            let adicionarFavoritos = `
+                    <div class="lista_favoritos"> 
+                        <div class="card_vendedor_favoritos">
+                            <img src="${produto.imagem}"><br><div class="h4_sub text-center">${produto.nome}</div>
+                        </div><p class="descricao_busca"><b>Descrição:</b> ${produto.descricaoResumo} <br> <span class="h4_text">Loja: ${loja.nome}</span> </p>
+                        <button type="button" class="btn btn-secondary text-right" id="botao_remover_favoritos" onclick="removerFavorito('${idLojaProduto   }', 'produto')">Remover</button>
+                        <button type="button" class="btn btn-primary text-right" onclick='redirectDetalhesProduto("${produto.nome}", "${loja.link}")'>Ir para produto</button>
+                    </div>
+                    `;
+            produtosFavoritos[produtosFavoritos.length - 1].idProduto = idLojaProduto;                    
+            produtosFavoritos[produtosFavoritos.length - 1].info = adicionarFavoritos;
+            produtosFavoritos.push({},);
+            listaUsuarios[idUsuarioLogado.id].favoritos.produtos = produtosFavoritos;
+            window.alert("Produto adicionado aos favoritos!");
+        }
+        else {
+            window.alert("Produto já favoritado anteriormente");
+        }
+        updateLocalStorage();
     }
     else {
-        window.alert("Vendedor já favoritado anteriormente");
+        window.alert("Faça login para favoritar produtos!");
+    }
+}
+
+function removerFavorito (idLojaOuProduto, vendedorOuProduto) {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    if (vendedorOuProduto == "vendedor") {    
+        let vendedoresFavoritos = listaUsuarios[idUsuarioLogado.id].favoritos.vendedores;
+        idLojaOuProduto = idLojaOuProduto.replace("?loja=","");
+        let indice = vendedoresFavoritos.findIndex(x => x.idLoja === idLojaOuProduto);
+        vendedoresFavoritos.splice(indice, 1);
+        listaUsuarios[idUsuarioLogado.id].favoritos.vendedores = vendedoresFavoritos;
+    }
+    else if (vendedorOuProduto == "produto") {    
+        let produtosFavoritos = listaUsuarios[idUsuarioLogado.id].favoritos.produtos;
+        let indice = produtosFavoritos.findIndex(x => x.idProduto === idLojaOuProduto);
+        console.log(idLojaOuProduto);
+        console.log(indice);
+        produtosFavoritos.splice(indice, 1);
+        listaUsuarios[idUsuarioLogado.id].favoritos.produtos = produtosFavoritos;
     }
     updateLocalStorage();
+    abrirFavoritosUsuario();
+}
+
+function redirectDetalhesProduto(nomeProduto, lojaUrl) {
+    localStorage.setItem('redirectDetalhesProduto', nomeProduto);
+    window.location = "mini-website-produtos.html" + lojaUrl;
 }
 
 function mudarFormatoData (data) {

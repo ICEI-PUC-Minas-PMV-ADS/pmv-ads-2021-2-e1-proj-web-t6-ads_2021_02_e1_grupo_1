@@ -193,7 +193,7 @@ function updateListaProdutosPaginaCarrinho() {
                   </div>
 
                 </div>
-                <button class="btn btn-secondary" type="button" id="carrinho_card_botao_favoritos">Favoritar produto</button>
+                <button class="btn btn-secondary" type="button" id="carrinho_card_botao_favoritos" onclick="favoritarProduto(${i})">Favoritar produto</button>
                 <button class="btn btn-primary" type="button" id="informacoes_botao_adicionar_produto" onclick='adicionarCarrinho(${i}, true)'>Adicionar ao carrinho</button>
               </form>
             </div>
