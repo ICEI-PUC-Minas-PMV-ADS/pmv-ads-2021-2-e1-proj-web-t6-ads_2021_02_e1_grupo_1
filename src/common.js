@@ -255,6 +255,9 @@ function abrirHistoricoUsuario() {
     listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
     let historico = listaUsuarios[idUsuarioLogado.id].historicoDePedidos;
     let listaHistorico = ``;
+    if (historico.length == 1) {
+        listaHistorico = `<div class="h4 text-center">Nenhum pedido realizado</div>`;
+    }
     for (let i = (historico.length - 2); i >= 0; i--) {
     let pedido = listaUsuarios[idUsuarioLogado.id].historicoDePedidos[i];
     let indexPedido = pedido.numeroDoPedido - 1;
@@ -270,8 +273,10 @@ function abrirHistoricoUsuario() {
                 </div>
             </div>
             <div class="detalhes_pedido">
-                <div class="h4_text text-right" id="detalhesPedido${indexPedido}">
+                <div class="h4_text" id="detalhesPedido${indexPedido}">
+                    <div class="text-right">
                     Detalhes do pedido <button type="button" class="btn btn-transparent" onclick="mostrarDetalhesHistorico(${indexPedido}, 'open')"><i class="fas fa-caret-down fa-2x"></i></button>
+                    </div>
                     <br>
                 </div>
                 <div class="bottom_border_dark text-right">
@@ -289,16 +294,20 @@ function mostrarDetalhesHistorico(indexPedido, openOrClose = "close") {
     let pedido = listaUsuarios[idUsuarioLogado.id].historicoDePedidos[indexPedido];
     if (openOrClose == "open") {
         document.querySelector(`#detalhesPedido${indexPedido}`).innerHTML = 
-        `
+        `   
+            <div class="text-right">
             Detalhes do pedido <button type="button" class="btn btn-transparent" onclick="mostrarDetalhesHistorico(${indexPedido}, 'close')"><i class="fas fa-caret-up fa-2x"></i></button>
+            </div>
             <br>
-            ${pedido.detalhes}
+            <div class="bottom_border_dark">
+                ${pedido.detalhes}
+            </div>
         `
     }
     else {
         document.querySelector(`#detalhesPedido${indexPedido}`).innerHTML = 
         `
-        <div class="detalhes_pedido">
+        <div class="text-right">
                 Detalhes do pedido <button type="button" class="btn btn-transparent" onclick="mostrarDetalhesHistorico(${indexPedido}, 'open')"><i class="fas fa-caret-down fa-2x"></i></button>
                 <br>
         </div>
@@ -317,6 +326,52 @@ function repetirPedido(indexHistorico) {
     listaVendedores[indexLoja].carrinho = historicoRepetir.repetir;
     window.location = "mini-website-carrinho.html";
 
+    updateLocalStorage();
+}
+
+function abrirFavoritosUsuario() {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let favoritos = listaUsuarios[idUsuarioLogado.id].favoritos;
+    let listaFavoritos = ``;
+    for (let i = (favoritos.vendedores.length -2); i >= 0; i--) {
+        listaFavoritos += favoritos.vendedores[i].info;
+    }
+    if (favoritos.vendedores.length > 1) {
+        document.querySelector("#vendedores_favoritos").innerHTML = listaFavoritos;
+    }
+}
+
+function favoritarVendedor() {
+    let lojaAtual = JSON.parse(localStorage.getItem('lojaAtual'));
+    listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let indexLoja = procurarIdLoja(lojaAtual);
+    let loja = listaVendedores[indexLoja];
+
+    let vendedoresFavoritos = listaUsuarios[idUsuarioLogado.id].favoritos.vendedores;
+    let indexFavorito = vendedoresFavoritos.findIndex(x => x.idLoja === lojaAtual);
+    
+    if (indexFavorito == -1) {
+    let adicionarFavoritos = `
+            <div class="lista_favoritos"> 
+                <div class="card_vendedor_favoritos">
+                    <img src="${loja.imagem}"><br><div class="h4_sub text-center">${loja.nome}</div>
+                </div><p class="descricao_busca"><b>Descrição:</b> ${loja.descricaoResumo}</p>
+                <a href="mini-website.html${loja.link}"><button type="button" class="btn btn-primary text-right">Ir para página</button></a>
+            </div>
+            `;
+        
+        vendedoresFavoritos[vendedoresFavoritos.length - 1].info = adicionarFavoritos;
+        vendedoresFavoritos[vendedoresFavoritos.length - 1].idLoja = lojaAtual;
+        vendedoresFavoritos.push({},);
+        listaUsuarios[idUsuarioLogado.id].favoritos.vendedores = vendedoresFavoritos;
+        window.alert("Vendedor adicionado aos favoritos!");
+    }
+    else {
+        window.alert("Vendedor já favoritado anteriormente");
+    }
     updateLocalStorage();
 }
 

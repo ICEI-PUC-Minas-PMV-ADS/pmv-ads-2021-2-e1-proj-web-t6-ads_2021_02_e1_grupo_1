@@ -11,6 +11,7 @@ newEntry.nomeUsuario = newEntry.nome;
 newEntry.telefone = "";
 newEntry.endereco = "Selecionar endereço";
 newEntry.historicoDePedidos = [{},];
+newEntry.favoritos = {"vendedores": [{},], "produtos" : [{},],};
 getListaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
 findIndex = getListaUsuarios.findIndex(x => x.email === newEntry.email);
 if (findIndex == -1) {
