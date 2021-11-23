@@ -63,10 +63,10 @@
                           </a>
                           <div class="itens_menu dropdown-menu navDrop-conta">
                               <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirDadosUsuario()"> <i class="far fa-user-circle fa-lg"></i> Dados Pessoais</a>
-                              <a class="dropdown-item item-menu-usuario opcao_vendedor" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirMenuUsuario(2)"> <i class="fas fa-store fa-lg"></i> Gerenciar Loja</a>
+                              <a class="dropdown-item item-menu-usuario opcao_vendedor" href="gerenciar-mini-website.html"> <i class="fas fa-store fa-lg"></i> Gerenciar Loja</a>
                               <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#historico_pedidos" onclick="abrirHistoricoUsuario()"> <i class="fas fa-history fa-lg"></i> Histórico</a>
                               <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#favoritos_usuario" onclick="abrirFavoritosUsuario()"> <i class="far fa-heart fa-lg"></i> Favoritos</a>
-                              <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#dados_pessoais" onclick="abrirMenuUsuario(5)"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
+                              <a class="dropdown-item item-menu-usuario" href="#" data-toggle="modal" data-target="#cartoes_usuario" onclick="abrirCartoesUsuario()"> <i class="far fa-credit-card fa-lg"></i> Pagamentos</a>
                               <a class="dropdown-item item-menu-usuario" href="#" onclick="logOut()"> <i class="far fa-times-circle fa-lg"></i> Sair</a>
                           </div>
                       </li>
@@ -202,7 +202,7 @@
 
                 <!-- Modal de histórico do usuário -->
 
-                <div class="modal fade" id="historico_pedidos" tabindex="-1" role="dialog" aria-labelledby="dados_pessoaisTitle" aria-hidden="true">
+                <div class="modal fade" id="historico_pedidos" tabindex="-1" role="dialog" aria-labelledby="historico_pedidosTitle" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -225,7 +225,7 @@
                 
                 <!-- Modal de favoritos do usuário -->
 
-                <div class="modal fade" id="favoritos_usuario" tabindex="-1" role="dialog" aria-labelledby="dados_pessoaisTitle" aria-hidden="true">
+                <div class="modal fade" id="favoritos_usuario" tabindex="-1" role="dialog" aria-labelledby="favoritos_usuarioTitle" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -257,6 +257,34 @@
                       </div>
                         </div>
                         <div class="modal-footer">
+                          <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">Fechar</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!---------------------------------->
+
+                <!-- Modal de cartoes do usuário -->
+
+                <div class="modal fade" id="cartoes_usuario" tabindex="-1" role="dialog" aria-labelledby="cartoes_usuarioTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="selecionar_enderecoTitle">Cartões salvos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                        <div class="modal-body">
+                            <div id="cartoes_salvos">
+                              <div class="center_padding">
+                               <span class="h4_sub">Nenhum cartão salvo</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" onclick="adicionarCartao()">Adicionar cartão</button>
                           <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">Fechar</button>
                         </div>
                     </div>

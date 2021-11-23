@@ -20,6 +20,7 @@ function setLocalStorage(){
                 "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deserunt repellat totam libero porro consectetur dolorem dolor eligendi ratione, quia, corporis aliquam qui ea et iste quasi obcaecati, dolores eveniet vel sed autem. Distinctio nostrum quidem dolorum nam neque magni eos labore ipsa, culpa saepe, at repellendus inventore dolores provident dicta numquam sunt repudiandae doloribus quis? Alias ipsa iusto provident hic voluptatibus repellendus deleniti atque enim natus repellat veritatis, ab incidunt quia libero laboriosam iure amet ullam eveniet delectus cupiditate omnis dicta! Nihil quis veniam aspernatur incidunt sint. Architecto, a provident? Dolorem quasi ut cumque consequuntur veniam. Beatae quia facilis laudantium commodi laborum deleniti atque alias, nemo assumenda? Nam delectus iusto totam perferendis, distinctio repudiandae? Quas deserunt libero eos deleniti, error, sequi recusandae amet ratione est aliquid nam perspiciatis a non praesentium dolores sint fugiat vero tenetur ducimus cumque corporis! Aliquid quo labore rerum doloribus animi quos quam quidem accusamus totam facere ut, eveniet, molestiae beatae aliquam commodi nostrum sapiente vel! Asperiores beatae ratione culpa ipsum architecto assumenda reprehenderit officiis recusandae expedita voluptatum voluptas laborum, labore voluptatibus vero dolorum magnam. Inventore incidunt libero eius facere consequatur, odio vitae odit consequuntur aperiam dolorum exercitationem rerum tempora! Sunt earum officia cupiditate ex vitae nobis est. Maxime, consequuntur soluta aliquid cumque dicta culpa harum reprehenderit dolore impedit quibusdam asperiores quidem praesentium alias quas, facere hic unde eum ea beatae possimus? Labore dolorum sit asperiores eligendi odio quam quas, distinctio velit nisi id saepe dicta adipisci reiciendis nemo repellat, autem doloribus ipsum temporibus sapiente? Quas enim quisquam ipsum sed, eos atque accusamus, nesciunt tempora voluptas eligendi error, ullam deserunt voluptatibus dolor in. Earum quaerat laudantium, rem delectus fuga mollitia expedita assumenda repellendus eius, tenetur ullam, incidunt obcaecati beatae ut. Eveniet corrupti veniam incidunt odit, alias quaerat esse architecto natus, suscipit quasi quibusdam ut! Nesciunt!",
                 "avaliacao" : "0.92",   /* Porcentagem de 0 até 1 */
                 "link" : "?loja=doces-caseiros",
+                "videoApresentacao": "",
                 "catalogo" : [
                     {
                         "nome": "Brigadeiro",
@@ -82,6 +83,7 @@ function setLocalStorage(){
                 "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deserunt repellat totam libero porro consectetur dolorem dolor eligendi ratione, quia, corporis aliquam qui ea et iste quasi obcaecati, dolores eveniet vel sed autem. Distinctio nostrum quidem dolorum nam neque magni eos labore ipsa, culpa saepe, at repellendus inventore dolores provident dicta numquam sunt repudiandae doloribus quis? Alias ipsa iusto provident hic voluptatibus repellendus deleniti atque enim natus repellat veritatis, ab incidunt quia libero laboriosam iure amet ullam eveniet delectus cupiditate omnis dicta! Nihil quis veniam aspernatur incidunt sint. Architecto, a provident? Dolorem quasi ut cumque consequuntur veniam. Beatae quia facilis laudantium commodi laborum deleniti atque alias, nemo assumenda? Nam delectus iusto totam perferendis, distinctio repudiandae? Quas deserunt libero eos deleniti, error, sequi recusandae amet ratione est aliquid nam perspiciatis a non praesentium dolores sint fugiat vero tenetur ducimus cumque corporis! Aliquid quo labore rerum doloribus animi quos quam quidem accusamus totam facere ut, eveniet, molestiae beatae aliquam commodi nostrum sapiente vel! Asperiores beatae ratione culpa ipsum architecto assumenda reprehenderit officiis recusandae expedita voluptatum voluptas laborum, labore voluptatibus vero dolorum magnam. Inventore incidunt libero eius facere consequatur, odio vitae odit consequuntur aperiam dolorum exercitationem rerum tempora! Sunt earum officia cupiditate ex vitae nobis est. Maxime, consequuntur soluta aliquid cumque dicta culpa harum reprehenderit dolore impedit quibusdam asperiores quidem praesentium alias quas, facere hic unde eum ea beatae possimus? Labore dolorum sit asperiores eligendi odio quam quas, distinctio velit nisi id saepe dicta adipisci reiciendis nemo repellat, autem doloribus ipsum temporibus sapiente? Quas enim quisquam ipsum sed, eos atque accusamus, nesciunt tempora voluptas eligendi error, ullam deserunt voluptatibus dolor in. Earum quaerat laudantium, rem delectus fuga mollitia expedita assumenda repellendus eius, tenetur ullam, incidunt obcaecati beatae ut. Eveniet corrupti veniam incidunt odit, alias quaerat esse architecto natus, suscipit quasi quibusdam ut! Nesciunt!",
                 "avaliacao" : "0.85",    /* Porcentagem de 0 até 1 */
                 "link" : "?loja=massas-congeladas",
+                "videoApresentacao": "",
                 "catalogo" : [
                     {
                         "nome": "Pizza portuguesa",
@@ -114,6 +116,18 @@ function setLocalStorage(){
                 "carrinho" : [
                     {},
                 ],
+                "precoEntrega" : "12,00",
+                "formasPagamento" : {
+                    "online" : ["Cartão", "Pix"],
+                    "naEntrega" : ["Cartão", "Dinheiro"],
+                },
+                "redesSociais" : {
+                    "facebook" : "facebook.com",
+                    "instagram": "instagram.com",
+                    "twitter" : "twitter.com",
+                    "tiktok" : "tiktok.com",
+                    "youtube" : "youtube.com",
+                },
             },
             {
                 "numero_lista" : 3,
@@ -123,12 +137,25 @@ function setLocalStorage(){
                 "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deserunt repellat totam libero porro consectetur dolorem dolor eligendi ratione, quia, corporis aliquam qui ea et iste quasi obcaecati, dolores eveniet vel sed autem. Distinctio nostrum quidem dolorum nam neque magni eos labore ipsa, culpa saepe, at repellendus inventore dolores provident dicta numquam sunt repudiandae doloribus quis? Alias ipsa iusto provident hic voluptatibus repellendus deleniti atque enim natus repellat veritatis, ab incidunt quia libero laboriosam iure amet ullam eveniet delectus cupiditate omnis dicta! Nihil quis veniam aspernatur incidunt sint. Architecto, a provident? Dolorem quasi ut cumque consequuntur veniam. Beatae quia facilis laudantium commodi laborum deleniti atque alias, nemo assumenda? Nam delectus iusto totam perferendis, distinctio repudiandae? Quas deserunt libero eos deleniti, error, sequi recusandae amet ratione est aliquid nam perspiciatis a non praesentium dolores sint fugiat vero tenetur ducimus cumque corporis! Aliquid quo labore rerum doloribus animi quos quam quidem accusamus totam facere ut, eveniet, molestiae beatae aliquam commodi nostrum sapiente vel! Asperiores beatae ratione culpa ipsum architecto assumenda reprehenderit officiis recusandae expedita voluptatum voluptas laborum, labore voluptatibus vero dolorum magnam. Inventore incidunt libero eius facere consequatur, odio vitae odit consequuntur aperiam dolorum exercitationem rerum tempora! Sunt earum officia cupiditate ex vitae nobis est. Maxime, consequuntur soluta aliquid cumque dicta culpa harum reprehenderit dolore impedit quibusdam asperiores quidem praesentium alias quas, facere hic unde eum ea beatae possimus? Labore dolorum sit asperiores eligendi odio quam quas, distinctio velit nisi id saepe dicta adipisci reiciendis nemo repellat, autem doloribus ipsum temporibus sapiente? Quas enim quisquam ipsum sed, eos atque accusamus, nesciunt tempora voluptas eligendi error, ullam deserunt voluptatibus dolor in. Earum quaerat laudantium, rem delectus fuga mollitia expedita assumenda repellendus eius, tenetur ullam, incidunt obcaecati beatae ut. Eveniet corrupti veniam incidunt odit, alias quaerat esse architecto natus, suscipit quasi quibusdam ut! Nesciunt!",
                 "avaliacao" : "0.67",     /* Porcentagem de 0 até 1 */
                 "link" : "?loja=marmitas-vegan",
+                "videoApresentacao": "",
                 "catalogo" : [
                     {},
                 ],
                 "carrinho" : [
                     {},
                 ],
+                "precoEntrega" : "12,00",
+                "formasPagamento" : {
+                    "online" : ["Cartão", "Pix"],
+                    "naEntrega" : ["Cartão", "Dinheiro"],
+                },
+                "redesSociais" : {
+                    "facebook" : "facebook.com",
+                    "instagram": "instagram.com",
+                    "twitter" : "twitter.com",
+                    "tiktok" : "tiktok.com",
+                    "youtube" : "youtube.com",
+                },
             },
             {
                 "numero_lista" : 4,
@@ -138,12 +165,25 @@ function setLocalStorage(){
                 "descricao" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deserunt repellat totam libero porro consectetur dolorem dolor eligendi ratione, quia, corporis aliquam qui ea et iste quasi obcaecati, dolores eveniet vel sed autem. Distinctio nostrum quidem dolorum nam neque magni eos labore ipsa, culpa saepe, at repellendus inventore dolores provident dicta numquam sunt repudiandae doloribus quis? Alias ipsa iusto provident hic voluptatibus repellendus deleniti atque enim natus repellat veritatis, ab incidunt quia libero laboriosam iure amet ullam eveniet delectus cupiditate omnis dicta! Nihil quis veniam aspernatur incidunt sint. Architecto, a provident? Dolorem quasi ut cumque consequuntur veniam. Beatae quia facilis laudantium commodi laborum deleniti atque alias, nemo assumenda? Nam delectus iusto totam perferendis, distinctio repudiandae? Quas deserunt libero eos deleniti, error, sequi recusandae amet ratione est aliquid nam perspiciatis a non praesentium dolores sint fugiat vero tenetur ducimus cumque corporis! Aliquid quo labore rerum doloribus animi quos quam quidem accusamus totam facere ut, eveniet, molestiae beatae aliquam commodi nostrum sapiente vel! Asperiores beatae ratione culpa ipsum architecto assumenda reprehenderit officiis recusandae expedita voluptatum voluptas laborum, labore voluptatibus vero dolorum magnam. Inventore incidunt libero eius facere consequatur, odio vitae odit consequuntur aperiam dolorum exercitationem rerum tempora! Sunt earum officia cupiditate ex vitae nobis est. Maxime, consequuntur soluta aliquid cumque dicta culpa harum reprehenderit dolore impedit quibusdam asperiores quidem praesentium alias quas, facere hic unde eum ea beatae possimus? Labore dolorum sit asperiores eligendi odio quam quas, distinctio velit nisi id saepe dicta adipisci reiciendis nemo repellat, autem doloribus ipsum temporibus sapiente? Quas enim quisquam ipsum sed, eos atque accusamus, nesciunt tempora voluptas eligendi error, ullam deserunt voluptatibus dolor in. Earum quaerat laudantium, rem delectus fuga mollitia expedita assumenda repellendus eius, tenetur ullam, incidunt obcaecati beatae ut. Eveniet corrupti veniam incidunt odit, alias quaerat esse architecto natus, suscipit quasi quibusdam ut! Nesciunt!",
                 "avaliacao" : "0.8",    /* Porcentagem de 0 até 1 */
                 "link" : "?loja=cupcakes-variados",
+                "videoApresentacao": "",
                 "catalogo" : [
                     {},
                 ],
                 "carrinho" : [
                     {},
                 ],
+                "precoEntrega" : "12,00",
+                "formasPagamento" : {
+                    "online" : ["Cartão", "Pix"],
+                    "naEntrega" : ["Cartão", "Dinheiro"],
+                },
+                "redesSociais" : {
+                    "facebook" : "facebook.com",
+                    "instagram": "instagram.com",
+                    "twitter" : "twitter.com",
+                    "tiktok" : "tiktok.com",
+                    "youtube" : "youtube.com",
+                },
             },
           ]
         localStorage.setItem('listaVendedores', JSON.stringify(listaVendedores));
@@ -354,7 +394,7 @@ function abrirFavoritosUsuario() {
         listaProdutosFavoritos = 
         `
             <div class="center_padding">
-                <span class="h4_sub">Nenhum vendedor favoritado</span>
+                <span class="h4_sub">Nenhum produto favoritado</span>
             </div>
         `;
     }
@@ -395,7 +435,7 @@ function favoritarVendedor() {
         updateLocalStorage();
         }
     else {
-        window.alert("Faça login para favoritar produtos!");
+        window.alert("Faça login para favoritar vendedores!");
     }
 }
 
@@ -455,8 +495,6 @@ function removerFavorito (idLojaOuProduto, vendedorOuProduto) {
     else if (vendedorOuProduto == "produto") {    
         let produtosFavoritos = listaUsuarios[idUsuarioLogado.id].favoritos.produtos;
         let indice = produtosFavoritos.findIndex(x => x.idProduto === idLojaOuProduto);
-        console.log(idLojaOuProduto);
-        console.log(indice);
         produtosFavoritos.splice(indice, 1);
         listaUsuarios[idUsuarioLogado.id].favoritos.produtos = produtosFavoritos;
     }
@@ -467,6 +505,58 @@ function removerFavorito (idLojaOuProduto, vendedorOuProduto) {
 function redirectDetalhesProduto(nomeProduto, lojaUrl) {
     localStorage.setItem('redirectDetalhesProduto', nomeProduto);
     window.location = "mini-website-produtos.html" + lojaUrl;
+}
+
+function abrirCartoesUsuario() {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let cartoes = listaUsuarios[idUsuarioLogado.id].cartoes;
+    let listaCartoes =  ``;
+    for (let i = 0; i < (cartoes.length); i++) {
+        listaCartoes += `
+        <div class="layout_historico">
+            <span class="h4_sub">${cartoes[i].nome}</span>
+        </div>
+        <div class="bottom_border_dark">
+            <br>
+            <i class="far fa-credit-card fa-6x" id="credit_icon"></i>
+            <div class="text-right">
+                <button type="button" class="btn btn-secondary" id="botao_repetir_pedido" onclick="removerCartao(${i})">Remover cartão</button>    
+            </div>            
+        </div>
+        `;
+    }
+    if (cartoes.length == 0) {
+        listaCartoes = 
+        `
+        <div class="center_padding">
+            <span class="h4_sub">Nenhum cartão salvo</span>
+        </div>
+        `;
+    }
+    document.querySelector("#cartoes_salvos").innerHTML = listaCartoes;
+}
+
+function adicionarCartao() {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let cartoes = listaUsuarios[idUsuarioLogado.id].cartoes;
+    let novoCartao = {};
+    novoCartao.nome = "Cartão " + (cartoes.length + 1);
+    cartoes.push(novoCartao,);
+    listaUsuarios[idUsuarioLogado.id].cartoes = cartoes;
+    updateLocalStorage();
+    abrirCartoesUsuario();
+}
+
+function removerCartao(indexCartao) {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let cartoes = listaUsuarios[idUsuarioLogado.id].cartoes;
+    cartoes.splice(indexCartao, 1);
+    listaUsuarios[idUsuarioLogado.id].cartoes = cartoes;
+    updateLocalStorage();
+    abrirCartoesUsuario();
 }
 
 function mudarFormatoData (data) {

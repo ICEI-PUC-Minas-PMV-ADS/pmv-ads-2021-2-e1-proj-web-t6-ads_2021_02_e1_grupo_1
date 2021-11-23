@@ -124,9 +124,16 @@
     bottom: 6px;
     right: 6px;
 }
+
 #botao_remover_favoritos {
     right: 145px;
 }
+
+#credit_icon {
+    color: #ced4da;
+    margin-left: 16px;
+}
+
 /* Informações visíveis apenas para usuários do tipo vendedor */
 .opcao_vendedor {
     display: none;
