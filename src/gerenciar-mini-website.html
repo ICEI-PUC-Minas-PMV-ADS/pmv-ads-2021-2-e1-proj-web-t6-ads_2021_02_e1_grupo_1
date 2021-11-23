@@ -117,21 +117,23 @@
           <div class="col-lg-10 mx-auto btn-group nav_mini_website">
             <a href="gerenciar-mini-website.html"><button class="botao_nav_mini_website">Informações</button></a>
             <a href="gerenciar-mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
-            <a href="gerenciar-mini-website-pagamento.html"><button class="botao_nav_mini_website">Pagamento</button></a>
+            <a href="gerenciar-mini-website-pagamento.html"><button class="botao_nav_mini_website">Pagamento e entrega</button></a>
           </div>
         </div>
       </nav>
     </div>
     <div class="container" id="gerenciar_mini_website_informacoes">
       <div id="gerenciar_mini_website_informacoes_imagem_descricao">
-      <div>
-        <div class="h4_sub text-center">Imagem da loja</div>
-        <img src="" id="imagem_mini_website">
-        <form class="text-center mb-3" onsubmit="mudarImagemLoja();return false">
-          <input type="file" class="form-control" id="mudar_imagem_loja">         
-          <button type="submit" class="btn btn-primary">Mudar imagem</button>
-        </form>
-      </div>
+
+        <div class="text-center mx-auto">
+          <div class="h4_sub text-center">Imagem da loja</div>
+          <img src="" id="imagem_mini_website">
+          <form class="text-center mb-3" onsubmit="mudarImagemLoja();return false">
+            <input type="file" class="form-control" id="mudar_imagem_loja">         
+            <button type="submit" class="btn btn-primary">Mudar imagem</button>
+          </form>
+        </div>
+
         <div>
           <form onsubmit="mudarDescricao();return false">
             <div class="h4_sub">Descrição completa da loja (max 2500 caracteres):</div>
@@ -139,6 +141,7 @@
             <div class="text-right">
               <button type="submit" class="btn btn-primary">Mudar descrição</button>
             </div>
+            <br>
           </form>
         </div>
       </div>

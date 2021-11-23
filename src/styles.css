@@ -525,7 +525,7 @@
 
 #texto_gerenciar_mini_website {
     width: 100%;
-    height: 480px;
+    height: 360px;
     margin-top: 6px;
 }
 
@@ -627,6 +627,12 @@
 #mini_website_quem_somos p {
     text-align: justify;
     text-indent: 2em;
+}
+
+#video_apresentacao {
+   height: 594px;
+   width: 100%;
+   max-width: 880px;
 }
 
 /* > Produtos */
@@ -1021,6 +1027,9 @@
     #selecionar_sabor {
         width: 100px;
     }
+    #video_apresentacao {
+        height: 480px;
+    }
 }
 @media (max-width: 767px) {
     .resultado_busca p {
@@ -1107,6 +1116,14 @@
         left: 12px;
         font-size: 16px;
     }
+    #gerenciar_mini_website_informacoes_imagem_descricao {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #video_apresentacao {
+        height: 360px;
+    }
+    
 }
 @media (max-width: 575px) {
     #busca_homepage {
@@ -1128,6 +1145,9 @@
         margin: auto;
         margin-bottom: 12px;
         float: none;
+    }
+    #video_apresentacao {
+        height: 320px;
     }
 }
 @media (max-width: 535px) {
