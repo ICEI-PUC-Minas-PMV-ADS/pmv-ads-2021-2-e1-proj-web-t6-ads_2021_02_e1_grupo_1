@@ -109,35 +109,46 @@
   <main>
     <div class="text-center" id="conteudo_pagina">
       <div class="container" id="mini_website_nome_loja">
-        <h1 id="nome_loja"> <br> </h1>
-        <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos" onclick="favoritarVendedor()">Favoritar vendedor</button>
+        <h1> Gerenciar Loja <br></h1>
+        <span class="h4_sub" id="nome_loja"></span>
       </div>
       <nav>
         <div class="container" id="container_nav_mini_website">
           <div class="col-lg-10 mx-auto btn-group nav_mini_website">
-            <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
-            <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
-            <a href="mini-website-redes-sociais.html"><button class="botao_nav_mini_website">Redes Sociais</button></a>
-            <a href="mini-website-contato.html"><button class="botao_nav_mini_website">Contato</button></a>
-            <a href="mini-website-carrinho.html">
-              <button class="botao_nav_mini_website">Carrinho
-                <span id="carrinho_contador_box">
-                  <i class="fas fa-shopping-cart fa-lg"></i>
-                  <span id="carrinho_contador">
-                    <p id="numero_itens_carrinho">0</p>
-                  </span>
-                </span>
-              </button>
-            </a>
+            <a href="gerenciar-mini-website.html"><button class="botao_nav_mini_website">Informações</button></a>
+            <a href="gerenciar-mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
+            <a href="gerenciar-mini-website-pagamento.html"><button class="botao_nav_mini_website">Pagamento</button></a>
           </div>
         </div>
       </nav>
     </div>
-    <div class="container" id="mini_website_quem_somos">
-      <img src="" id="imagem_mini_website">
-      <p id="texto_mini_website">
-        <!-- Texto de descrição da loja -->
-      </p>
+    <div class="container" id="gerenciar_mini_website_informacoes">
+      <div id="gerenciar_mini_website_informacoes_imagem_descricao">
+      <div>
+        <div class="h4_sub text-center">Imagem da loja</div>
+        <img src="" id="imagem_mini_website">
+        <form class="text-center mb-3" onsubmit="mudarImagemLoja();return false">
+          <input type="file" class="form-control" id="mudar_imagem_loja">         
+          <button type="submit" class="btn btn-primary">Mudar imagem</button>
+        </form>
+      </div>
+        <div>
+          <form onsubmit="mudarDescricao();return false">
+            <div class="h4_sub">Descrição completa da loja (max 2500 caracteres):</div>
+            <textarea class="mr-right" id="texto_gerenciar_mini_website" name="texto_gerenciar_mini_website" placeholder="" rows="2" cols="42 " maxlength="2500" required></textarea>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary">Mudar descrição</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <form onsubmit="mudarDescricaoResumo();return false">
+        <div class="h4_sub">Descrição resumida da loja (max 200 caracteres):</div>
+        <textarea class="mr-right" id="texto_gerenciar_mini_website_resumo" name="texto_gerenciar_mini_website_resumo" placeholder="" rows="2" cols="42 " maxlength="200" required></textarea>
+        <div class="text-right">
+          <button type="submit" class="btn btn-primary">Mudar resumo</button>
+        </div>
+      </form>
     </div>
   </main>
   <footer class="text-center text-lg-start" id="conteudo_footer">
@@ -203,7 +214,7 @@
     crossorigin="anonymous"></script>
   <script src="common.js"></script>
   <script src="mini-website-common.js"></script>
-  <script src="mini-website.js"></script>
+  <script src="gerenciar-mini-website.js"></script>
 </body>
 
 </html>

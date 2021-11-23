@@ -25,13 +25,11 @@ function updateResultadosDaBusca() {
     function condicoesParaInclusaoNaLista(id_vendedor, skip = false) {
         let avaliacao4EstrelasChecked = document.querySelector("#opcao-avaliacao4estrelas:checked");
         if (avaliacao4EstrelasChecked && Number(listaVendedores[id_vendedor].avaliacao) < 0.8) {
-            console.log(Number(listaVendedores[id_vendedor].avaliacao));
             skip = true;
         }
     return skip;
     }
     /* Mantém o texto de busca digitado na página anterior */
-    console.log(resultadosVendedores);
 
     document.querySelector("#buscar_vendedores").value = buscaInfo.get('busca');
 

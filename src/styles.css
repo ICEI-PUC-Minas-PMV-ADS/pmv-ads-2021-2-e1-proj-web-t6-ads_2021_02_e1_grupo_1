@@ -104,6 +104,7 @@
 }
 .card_vendedor_favoritos img { 
     height: 120px;
+    width: 180px;
     border-radius: 5px;
     margin-top: 6px;
 }
@@ -313,6 +314,7 @@
     bottom: 0px;
 }
 #carrossel_item0 img {
+    height: 233px;
     width: 350px;
     border:2px solid #dddddd;
     border-radius: 8px;
@@ -325,6 +327,7 @@
     bottom: 0px;
 }
 #carrossel_item1 img {
+    height: 233px;
     width: 350px;
     border:2px solid #dddddd;
     border-radius: 8px;
@@ -337,6 +340,7 @@
     bottom: 0px;
 }
 #carrossel_item2 img {
+    height: 233px;
     width: 350px;
     border:2px solid #dddddd;
     border-radius: 8px;
@@ -349,6 +353,7 @@
     bottom: 0px;
 }
 #carrossel_item3 img {
+    height: 233px;
     width: 350px;
     border:2px solid #dddddd;
     border-radius: 8px;
@@ -361,6 +366,7 @@
     bottom: 0px;
 }
 #carrossel_item4 img {
+    height: 233px;
     width: 350px;
     border:2px solid #dddddd;
     border-radius: 8px;
@@ -462,6 +468,7 @@
 }
 .card_vendedor img { 
     height: 160px;
+    width: 240px;
     border-radius: 5px;
 }
 .avaliacao_texto {
@@ -486,7 +493,55 @@
 
 /* ----- */
 
-/* mini-website do vendedor (mini-website.html) */
+/* gerenciar mini-website do vendedor (gerenciar-mini-website.html) */
+
+#gerenciar_mini_website_informacoes {
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    flex-wrap:nowrap;
+    min-height: 600px;
+}
+#gerenciar_mini_website_informacoes img {
+    height: 240px;
+    width: 360px;
+    margin: 6px;
+    border: 1px solid #888888;
+    border-radius: 12px;
+    float: left;
+}
+
+#gerenciar_mini_website_informacoes textarea {
+    resize: none;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+#gerenciar_mini_website_informacoes_imagem_descricao {
+    display: grid;
+    grid-template-columns: 384px auto;
+}
+
+#texto_gerenciar_mini_website {
+    width: 100%;
+    height: 480px;
+    margin-top: 6px;
+}
+
+#texto_gerenciar_mini_website_resumo {
+    width: 100%;
+    height: 240px;
+    margin-top: 6px;
+}
+
+#mudar_imagem_loja {
+    height: 100%;
+    width: 360px;
+    margin: 6px;
+    padding: 0;
+}
+
 /* > Geral  */
 .nav_mini_website { 
     padding: 0px;
@@ -496,19 +551,21 @@
     white-space: nowrap;
     margin-left: -200px;
 }
-#container_nav_mini_website {
-    margin-top: 24px;
-    padding: 0px;
-    border-radius: 12px;
-    height: 80px;
-    width: 100%;
-}
+
 .nav_mini_website button { 
     margin: 10px;
     width: 128px;
     padding: 0px;
     height: 60px;
     color: #343a40;
+}
+
+#container_nav_mini_website {
+    margin-top: 24px;
+    padding: 0px;
+    border-radius: 12px;
+    height: 80px;
+    width: 100%;
 }
 .botao_nav_mini_website {
     font-size: 20px;
@@ -561,6 +618,7 @@
 }
 #mini_website_quem_somos img {
     height: 240px;
+    width: 360px;
     margin-right: 12px;
     margin-bottom: 12px;
     border-radius: 12px;
