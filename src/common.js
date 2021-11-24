@@ -62,7 +62,7 @@ function setLocalStorage(){
                 "carrinho" : [
                     {},
                 ],
-                "precoEntrega" : "12,00",
+                "precoEntrega" : "6,00",
                 "formasPagamento" : {
                     "online" : ["Cartão", "Pix"],
                     "naEntrega" : ["Cartão", "Dinheiro"],
@@ -116,7 +116,7 @@ function setLocalStorage(){
                 "carrinho" : [
                     {},
                 ],
-                "precoEntrega" : "12,00",
+                "precoEntrega" : "15,50",
                 "formasPagamento" : {
                     "online" : ["Cartão", "Pix"],
                     "naEntrega" : ["Cartão", "Dinheiro"],
@@ -172,7 +172,7 @@ function setLocalStorage(){
                 "carrinho" : [
                     {},
                 ],
-                "precoEntrega" : "12,00",
+                "precoEntrega" : "10,00",
                 "formasPagamento" : {
                     "online" : ["Cartão", "Pix"],
                     "naEntrega" : ["Cartão", "Dinheiro"],
@@ -460,7 +460,7 @@ function favoritarProduto(idProduto = -1) {
         if (indexFavorito == -1) {
             let adicionarFavoritos = `
                     <div class="lista_favoritos"> 
-                        <div class="card_vendedor_favoritos">
+                        <div class="card_vendedor_favoritos_produto">
                             <img src="${produto.imagem}"><br><div class="h4_sub text-center">${produto.nome}</div>
                         </div><p class="descricao_busca"><b>Descrição:</b> ${produto.descricaoResumo} <br> <span class="h4_text">Loja: ${loja.nome}</span> </p>
                         <button type="button" class="btn btn-secondary text-right" id="botao_remover_favoritos" onclick="removerFavorito('${idLojaProduto   }', 'produto')">Remover</button>
@@ -645,4 +645,15 @@ function procurarIdLoja(lojaAtual) {
     listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
     let indexLoja = listaVendedores.findIndex(x => x.link === linkDaLojaNaLista);
     return indexLoja;
+}
+
+function addHTTPS (link) {
+    let checkHTTPS = link.substr(0,4);
+    if (checkHTTPS != "http" && link != "") {
+        checkHTTPS = link.substr(0,2);
+        if (checkHTTPS != "//") {
+            link = "//" + link;
+        }
+    }
+    return link;
 }

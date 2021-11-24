@@ -1,5 +1,5 @@
 let finalizarPedido = false;
-let precoEntregaNormal = "12,00";
+let precoEntregaNormal = listaVendedores[findIndex].precoEntrega;
 let precoEntrega = 0;
 
 updateListaCarrinho();

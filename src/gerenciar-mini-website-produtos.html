@@ -303,52 +303,103 @@
   <main>
     <div class="text-center" id="conteudo_pagina">
       <div class="container" id="mini_website_nome_loja">
-        <h1 id="nome_loja"> <br> </h1>
-        <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos" onclick="favoritarVendedor()">Favoritar vendedor</button>
+        <h1> Gerenciar Loja <br></h1>
+        <span class="h4_sub" id="nome_loja"></span>
       </div>
       <nav>
         <div class="container" id="container_nav_mini_website">
           <div class="col-lg-10 mx-auto btn-group nav_mini_website">
-            <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
-            <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
-            <a href="mini-website-redes-sociais.html"><button class="botao_nav_mini_website">Redes Sociais</button></a>
-            <a href="mini-website-contato.html"><button class="botao_nav_mini_website">Contato</button></a>
-            <a href="mini-website-carrinho.html">
-              <button class="botao_nav_mini_website">Carrinho
-                <span id="carrinho_contador_box">
-                  <i class="fas fa-shopping-cart fa-lg"></i>
-                  <span id="carrinho_contador">
-                    <p id="numero_itens_carrinho">0</p>
-                  </span>
-                </span>
-              </button>
-            </a>
+            <a href="gerenciar-mini-website.html"><button class="botao_nav_mini_website">Informações</button></a>
+            <a href="gerenciar-mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
+            <a href="gerenciar-mini-website-pagamento.html"><button class="botao_nav_mini_website">Venda/Entrega</button></a>
           </div>
         </div>
       </nav>
     </div>
-    <div class="container" id="mini-website-contato">
-      <form class="form-group col-lg-8 mx-auto" onsubmit="window.alert('Mensagem enviada!')">
-        <label for="assunto" class="form_label">Assunto</label>
-        <select class="form-control" id="assunto">
-          <option value="Reclamacao">Problema com a entrega</option>
-          <option value="Reclamacao">Reclamação sobre produto</option>
-          <option value="Reclamacao">Outro</option>
-        </select>
-        <label for="contatoNome" class="form_label">Nome</label>
-        <input type="text" class="form-control" id="contatoNome" placeholder="Nome" required>
-        <label for="contatoEmail" class="form_label">E-mail</label>
-        <input type="email" class="form-control" id="contatoEmail" placeholder="exemplo@email.com" required>
-        <label for="contatoTelefone" class="form_label">Telefone/Whatsapp</label>
-        <input type="email" class="form-control" id="contatoTelefone" placeholder="+55 (XX) XXXXX-XXXX">
-        <small id="contatoTelefone" class="form-text text-muted">*Opcional</small>
-        <label for="contatoMensagem" class="form_label">Mensagem</label><br>
-        <textarea class="mr-right" id="contatoMensagem" name="contatoMensagem" placeholder="Mensagem" rows="2" cols="42 " required></textarea>
-        <div class="text-right">
-          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-        </div>
-      </form>
+    <div class="container" id="mini_website_produtos">
+      <!-- Seção de produtos (Inserida com Javascript)-->
     </div>
+    <!-- Tela de "Mais Detalhes"-->
+
+    <div class="modal fade" id="mais_detalhes" tabindex="-1" role="dialog" aria-labelledby="mais_detalhes"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" id="modal_mais_detalhes">
+          <div class="modal-header">
+            <span class="modal-title h4" id="mais_detalhes">Detalhes do produto</span>
+            <button class="btn btn-secondary" type="button" id="modal_botao_favoritos" onclick="favoritarProduto()">Favoritar produto</button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="modal_informacoes_produto">
+            <div class="text-center">
+              <img class="informacoes_imagem_produto" src="">
+              <span class="informacoes_nome_produto h4">
+                <!-- Nome do Produto -->
+              </span><br>
+              <span class="informacoes_preco_produto h4_sub">
+                <!-- Preço do Produto -->
+              </span>
+            </div>
+            <div class="text-justify">
+              <div id="informacoes_descricao_produto">
+                <!-- Descrição -->
+              </div>
+              <div id="informacoes_sabores_produto">
+                <!-- Sabores -->
+              </div>
+              <div id="informacoes_outras_produto">
+                <!-- Outras informações -->
+              </div>
+            </div>
+            <button class="btn btn-primary" type="button" id="modal_botao_adicionar_produto"
+              onclick="informacoesAdicionarCarrinho('open')">Adicionar ao carrinho</button>
+            <div id="informacoes_adicionar_carrinho">
+              <button type="button" class="close" aria-label="Close" onclick="informacoesAdicionarCarrinho('close')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div id="card_adicionar_produto">
+                <img class="informacoes_imagem_produto">
+                <div>
+                  <span class="informacoes_nome_produto h4"></span>
+                  <p class="informacoes_preco_produto">
+                    <!-- Preço do Produto -->
+                  </p>
+                  <form>
+                    <div>
+                      <label for="selecionar_sabor">
+                        <p>Sabor:</p>
+                      </label>
+                      <select name="selecionar_sabor" class="selecionar_sabor" id="selecionar_sabor">
+                        <!-- Adicionados via Javascript -->
+                      </select>
+                      <label for="selecionar_quantidade">
+                        <p>Quantidade:</p>
+                      </label>
+                      <input type="number" class="selecionar_quantidade" id="selecionar_quantidade" value="1" min="1">
+                      <label for="comentario_pedido" class="mr-left">
+                        <p>Comentários:</p>
+                      </label>
+                      <div>
+                        <textarea class="mr-right" id="comentario_pedido" name="comentarios" rows="2"
+                          cols="46 "></textarea>
+                      </div>
+
+                    </div>
+                    <span id="container_informacoes_botao_adicionar_produto">
+                      <button class="btn btn-primary" type="button" id="informacoes_botao_adicionar_produto">Adicionar ao carrinho</button>
+                    </span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+
   </main>
   <footer class="text-center text-lg-start" id="conteudo_footer">
     <div class="container text-center text-md-start mt-5">
@@ -413,7 +464,7 @@
     crossorigin="anonymous"></script>
   <script src="common.js"></script>
   <script src="mini-website-common.js"></script>
-  <script src="mini-website-contato.js"></script>
+  <script src="gerenciar-mini-website-produtos.js"></script>
 </body>
 
 </html>

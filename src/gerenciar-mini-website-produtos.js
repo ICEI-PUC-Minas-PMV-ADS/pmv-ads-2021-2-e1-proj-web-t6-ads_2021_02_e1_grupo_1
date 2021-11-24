@@ -1,3 +1,25 @@
+idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+
+if (idUsuarioLogado.id != -1) {
+    lojaAtual = listaUsuarios[idUsuarioLogado.id].nomeLoja;
+    if (lojaAtual != null && lojaAtual !="") {
+        lojaAtual = lojaAtual.toLowerCase().replace(/ /g,"-");
+        findIndex = procurarIdLoja(lojaAtual);
+    }
+    else {
+        findIndex = -1;
+    }
+}
+else {
+    findIndex = -1;
+}
+
+if (findIndex == -1) {
+    window.location = "mini-website-nao-encontrado.html"   
+}
+
 updateListaProdutos();
 redirecionadoDosFavoritos();
 
