@@ -194,3 +194,25 @@ Ao clicar na opção "dados pessoais" do menu da conta do usuário um modal cont
 http://localhost:5500/index.html
 5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Dados pessoais".
+
+# Menu da conta do usuário - Histórico de pedidos (RF-02)
+Ao clicar na opção "histórico de pedidos" do menu da conta do usuário um modal contendo as informações dos pedidos realizados no website é mostrado. Dentro do modal, o usuário pode clicar na opção "mais detalhes" para exibir a descrição detalhada do pedido, contendo os itens pedidos e o preço da entrega. O usuário pode também clicar na opção "repetir pedido" para ser redirecionado para a página da loja com os itens em questão já incluidos no carrinho.
+
+![MenuUsuario_Historico](https://user-images.githubusercontent.com/74699119/143475992-846fe726-4638-4677-9ec7-bea232767c20.png)
+
+### Requisitos atendidos
+-	RF-02
+
+### Artefatos da funcionalidade
+-	Todos os arquivos html do projeto que possuem cabeçalho
+-	common.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Histórico de pedidos".
