@@ -171,3 +171,26 @@ O menu da conta do usuário pode ser acessado de qualquer página do sistema que
 4.	Abra um navegador de Internet e informe a seguinte URL:
 http://localhost:5500/index.html
 5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho.
+
+# Menu da conta do usuário - Dados pessoais (RF-02)
+Ao clicar na opção "dados pessoais" do menu da conta do usuário um modal contendo as informações pessoais do usuário logado é mostrado. Caso o usuário deseje alterar suas informações, ele pode faze-lo mudando o conteudo dos campos editáveis e clicando em "alterar". A alteração de algumas informações requer que o usuário confirme sua senha, enquanto outras informações não podem ser alteradas pelo usuário.
+
+![MenuUsuario_DadosPessoais](https://user-images.githubusercontent.com/74699119/143474869-721d0134-454e-4023-918c-dd567e67dd4e.png)
+
+### Requisitos atendidos
+-	RF-02
+
+### Artefatos da funcionalidade
+-	Todos os arquivos html do projeto que possuem cabeçalho
+-	common.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Dados pessoais".
