@@ -1,6 +1,9 @@
+if (findIndex == -1) {
+    window.location = "mini-website-nao-encontrado.html";
+}
+
+
 let redesSociais = ["facebook", "instagram", "youtube", "twitter", "tiktok"]
-
-
 
 let redesSociaisContent = 
 `
