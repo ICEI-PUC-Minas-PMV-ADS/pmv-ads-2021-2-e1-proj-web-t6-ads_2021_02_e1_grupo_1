@@ -238,3 +238,25 @@ Ao clicar na opção "favoritos" do menu da conta do usuário um modal contendo 
 http://localhost:5500/index.html
 5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Favoritos".
+
+# Menu da conta do usuário - Pagamentos (RF-02)
+Ao clicar na opção "favoritos" do menu da conta do usuário um modal contendo as informações dos meios de pagamento salvos. No momento, esta funcionalidade apenas simula o registro de cartões de crédito, com a opção "adicionar cartão" adicionando um novo cartão e a opção "remover cartão" removendo este cartão.
+
+![MenuUsuario_Pagamentos](https://user-images.githubusercontent.com/74699119/143477510-dcd99076-a4ba-44db-820b-45948e0eba53.png)
+
+### Requisitos atendidos
+-	RF-02
+
+### Artefatos da funcionalidade
+-	Todos os arquivos html do projeto que possuem cabeçalho
+-	common.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Pagamentos".
