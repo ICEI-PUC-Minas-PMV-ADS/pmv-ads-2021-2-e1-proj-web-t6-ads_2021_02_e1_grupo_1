@@ -10,8 +10,8 @@ let lojaAtual = JSON.parse(localStorage.getItem('lojaAtual'));
 
 listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
 
-let linkDaLojaNaLista = "?loja=" + lojaAtual;
-findIndex = listaVendedores.findIndex(x => x.link === linkDaLojaNaLista);
+findIndex = procurarIdLoja(lojaAtual);
+
 if (findIndex == -1) {
     window.location = "mini-website-nao-encontrado.html";
 }

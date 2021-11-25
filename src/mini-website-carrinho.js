@@ -1,5 +1,5 @@
 let finalizarPedido = false;
-let precoEntregaNormal = "12,00";
+let precoEntregaNormal = listaVendedores[findIndex].precoEntrega;
 let precoEntrega = 0;
 
 updateListaCarrinho();
@@ -7,6 +7,8 @@ updateListaProdutosPaginaCarrinho();
 
 function updateListaCarrinho() {
     let listaCarrinho = ``;
+    let guardarHistorico = {};
+    let guardarHistoricoDetalhes = ``
     let carrinhoVendedorAtual = listaVendedores[findIndex].carrinho;
     let precoTotal = 0;
     document.querySelector("#botao_finalizar_pedido").type = "button";
@@ -39,24 +41,47 @@ function updateListaCarrinho() {
                 </div>
             </div>
         `;
+        guardarHistoricoDetalhes += `            
+        <div class="produto_carrinho">
+            <img src=${imagemListaCarrinho}> 
+            <div id="produto_carrinho_centro">
+                <div>
+                    <span id="produto_carrinho_nome">${nomeListaCarrinho}</span>
+                <div>
+                    <span id="produto_carrinho_sabor"><b>Sabor:</b> ${saborListaCarrinho}</span>
+                    <span id="produto_carrinho_quantidade"><b>Quantidade:</b> ${quantidadeListaCarrinho}</span>
+                </div>
+                <span id="produto_carrinho_comentarios"><b>Comentários:</b> ${comentarioListaCarrinho} </span>
+                <span id="produto_carrinho_preco"> ${precoListaCarrinho} R$ </span> 
+                </div>
+            </div>
+        </div>
+    `;
     }
     precoEntrega = parseInt(precoEntrega);
     if (precoEntrega != null && precoEntrega > 0) {
       precoTotal += precoEntrega;
       precoEntrega = precoEntrega.toFixed(2).replace(".",",");
       listaCarrinho += `<div class="h4_sub" id="preco_entrega">Entrega: ${precoEntrega} R$</div>`;
+      guardarHistoricoDetalhes += `<div class="h4_text text-right">Entrega: ${precoEntrega} R$</div>`
     }
     
     document.querySelector("#lista_carrinho_upper").innerHTML = listaCarrinho;
     precoTotal = precoTotal.toFixed(2);
     precoTotal = precoTotal.replace(".",",");
     document.querySelector("#lista_carrinho_preco_total").innerHTML = `Total: ${precoTotal} R$`;
+
+    guardarHistorico.detalhes = guardarHistoricoDetalhes;
+    guardarHistorico.preco = precoTotal;
+    guardarHistorico.repetir = carrinhoVendedorAtual;
+    localStorage.setItem('formatoGuardarHistorico', JSON.stringify(guardarHistorico));
 }
 
 function updateListaProdutosPaginaCarrinho() {
     listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
     let catalogo = listaVendedores[findIndex].catalogo;
     let listaProdutosPaginaCarrinho;
+    let nomeTipoDePagamento;
     enderecoAtual = JSON.parse(localStorage.getItem('enderecoAtual'));
 
     if (finalizarPedido) {
@@ -70,52 +95,124 @@ function updateListaProdutosPaginaCarrinho() {
       
       precoEntrega = precoEntregaNormal;
 
+      listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+      let formasPagamento = listaVendedores[findIndex].formasPagamento;
+
       let formasPagamentoDisponiveis = `
+      <div class="h4_sub">Pagar online</div>
+      <div>
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_cartao" name="forma_pagamento" required> <label for="forma_pagamento_cartao"> Cartao <label></input>
-        </li>
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_pix" name="forma_pagamento"> <label for="forma_pagamento_pix"> Pix <label></input>
-        </li>
-      </ul>
       `;
+      
+      let pagamentoOnlineDisponivel = false;
+
+      for (let i = 0; i < formasPagamento.online.length; i++) {
+        nomeTipoDePagamento = checarNomeDoTipoDePagamento(formasPagamento.online[i]);
+        if (formasPagamento.online[i] != null && formasPagamento.online[i] != "") {
+          pagamentoOnlineDisponivel = true;
+          formasPagamentoDisponiveis += `
+            <li class="list-group-item  border-0">
+              <input type="radio" id="forma_pagamento_${formasPagamento.online[i]}" name="forma_pagamento" required> <label for="forma_pagamento_${formasPagamento.online[i]}"> ${nomeTipoDePagamento} <label></input>
+            </li>
+          `;
+        }
+      }
+
+      formasPagamentoDisponiveis += `
+      </ul>
+      </div>
+      <br>
+      `;
+      
+      if (pagamentoOnlineDisponivel == false) {
+        formasPagamentoDisponiveis = `
+        <ul class="list-group list-group-horizontal">
+        </ul>
+        </div>
+        `;
+        
+      }
+
       let formasPagamentoDisponiveisNaEntrega = `
+      <div class="h4_sub">Pagar na entrega</div>
+      <div>
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_cartao_entrega" name="forma_pagamento"> <label for="forma_pagamento_cartao_entrega"> Cartao <label></input>
-        </li>
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_dinheiro_entrega" name="forma_pagamento"> <label for="forma_pagamento_dinheiro_entrega"> Dinheiro <label></input>
-        </li>
-      </ul>
       `;
+      
+      pagamentoNaEntregaDisponivel = false;
+      for (let i = 0; i < formasPagamento.naEntrega.length; i++) {
+        nomeTipoDePagamento = checarNomeDoTipoDePagamento(formasPagamento.naEntrega[i]);
+        if (formasPagamento.naEntrega[i] != null && formasPagamento.naEntrega[i] != "") {
+        formasPagamentoDisponiveisNaEntrega += `
+            <li class="list-group-item  border-0">
+              <input type="radio" id="forma_pagamento_entrega${formasPagamento.naEntrega[i]}" name="forma_pagamento" required> <label for="forma_pagamento_entrega${formasPagamento.naEntrega[i]}"> ${nomeTipoDePagamento} <label></input>
+            </li>
+          `;
+          pagamentoNaEntregaDisponivel = true;
+        }
+      }
+
+      formasPagamentoDisponiveisNaEntrega += `
+      </ul>
+      </div>
+      <br>
+      `;
+
+      if (pagamentoNaEntregaDisponivel == false) {
+        formasPagamentoDisponiveisNaEntrega = `
+        <div>
+        <ul class="list-group list-group-horizontal">
+        </ul>
+        </div>
+        `;
+        
+      }
+
       let formasDeEntrega = `
       <ul class="list-group">
-        <li class="list-group-item  border-0">
-          <input type="radio" id="entregar" name="forma_de_entrega" checked onclick="selecionarEntrega()" required> <label for="entregar"> Entrega para: 
-          <i><a class="black-link" href=# data-toggle="modal" data-target="#selecionar_endereco">- ${enderecoAtual} -</i></a> 
-          Custo R$ ${precoEntregaNormal} <label></input>
-        </li>
-        <li class="list-group-item  border-0">
-          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()"> <label for="retirar"> Retirar na loja <label></input>
-        </li>
+      `;
+
+      if(listaVendedores[findIndex].precoEntrega != "") { 
+      formasDeEntrega += `
+      <li class="list-group-item  border-0">
+      <input type="radio" id="entregar" name="forma_de_entrega" checked onclick="selecionarEntrega()" required> <label for="entregar"> Entrega para: 
+      <i><a class="black-link" href=# data-toggle="modal" data-target="#selecionar_endereco">- ${enderecoAtual} -</i></a> 
+      Custo R$ ${precoEntregaNormal} <label></input>
+      </li>
+      `;
+      }
+
+      if(listaVendedores[findIndex].retiradaNaLoja) { 
+        if(listaVendedores[findIndex].precoEntrega != "") { 
+          formasDeEntrega += `
+          <li class="list-group-item  border-0">
+          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()" required> <label for="retirar"> Retirar na loja <label></input>
+          </li>
+          `;
+          }
+          else {
+          formasDeEntrega += `
+          <li class="list-group-item  border-0">
+          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()" required checked> <label for="retirar"> Retirar na loja <label></input>
+          </li>
+          `;
+          }
+        }
+
+      formasDeEntrega += `
       </ul>
       `;
+
       listaProdutosPaginaCarrinho = `
       <button class="btn btn-transparent" type="button" id="botao_voltar" onclick="voltarPedido()"><i class="fas fa-angle-left"></i> Voltar</button>
       <div class="h4 text-center">Dados do pagamento</div>
       <div id="carrinho_pagamento">
-        <div class="h4_sub">Formas de Pagamento Disponíveis</div>
+        <div class="h4">Formas de pagamento disponíveis</div>
+        <br>
         <div>
         ${formasPagamentoDisponiveis}
-        </div>
-        <br>
-        <div class="h4_sub">Pagar na entrega</div>
-        <div>
+
         ${formasPagamentoDisponiveisNaEntrega}
-        </div>
-        <br>
         <div class="h4_sub">Entrega</div>
         <div>
         ${formasDeEntrega}
@@ -169,8 +266,8 @@ function updateListaProdutosPaginaCarrinho() {
                   </div>
 
                 </div>
-                <button class="btn btn-secondary" type="button" id="carrinho_card_botao_favoritos">Favoritar produto</button>
-                <button class="btn btn-primary" type="button" id="informacoes_botao_adicionar_produto" onclick='adicionarCarrinho(${i}, true)'>Adicionar ao carrinho</button>
+                <button class="btn btn-secondary carrinho_card_botao_favoritos" type="button" onclick="favoritarProduto(${i})">Favoritar produto</button>
+                <button class="btn btn-primary informacoes_botao_adicionar_produto" type="button" onclick='adicionarCarrinho(${i}, true)'>Adicionar ao carrinho</button>
               </form>
             </div>
           </div>
@@ -180,6 +277,18 @@ function updateListaProdutosPaginaCarrinho() {
     
     document.querySelector("#carrinho_adicionar_produtos").innerHTML = listaProdutosPaginaCarrinho;
     updateListaCarrinho();
+
+    function checarNomeDoTipoDePagamento(tipoPagamento) {
+      if (tipoPagamento == "cartao") {
+        return "Cartão";
+      }
+      else if (tipoPagamento == "pix") {
+        return "Pix";
+      }
+      else if (tipoPagamento == "dinheiro") {
+        return "Dinheiro";
+      }
+    }
 }
 
 function removerCarrinho(removerCarrinhoIndex = 0) {
@@ -194,25 +303,39 @@ function finalizarPedidoCarrinho() {
   let usuario = JSON.parse(localStorage.getItem('idUsuarioLogado'))
   listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
   let carrinho = listaVendedores[findIndex].carrinho;
-  if (finalizarPedido && carrinho.length > 1 && usuario.id != -1) {
-    document.querySelector("#botao_finalizar_pedido").type = "submit";
+  let realizarEntrega = true;
+  if (listaVendedores[findIndex].retiradaNaLoja == false && listaVendedores[findIndex].precoEntrega == "") {
+    window.alert("Entrega indisponível no momento!");
+    realizarEntrega = false;
   }
-  else {
-    if (usuario.id != -1 && carrinho.length > 1) {
-      finalizarPedido = true;
-    }
-    else if (carrinho.length == 1) {
-      window.alert("Carrinho vazio!")
+  let formasPagamento = listaVendedores[findIndex].formasPagamento;
+  if (formasPagamento.online == "" && formasPagamento.naEntrega == "" && finalizarPedido) {
+    window.alert("Formas de pagamento indisponíveis no momento!");
+    realizarEntrega = false;
+  }
+  if (realizarEntrega) {
+    if (finalizarPedido && carrinho.length > 1 && usuario.id != -1) {
+      document.querySelector("#botao_finalizar_pedido").type = "submit";
     }
     else {
-      window.alert("Faça login para finalizar o pedido!")
+      if (usuario.id != -1 && carrinho.length > 1) {
+        finalizarPedido = true;
+      }
+      else if (carrinho.length == 1) {
+        window.alert("Carrinho vazio!")
+      }
+      else {
+        window.alert("Faça login para finalizar o pedido!")
+      }
+      finalizarPedidoReverseWrap()
+      updateListaProdutosPaginaCarrinho();
     }
-    updateListaProdutosPaginaCarrinho();
   }
 }
 
 function voltarPedido() {
   finalizarPedido = false;
+  finalizarPedidoReverseWrap()
   selecionarEntrega();
   updateListaProdutosPaginaCarrinho();
 }
@@ -232,6 +355,41 @@ function pedidoSubmetido() {
   let carrinhoVendedorAtual = listaVendedores[findIndex].carrinho;
   carrinhoVendedorAtual = [{}];
   listaVendedores[findIndex].carrinho = carrinhoVendedorAtual;
+  guardarHistorico()
+  function guardarHistorico() {
+    idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+    listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
+    let guardarHistorico = JSON.parse(localStorage.getItem('formatoGuardarHistorico'));
+
+    let lojaAtual = listaVendedores[findIndex];
+    let numeroPedido = listaUsuarios[idUsuarioLogado.id].historicoDePedidos.length;
+    /* Informações gerais */
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].numeroDoPedido = numeroPedido;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].nomeVendedor = lojaAtual.nome;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].valorDaCompra = guardarHistorico.preco;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].detalhes = guardarHistorico.detalhes;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].repetir = guardarHistorico.repetir;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].idLoja = JSON.parse(localStorage.getItem('lojaAtual'));;
+    /* > Data da compra */
+    let dataHoje = new Date();
+    let dd = String(dataHoje.getDate()).padStart(2, '0');
+    let mm = String(dataHoje.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = dataHoje.getFullYear();
+    dataHoje = dd + '/' + mm + '/' + yyyy;
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos[numeroPedido - 1].dataCompra = dataHoje;
+    /* ----------------- */
+
+    listaUsuarios[idUsuarioLogado.id].historicoDePedidos.push({});
+  }
   updateLocalStorage();
   window.alert("Pedido submetido!");
+}
+
+function finalizarPedidoReverseWrap() {
+  if (finalizarPedido) {
+    document.querySelector("#mini_website_carrinho").style = "flex-wrap: wrap";
+  }
+  else {
+  document.querySelector("#mini_website_carrinho").style = "flex-wrap: reverse-wrap";
+  }
 }

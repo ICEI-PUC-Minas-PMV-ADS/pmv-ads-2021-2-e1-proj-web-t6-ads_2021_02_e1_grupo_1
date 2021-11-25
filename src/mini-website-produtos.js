@@ -1,4 +1,5 @@
 updateListaProdutos();
+redirecionadoDosFavoritos();
 
 function detalhesProduto(detalhes) {
     informacoesAdicionarCarrinho('close');
@@ -41,7 +42,7 @@ function updateListaProdutos() {
     let catalogoProdutos = listaVendedores[findIndex].catalogo;
     let produtosMostrados = [{"empty" : true},];
     let listaProdutos;
-    if (catalogoProdutos) {
+    if (catalogoProdutos.length > 0) {
         for (let i = 0; i < (catalogoProdutos.length); i++) {
             produtosMostrados[i] = catalogoProdutos[i];
             produtosMostrados.push({});
@@ -62,8 +63,8 @@ function updateListaProdutos() {
         }
         let resultado;
 
-        if (produtosMostrados[0].empty || produtosMostrados[0].nome == null) {
-            resultado = `<div><div class="alert-danger" style="padding: 8px; margin-top: 32px; margin-bottom: 320px;"><h4 class="text-center"> Nenhum produto cadastrado </h4></div></div>`
+        if (produtosMostrados.empty || produtosMostrados[0].nome == null) {
+            resultado = `<div><br><div class="alert-danger nao_encontrado"><div class="h4 text-center"> Nenhum produto cadastrado </div></div></div>`
         }
         else {
             resultado = `
@@ -91,4 +92,14 @@ function updateListaProdutos() {
     }
 
     mostrarProdutos.innerHTML = listaProdutos;
+}
+
+function redirecionadoDosFavoritos() {
+    let redirecionado = localStorage.getItem("redirectDetalhesProduto");
+    if (redirecionado != null && redirecionado != "") {
+        console.log("teste");
+        $('#mais_detalhes').modal();
+        detalhesProduto(redirecionado);
+    }
+    localStorage.setItem("redirectDetalhesProduto", "");
 }

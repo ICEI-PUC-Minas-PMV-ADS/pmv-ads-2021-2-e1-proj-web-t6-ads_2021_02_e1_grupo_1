@@ -303,49 +303,59 @@
   <main>
     <div class="text-center" id="conteudo_pagina">
       <div class="container" id="mini_website_nome_loja">
-        <h1 id="nome_loja"> <br> </h1>
-        <button class="btn btn-primary" type="button" id="mini_website_botao_favoritos" onclick="favoritarVendedor()">Favoritar vendedor</button>
+        <h1> Gerenciar Loja <br></h1>
+        <span class="h4_sub" id="nome_loja"></span>
       </div>
       <nav>
         <div class="container" id="container_nav_mini_website">
           <div class="col-lg-10 mx-auto btn-group nav_mini_website">
-            <a href="mini-website.html"><button class="botao_nav_mini_website">Quem somos</button></a>
-            <a href="mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
-            <a href="mini-website-redes-sociais.html"><button class="botao_nav_mini_website">Redes Sociais</button></a>
-            <a href="mini-website-contato.html"><button class="botao_nav_mini_website">Contato</button></a>
-            <a href="mini-website-carrinho.html">
-              <button class="botao_nav_mini_website">Carrinho
-                <span id="carrinho_contador_box">
-                  <i class="fas fa-shopping-cart fa-lg"></i>
-                  <span id="carrinho_contador">
-                    <p id="numero_itens_carrinho">0</p>
-                  </span>
-                </span>
-              </button>
-            </a>
+            <a href="gerenciar-mini-website.html"><button class="botao_nav_mini_website">Informações</button></a>
+            <a href="gerenciar-mini-website-produtos.html"><button class="botao_nav_mini_website">Produtos</button></a>
+            <a href="gerenciar-mini-website-pagamento.html"><button class="botao_nav_mini_website">Venda/Entrega</button></a>
           </div>
         </div>
       </nav>
     </div>
-    <div class="container" id="mini-website-contato">
-      <form class="form-group col-lg-8 mx-auto" onsubmit="window.alert('Mensagem enviada!')">
-        <label for="assunto" class="form_label">Assunto</label>
-        <select class="form-control" id="assunto">
-          <option value="Reclamacao">Problema com a entrega</option>
-          <option value="Reclamacao">Reclamação sobre produto</option>
-          <option value="Reclamacao">Outro</option>
-        </select>
-        <label for="contatoNome" class="form_label">Nome</label>
-        <input type="text" class="form-control" id="contatoNome" placeholder="Nome" required>
-        <label for="contatoEmail" class="form_label">E-mail</label>
-        <input type="email" class="form-control" id="contatoEmail" placeholder="exemplo@email.com" required>
-        <label for="contatoTelefone" class="form_label">Telefone/Whatsapp</label>
-        <input type="email" class="form-control" id="contatoTelefone" placeholder="+55 (XX) XXXXX-XXXX">
-        <small id="contatoTelefone" class="form-text text-muted">*Opcional</small>
-        <label for="contatoMensagem" class="form_label">Mensagem</label><br>
-        <textarea class="mr-right" id="contatoMensagem" name="contatoMensagem" placeholder="Mensagem" rows="2" cols="42 " required></textarea>
+    <div class="container d-flex" onsubmit="submeterInformacoesVendaEntrega()">
+      <form id="gerenciar_opcoes_pagamento">
+        <div class="h4">Formas de pagamento disponíves</div>
+        <div class="h4_sub">Online</div>
+        <ul class="list-group list-group-horizontal" id="gerenciar_mini_website_vendas">
+          <li class="list-group-item  border-0 bigger_checkbox">
+            <input type="checkbox" id="forma_pagamento_online_cartao" name="forma_pagamento_online_cartao"> <label for="forma_pagamento_online_cartao"> Cartão <label></input>
+          </li>
+          <li class="list-group-item  border-0">
+            <input type="checkbox" id="forma_pagamento_online_pix" name="forma_pagamento_online_pix"> <label for="forma_pagamento_online_pix"> Pix <label></input>
+          </li>
+        </ul>
+        <br>
+        <div class="h4_sub">Na entrega/Retirada</div>
+        <ul class="list-group list-group-horizontal" id="gerenciar_mini_website_vendas">
+          <li class="list-group-item  border-0">
+            <input type="checkbox" id="forma_pagamento_entrega_cartao" name="forma_pagamento_entrega_cartao"> <label for="forma_pagamento_entrega_cartao"> Cartão <label></input>
+          </li>
+          <li class="list-group-item  border-0">
+            <input type="checkbox" id="forma_pagamento_entrega_dinheiro" name="forma_pagamento_entrega_dinheiro"> <label for="forma_pagamento_entrega_dinheiro"> Dinheiro <label></input>
+          </li>
+        </ul>
+        <br>
+        <div class="h4">Formas de entrega disponíveis</div>
+        <div>
+          <label for="forma_entrega_endereco"> <span class="h4_sub">Entrega para o endereço do cliente </span> <label></label><input type="checkbox" id="forma_entrega_endereco" name="forma_entrega_endereco" onclick="precoEntrega()"></input>
+        </div>
+        <div class="space_left" id="forma_entrega_endereco_preco_hide">
+          <label for="forma_entrega_endereco_preco"> <span class="h4_text">Preço da entrega: </span> <label></label>
+          <span class="input_reais_centavos">
+            <input type="number" id="forma_entrega_endereco_preco" name="forma_entrega_endereco_preco" min="0" value="0"> R$</input>
+            <input type="number" id="forma_entrega_endereco_preco_centavos" name="forma_entrega_endereco_preco_centavos" min ="0" max="99" value="00"> Centavos</input>
+          </span>
+        </div>
+        <br>
+        <div>
+          <label for="forma_entrega_retirada"> <span class="h4_sub">Retirada na loja </span> <label></label><input type="checkbox" id="forma_entrega_retirada" name="forma_entrega_retirada"></input>
+        </div>
         <div class="text-right">
-          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          <button class="btn btn-primary bottom_right" type="submit">Submeter alterações</button>
         </div>
       </form>
     </div>
@@ -397,6 +407,7 @@
             email@email.com.br
           </p>
           <p><i class="fas fa-phone me-3"></i> +55 31 XXXX-XXXX</p>
+          <br>
         </div>
       </div>
     </div>
@@ -413,7 +424,7 @@
     crossorigin="anonymous"></script>
   <script src="common.js"></script>
   <script src="mini-website-common.js"></script>
-  <script src="mini-website-contato.js"></script>
+  <script src="gerenciar-mini-website-pagamento.js"></script>
 </body>
 
 </html>
