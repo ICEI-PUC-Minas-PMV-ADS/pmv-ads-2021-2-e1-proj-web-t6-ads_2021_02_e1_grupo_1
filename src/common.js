@@ -64,8 +64,8 @@ function setLocalStorage(){
                 ],
                 "precoEntrega" : "6,00",
                 "formasPagamento" : {
-                    "online" : ["Cartão", "Pix"],
-                    "naEntrega" : ["Cartão", "Dinheiro"],
+                    "online" : ["cartao", "pix"],
+                    "naEntrega" : ["cartao", "dinheiro"],
                 },
                 "redesSociais" : {
                     "facebook" : "facebook.com",
@@ -118,8 +118,8 @@ function setLocalStorage(){
                 ],
                 "precoEntrega" : "15,50",
                 "formasPagamento" : {
-                    "online" : ["Cartão", "Pix"],
-                    "naEntrega" : ["Cartão", "Dinheiro"],
+                    "online" : ["cartao", "pix"],
+                    "naEntrega" : ["cartao", "dinheiro"],
                 },
                 "redesSociais" : {
                     "facebook" : "facebook.com",
@@ -146,8 +146,8 @@ function setLocalStorage(){
                 ],
                 "precoEntrega" : "12,00",
                 "formasPagamento" : {
-                    "online" : ["Cartão", "Pix"],
-                    "naEntrega" : ["Cartão", "Dinheiro"],
+                    "online" : ["cartao", "pix"],
+                    "naEntrega" : ["cartao", "dinheiro"],
                 },
                 "redesSociais" : {
                     "facebook" : "facebook.com",
@@ -174,8 +174,8 @@ function setLocalStorage(){
                 ],
                 "precoEntrega" : "10,00",
                 "formasPagamento" : {
-                    "online" : ["Cartão", "Pix"],
-                    "naEntrega" : ["Cartão", "Dinheiro"],
+                    "online" : ["cartao", "pix"],
+                    "naEntrega" : ["cartao", "dinheiro"],
                 },
                 "redesSociais" : {
                     "facebook" : "facebook.com",
@@ -415,10 +415,10 @@ function favoritarVendedor() {
         
         if (indexFavorito == -1) {
             let adicionarFavoritos = `
-                    <div class="lista_favoritos"> 
+                    <div class="lista_favoritos lista_favoritos_vendedor"> 
                         <div class="card_vendedor_favoritos">
                             <img src="${loja.imagem}"><br><div class="h4_sub text-center">${loja.nome}</div>
-                        </div><p class="descricao_busca"><b>Descrição:</b> ${loja.descricaoResumo}</p>
+                        </div><p class="descricao_busca_vendedores_favoritos"><b>Descrição:</b> ${loja.descricaoResumo}</p>
                         <button type="button" class="btn btn-secondary text-right" id="botao_remover_favoritos" onclick="removerFavorito('${loja.link}', 'vendedor')">Remover</button>
                         <a href="mini-website.html${loja.link}"><button type="button" class="btn btn-primary text-right">Ir para página</button></a>
                     </div>
@@ -463,7 +463,7 @@ function favoritarProduto(idProduto = -1) {
                         <div class="card_vendedor_favoritos_produto">
                             <img src="${produto.imagem}"><br><div class="h4_sub text-center">${produto.nome}</div>
                         </div><p class="descricao_busca"><b>Descrição:</b> ${produto.descricaoResumo} <br> <span class="h4_text">Loja: ${loja.nome}</span> </p>
-                        <button type="button" class="btn btn-secondary text-right" id="botao_remover_favoritos" onclick="removerFavorito('${idLojaProduto   }', 'produto')">Remover</button>
+                        <button type="button" class="btn btn-secondary text-right" id="botao_remover_favoritos" onclick="removerFavorito('${idLojaProduto}', 'produto')">Remover</button>
                         <button type="button" class="btn btn-primary text-right" onclick='redirectDetalhesProduto("${produto.nome}", "${loja.link}")'>Ir para produto</button>
                     </div>
                     `;

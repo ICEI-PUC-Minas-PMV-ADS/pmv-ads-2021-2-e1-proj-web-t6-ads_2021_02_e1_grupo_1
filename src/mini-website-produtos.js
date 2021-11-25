@@ -42,7 +42,7 @@ function updateListaProdutos() {
     let catalogoProdutos = listaVendedores[findIndex].catalogo;
     let produtosMostrados = [{"empty" : true},];
     let listaProdutos;
-    if (catalogoProdutos) {
+    if (catalogoProdutos.length > 0) {
         for (let i = 0; i < (catalogoProdutos.length); i++) {
             produtosMostrados[i] = catalogoProdutos[i];
             produtosMostrados.push({});
@@ -63,7 +63,7 @@ function updateListaProdutos() {
         }
         let resultado;
 
-        if (produtosMostrados[0].empty || produtosMostrados[0].nome == null) {
+        if (produtosMostrados.empty || produtosMostrados[0].nome == null) {
             resultado = `<div><br><div class="alert-danger nao_encontrado"><div class="h4 text-center"> Nenhum produto cadastrado </div></div></div>`
         }
         else {

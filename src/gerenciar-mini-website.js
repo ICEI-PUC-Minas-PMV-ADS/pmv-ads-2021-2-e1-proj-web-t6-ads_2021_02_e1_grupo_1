@@ -33,6 +33,7 @@ function updateVideoApresentacao() {
     let videoApresentacao = src = listaVendedores[findIndex].videoApresentacao;
 
     if (videoApresentacao != null && videoApresentacao != "") {
+        document.querySelector("#video_apresentacao").style = "display: inline";
         document.querySelector("#video_apresentacao").src = videoApresentacao;
     }
     else {
@@ -85,7 +86,6 @@ function mudarImagemLoja() {
         window.alert("Imagem da loja alterada!");        
     });
 }
-
 
 function mudarVideoLoja() {
     idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));

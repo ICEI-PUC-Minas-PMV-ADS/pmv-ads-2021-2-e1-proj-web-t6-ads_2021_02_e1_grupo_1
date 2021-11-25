@@ -4,7 +4,6 @@ document.querySelector("#imagem_mini_website").src = listaVendedores[findIndex].
 
 let videoApresentacao = src = listaVendedores[findIndex].videoApresentacao;
 
-console.log(videoApresentacao);
 if (videoApresentacao != null && videoApresentacao != "") {
     document.querySelector("#video_apresentacao").src = videoApresentacao;
 }

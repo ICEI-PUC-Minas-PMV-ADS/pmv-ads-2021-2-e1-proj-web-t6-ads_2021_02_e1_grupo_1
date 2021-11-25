@@ -70,16 +70,14 @@ function adicionarNovaLoja(nomeDaLoja) {
         "avaliacao" : "1.0",    /* Porcentagem de 0 até 1 */
         "link" : "",
         "videoApresentacao": "",
-        "catalogo" : [
-            {},
-        ],
+        "catalogo" : [],
         "carrinho" : [
             {},
         ],
         "precoEntrega" : "",
         "formasPagamento" : {
-            "online" : ["Cartão", ""],
-            "naEntrega" : ["", "Dinheiro"],
+            "online" : [],
+            "naEntrega" : [],
         },
         "redesSociais" : {
             "facebook" : "",

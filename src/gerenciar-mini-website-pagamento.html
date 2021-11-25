@@ -316,113 +316,9 @@
         </div>
       </nav>
     </div>
-    <div class="container" id="mini_website_produtos">
-      <!-- Seção de produtos (Inserida com Javascript)-->
+    <div class="container" id="gerenciar_mini_website_informacoes">
+
     </div>
-    <!-- Tela de "Mais Detalhes"-->
-
-    <div class="modal fade" id="mais_detalhes" tabindex="-1" role="dialog" aria-labelledby="mais_detalhes"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content modal_gerenciar" id="modal_mais_detalhes">
-          <div class="modal-header">
-            <span class="modal-title h4" id="mais_detalhes">Detalhes do produto</span>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <form onsubmit="mudarInformacoesProduto()">
-            <div id="modal_informacoes_produto">
-              <div>
-                <div class="text-center mx-auto">
-                  <img class="informacoes_imagem_produto" src="">
-                  <div class="text-center mx-auto" id="mudar_imagem_produto_container">
-                    <label for="mudar_imagem_produto" class="form_label">Mudar imagem</label>
-                    <input type="file" class="form-control" id="mudar_imagem_produto">         
-                  </div>
-                </div>
-
-                <div id="gerenciar_produto_nome">
-                  <div><label for="informacoes_nome_produto" class="form_label">Nome do produto</label></div>
-                  <input type="text" class="mr-right" id="informacoes_nome_produto" name="informacoes_nome_produto" placeholder="Insira o nome do produto" required></input>
-                </div>
-                <div>
-                  <div><label for="informacoes_preco_produto_reais" class="form_label">Preço do produto</label></div>
-                  <div class="input_reais_centavos">
-                    <input type="number" id="informacoes_preco_produto_reais" name="informacoes_preco_produto" min="0" required> R$</input>
-                    <input type="number" id="informacoes_preco_produto_centavos" name="informacoes_preco_produto_centavos" min ="0" max="99" required> Centavos</input>
-                </div>
-              </div>
-              </div>
-              <div class="text-justify">
-                <div id="gerenciar_produto_descricao">
-                  <label for="informacoes_descricao_produto" class="h4_text">Descrição do produto (max 650 caracteres):</label>
-                  <textarea class="mr-right" id="informacoes_descricao_produto" name="informacoes_descricao_produto" placeholder="" rows="2" cols="42 " maxlength="650" required></textarea>
-                  <label for="informacoes_descricao_produto_resumo" class="h4_text">Descrição resumida do produto (max 120 caracteres):</label>
-                  <textarea class="mr-right" id="informacoes_descricao_produto_resumo" name="informacoes_descricao_produto_resumo" placeholder="" rows="2" cols="42 " maxlength="120" required></textarea>
-                  
-                  <label for="informacoes_sabores_produto_input" class="h4_text">Lista de sabores do produto</label>
-                  <div id="gerenciar_sabores_produto">
-                    <input type="text" class="mr-right" id="informacoes_sabores_produto_input" name="informacoes_sabores_produto_input" placeholder="Digitar sabor"></input>
-                    <button class="btn btn-primary" type="button" onclick="adicionarSabor()">Adicionar</button>
-                    <div class="h4_text">Sabores atuais: </div>
-                    <div id="informacoes_sabores_produto">
-                      <!-- Inserido com Javascript -->
-                    </div>
-                  </div>
-                  <label for="informacoes_outras_produto" class="h4_text">Outras informações do produto (max 150 caracteres):</label>
-                  <textarea class="mr-right" id="informacoes_outras_produto" name="informacoes_outras_produto" placeholder="" rows="2" cols="42 " maxlength="150"></textarea>
-                  </div>
-                <div class="spacer">
-                </div>
-              </div>
-              <button class="btn btn-primary" type="submit" id="modal_botao_adicionar_produto">Submeter alterações</button>
-              <div id="informacoes_adicionar_carrinho">
-                <button type="button" class="close" aria-label="Close" onclick="informacoesAdicionarCarrinho('close')">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div id="card_adicionar_produto">
-                  <img class="informacoes_imagem_produto">
-                  <div>
-                    <span class="informacoes_nome_produto h4"></span>
-                    <p class="informacoes_preco_produto">
-                      <!-- Preço do Produto -->
-                    </p>
-                    <form>
-                      <div>
-                        <label for="selecionar_sabor">
-                          <p>Sabor:</p>
-                        </label>
-                        <select name="selecionar_sabor" class="selecionar_sabor" id="selecionar_sabor">
-                          <!-- Adicionados via Javascript -->
-                        </select>
-                        <label for="selecionar_quantidade">
-                          <p>Quantidade:</p>
-                        </label>
-                        <input type="number" class="selecionar_quantidade" id="selecionar_quantidade" value="1" min="1">
-                        <label for="comentario_pedido" class="mr-left">
-                          <p>Comentários:</p>
-                        </label>
-                        <div>
-                          <textarea class="mr-right" id="comentario_pedido" name="comentarios" rows="2"
-                            cols="46 "></textarea>
-                        </div>
-
-                      </div>
-                      <span id="container_informacoes_botao_adicionar_produto">
-                        <button class="btn btn-primary" type="button" id="informacoes_botao_adicionar_produto">Adicionar ao carrinho</button>
-                      </span>
-                    </form>
-                  </div>
-                </div>
-              </div>
-             </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-------------------------------------------------------------------------------------------------------------------------------->
-
   </main>
   <footer class="text-center text-lg-start" id="conteudo_footer">
     <div class="container text-center text-md-start mt-5">
@@ -471,6 +367,7 @@
             email@email.com.br
           </p>
           <p><i class="fas fa-phone me-3"></i> +55 31 XXXX-XXXX</p>
+          <br>
         </div>
       </div>
     </div>
@@ -487,7 +384,7 @@
     crossorigin="anonymous"></script>
   <script src="common.js"></script>
   <script src="mini-website-common.js"></script>
-  <script src="gerenciar-mini-website-produtos.js"></script>
+  <script src="gerenciar-mini-website-pagamento.js"></script>
 </body>
 
 </html>

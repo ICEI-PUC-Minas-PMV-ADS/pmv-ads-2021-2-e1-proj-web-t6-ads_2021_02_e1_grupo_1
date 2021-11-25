@@ -81,6 +81,7 @@ function updateListaProdutosPaginaCarrinho() {
     listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
     let catalogo = listaVendedores[findIndex].catalogo;
     let listaProdutosPaginaCarrinho;
+    let nomeTipoDePagamento;
     enderecoAtual = JSON.parse(localStorage.getItem('enderecoAtual'));
 
     if (finalizarPedido) {
@@ -94,26 +95,79 @@ function updateListaProdutosPaginaCarrinho() {
       
       precoEntrega = precoEntregaNormal;
 
+      listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+      let formasPagamento = listaVendedores[findIndex].formasPagamento;
+
       let formasPagamentoDisponiveis = `
+      <div class="h4_sub">Pagar online</div>
+      <div>
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_cartao" name="forma_pagamento" required> <label for="forma_pagamento_cartao"> Cartão <label></input>
-        </li>
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_pix" name="forma_pagamento"> <label for="forma_pagamento_pix"> Pix <label></input>
-        </li>
-      </ul>
       `;
+      
+      let pagamentoOnlineDisponivel = false;
+
+      for (let i = 0; i < formasPagamento.online.length; i++) {
+        nomeTipoDePagamento = checarNomeDoTipoDePagamento(formasPagamento.online[i]);
+        if (formasPagamento.online[i] != null && formasPagamento.online[i] != "") {
+          pagamentoOnlineDisponivel = true;
+          formasPagamentoDisponiveis += `
+            <li class="list-group-item  border-0">
+              <input type="radio" id="forma_pagamento_${formasPagamento.online[i]}" name="forma_pagamento" required> <label for="forma_pagamento_${formasPagamento.online[i]}"> ${nomeTipoDePagamento} <label></input>
+            </li>
+          `;
+        }
+      }
+
+      formasPagamentoDisponiveis += `
+      </ul>
+      </div>
+      <br>
+      `;
+      
+      if (pagamentoOnlineDisponivel == false) {
+        formasPagamentoDisponiveis = `
+        <ul class="list-group list-group-horizontal">
+        </ul>
+        </div>
+        `;
+        
+      }
+
       let formasPagamentoDisponiveisNaEntrega = `
+      <div class="h4_sub">Pagar na entrega</div>
+      <div>
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_cartao_entrega" name="forma_pagamento"> <label for="forma_pagamento_cartao_entrega"> Cartão <label></input>
-        </li>
-        <li class="list-group-item  border-0">
-          <input type="radio" id="forma_pagamento_dinheiro_entrega" name="forma_pagamento"> <label for="forma_pagamento_dinheiro_entrega"> Dinheiro <label></input>
-        </li>
-      </ul>
       `;
+      
+      pagamentoNaEntregaDisponivel = false;
+      for (let i = 0; i < formasPagamento.naEntrega.length; i++) {
+        nomeTipoDePagamento = checarNomeDoTipoDePagamento(formasPagamento.naEntrega[i]);
+        if (formasPagamento.naEntrega[i] != null && formasPagamento.naEntrega[i] != "") {
+        formasPagamentoDisponiveisNaEntrega += `
+            <li class="list-group-item  border-0">
+              <input type="radio" id="forma_pagamento_entrega${formasPagamento.naEntrega[i]}" name="forma_pagamento" required> <label for="forma_pagamento_entrega${formasPagamento.naEntrega[i]}"> ${nomeTipoDePagamento} <label></input>
+            </li>
+          `;
+          pagamentoNaEntregaDisponivel = true;
+        }
+      }
+
+      formasPagamentoDisponiveisNaEntrega += `
+      </ul>
+      </div>
+      <br>
+      `;
+
+      if (pagamentoNaEntregaDisponivel == false) {
+        formasPagamentoDisponiveisNaEntrega = `
+        <div>
+        <ul class="list-group list-group-horizontal">
+        </ul>
+        </div>
+        `;
+        
+      }
+
       let formasDeEntrega = `
       <ul class="list-group">
         <li class="list-group-item  border-0">
@@ -126,20 +180,27 @@ function updateListaProdutosPaginaCarrinho() {
         </li>
       </ul>
       `;
+
+      if(listaVendedores[findIndex].precoEntrega == "") { 
+      formasDeEntrega = `
+      <ul class="list-group">
+        <li class="list-group-item  border-0">
+          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()" checked> <label for="retirar"> Retirar na loja <label></input>
+        </li>
+      </ul>
+      `;
+      }
+
       listaProdutosPaginaCarrinho = `
       <button class="btn btn-transparent" type="button" id="botao_voltar" onclick="voltarPedido()"><i class="fas fa-angle-left"></i> Voltar</button>
       <div class="h4 text-center">Dados do pagamento</div>
       <div id="carrinho_pagamento">
-        <div class="h4_sub">Formas de Pagamento Disponíveis</div>
+        <div class="h4">Formas de pagamento disponíveis</div>
+        <br>
         <div>
         ${formasPagamentoDisponiveis}
-        </div>
-        <br>
-        <div class="h4_sub">Pagar na entrega</div>
-        <div>
+
         ${formasPagamentoDisponiveisNaEntrega}
-        </div>
-        <br>
         <div class="h4_sub">Entrega</div>
         <div>
         ${formasDeEntrega}
@@ -193,8 +254,8 @@ function updateListaProdutosPaginaCarrinho() {
                   </div>
 
                 </div>
-                <button class="btn btn-secondary" type="button" id="carrinho_card_botao_favoritos" onclick="favoritarProduto(${i})">Favoritar produto</button>
-                <button class="btn btn-primary" type="button" id="informacoes_botao_adicionar_produto" onclick='adicionarCarrinho(${i}, true)'>Adicionar ao carrinho</button>
+                <button class="btn btn-secondary carrinho_card_botao_favoritos" type="button" onclick="favoritarProduto(${i})">Favoritar produto</button>
+                <button class="btn btn-primary informacoes_botao_adicionar_produto" type="button" onclick='adicionarCarrinho(${i}, true)'>Adicionar ao carrinho</button>
               </form>
             </div>
           </div>
@@ -204,6 +265,18 @@ function updateListaProdutosPaginaCarrinho() {
     
     document.querySelector("#carrinho_adicionar_produtos").innerHTML = listaProdutosPaginaCarrinho;
     updateListaCarrinho();
+
+    function checarNomeDoTipoDePagamento(tipoPagamento) {
+      if (tipoPagamento == "cartao") {
+        return "Cartão";
+      }
+      else if (tipoPagamento == "pix") {
+        return "Pix";
+      }
+      else if (tipoPagamento == "dinheiro") {
+        return "Dinheiro";
+      }
+    }
 }
 
 function removerCarrinho(removerCarrinhoIndex = 0) {

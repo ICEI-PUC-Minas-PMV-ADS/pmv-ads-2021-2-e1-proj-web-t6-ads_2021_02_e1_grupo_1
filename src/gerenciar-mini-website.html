@@ -340,8 +340,8 @@
         </div>
       </div>
       <form onsubmit="mudarDescricaoResumo();return false">
-        <div class="h4_sub">Descrição resumida da loja (max 200 caracteres):</div>
-        <textarea class="mr-right" id="texto_gerenciar_mini_website_resumo" name="texto_gerenciar_mini_website_resumo" placeholder="" rows="2" cols="42 " maxlength="200" required></textarea>
+        <div class="h4_sub">Descrição resumida da loja (max 250 caracteres):</div>
+        <textarea class="mr-right" id="texto_gerenciar_mini_website_resumo" name="texto_gerenciar_mini_website_resumo" placeholder="" rows="2" cols="42 " maxlength="250" required></textarea>
         <div class="text-right">
           <button type="submit" class="btn btn-primary">Mudar resumo</button>
         </div>
@@ -350,14 +350,14 @@
       <div class="text-center">
         <iframe id= "video_apresentacao" width="640" height="360" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
       </div>
-      <form class="text-center col-6 mx-auto" onsubmit="mudarVideoLoja();return false">
+      <form class="text-center gerenciar_input mx-auto" onsubmit="mudarVideoLoja();return false">
         <label for="mudar_video_loja" class="form_label">Inserir vídeo de apresentação</label>
         <input type="text" class="form-control" id="mudar_video_loja">         
         <button type="submit" class="btn btn-primary btn_margin">Mudar vídeo de apresentação</button>
       </form>
       <br>
       <div class="h4_sub text-center">Redes sociais</div>
-      <form class="text-center col-6 mx-auto" onsubmit="mudarRedesSociais();return false">
+      <form class="text-center gerenciar_input mx-auto" onsubmit="mudarRedesSociais();return false">
         <div class="text-left">
           <label for="mudar_facebook" class="form_label">Facebook</label>
           <input type="text" class="form-control mr-auto" id="mudar_facebook">
