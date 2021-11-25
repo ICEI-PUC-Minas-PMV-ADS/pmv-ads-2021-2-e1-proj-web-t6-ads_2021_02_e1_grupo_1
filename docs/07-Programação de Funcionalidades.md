@@ -99,24 +99,40 @@ A tela de cadastro permite que o usuário crie uma conta afim de guardar suas in
 ```
 "listaUsuarios" : [
     {
-        "clienteVendedor" : "cliente"
-        "cnpj" : "none"
-        "email" : "usuario1@email.com"
-        "nascimento" : "2021-10-01"
-        "nome" : "Usuario 1"
-        "nomeLoja" : "none"
-        "senha" : "senha"
-        "sobrenome" : "Usuario 1"
+        "cartoes" = []
+        "favoritos" = {"vendedores": [{},], "produtos" : [{},],}
+        "cartoes": [{nome: "Cartão 1"}, {nome: "Cartão 2"}, {nome: "Cartão 3"}]
+        "clienteVendedor": "cliente"
+        "cnpj": "none"
+        "confirmaSenha": "senha"
+        "email": "email@email.com"
+        "endereco": "Selecionar endereço"
+        "favoritos": {vendedores: [{idLoja: "doces-caseiros",…}, {}],…}
+        "historicoDePedidos": [{numeroDoPedido: 1, nomeVendedor: "Massas Congeladas", valorDaCompra: "48,00",…},…]
+        "nascimento": "1990-01-01"
+        "nome": "Usuário 1"
+        "nomeLoja": "none"
+        "nomeUsuario": "Usuário 1"
+        "senha": "senha"
+        "sobrenome": "Sobrenome"
+        "telefone": ""
     },
     {
-        "clienteVendedor" : "vendedor"
-        "cnpj" : "99.999.999/0001-99"
-        "email" : "usuario2@email.com"
-        "nascimento" : "2021-10-01"
-        "nome" : "Usuario 2"
-        "nomeLoja" : "Loja do Usuario 2"
-        "senha" : "senha2"
-        "sobrenome" : "Usuario 2"    
+        "cartoes": []
+        "clienteVendedor": "vendedor"
+        "cnpj": "99.999.999/0001-99"
+        "confirmaSenha": "senha"
+        "email": "email2@email.com"
+        "endereco": "Selecionar endereço"
+        "favoritos": {vendedores: [{}], produtos: [{}]}
+        "historicoDePedidos": [{}]
+        "nascimento": "1990-01-01"
+        "nome": "Usuario 2"
+        "nomeLoja": "Loja do Usuario 2"
+        "nomeUsuario": "Usuario 2"
+        "senha": "senha"
+        "sobrenome": "Sobrenome"
+        "telefone": ""
      },
   ]
 ```
