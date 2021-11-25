@@ -75,6 +75,7 @@ function adicionarNovaLoja(nomeDaLoja) {
             {},
         ],
         "precoEntrega" : "",
+        "retiradaNaLoja" : true,
         "formasPagamento" : {
             "online" : [],
             "naEntrega" : [],

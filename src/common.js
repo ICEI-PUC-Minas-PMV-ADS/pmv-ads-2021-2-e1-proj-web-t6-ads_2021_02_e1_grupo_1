@@ -63,6 +63,7 @@ function setLocalStorage(){
                     {},
                 ],
                 "precoEntrega" : "6,00",
+                "retiradaNaLoja" : true,
                 "formasPagamento" : {
                     "online" : ["cartao", "pix"],
                     "naEntrega" : ["cartao", "dinheiro"],
@@ -117,6 +118,7 @@ function setLocalStorage(){
                     {},
                 ],
                 "precoEntrega" : "15,50",
+                "retiradaNaLoja" : true,
                 "formasPagamento" : {
                     "online" : ["cartao", "pix"],
                     "naEntrega" : ["cartao", "dinheiro"],
@@ -145,6 +147,7 @@ function setLocalStorage(){
                     {},
                 ],
                 "precoEntrega" : "12,00",
+                "retiradaNaLoja" : true,
                 "formasPagamento" : {
                     "online" : ["cartao", "pix"],
                     "naEntrega" : ["cartao", "dinheiro"],
@@ -173,6 +176,7 @@ function setLocalStorage(){
                     {},
                 ],
                 "precoEntrega" : "10,00",
+                "retiradaNaLoja" : true,
                 "formasPagamento" : {
                     "online" : ["cartao", "pix"],
                     "naEntrega" : ["cartao", "dinheiro"],

@@ -36,7 +36,9 @@
 .bottom_border_dark {
     border-bottom: 1px solid #ced4da;
 }
-
+.space_left {
+    margin-left: 2%;
+}
 .nao_encontrado {
     padding: 8px; 
     margin-bottom: 320px;
@@ -46,6 +48,11 @@
 }
 .no_word_wrap {
     white-space: nowrap;
+}
+.bottom_right {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
 }
 .bottom_border_menu {
     margin-top: 12px;
@@ -75,7 +82,7 @@
     background: none;
     border: none;
 }
-#menu_dados_usuario_repetir_senha_hide, #menu_dados_usuario_senha_antiga_hide, #menu_dados_usuario_confirmar_senha_hide {
+#menu_dados_usuario_repetir_senha_hide, #menu_dados_usuario_senha_antiga_hide, #menu_dados_usuario_confirmar_senha_hide, #forma_entrega_endereco_preco_hide {
     display: none;
 }
 .confirmar {
@@ -634,7 +641,21 @@
     border-radius: 5px;
     margin: 4px;
 }
-
+#gerenciar_opcoes_pagamento {
+    position: relative;
+    background-color: #f8f8f8;
+    border: 1px solid #ced4da;
+    padding: 16px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    height: 600px;
+    width: 480px;
+}
+#gerenciar_mini_website_vendas li {
+    background-color: #f8f8f8;
+}
 /* > Geral  */
 .nav_mini_website { 
     padding: 0px;

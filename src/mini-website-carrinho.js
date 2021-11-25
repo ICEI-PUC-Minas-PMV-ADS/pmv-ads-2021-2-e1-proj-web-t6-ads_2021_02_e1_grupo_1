@@ -170,26 +170,38 @@ function updateListaProdutosPaginaCarrinho() {
 
       let formasDeEntrega = `
       <ul class="list-group">
-        <li class="list-group-item  border-0">
-          <input type="radio" id="entregar" name="forma_de_entrega" checked onclick="selecionarEntrega()" required> <label for="entregar"> Entrega para: 
-          <i><a class="black-link" href=# data-toggle="modal" data-target="#selecionar_endereco">- ${enderecoAtual} -</i></a> 
-          Custo R$ ${precoEntregaNormal} <label></input>
-        </li>
-        <li class="list-group-item  border-0">
-          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()"> <label for="retirar"> Retirar na loja <label></input>
-        </li>
-      </ul>
       `;
 
-      if(listaVendedores[findIndex].precoEntrega == "") { 
-      formasDeEntrega = `
-      <ul class="list-group">
-        <li class="list-group-item  border-0">
-          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()" checked> <label for="retirar"> Retirar na loja <label></input>
-        </li>
-      </ul>
+      if(listaVendedores[findIndex].precoEntrega != "") { 
+      formasDeEntrega += `
+      <li class="list-group-item  border-0">
+      <input type="radio" id="entregar" name="forma_de_entrega" checked onclick="selecionarEntrega()" required> <label for="entregar"> Entrega para: 
+      <i><a class="black-link" href=# data-toggle="modal" data-target="#selecionar_endereco">- ${enderecoAtual} -</i></a> 
+      Custo R$ ${precoEntregaNormal} <label></input>
+      </li>
       `;
       }
+
+      if(listaVendedores[findIndex].retiradaNaLoja) { 
+        if(listaVendedores[findIndex].precoEntrega != "") { 
+          formasDeEntrega += `
+          <li class="list-group-item  border-0">
+          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()" required> <label for="retirar"> Retirar na loja <label></input>
+          </li>
+          `;
+          }
+          else {
+          formasDeEntrega += `
+          <li class="list-group-item  border-0">
+          <input type="radio" id="retirar" name="forma_de_entrega" onclick="selecionarEntrega()" required checked> <label for="retirar"> Retirar na loja <label></input>
+          </li>
+          `;
+          }
+        }
+
+      formasDeEntrega += `
+      </ul>
+      `;
 
       listaProdutosPaginaCarrinho = `
       <button class="btn btn-transparent" type="button" id="botao_voltar" onclick="voltarPedido()"><i class="fas fa-angle-left"></i> Voltar</button>
@@ -291,21 +303,33 @@ function finalizarPedidoCarrinho() {
   let usuario = JSON.parse(localStorage.getItem('idUsuarioLogado'))
   listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
   let carrinho = listaVendedores[findIndex].carrinho;
-  if (finalizarPedido && carrinho.length > 1 && usuario.id != -1) {
-    document.querySelector("#botao_finalizar_pedido").type = "submit";
+  let realizarEntrega = true;
+  if (listaVendedores[findIndex].retiradaNaLoja == false && listaVendedores[findIndex].precoEntrega == "") {
+    window.alert("Entrega indisponível no momento!");
+    realizarEntrega = false;
   }
-  else {
-    if (usuario.id != -1 && carrinho.length > 1) {
-      finalizarPedido = true;
-    }
-    else if (carrinho.length == 1) {
-      window.alert("Carrinho vazio!")
+  let formasPagamento = listaVendedores[findIndex].formasPagamento;
+  if (formasPagamento.online == "" && formasPagamento.naEntrega == "" && finalizarPedido) {
+    window.alert("Formas de pagamento indisponíveis no momento!");
+    realizarEntrega = false;
+  }
+  if (realizarEntrega) {
+    if (finalizarPedido && carrinho.length > 1 && usuario.id != -1) {
+      document.querySelector("#botao_finalizar_pedido").type = "submit";
     }
     else {
-      window.alert("Faça login para finalizar o pedido!")
+      if (usuario.id != -1 && carrinho.length > 1) {
+        finalizarPedido = true;
+      }
+      else if (carrinho.length == 1) {
+        window.alert("Carrinho vazio!")
+      }
+      else {
+        window.alert("Faça login para finalizar o pedido!")
+      }
+      finalizarPedidoReverseWrap()
+      updateListaProdutosPaginaCarrinho();
     }
-    finalizarPedidoReverseWrap()
-    updateListaProdutosPaginaCarrinho();
   }
 }
 

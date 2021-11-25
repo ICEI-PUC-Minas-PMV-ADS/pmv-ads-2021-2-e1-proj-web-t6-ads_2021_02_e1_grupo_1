@@ -316,8 +316,48 @@
         </div>
       </nav>
     </div>
-    <div class="container" id="gerenciar_mini_website_informacoes">
-
+    <div class="container d-flex" onsubmit="submeterInformacoesVendaEntrega()">
+      <form id="gerenciar_opcoes_pagamento">
+        <div class="h4">Formas de pagamento disponíves</div>
+        <div class="h4_sub">Online</div>
+        <ul class="list-group list-group-horizontal" id="gerenciar_mini_website_vendas">
+          <li class="list-group-item  border-0 bigger_checkbox">
+            <input type="checkbox" id="forma_pagamento_online_cartao" name="forma_pagamento_online_cartao"> <label for="forma_pagamento_online_cartao"> Cartão <label></input>
+          </li>
+          <li class="list-group-item  border-0">
+            <input type="checkbox" id="forma_pagamento_online_pix" name="forma_pagamento_online_pix"> <label for="forma_pagamento_online_pix"> Pix <label></input>
+          </li>
+        </ul>
+        <br>
+        <div class="h4_sub">Na entrega/Retirada</div>
+        <ul class="list-group list-group-horizontal" id="gerenciar_mini_website_vendas">
+          <li class="list-group-item  border-0">
+            <input type="checkbox" id="forma_pagamento_entrega_cartao" name="forma_pagamento_entrega_cartao"> <label for="forma_pagamento_entrega_cartao"> Cartão <label></input>
+          </li>
+          <li class="list-group-item  border-0">
+            <input type="checkbox" id="forma_pagamento_entrega_dinheiro" name="forma_pagamento_entrega_dinheiro"> <label for="forma_pagamento_entrega_dinheiro"> Dinheiro <label></input>
+          </li>
+        </ul>
+        <br>
+        <div class="h4">Formas de entrega disponíveis</div>
+        <div>
+          <label for="forma_entrega_endereco"> <span class="h4_sub">Entrega para o endereço do cliente </span> <label></label><input type="checkbox" id="forma_entrega_endereco" name="forma_entrega_endereco" onclick="precoEntrega()"></input>
+        </div>
+        <div class="space_left" id="forma_entrega_endereco_preco_hide">
+          <label for="forma_entrega_endereco_preco"> <span class="h4_text">Preço da entrega: </span> <label></label>
+          <span class="input_reais_centavos">
+            <input type="number" id="forma_entrega_endereco_preco" name="forma_entrega_endereco_preco" min="0" value="0"> R$</input>
+            <input type="number" id="forma_entrega_endereco_preco_centavos" name="forma_entrega_endereco_preco_centavos" min ="0" max="99" value="00"> Centavos</input>
+          </span>
+        </div>
+        <br>
+        <div>
+          <label for="forma_entrega_retirada"> <span class="h4_sub">Retirada na loja </span> <label></label><input type="checkbox" id="forma_entrega_retirada" name="forma_entrega_retirada"></input>
+        </div>
+        <div class="text-right">
+          <button class="btn btn-primary bottom_right" type="submit">Submeter alterações</button>
+        </div>
+      </form>
     </div>
   </main>
   <footer class="text-center text-lg-start" id="conteudo_footer">
