@@ -1,3 +1,7 @@
+if (findIndex == -1) {
+  window.location = "mini-website-nao-encontrado.html";
+}
+
 let finalizarPedido = false;
 let precoEntregaNormal = listaVendedores[findIndex].precoEntrega;
 let precoEntrega = 0;
@@ -341,8 +345,13 @@ function voltarPedido() {
 }
 
 function selecionarEntrega () {
-  if (document.querySelector("#entregar").checked && finalizarPedido) {
-    precoEntrega = precoEntregaNormal;
+  if (document.querySelector("#entregar") != null) {
+    if (document.querySelector("#entregar").checked && finalizarPedido) {
+      precoEntrega = precoEntregaNormal;
+    }
+    else {
+      precoEntrega = 0;
+    }
   }
   else {
     precoEntrega = 0;

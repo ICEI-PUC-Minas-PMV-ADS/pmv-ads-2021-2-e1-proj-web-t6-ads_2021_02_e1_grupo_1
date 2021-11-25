@@ -12,10 +12,6 @@ listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
 
 findIndex = procurarIdLoja(lojaAtual);
 
-if (findIndex == -1) {
-    window.location = "mini-website-nao-encontrado.html";
-}
-
 document.querySelector("#nome_loja").innerText = listaVendedores[findIndex].nome;
 
 
