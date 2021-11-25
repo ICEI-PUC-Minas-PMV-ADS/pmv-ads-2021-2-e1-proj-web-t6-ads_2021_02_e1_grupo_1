@@ -23,24 +23,68 @@ A recomendação de vendedores ocorre na tela principal do sistema por meio da e
 ```
 "listaVendedores" : [
     {
-        "numero_lista" : "1",
-        "nome" : "Loja 1",
-        "imagem" : "imagens/loja_doces.jpg",
+       "avaliacao": "0.92"
+       "carrinho": [{}]
+       "catalogo": [{nome: "Brigadeiro", imagem: "imagens/produtos/brigadeiro.jpg",…},…]
+       "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "descricaoResumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "formasPagamento": {online: ["cartao", "pix"], naEntrega: ["cartao", "dinheiro"]}
+       "imagem": "imagens/loja_doces.jpg"
+       "link": "?loja=doces-caseiros"
+       "nome": "Doces Caseiros"
+       "numero_lista": 1
+       "precoEntrega": "6,00"
+       "redesSociais": {facebook: "facebook.com", instagram: "instagram.com", twitter: "twitter.com", tiktok: "tiktok.com",…}
+       "retiradaNaLoja": true
+       "videoApresentacao": "https://www.youtube.com/embed/FC-IX2gQ8_Q"
     },
     {
-        "numero_lista" : "2",
-        "nome" : "Loja 2",
-        "imagem" : "imagens/loja_massas.jpg",
+       "avaliacao": "0.85"
+       "carrinho": [{}]
+       "catalogo": [{nome: "Pizza portuguesa", imagem: "imagens/produtos/pizzaportuguesa.jpg",…},…]
+       "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "descricaoResumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "formasPagamento": {online: ["cartao", "pix"], naEntrega: ["cartao", "dinheiro"]}
+       "imagem": "imagens/loja_massas.jpg"
+       "link": "?loja=massas-congeladas"
+       "nome": "Massas Congeladas"
+       "numero_lista": 2
+       "precoEntrega": "15,50"
+       "redesSociais": {facebook: "facebook.com", instagram: "instagram.com", twitter: "twitter.com", tiktok: "tiktok.com",…}
+       "retiradaNaLoja": true
+       "videoApresentacao": "https://www.youtube.com/embed/FC-IX2gQ8_Q"
     },
     {
-        "numero_lista" : "3",
-        "nome" : "Loja 3",
-        "imagem" : "imagens/loja_vegan.jpg",
+       "avaliacao": "0.67"
+       "carrinho": [{}]
+       "catalogo": [{},]
+       "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "descricaoResumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "formasPagamento": {online: ["cartao", "pix"], naEntrega: ["cartao", "dinheiro"]}
+       "imagem": "imagens/loja_vegan.jpg"
+       "link": "?loja=marmitas-vegan"
+       "nome": "Marmitas Vegan"
+       "numero_lista": 3
+       "precoEntrega": "12,50"
+       "redesSociais": {facebook: "facebook.com", instagram: "instagram.com", twitter: "twitter.com", tiktok: "tiktok.com",…}
+       "retiradaNaLoja": true
+       "videoApresentacao": "https://www.youtube.com/embed/FC-IX2gQ8_Q"
     },
     {
-        "numero_lista" : "4",
-        "nome" : "Loja 4",
-        "imagem" : "imagens/loja_cupcakes.jpg",
+       "avaliacao": "0.80"
+       "carrinho": [{}]
+       "catalogo": [{},]
+       "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "descricaoResumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+       "formasPagamento": {online: ["cartao", "pix"], naEntrega: ["cartao", "dinheiro"]}
+       "imagem": "imagens/loja_cupcakes.jpg"
+       "link": "?loja=cupcakes-variados"
+       "nome": "Cupcakes Variados"
+       "numero_lista": 3
+       "precoEntrega": "10,00"
+       "redesSociais": {facebook: "facebook.com", instagram: "instagram.com", twitter: "twitter.com", tiktok: "tiktok.com",…}
+       "retiradaNaLoja": true
+       "videoApresentacao": "https://www.youtube.com/embed/FC-IX2gQ8_Q"
     },
   ]
 ```
