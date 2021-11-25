@@ -195,7 +195,7 @@ http://localhost:5500/index.html
 5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Dados pessoais".
 
-# Menu da conta do usuário - Histórico de pedidos (RF-06)
+# Menu da conta do usuário - Histórico de pedidos (RF-02)
 Ao clicar na opção "histórico de pedidos" do menu da conta do usuário um modal contendo as informações dos pedidos realizados no website é mostrado. Dentro do modal, o usuário pode clicar na opção "mais detalhes" para exibir a descrição detalhada do pedido, contendo os itens pedidos e o preço da entrega. O usuário pode também clicar na opção "repetir pedido" para ser redirecionado para a página da loja com os itens em questão já incluidos no carrinho.
 
 ![MenuUsuario_Historico](https://user-images.githubusercontent.com/74699119/143475992-846fe726-4638-4677-9ec7-bea232767c20.png)
@@ -217,13 +217,13 @@ http://localhost:5500/index.html
 5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Histórico de pedidos".
 
-# Menu da conta do usuário - Favoritos (RF-02)
+# Menu da conta do usuário - Favoritos (RF-06)
 Ao clicar na opção "favoritos" do menu da conta do usuário um modal contendo as informações dos vendedores e itens favoritados pelo usuário é exibido. Dentro deste modal, o usuário pode remover itens favoritados e também ir direto para a página do vendedor ou produto ao clicar nas opções "ir para página" e "ir para produto" respectivamente.
 
 ![MenuUsuario_Favoritos](https://user-images.githubusercontent.com/74699119/143476915-c6f6a17f-fe77-4fd7-9442-9b2bda6228e0.png)
 
 ### Requisitos atendidos
--	RF-02
+-	RF-06
 
 ### Artefatos da funcionalidade
 -	Todos os arquivos html do projeto que possuem cabeçalho
