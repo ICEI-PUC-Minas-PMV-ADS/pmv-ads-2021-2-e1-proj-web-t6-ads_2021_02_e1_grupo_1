@@ -369,7 +369,7 @@ http://localhost:5500/index.html
 # Página de gerenciar loja - Aba de informações (RF-07 e RF-09)
 Página que permite ao usuário cadastrado como vendedor submeter informações gerais sobre sua loja/modelo de negócios. Nesta página o usuário pode submeter um arquivo de imagem para servir como imagem da loja, adicionar uma descrição completa da loja (exibida na página inicial do mini-website de sua loja), adicionar uma descrição resumida (que aparecerá nos resultados de busca e nos favoritos quando sua loja for favoritada) e fornecer o link de um vídeo de apresentação de sua loja hospedado no youtube. O usuário poderá também fornecer os links para redes sociais da loja (Facebook, Instagram, Canal do Youtube, Twitter e Tiktok), caso o vendedor não possua alguma dessas redes sociais, os campos deixados em branco não serão exibidos no mini-website. 
 
-![MenuUsuario_Vendedor_GerenciarLoja](https://user-images.githubusercontent.com/74699119/143630900-ad5fb533-6ddf-4f25-bedf-c3e696c51495.png)
+![MenuUsuario_Vendedor_GerenciarLoja](https://user-images.githubusercontent.com/74699119/143632322-b3dfd9a5-7fbd-4ec1-968b-6f54c1d3282a.png)
 
 ### Requisitos atendidos
 -	RF-07
