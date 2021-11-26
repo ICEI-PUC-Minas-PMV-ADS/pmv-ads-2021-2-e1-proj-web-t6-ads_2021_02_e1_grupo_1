@@ -320,3 +320,71 @@ Ao clicar na opção "favoritos" do menu da conta do usuário um modal contendo 
 http://localhost:5500/index.html
 5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Pagamentos".
+
+# Menu da conta do usuário - Favoritos (RF-05)
+Ao clicar na opção "favoritos" do menu da conta do usuário um modal contendo as informações dos vendedores e itens favoritados pelo usuário é exibido. Dentro deste modal, o usuário pode remover itens favoritados e também ir direto para a página do vendedor ou produto ao clicar nas opções "ir para página" e "ir para produto" respectivamente.
+
+![MenuUsuario_Favoritos](https://user-images.githubusercontent.com/74699119/143476915-c6f6a17f-fe77-4fd7-9442-9b2bda6228e0.png)
+
+### Requisitos atendidos
+-	RF-05
+
+### Artefatos da funcionalidade
+-	Todos os arquivos html do projeto que possuem cabeçalho
+-	common.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Favoritos".
+
+# Menu da conta do usuário - Gerenciar Loja (RF-07 e RF-09)
+Caso o usuário tenha realizado seu cadastro como vendedor, a opção "Gerenciar Loja" estará presente no menu da conta do usuário. Ao clicar nesta opção o usuário é redirecionar para a página de gerenciamento de sua loja.
+
+![MenuUsuario_Vendedor](https://user-images.githubusercontent.com/74699119/143627451-c0fe49c4-2fc0-4eb6-b438-7d8e8f1692b8.png)
+
+### Requisitos atendidos
+-	RF-07
+-	RF-09
+
+### Artefatos da funcionalidade
+-	Todos os arquivos html do projeto que possuem cabeçalho
+-	common.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login selecionando a opção "Quero me cadastrar como: Vendedor" na tela de cadastro (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e a opção "Gerenciar Loja" deverá aparecer.
+
+# Página de gerenciar loja - Aba de informações (RF-07 e RF-09)
+Página que permite ao usuário cadastrado como vendedor submeter informações gerais sobre sua loja/modelo de negócios. Nesta página o usuário pode submeter um arquivo de imagem para servir como imagem da loja, adicionar uma descrição completa da loja (exibida na página inicial do mini-website de sua loja), adicionar uma descrição resumida (que aparecerá nos resultados de busca e nos favoritos quando sua loja for favoritada) e fornecer o link de um vídeo de apresentação de sua loja hospedado no youtube. O usuário poderá também fornecer os links para redes sociais da loja (Facebook, Instagram, Canal do Youtube, Twitter e Tiktok), caso o vendedor não possua alguma dessas redes sociais, os campos deixados em branco não serão exibidos no mini-website. 
+
+![MenuUsuario_Vendedor](https://user-images.githubusercontent.com/74699119/143627451-c0fe49c4-2fc0-4eb6-b438-7d8e8f1692b8.png)
+
+### Requisitos atendidos
+-	RF-07
+-	RF-09
+
+### Artefatos da funcionalidade
+-	Todos os arquivos html do projeto que possuem cabeçalho
+-	common.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login selecionando a opção "Quero me cadastrar como: Vendedor" na tela de cadastro (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e a opção "Gerenciar Loja" deverá aparecer.
