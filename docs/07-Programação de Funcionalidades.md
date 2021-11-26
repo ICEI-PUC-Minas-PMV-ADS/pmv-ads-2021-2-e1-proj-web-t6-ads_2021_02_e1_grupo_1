@@ -344,7 +344,7 @@ http://localhost:5500/index.html
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Favoritos".
 
 # Menu da conta do usuário - Gerenciar Loja (RF-07 e RF-09)
-Caso o usuário tenha realizado seu cadastro como vendedor, a opção "Gerenciar Loja" estará presente no menu da conta do usuário. Ao clicar nesta opção o usuário é redirecionar para a página de gerenciamento de sua loja.
+Caso o usuário tenha realizado seu cadastro como vendedor, a opção "Gerenciar Loja" estará presente no menu da conta do usuário. Ao clicar nesta opção o usuário é redirecionado para a página de gerenciamento de sua loja.
 
 ![MenuUsuario_Vendedor](https://user-images.githubusercontent.com/74699119/143627451-c0fe49c4-2fc0-4eb6-b438-7d8e8f1692b8.png)
 
