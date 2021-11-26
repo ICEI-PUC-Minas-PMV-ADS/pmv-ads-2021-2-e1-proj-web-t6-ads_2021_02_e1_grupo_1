@@ -128,7 +128,6 @@ function updateListaProdutos() {
             resultado = ``
         }
         else {
-            console.log("teste");
             resultado = `
                 <div class="card_produto">
                 <img src="${imagemProduto}">
@@ -208,10 +207,7 @@ function mudarImagemProduto() {
 }
 
 const fileInput = document.querySelector("#mudar_imagem_produto");
-const handleFiles = () => {
-  const selectedFiles = [...fileInput.files];
-  console.log(selectedFiles);
-}
+
 fileInput.addEventListener("change", atualizarImagemProduto);
 
 
@@ -223,11 +219,17 @@ function atualizarImagemProduto() {
         const reader = new FileReader();
         reader.readAsDataURL(imagemNova[0]);
         reader.addEventListener("load", ()=> {
-            idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
-            listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
-            listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
-            let novaImagem = reader.result;
-            document.querySelectorAll(".informacoes_imagem_produto")[0].src = novaImagem;
+            if (imagemNova[0].size <= 20000) {
+                idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+                listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+                listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+                let novaImagem = reader.result;
+                document.querySelectorAll(".informacoes_imagem_produto")[0].src = novaImagem;
+            }
+            else {
+                window.alert("O arquivo deve possuir no máximo 20 KB!")
+                document.querySelector("#mudar_imagem_produto").value = "";
+            }
         });
     }
 }
@@ -240,7 +242,6 @@ function mudarNomeProduto() {
     findIndexProduto = listaVendedores[findIndex].catalogo.findIndex(x => x.nome === produtoAtual);
     let novoNomeProduto = document.querySelector("#informacoes_nome_produto").value;
     let verificarNomeRepetido = listaVendedores[findIndex].catalogo.findIndex(x => x.nome === novoNomeProduto);
-    console.log(verificarNomeRepetido);
     if (verificarNomeRepetido == -1 || novoNomeProduto == produtoAtual) {
         listaVendedores[findIndex].catalogo[findIndexProduto].nome = novoNomeProduto;
     }
