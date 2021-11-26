@@ -2,14 +2,14 @@
 
 Nesta sessão são mostradas as telas correspondentes a cada funcionalidade do sistema. As instruções de acesso e o endereço (URL) da página são apresentados em seguida.
 
-## Recomendação de vendedores (RF-07)
+## Recomendação de vendedores (RF-06)
 
 A recomendação de vendedores ocorre na tela principal do sistema por meio da exibição da imagem e nome da lista de vendedores recomendados em um slider do tipo “carrossel”. As informações dos vendedores são guardadas no local storage em uma estrutura de dados baseada em JSON. A figura abaixo demonstra essa funcionalidade abaixo do texto “vendedores recomendados na sua região”.
 
 ![homepage](https://user-images.githubusercontent.com/74699119/138290517-fc4b6a6f-6b1a-4b23-9f92-777fb2de319f.png)
 
 ### Requisitos atendidos
--	RF-07
+-	RF-06
  
 ### Artefatos da funcionalidade
 -	index.html
@@ -277,13 +277,13 @@ http://localhost:5500/index.html
 5.	Realize o cadastro e login (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e selecione a opção "Histórico de pedidos".
 
-# Menu da conta do usuário - Favoritos (RF-06)
+# Menu da conta do usuário - Favoritos (RF-05)
 Ao clicar na opção "favoritos" do menu da conta do usuário um modal contendo as informações dos vendedores e itens favoritados pelo usuário é exibido. Dentro deste modal, o usuário pode remover itens favoritados e também ir direto para a página do vendedor ou produto ao clicar nas opções "ir para página" e "ir para produto" respectivamente.
 
 ![MenuUsuario_Favoritos](https://user-images.githubusercontent.com/74699119/143476915-c6f6a17f-fe77-4fd7-9442-9b2bda6228e0.png)
 
 ### Requisitos atendidos
--	RF-06
+-	RF-05
 
 ### Artefatos da funcionalidade
 -	Todos os arquivos html do projeto que possuem cabeçalho
