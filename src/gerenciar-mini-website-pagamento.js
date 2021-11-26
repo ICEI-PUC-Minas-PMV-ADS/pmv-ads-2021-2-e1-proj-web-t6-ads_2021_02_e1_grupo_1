@@ -100,7 +100,6 @@ function submeterInformacoesVendaEntrega () {
         if (reais == "") {
             reais = 0;
         }
-        console.log(centavos);
         if (centavos == "") {
             centavos = "0";
         }

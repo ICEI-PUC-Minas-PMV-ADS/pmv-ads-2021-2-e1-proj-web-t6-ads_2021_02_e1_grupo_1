@@ -102,7 +102,6 @@ function updateListaProdutos() {
 function redirecionadoDosFavoritos() {
     let redirecionado = localStorage.getItem("redirectDetalhesProduto");
     if (redirecionado != null && redirecionado != "") {
-        console.log("teste");
         $('#mais_detalhes').modal();
         detalhesProduto(redirecionado);
     }

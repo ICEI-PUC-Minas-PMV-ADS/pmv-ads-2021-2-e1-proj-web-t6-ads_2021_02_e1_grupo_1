@@ -76,14 +76,20 @@ function mudarImagemLoja() {
     const reader = new FileReader();
     reader.readAsDataURL(imagemNova[0]);
     reader.addEventListener("load", ()=> {
-        idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
-        listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
-        listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
-        let novaImagem = reader.result;
-        listaVendedores[findIndex].imagem = novaImagem;
-        document.querySelector("#imagem_mini_website").src = novaImagem;
-        updateLocalStorage();
-        window.alert("Imagem da loja alterada!");        
+        if (imagemNova[0].size <= 20000) {
+            idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
+            listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+            listaVendedores = JSON.parse(localStorage.getItem('listaVendedores'));
+            let novaImagem = reader.result;
+            listaVendedores[findIndex].imagem = novaImagem;
+            document.querySelector("#imagem_mini_website").src = novaImagem;
+            updateLocalStorage();
+            window.alert("Imagem da loja alterada!");        
+        }
+        else {
+            window.alert("O arquivo deve possuir no máximo 20 KB!")
+            document.querySelector("#mudar_imagem_loja").value = "";
+        }
     });
 }
 

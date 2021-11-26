@@ -582,6 +582,7 @@
     height: 100%;
     width: 360px;
     margin: 6px;
+    margin-bottom: 0px;
     padding: 0;
 }
 
