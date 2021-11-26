@@ -65,16 +65,12 @@ A tabela abaixo contém os requisitos funcionais do projeto e a prioridade com a
 |RF-001| O site deve apresentar um mecanismo de busca que permita ao consumidor localizar microempreendedores cadastrados que produzam e entreguem os produtos desejados para sua localização. | ALTA | 
 |RF-002| O site deve permitir que o consumidor crie uma conta para salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). | ALTA | 
 |RF-003| O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes| ALTA |
-|RF-004| O site deve conter uma funcionalidade de avaliação dos usuários referentes aos produtos e vendedores | ALTA |
-|RF-005| O site deve permitir ao usuário visualizar todas a redes sociais e contatos disponibilizados pelos vendedores | MÉDIA |
-|RF-006| O site deve permitir que o consumidor salve como favorito, produtos ou vendedores. | BAIXA |
-|RF-007| O site deve apresentar na página principal sugestões de microempreendedores alimentícios na região do usuário  | MÉDIA |
-|RF-008| O site deve permitir que o microempreendedor submeta durante o cadastro as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” | ALTA|
-|RF-009| O site deve permitir que microempreendedor cadastre seus produtos e forneça possíveis informações relevantes sobre os mesmos para constar na descrição | ALTA |
-|RF-010| O site deve permitir que microempreendedor cadastrado informe a quantidade de produtos em estoque para evitar pedidos maiores do que é capaz de fornecer naquele período | BAIXA |
-|RF-011| O site deve fornecer uma plataforma de vendas e entrega para o microempreendedor, de modo que os pedidos submetidos pelo cliente sejam encaminhados para o e-mail ou whatsapp do vendedor com todas as informações necessárias para organizar a entrega e receber o dinheiro pelo modo de pagamento desejado | ALTA|
-|RF-012| A plataforma deve oferecer a opção de um sistema de pagamentos interno caso o vendedor deseje automatizar os pagamentos em vez de gerenciá-los por conta própria. | BAIXA |
-|RF-013| A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) | MÉDIA |
+|RF-004| O site deve permitir ao usuário visualizar todas a redes sociais e contatos disponibilizados pelos vendedores | MÉDIA |
+|RF-005| O site deve permitir que o consumidor salve como favorito, produtos ou vendedores. | BAIXA |
+|RF-006| O site deve apresentar na página principal sugestões de microempreendedores alimentícios na região do usuário  | MÉDIA |
+|RF-007| O site deve permitir que o microempreendedor submeta as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” | ALTA|
+|RF-008| O site deve permitir que microempreendedor cadastre seus produtos e forneça possíveis informações relevantes sobre os mesmos para constar na descrição | ALTA |
+|RF-009| A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) | MÉDIA |
 
 ### Requisitos não Funcionais
 
