@@ -470,6 +470,6 @@ http://localhost:5500/index.html
 5.	Realize o cadastro e login selecionando a opção "Quero me cadastrar como: Vendedor" na tela de cadastro (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e a opção "Gerenciar Loja" deverá aparecer.
 7.	Clique na opção "Gerenciar Loja" para ser redirecionado para a página de Gerenciar Loja - Informações.
-8.	Clique na opção "Produtos" no cabeçalho secundário presente na página de gerenciar loja para ser redirecionado para esta página.
+8.	Clique na opção "Venda/Entrega" no cabeçalho secundário presente na página de gerenciar loja para ser redirecionado para esta página.
 
 
