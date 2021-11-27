@@ -70,7 +70,33 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 
 <br>
 
-| Caso de Teste         | Caso de Teste	CT-08 – Customizar informações do mini-website (Vendedor) |
+| Caso de Teste         | Caso de Teste CT-08 – Visualização da página inicial de cada loja |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes. |
+| Objetivo do Teste     | Verificar a função de mini website do vendedor |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar em algum vendedor recomendado na página inicial ou utilizar a funcionalidade "Buscar vendedores" e clicar nos vendedores listados |
+| Critérios de Êxito    | -	Visualizar a imagem do vendedor cadastrado, texto de descrição da loja e vídeo de apresentação (se presente para aquela loja) para as lojas cadastradas |
+
+<br>
+
+| Caso de Teste         | Caso de Teste CT-09 – Adicionar e remover produtos de uma loja ao carrinho de compras |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes. |
+| Objetivo do Teste     | Verificar a função de mini website do vendedor |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar em algum vendedor recomendado na página inicial ou utilizar a funcionalidade "Buscar vendedores" e clicar nos vendedores listados <br> 5) Clicar na aba "Produtos" no menu de navegação do mini website do vendedor. <br> 6) Clicar no botão de "Mais detalhes" do produto desejado para abrir o modal de detalhes do produto. <br> 7) Clicar em "Adicionar ao carrinho" <br> 8) Selecionar o sabor e quantidade do produto que deseja adicionar, adicionar comentários sobre o pedido e clicar novamente em "Adicionar ao carrinho" para adicionar o produto na quantidade e sabor desejados ao carrinho <br> 9) Clicar na aba "Carrinho" do mini website para verificar se o produto foi adicionado à lista. <br> 10) Mais produtos podem ser adicioandos ao carrinho na aba de "Carrinho" do mini-website clicando em "Adicionar produto" nos produtos listados à esquerda nesta página (podendo selecionar a quantidade, sabor e comentários). <br> 11) Para remover algum produto da lista do carrinho, clique em "cancelar" no canto inferior direito da descrição da ordem do produto na lista. |
+| Critérios de Êxito    | -	Visualizar os produtos cadastrados. <br> - Visualizar o modal de detalhes do produto após clicar em "mais detalhes" <br> - Verificar que a ordem do produto foi corretamente adicionada ao carrinho <br> - Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar". |
+
+<br>
+
+| Caso de Teste         | Caso de Teste CT-10 – Adicionar e remover produtos de uma loja ao carrinho de compras |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes. |
+| Objetivo do Teste     | Verificar a função de mini website do vendedor |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar em algum vendedor recomendado na página inicial ou utilizar a funcionalidade "Buscar vendedores" e clicar nos vendedores listados <br> 5) Clicar na aba "Produtos" no menu de navegação do mini website do vendedor. <br> 6) Clicar no botão de "Mais detalhes" do produto desejado para abrir o modal de detalhes do produto. <br> 7) Clicar em "Adicionar ao carrinho" <br> 8) Selecionar o sabor e quantidade do produto que deseja adicionar, adicionar comentários sobre o pedido e clicar novamente em "Adicionar ao carrinho" para adicionar o produto na quantidade e sabor desejados ao carrinho <br> 9) Clicar na aba "Carrinho" do mini website para verificar se o produto foi adicionado à lista. <br> 10) Mais produtos podem ser adicioandos ao carrinho na aba de "Carrinho" do mini-website clicando em "Adicionar produto" nos produtos listados à esquerda nesta página (podendo selecionar a quantidade, sabor e comentários). <br> 11) Para remover algum produto da lista do carrinho, clique em "cancelar" no canto inferior direito da descrição da ordem do produto na lista. |
+| Critérios de Êxito    | -	Visualizar os produtos cadastrados. <br> - Visualizar o modal de detalhes do produto após clicar em "mais detalhes" <br> - Verificar que a ordem do produto foi corretamente adicionada ao carrinho <br> - Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar". |
+
+
+| Caso de Teste         | Caso de Teste	CT-0? – Customizar informações do mini-website (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes <br> RF-007 - O site deve permitir que o microempreendedor submeta as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” <br> RF-009 - A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) |
 | Objetivo do Teste     | Verificar a funcionalidade de customização das informações da loja pelo usuário cadastrado como vendedor/dono daquela loja |
