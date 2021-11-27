@@ -376,8 +376,10 @@ Página que permite ao usuário cadastrado como vendedor submeter informações 
 -	RF-09
 
 ### Artefatos da funcionalidade
--	Todos os arquivos html do projeto que possuem cabeçalho
+-	gerenciar-mini-website.html
 -	common.js
+-	mini-website-common.js
+-	gerenciar-mini-website.js
 -	style.css
 
 ### Instruções de acesso
@@ -388,3 +390,59 @@ Página que permite ao usuário cadastrado como vendedor submeter informações 
 http://localhost:5500/index.html
 5.	Realize o cadastro e login selecionando a opção "Quero me cadastrar como: Vendedor" na tela de cadastro (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
 6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e a opção "Gerenciar Loja" deverá aparecer.
+7.	Clique na opção "Gerenciar Loja" para ser redirecionado para esta página.
+
+# Página de gerenciar loja - Aba de produtos (RF-08)
+Página que permite ao usuário cadastrado como vendedor adicionar e remover produtos para sua loja. Ao criar um novo produto ou clicar no botão "editar" em um produto já existente, o modal de edição de informações de produto é aberto, permitindo ao vendedor alterar as informações do produto.
+
+![MenuUsuario_Vendedor_GerenciarLoja_produtos1](https://user-images.githubusercontent.com/74699119/143665699-568357d8-e184-4574-a28b-2f4f3d5e0815.png)
+![MenuUsuario_Vendedor_GerenciarLoja_produtos2](https://user-images.githubusercontent.com/74699119/143665700-ae90d592-d92d-47ff-881d-31e3f22ab70d.png)
+
+### Requisitos atendidos
+-	RF-08
+
+### Artefatos da funcionalidade
+-	gerenciar-mini-website-produtos.html
+-	common.js
+-	mini-website-common.js
+-	gerenciar-mini-website-produtos.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login selecionando a opção "Quero me cadastrar como: Vendedor" na tela de cadastro (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e a opção "Gerenciar Loja" deverá aparecer.
+7.	Clique na opção "Gerenciar Loja" para ser redirecionado para a página de Gerenciar Loja - Informações.
+8.	Clique na opção "Produtos" no cabeçalho secundário presente na página de gerenciar loja para ser redirecionado para esta página.
+
+# Modal de edição de informações do produto (RF-08)
+Modal que aparece para o vendedor quando este cadastra um novo produto na loja ou tenta editar as informações de um produto já existente. Permite que o usuário faça o upload de um arquivo de imagem para servir como a imagem do produto, bem como preencher os campos de nome, preço, descrição, resumo da descrição e outras informações para o produto, os quais pode submeter clicando no botão "submeter alterações". Para adicionar ou remover sabores disponíveis do produto, o usuário deve escrever o nome do sabor que deseja adicionar e clicar no botão "adicionar" ou clicar no icone "x" ao lado do sabor já listado para remove-lo.
+
+![MenuUsuario_Vendedor_GerenciarLoja_produtos_modal](https://user-images.githubusercontent.com/74699119/143665862-a52c9dba-8595-45ad-9a43-8e896f07cc2d.png)
+
+### Requisitos atendidos
+-	RF-08
+
+### Artefatos da funcionalidade
+-	gerenciar-mini-website-produtos.html
+-	common.js
+-	mini-website-common.js
+-	gerenciar-mini-website-produtos.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login selecionando a opção "Quero me cadastrar como: Vendedor" na tela de cadastro (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e a opção "Gerenciar Loja" deverá aparecer.
+7.	Clique na opção "Gerenciar Loja" para ser redirecionado para a página de Gerenciar Loja - Informações.
+8.	Clique na opção "Produtos" no cabeçalho secundário presente na página de gerenciar loja para ser redirecionado para esta página.
+9.	Clique em "adicionar produto" ou em "editar" para um produto já existente e o modal abrirá.
+
