@@ -63,7 +63,7 @@ A tabela abaixo contém os requisitos funcionais do projeto e a prioridade com a
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| O site deve apresentar um mecanismo de busca que permita ao consumidor localizar microempreendedores cadastrados que produzam e entreguem os produtos desejados para sua localização. | ALTA | 
-|RF-002| O site deve permitir que o consumidor crie uma conta para salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). | ALTA | 
+|RF-002| O site deve permitir que o usuário crie uma conta para salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). | ALTA | 
 |RF-003| O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes| ALTA |
 |RF-004| O site deve permitir ao usuário visualizar todas a redes sociais e contatos disponibilizados pelos vendedores | MÉDIA |
 |RF-005| O site deve permitir que o consumidor salve como favorito, produtos ou vendedores. | BAIXA |
