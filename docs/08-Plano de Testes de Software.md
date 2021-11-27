@@ -1,19 +1,15 @@
 # Plano de Testes de Software
+Os requisitos para realização dos testes de software são:
+-	Site publicado na Internet
+-	Navegador da Internet - Chrome, Firefox ou Edge
+-	Conectividade de Internet para acesso aos vídeos de apresentação e redes sociais
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| Caso de Teste         | Caso de Teste	CT-01 – Cadastro de usuário (consumidor) |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-002 - O site deve permitir que o consumidor crie uma conta para salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). |
+| Objetivo do Teste     | Objetivo do Teste	Verificar a função de cadastro do consumidor |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar na aba ...|
+| Critérios de Êxito    | -	Realizar cadastro de dados pessoais. <br>- Efetuar login e logoff. |
