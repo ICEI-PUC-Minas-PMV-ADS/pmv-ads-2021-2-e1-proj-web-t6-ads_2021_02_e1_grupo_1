@@ -12,4 +12,4 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 | Requisitos Associados | RF-002 - O site deve permitir que o consumidor crie uma conta para salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). |
 | Objetivo do Teste     | Objetivo do Teste	Verificar a função de cadastro do consumidor |
 | Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar na aba ...|
-| Critérios de Êxito    | -	Realizar cadastro de dados pessoais. <br>- Efetuar login e logoff. |
+| Critérios de Êxito    | -	Realizar cadastro de dados pessoais. <br>- Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente <br>- Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente<br>- Efetuar login e logoff. |
