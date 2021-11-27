@@ -446,3 +446,30 @@ http://localhost:5500/index.html
 8.	Clique na opção "Produtos" no cabeçalho secundário presente na página de gerenciar loja para ser redirecionado para esta página.
 9.	Clique em "adicionar produto" ou em "editar" para um produto já existente e o modal abrirá.
 
+# Página de gerenciar loja - Aba de informações de venda e entrega (RF-09)
+Página que permite ao usuário cadastrado como vendedor determinar quais formas de pagamento serão aceitas em seu negócio, bem como quais formas de entrega/retirada do produto estarão disponíveis (entrega para o endereço do cliente e/ou retirada do produto diretamente na loja pelo cliente). Ao marcar as opções que deseja disponibilizar e fornecer as informações solicitadas, o usuário deve clicar em "Submeter alterações" para salvar as mudanças.
+
+![MenuUsuario_Vendedor_GerenciarLoja_vendaEntrega](https://user-images.githubusercontent.com/74699119/143665969-2aa0e9fc-5b90-484f-ba22-f888e444ea75.png)
+
+### Requisitos atendidos
+-	RF-09
+
+### Artefatos da funcionalidade
+-	gerenciar-mini-website-pagamento.html
+-	common.js
+-	mini-website-common.js
+-	gerenciar-mini-website-pagamento.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Realize o cadastro e login selecionando a opção "Quero me cadastrar como: Vendedor" na tela de cadastro (conforme explicado nas funcionalidades anteriores) e clique sob o campo “Minha conta” em qualquer página contendo o cabeçalho (incluindo a página index.html).
+6.	Clique na opção "Minha conta" presente do lado direito do cabeçalho e a opção "Gerenciar Loja" deverá aparecer.
+7.	Clique na opção "Gerenciar Loja" para ser redirecionado para a página de Gerenciar Loja - Informações.
+8.	Clique na opção "Produtos" no cabeçalho secundário presente na página de gerenciar loja para ser redirecionado para esta página.
+
+
