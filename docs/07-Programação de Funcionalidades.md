@@ -494,17 +494,20 @@ Página que exibe os resultados da busca de vendedores realizada pelo usuário. 
 http://localhost:5500/index.html
 5.	Na tela inicial, digite o que procura no campo de busca abaixo de "Buscar vendedores" e clique no icone da lupa à direita.
 
-# Mini website do vendedor - Página inicial/Aba de "Quem somos" (RF-03)
-Página que exibe as informações sobre a loja selecionada, sendo elas a imagem da loja, descrição completa e o vídeo de apresentação (o vídeo de apresentação do curso foi utilizado como placeholder para o vídeo de apresentação da loja neste caso). O layout da página contém também um menu de navegação que permite navegar pelas diversas abas do mini website (Quem somos, Produtos, Redes Sociais, Contato e Carrinho).
+# Mini website do vendedor - Página inicial/Aba de "Quem somos" (RF-03 e RF-05)
+Página que exibe as informações sobre a loja selecionada, sendo elas a imagem da loja, descrição completa e o vídeo de apresentação (o vídeo de apresentação do curso foi utilizado como placeholder para o vídeo de apresentação da loja neste caso). O layout da página contém também um menu de navegação que permite navegar pelas diversas abas do mini website (Quem somos, Produtos, Redes Sociais, Contato e Carrinho) e um botão de favoritos presente à direita do nome da loja que permite ao usuário salvar o vendedor em seus favoritos.
 
 ![mini-website](https://user-images.githubusercontent.com/74699119/143668989-647a7224-f592-4118-8621-bf735bc09999.png)
 
 ### Requisitos atendidos
 -	RF-03
+-	RF-05
 
 ### Artefatos da funcionalidade
--	busca.html
+-	mini-website.html
 -	common.js
+-	mini-website-common.js
+-	mini-website.js
 -	busca.js
 -	style.css
 
@@ -515,6 +518,77 @@ Página que exibe as informações sobre a loja selecionada, sendo elas a imagem
 4.	Abra um navegador de Internet e informe a seguinte URL:
 http://localhost:5500/index.html
 5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
+
+# Mini website do vendedor - Aba de produtos (RF-03 e RF-05)
+Página que exibe as informações sobre os produtos disponíveis na loja selecionada. Ao clicar no botão "Mais detalhes", um modal mostrando as informações detalhadas do produto é aberto.
+
+![mini-website-produtos](https://user-images.githubusercontent.com/74699119/143669245-a70d2bbe-a48a-4f90-a628-902ab532cc1b.png)
+
+### Requisitos atendidos
+-	RF-03
+-	RF-05
+
+### Artefatos da funcionalidade
+-	mini-website-produtos.html
+-	common.js
+-	mini-website-common.js
+-	mini-website-produtos.js
+-	busca.js
+-	style.css
+
+# Modal de "Mais detalhes" do produto (RF-03 e RF-05)
+Modal exibindo as informações detalhadas do produto selecionado. Além das informações de imagem, preço e descrição, são apresentados também os sabores disponíveis e uma seção de "outras informações" contendo outras informações relevantes fornecidas pelo vendedor. Ao clicar em "Adicionar ao carrinho" uma vez, uma janela é exibida onde o usuário pode informar o sabor e a quantidade do produto que deseja comprar, bem como adicionar comentários ao pedido. Após selecionadas estas opções, clicar novamente em "Adicionar ao carrinho" adiciona o produto ao carrinho de compras.
+
+![modal_maisDetalhes](https://user-images.githubusercontent.com/74699119/143669485-698aead3-a18d-46c8-a511-29c3098fadeb.png)
+![modal_maisDetalhes2](https://user-images.githubusercontent.com/74699119/143669487-bab2d64b-35f4-4571-89ee-6709a44618c0.png)
+
+### Requisitos atendidos
+-	RF-03
+-	RF-05
+
+### Artefatos da funcionalidade
+-	mini-website-produtos.html
+-	common.js
+-	mini-website-common.js
+-	mini-website-produtos.js
+-	busca.js
+-	style.css
+
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
+6.	Clique na opção "Produtos" no menu de navegação do mini website para ser redirecionado para esta página.
+
+# Mini website do vendedor - Aba de redes sociais (RF-04)
+Página que exibe as informações sobre as redes sociais do vendedor. Caso a loja possua alguma rede social associada à mesma, um icone representando a rede social será mostrado nesta página. Ao clicar no icone, uma nova aba é aberta no navegador para o endereço em questão.
+
+![mini-website-redesSociais](https://user-images.githubusercontent.com/74699119/143669355-34c94b9e-eb47-4624-a0f1-d0ca78f56dfe.png)
+
+### Requisitos atendidos
+-	RF-04
+
+### Artefatos da funcionalidade
+-	mini-website-redes-sociais.html
+-	common.js
+-	mini-website-common.js
+-	mini-website-redes-sociais.js
+-	busca.js
+-	style.css
+
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
+6.	Clique na opção "Redes Sociais" no menu de navegação do mini website para ser redirecionado para esta página.
 
 
 
