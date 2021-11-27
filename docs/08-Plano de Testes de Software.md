@@ -52,7 +52,25 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 
 <br>
 
-| Caso de Teste         | Caso de Teste	CT-06 – Customizar informações do mini-website (Vendedor) |
+| Caso de Teste         | Caso de Teste	CT-06 – Visualizar vendedores recomendados na página inicial |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-006 - O site deve apresentar na página principal sugestões de microempreendedores alimentícios na região do usuário. |
+| Objetivo do Teste     | Verificar a funcionalidade de recomendação de vendedores |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar nas setas presentes ao lado dos vendedores recomendados para observar mais vendedores.
+| Critérios de Êxito    | -	Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer nas recomendações (clicar nas setas à esquerda ou direita para mostrar mais vendedores). <br> - Ao chegar no final da lista de vendedores, a lista deve começar a repetir (mostrar novamente o primeiro ou último vendedor da lista ao clicar novamente na seta direita ou esquerda, respectivamente).
+
+<br>
+
+| Caso de Teste         | Caso de Teste	CT-07 – Buscar vendedores cadastrados |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-001 - O site deve apresentar um mecanismo de busca que permita ao consumidor localizar microempreendedores cadastrados que produzam e entreguem os produtos desejados para sua localização. |
+| Objetivo do Teste     | Verificar a funcionalidade de busca de vendedores |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Preencher o campo de busca abaixo de "Buscar vendedores" e clicar no icone da lupa para realizar a busca |
+| Critérios de Êxito    | -	Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer na lista de resultados. <br> - Mudar o filtro de busca "Avaliação maior que 4 estrelas" deve atualizar a lista excluindo os vendedores com avaliação menor do que 4/5. <br> - Clicar na imagem dos vendedores cadastrados deve redirecionar o usuário para a página de "mini website" do vendedor. |
+
+<br>
+
+| Caso de Teste         | Caso de Teste	CT-08 – Customizar informações do mini-website (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes <br> RF-007 - O site deve permitir que o microempreendedor submeta as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” <br> RF-009 - A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) |
 | Objetivo do Teste     | Verificar a funcionalidade de customização das informações da loja pelo usuário cadastrado como vendedor/dono daquela loja |
