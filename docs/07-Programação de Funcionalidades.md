@@ -497,7 +497,7 @@ http://localhost:5500/index.html
 # Mini website do vendedor - Página inicial/Aba de "Quem somos" (RF-03)
 Página que exibe as informações sobre a loja selecionada, sendo elas a imagem da loja, descrição completa e o vídeo de apresentação (o vídeo de apresentação do curso foi utilizado como placeholder para o vídeo de apresentação da loja neste caso). O layout da página contém também um menu de navegação que permite navegar pelas diversas abas do mini website (Quem somos, Produtos, Redes Sociais, Contato e Carrinho).
 
-![Busca](https://user-images.githubusercontent.com/74699119/143668851-5c519258-672f-4acc-bb93-3f6cebed0e64.png)
+![mini-website](https://user-images.githubusercontent.com/74699119/143668989-647a7224-f592-4118-8621-bf735bc09999.png)
 
 ### Requisitos atendidos
 -	RF-03
@@ -514,7 +514,7 @@ Página que exibe as informações sobre a loja selecionada, sendo elas a imagem
 3.	Abra o Visual Studio Code e execute o Live Server;
 4.	Abra um navegador de Internet e informe a seguinte URL:
 http://localhost:5500/index.html
-5.	Na tela inicial, digite o que procura no campo de busca abaixo de "Buscar vendedores" e clique no icone da lupa à direita.
+5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
 
 
 
