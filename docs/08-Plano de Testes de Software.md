@@ -14,6 +14,8 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 | Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar na opção "Crie sua conta" presente no cabeçalho do site|
 | Critérios de Êxito    | -	Realizar cadastro de dados pessoais. <br>- Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente. <br>- Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente. |
 
+<br>
+
 | Caso de Teste         | Caso de Teste	CT-02 – Cadastro de usuário (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Requisitos Associados | RF-002 - O site deve permitir que o usuário crie uma conta de vendedor para criar sua loja e salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). |
