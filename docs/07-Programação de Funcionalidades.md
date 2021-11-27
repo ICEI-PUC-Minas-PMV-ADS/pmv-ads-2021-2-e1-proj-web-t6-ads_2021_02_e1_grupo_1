@@ -472,4 +472,49 @@ http://localhost:5500/index.html
 7.	Clique na opção "Gerenciar Loja" para ser redirecionado para a página de Gerenciar Loja - Informações.
 8.	Clique na opção "Venda/Entrega" no cabeçalho secundário presente na página de gerenciar loja para ser redirecionado para esta página.
 
+# Busca de vendedores (RF-01)
+Página que exibe os resultados da busca de vendedores realizada pelo usuário. Os vendedores disponíveis são mostrados em uma lista do lado direito enquanto do lado esquerdo estão presentes os filtros de busca que o usuário pode aplicar aos resultados. No momento, todos os vendedores cadastrados são mostrados na lista independente da localização informada pelo usuário e dos termos usados na busca. O filtro de busca "avaliação de 4 estrelas ou mais" remove dos resultados mostrados os vendedores que possuírem avaliação inferior a 4 estrelas. Ao clicar na imagem do vendedor, o usuário é redirecionado para a página inicial da loja (mini website do vendedor) em questão.
+
+![Busca](https://user-images.githubusercontent.com/74699119/143668851-5c519258-672f-4acc-bb93-3f6cebed0e64.png)
+
+### Requisitos atendidos
+-	RF-01
+
+### Artefatos da funcionalidade
+-	busca.html
+-	common.js
+-	busca.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Na tela inicial, digite o que procura no campo de busca abaixo de "Buscar vendedores" e clique no icone da lupa à direita.
+
+# Mini website do vendedor - Página inicial/Aba de "Quem somos" (RF-03)
+Página que exibe as informações sobre a loja selecionada, sendo elas a imagem da loja, descrição completa e o vídeo de apresentação (o vídeo de apresentação do curso foi utilizado como placeholder para o vídeo de apresentação da loja neste caso). O layout da página contém também um menu de navegação que permite navegar pelas diversas abas do mini website (Quem somos, Produtos, Redes Sociais, Contato e Carrinho).
+
+![Busca](https://user-images.githubusercontent.com/74699119/143668851-5c519258-672f-4acc-bb93-3f6cebed0e64.png)
+
+### Requisitos atendidos
+-	RF-03
+
+### Artefatos da funcionalidade
+-	busca.html
+-	common.js
+-	busca.js
+-	style.css
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Na tela inicial, digite o que procura no campo de busca abaixo de "Buscar vendedores" e clique no icone da lupa à direita.
+
+
 
