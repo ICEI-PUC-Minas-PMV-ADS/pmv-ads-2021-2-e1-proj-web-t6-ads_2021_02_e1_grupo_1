@@ -540,7 +540,7 @@ Página que exibe as informações sobre os produtos disponíveis na loja seleci
 Modal exibindo as informações detalhadas do produto selecionado. Além das informações de imagem, preço e descrição, são apresentados também os sabores disponíveis e uma seção de "outras informações" contendo outras informações relevantes fornecidas pelo vendedor. Ao clicar em "Adicionar ao carrinho" uma vez, uma janela é exibida onde o usuário pode informar o sabor e a quantidade do produto que deseja comprar, bem como adicionar comentários ao pedido. Após selecionadas estas opções, clicar novamente em "Adicionar ao carrinho" adiciona o produto ao carrinho de compras.
 
 ![modal_maisDetalhes](https://user-images.githubusercontent.com/74699119/143669485-698aead3-a18d-46c8-a511-29c3098fadeb.png)
-![modal_maisDetalhes2](https://user-images.githubusercontent.com/74699119/143669487-bab2d64b-35f4-4571-89ee-6709a44618c0.png)
+![modal_maisDetalhes2](https://user-images.githubusercontent.com/74699119/143669521-bff0d10d-89a4-4e41-a6be-69889c402418.png)
 
 ### Requisitos atendidos
 -	RF-03
