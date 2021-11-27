@@ -590,5 +590,62 @@ http://localhost:5500/index.html
 5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
 6.	Clique na opção "Redes Sociais" no menu de navegação do mini website para ser redirecionado para esta página.
 
+# Mini website do vendedor - Aba de contato (RF-03)
+Página que apresenta um formulário que o usuário pode utilizar para enviar uma mensagem para o vendedor responsável pela loja (apenas simulado nesse projeto, uma vez que não ocorre o envio real da mensagem). Nesta página o usuário deve informar seu nome, informações de contato (e-mail e telefone), selecionar o assunto ao qual a mensagem se refere e digitar a mensagem para poder envia-la clicando na opção "enviar mensagem".
+
+![mini-website-contato](https://user-images.githubusercontent.com/74699119/143669902-f8f654a3-c0e9-42f9-bac5-f047fba40fff.png)
+
+### Requisitos atendidos
+-	RF-03
+
+### Artefatos da funcionalidade
+-	mini-website-contato.html
+-	common.js
+-	mini-website-common.js
+-	mini-website-contato.js
+-	busca.js
+-	style.css
+
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
+6.	Clique na opção "Contato" no menu de navegação do mini website para ser redirecionado para esta página.
+
+# Mini website do vendedor - Aba de carrinho (RF-03 e RF-05)
+Página que exibe os produtos adicionados ao carrinho pelo usuário, além de permitir a adição de mais produtos e favoritar produtos exibidos na página. Ao clicar uma vez na opção "Finalizar pedido", são apresentadas ao usuário as opções de pagamento e entrega de seu pedido. Uma vez selecionadas as opções de pagamento e entrega, clicar novamente na opção "Finalizar pedido" resulta na submissão do pedido e em sua adição ao histórico de pedidos (podendo ser visualizado mais tarde nesta aba do menu do usuário).
+
+![mini-website-carrinho](https://user-images.githubusercontent.com/74699119/143670025-3247ff28-b114-404c-a685-7449d0261139.png)
+![mini-website-carrinho2](https://user-images.githubusercontent.com/74699119/143670027-29fa29b9-4203-4f56-a284-a836055b0806.png)
+
+### Requisitos atendidos
+-	RF-03
+-	RF-05
+
+### Artefatos da funcionalidade
+-	mini-website-carrinho.html
+-	common.js
+-	mini-website-common.js
+-	mini-website-carrinho.js
+-	busca.js
+-	style.css
+
+
+### Instruções de acesso
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2.	Descompacte o arquivo em uma pasta específica;
+3.	Abra o Visual Studio Code e execute o Live Server;
+4.	Abra um navegador de Internet e informe a seguinte URL:
+http://localhost:5500/index.html
+5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
+6.	Clique na opção "Carrinho" no menu de navegação do mini website para ser redirecionado para esta página.
+
+
+
+
 
 
