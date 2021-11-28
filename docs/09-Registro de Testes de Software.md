@@ -651,7 +651,110 @@ Depois
 
 - <b> As informações alteradas devem permanecer após sair e voltar para a página de gerenciar loja - Sucesso</b><br>
 
+![CT18_A](https://user-images.githubusercontent.com/74699119/143788633-99bca58a-d512-4bd1-af50-cb340a319338.png)
+
 <br>
+
+![CT18_B](https://user-images.githubusercontent.com/74699119/143788640-2fd2d20f-4e0d-4fc9-8170-06f1a67b6b2b.png)
+
+<br>
+
+![CT18_C](https://user-images.githubusercontent.com/74699119/143788642-c6e81dd7-c910-43db-a5b0-2fb2d683dcfb.png)
+
+<br>
+
+![CT18_D](https://user-images.githubusercontent.com/74699119/143788645-5f7afcbc-51f1-43bd-a8da-55ba2f24d236.png)
+
+<br>
+
+![CT18_E](https://user-images.githubusercontent.com/74699119/143788647-16024fe4-34c2-4719-bdd4-2b6714010d64.png)
+
+<br>
+
+![CT18_F](https://user-images.githubusercontent.com/74699119/143788656-c16cc7dc-9966-4e98-87a6-b48a4970c863.png)
+
+<br>
+
+![CT18_G](https://user-images.githubusercontent.com/74699119/143788663-1c9c356b-19d2-4d39-ae6e-4cf6e6d16340.png)
+
+<br>
+
+![CT18_H](https://user-images.githubusercontent.com/74699119/143788668-8c86cb97-fa47-4d80-97a4-f8133ccd8c15.png)
+
+<br>
+
+![CT18_I](https://user-images.githubusercontent.com/74699119/143788677-b90cb2b4-672c-4a06-8d31-bbb681a9e516.png)
+
+<br>
+
+![CT18_J](https://user-images.githubusercontent.com/74699119/143788680-d5f35b9f-be4d-4ed2-8b3e-649a5b6fca98.png)
+
+<br>
+
+![CT18_K](https://user-images.githubusercontent.com/74699119/143788683-b35af7bd-ba34-4351-81a4-f518725ebc22.png)
+
+<br>
+
+Sair e voltar da página
+![CT18_K2](https://user-images.githubusercontent.com/74699119/143788729-504e2b72-a644-4f95-bb98-eec2937f4755.png)
+
+<br>
+
+![CT18_K3](https://user-images.githubusercontent.com/74699119/143788735-ea7f47fd-ee80-45a5-a1ac-09fd1f0d1fef.png)
+
+<br>
+
+![CT18_K4](https://user-images.githubusercontent.com/74699119/143788745-7ce5ea71-3b4d-42f7-9dce-bbfc08d3bae5.png)
+
+<br>
+
+- <b> Os produtos cadastrados deverão aparecer ao visualizar a página de produtos da loja do vendedor e deve ser possível adiciona-los ao carrinho de compras e submeter um pedido - Sucesso</b><br>
+
+Mini website - Produtos<br>
+Antes
+![CT18ANTES_A](https://user-images.githubusercontent.com/74699119/143788838-0065f0dd-72c7-4263-9f80-b6cbb0ddb963.png)
+
+<br>
+
+Depois
+![CT18DEPOIS_A1](https://user-images.githubusercontent.com/74699119/143788851-8c011fe4-fb93-453b-a5a1-b5ef00933b99.png)
+
+<br>
+
+![CT18DEPOIS_A2](https://user-images.githubusercontent.com/74699119/143788857-e2861a57-e10a-40a0-8ee5-4b91d48d1f8e.png)
+
+Mini website - Carrinho<br>
+Antes
+![CT18ANTES_B](https://user-images.githubusercontent.com/74699119/143788872-d66a4195-defb-4508-a0da-279652363774.png)
+
+<br>
+
+Depois
+![CT18DEPOIS_B](https://user-images.githubusercontent.com/74699119/143788878-e4713770-6c52-4337-beb2-0b0d1d7afb64.png)
+
+<br>
+
+- <b> Os produtos devem ser removidos do mini-website ao clicar em "Remover" na aba de produtos da página de gerenciamento da loja ou ter suas informações alteradas ao clicar em "Editar produto" - Sucesso</b><br>
+
+Editar produto
+![CT18_L](https://user-images.githubusercontent.com/74699119/143788751-5c6f8c8c-8075-4479-a60f-63fe0c700efb.png)
+
+<br>
+
+![CT18_M](https://user-images.githubusercontent.com/74699119/143788765-6992e802-6b39-4335-9083-652c017dc7e0.png)
+
+<br>
+
+Remover produto
+![CT18_N](https://user-images.githubusercontent.com/74699119/143788774-ea6b69ad-ffb5-4c10-a2dc-4f6266de17f2.png)
+
+<br>
+
+![CT18_O](https://user-images.githubusercontent.com/74699119/143788778-f54476ab-c85b-48aa-92a5-9beea8158963.png)
+
+<br>
+
+# Caso de teste 19
 
 | Caso de Teste         | Caso de Teste	CT-19 – Customizar opções de pagamento do mini-website (Vendedor) |
 |-----------------------|--------------------------------------------------------|
