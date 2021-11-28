@@ -133,7 +133,7 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 
 <br>
 
-| Caso de Teste         | Caso de Teste CT-14 – Salvar/remover produto nos favoritos |
+| Caso de Teste         | Caso de Teste CT-15 – Salvar/remover produto nos favoritos |
 |-----------------------|--------------------------------------------------------|
 | Requisitos Associados | RF-005 - O site deve permitir que o consumidor salve como favorito, produtos ou vendedores. |
 | Objetivo do Teste     | Verificar a funcionalidade de salvar páginas de vendedores nos favoritos |
