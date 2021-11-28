@@ -303,23 +303,25 @@ Na etapa atual, o sistema de busca de vendedores utiliza o local storage e não 
 
 - <b>Visualizar os produtos cadastrados - Sucesso</b><br>
 
-![CT9_A](https://user-images.githubusercontent.com/74699119/143783206-f08d5699-aab2-46f6-baff-26d75c80a83b.png)
+![CT9_A](https://user-images.githubusercontent.com/74699119/143790380-7f993700-d676-416d-915a-0985a036b838.png)
 
 <br>
 
 - <b>Visualizar o modal de detalhes do produto após clicar em "mais detalhes" - Sucesso</b><br>
   
-![CT9_B](https://user-images.githubusercontent.com/74699119/143783214-418cf2f9-afb8-4156-9803-f98e06cf5a11.png)
+![CT9_B](https://user-images.githubusercontent.com/74699119/143790393-1505e23b-29f4-45f2-842c-595e88968439.png)
 
 <br>
 
 Após clicar em "Adcionar ao carrinho"
-![CT9_C](https://user-images.githubusercontent.com/74699119/143783221-24e93b5c-c95d-4a9e-94db-9bcf29b298c0.png)
+![CT9_C](https://user-images.githubusercontent.com/74699119/143790404-66bde0e9-1b50-49f0-8c04-bcb41ab91e30.png)
+
 
 <br>
   
 Após clicar novamente em "Adcionar ao carrinho"
-![CT9_D](https://user-images.githubusercontent.com/74699119/143783229-e7940ccb-eac4-43a1-ac86-0385a2458989.png)
+![CT9_D](https://user-images.githubusercontent.com/74699119/143790411-3d665077-9572-4309-9931-347796e1c168.png)
+
 
 <br>
 
@@ -330,6 +332,10 @@ Após clicar novamente em "Adcionar ao carrinho"
 <br>
   
 - <b>Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar" - Sucesso</b><br>
+
+![CT9_E2](https://user-images.githubusercontent.com/74699119/143790418-f5a2c490-d1f2-43ec-9896-7b73ac1cd8e4.png)
+
+<br>
 
 ![CT9_E](https://user-images.githubusercontent.com/74699119/143783234-8619a610-5238-4193-9209-ced1ce41f93c.png)
 
