@@ -146,7 +146,7 @@ Antes de trocar
 Após trocar
 <br>
 
-![CT4_C](https://user-images.githubusercontent.com/74699119/143780872-9a73591d-ffd2-481a-b319-3f032cb9cb0b.png)
+![CT4_C](https://user-images.githubusercontent.com/74699119/143790286-51102ad6-c044-444a-b2b6-0a24a0123f49.png)
 
 <br>
 Após abrir e fechar
