@@ -360,14 +360,51 @@ Ao tentar submeter um pedido sem estar logado, uma mensagem dizendo "Faça login
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Visualizar as informações dos pedidos feitos anteriormente com sucesso <br> - Ser redirecionado para a página do carrinho da loja contendo os itens do pedido a ser repetido ao clicar em "Repetir pedido" |
+### Resultados obtidos
+
+- <b>Visualizar as informações dos pedidos feitos anteriormente com sucesso - Sucesso</b><br>
+
+![CT11_A](https://user-images.githubusercontent.com/74699119/143785503-ecb03cd5-3795-4286-92e8-7a2eaefd2eed.png)
 
 <br>
+
+![CT11_B](https://user-images.githubusercontent.com/74699119/143785508-fbeed768-bacd-4d32-b32b-fcbe7ebee273.png)
+
+<br>
+
+![CT11_C](https://user-images.githubusercontent.com/74699119/143785512-ef7e4ffa-aa50-4a8d-a00e-b9b5093a66c9.png)
+
+<br>
+
+- <b>Ser redirecionado para a página do carrinho da loja contendo os itens do pedido a ser repetido ao clicar em "Repetir pedido" - Sucesso</b><br>
+<br>
+
+![CT11_D](https://user-images.githubusercontent.com/74699119/143785520-abcb2399-c64b-4c84-b425-08f9d8bcd667.png)
+
+<br>
+
+![CT11_E](https://user-images.githubusercontent.com/74699119/143785525-79357348-18fb-4799-9cb0-3c12147ba4bf.png)
+
+<br>
+
+## Caso de teste 12
 
 | Caso de Teste         | Caso de Teste CT-12 – Visualizar redes sociais do vendedor |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Visualizar os icones das redes sociais do vendedor na página. <br> - Ser redirecionado para as redes sociais em uma nova aba do navegador ao clicar nos icones (como os vendedores cadastrados são fictícios, clicar nessas redes sociais deve apenas redirecionar para a página inicial da rede social em questão) |
+### Resultados obtidos
 
+- <b>Visualizar os icones das redes sociais do vendedor na página - Sucesso</b><br>
+
+![CT12_A](https://user-images.githubusercontent.com/74699119/143785620-a178f1bd-5bb2-4824-9b68-26ec1dd1d423.png)
+
+<br>
+
+- <br>Ser redirecionado para as redes sociais em uma nova aba do navegador ao clicar nos icones (como os vendedores cadastrados são fictícios, clicar nessas redes sociais deve apenas redirecionar para a página inicial da rede social em questão) - Sucesso</b><br>
+Clicar no icone das redes sociais abriu uma nova aba com o endereço da página inicial da rede (Exemplo: Clicar no icone do facebook abre a página https://www.facebook.com).
+
+- <b>Visualizar os icones das redes sociais do vendedor na página - Sucesso</b><br>
 <br>
 
 | Caso de Teste         | Caso de Teste CT-13 – Submeter mensagem para o vendedor |
