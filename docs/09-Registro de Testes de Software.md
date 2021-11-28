@@ -117,10 +117,14 @@ Resultado obtido ao clicar na opção
 - <b>O modal de dados do usuário deve abrir e mostrar os dados do usuário</b><br> 
 <br>
 Menu do usuário<br>
-![CT4_A](https://user-images.githubusercontent.com/74699119/143780151-9cd4347d-a97d-44ff-8bc5-c66c21c7f588.png)
+
+![CT4_A](https://user-images.githubusercontent.com/74699119/143780799-89162016-6988-4642-883e-cc42e038a9d1.png)
+
 <br>
 Modal de dados do usuário
-![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
+
+![CT4_B](https://user-images.githubusercontent.com/74699119/143780800-a187ea74-1784-437a-b2c0-915ad2eff827.png)
+
 <br>
 - <b>Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha)</b><br>
 Ao informar a senha errada para a troca de e-mail, uma mensagem de "senha incorreta!" é exibida e o e-mail não é trocado. Ao tentar trocar a senha fornecendo a senha antiga incorreta ou não repetindo corretamente a nova senha, uma mensagem de "informações incorretas!" é exibida e a senha não é trocada
@@ -130,7 +134,10 @@ Antes de fechar
 ![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
 <br>
 Após abrir e fechar
-![CT4_D](https://user-images.githubusercontent.com/74699119/143780326-1be1b1c1-ceb2-4adf-89a6-93752703f5bd.png)
+<br>
+
+![CT4_D](https://user-images.githubusercontent.com/74699119/143780815-6d43d1ee-faef-4481-86dc-82ea8c79fef8.png)
+
 <br>
 
 ## Caso de Teste 5
