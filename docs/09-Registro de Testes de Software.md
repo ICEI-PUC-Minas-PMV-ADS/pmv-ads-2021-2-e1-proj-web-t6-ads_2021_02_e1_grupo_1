@@ -222,22 +222,52 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 ![CT7_A](https://user-images.githubusercontent.com/74699119/143782860-cb62e58d-ee57-48e4-bf27-2654c4adbf97.png)
 
 <br>
+
 - <b>Mudar o filtro de busca "Avaliação maior que 4 estrelas" deve atualizar a lista excluindo os vendedores com avaliação menor do que 4/5 - Sucesso</b><br>
 
 ![CT7_B](https://user-images.githubusercontent.com/74699119/143782865-aa4799ee-53fa-4f14-b776-d6aae470d949.png)
 
 <br>
+
 - <b>Clicar na imagem dos vendedores cadastrados deve redirecionar o usuário para a página de "mini website" do vendedor - Sucesso</b><br>
 
 ![CT7_C](https://user-images.githubusercontent.com/74699119/143782868-e62d0956-4de3-49c3-ade4-af6f3af5fbda.png)
 
 <br>
 
+## Caso de teste 8
+
 | Caso de Teste         | Caso de Teste CT-08 – Visualização da página inicial de cada loja |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Visualizar a imagem do vendedor cadastrado, texto de descrição da loja e vídeo de apresentação (se presente para aquela loja) para as lojas cadastradas |
+### Resultados obtidos
 
+- <b> Visualizar a imagem do vendedor cadastrado, texto de descrição da loja e vídeo de apresentação (se presente para aquela loja) para as lojas cadastradas - Sucesso<b><br>
+
+![CT8_A](https://user-images.githubusercontent.com/74699119/143782991-ff23a8ef-12a6-489d-ae01-92729c0503b6.png)
+
+<br>
+  
+![CT8_B](https://user-images.githubusercontent.com/74699119/143783000-c42d7f69-472d-4f6d-b67e-5e8c337c6e6c.png)
+
+<br>
+  
+![CT8_C](https://user-images.githubusercontent.com/74699119/143783003-0a7f8b63-4b1e-4d70-8d29-c2463a5e5541.png)
+
+<br>
+  
+![CT8_D](https://user-images.githubusercontent.com/74699119/143783009-5788250f-8695-474b-a544-e3b861f48a23.png)
+
+<br>
+  
+![CT8_E](https://user-images.githubusercontent.com/74699119/143783016-1970bde0-fc53-44c9-a7bd-1048ff57eca5.png)
+  
+<br>
+
+## Caso de teste 9
+  
+- <b>Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer na lista de resultados - Sucesso</b><br>
 <br>
 
 | Caso de Teste         | Caso de Teste CT-09 – Adicionar e remover produtos de uma loja ao carrinho de compras |
