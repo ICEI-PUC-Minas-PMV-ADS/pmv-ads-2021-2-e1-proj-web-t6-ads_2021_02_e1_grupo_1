@@ -274,8 +274,55 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Visualizar os produtos cadastrados. <br> - Visualizar o modal de detalhes do produto após clicar em "mais detalhes" <br> - Verificar que a ordem do produto foi corretamente adicionada ao carrinho <br> - Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar". |
+### Resultados obtidos
+
+- <b>Visualizar os produtos cadastrados - Sucesso<b><br>
+
+![CT9_A](https://user-images.githubusercontent.com/74699119/143783206-f08d5699-aab2-46f6-baff-26d75c80a83b.png)
 
 <br>
+
+- <b>Visualizar o modal de detalhes do produto após clicar em "mais detalhes" - Sucesso<b><br>
+  
+![CT9_B](https://user-images.githubusercontent.com/74699119/143783214-418cf2f9-afb8-4156-9803-f98e06cf5a11.png)
+
+<br>
+  
+![CT9_C](https://user-images.githubusercontent.com/74699119/143783221-24e93b5c-c95d-4a9e-94db-9bcf29b298c0.png)
+
+<br>
+  
+![CT9_D](https://user-images.githubusercontent.com/74699119/143783229-e7940ccb-eac4-43a1-ac86-0385a2458989.png)
+
+<br>
+
+- <b>Verificar que a ordem do produto foi corretamente adicionada ao carrinho - Sucesso<b><br>
+  
+![CT9_E](https://user-images.githubusercontent.com/74699119/143783234-8619a610-5238-4193-9209-ced1ce41f93c.png)
+
+<br>
+  
+- <b>Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar" - Sucesso<b><br>
+
+![CT9_E](https://user-images.githubusercontent.com/74699119/143783234-8619a610-5238-4193-9209-ced1ce41f93c.png)
+
+<br>
+
+Após clicar em "cancelar"
+![CT9_F](https://user-images.githubusercontent.com/74699119/143783245-4d16ad5f-10a5-4a07-a0a2-6eab69c2095b.png)
+  
+Adicionando outro produto diretametne da página do carrinho
+<br>
+  
+![CT9_G](https://user-images.githubusercontent.com/74699119/143783275-86bb96f9-afcc-4fa8-8769-ba1078ec9df2.png)
+
+<br>
+  
+![CT9_H](https://user-images.githubusercontent.com/74699119/143783287-ec581fbc-0f24-4113-8a71-a5a66206320f.png)
+  
+<br>
+  
+## Caso de teste 10
 
 | Caso de Teste         | Caso de Teste CT-10 – Submeter o pedido de compra dos produtos adicionados ao carrinho |
 |-----------------------|--------------------------------------------------------|
