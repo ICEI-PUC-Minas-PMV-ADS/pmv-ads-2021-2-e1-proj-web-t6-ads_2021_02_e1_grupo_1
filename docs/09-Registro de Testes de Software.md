@@ -214,6 +214,22 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer na lista de resultados. <br> - Mudar o filtro de busca "Avaliação maior que 4 estrelas" deve atualizar a lista excluindo os vendedores com avaliação menor do que 4/5. <br> - Clicar na imagem dos vendedores cadastrados deve redirecionar o usuário para a página de "mini website" do vendedor. |
+### Resultados obtidos
+<br>
+
+- <b>Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer na lista de resultados - Sucesso</b><br>
+
+![CT7_A](https://user-images.githubusercontent.com/74699119/143782860-cb62e58d-ee57-48e4-bf27-2654c4adbf97.png)
+
+<br>
+- <b>Mudar o filtro de busca "Avaliação maior que 4 estrelas" deve atualizar a lista excluindo os vendedores com avaliação menor do que 4/5 - Sucesso</b><br>
+
+![CT7_B](https://user-images.githubusercontent.com/74699119/143782865-aa4799ee-53fa-4f14-b776-d6aae470d949.png)
+
+<br>
+- <b>Clicar na imagem dos vendedores cadastrados deve redirecionar o usuário para a página de "mini website" do vendedor - Sucesso</b><br>
+
+![CT7_C](https://user-images.githubusercontent.com/74699119/143782868-e62d0956-4de3-49c3-ade4-af6f3af5fbda.png)
 
 <br>
 
