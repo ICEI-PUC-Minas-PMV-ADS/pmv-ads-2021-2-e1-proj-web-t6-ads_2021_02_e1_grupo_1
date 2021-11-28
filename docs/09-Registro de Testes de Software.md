@@ -92,7 +92,7 @@ Após login
 - <b>Login só pode ser bem sucedido com um e-mail cadastrado e informando a senha correta - Sucesso</b><br>
 Ao informar um e-mail não cadastrado, uma mensagem dizendo "Não há nenhum usuário cadastrado com o E-mail ada@ada! Crie uma conta." é exibida e o login não é efetuado. Ao informar um e-mail já cadastrado, mas a senha incorreta, uma mensagem dizendo "Senha incorreta!" é exibida e o login não é efetuado.
 
-- <b>Realizar logoff e verificar que a opção "Minha conta" voltou a ser "Fazer Login" após o logoff</b><br>
+- <b>Realizar logoff e verificar que a opção "Minha conta" voltou a ser "Fazer Login" após o logoff - Sucesso</b><br>
 Opção de logoff
 <br>
 
@@ -114,7 +114,7 @@ Resultado obtido ao clicar na opção
 | Critérios de Êxito    | -	O modal de dados do usuário deve abrir e mostrar os dados do usuário. <br> - Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha). <br> - As informações alteradas com exito devem ainda estar presentes após fechar e abrir a funcionalidade novamente. |
 ### Resultados obtidos:
 
-- <b>O modal de dados do usuário deve abrir e mostrar os dados do usuário</b><br> 
+- <b>O modal de dados do usuário deve abrir e mostrar os dados do usuário - Sucesso</b><br> 
 <br>
 Menu do usuário<br>
 
@@ -126,10 +126,10 @@ Modal de dados do usuário
 ![CT4_B](https://user-images.githubusercontent.com/74699119/143780800-a187ea74-1784-437a-b2c0-915ad2eff827.png)
 
 <br>
-- <b>Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha)</b><br>
+- <b>Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha) - Sucesso</b><br>
 Ao informar a senha errada para a troca de e-mail, uma mensagem de "senha incorreta!" é exibida e o e-mail não é trocado. Ao tentar trocar a senha fornecendo a senha antiga incorreta ou não repetindo corretamente a nova senha, uma mensagem de "informações incorretas!" é exibida e a senha não é trocada
 <br>
-- <b>As informações alteradas com exito devem ainda estar presentes após fechar e abrir a funcionalidade novamente</b><br>
+- <b>As informações alteradas com exito devem ainda estar presentes após fechar e abrir a funcionalidade novamente - Sucesso</b><br>
 Antes de trocar
 ![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
 <br>
@@ -154,14 +154,14 @@ Após abrir e fechar
 | Critérios de Êxito    | -	O modal de seleção de endereço deve aparecer após clicar em "Entrega para". <br> - O endereço submetido deve estar presente abaixo da opção "Entrega para" no cabeçalho. <br> - Caso o usuário tenha feito login em uma conta, o endereço escolhido deve ficar salvo e estar presente novamente quando acessar essa conta |
 ### Resultados obtidos:
 
-- <b>O modal de seleção de endereço deve aparecer após clicar em "Entrega para"</b><br> 
+- <b>O modal de seleção de endereço deve aparecer após clicar em "Entrega para" - Sucesso</b><br> 
 ![CT5_A](https://user-images.githubusercontent.com/74699119/143781601-5ea6ab2f-5183-44b9-8ea2-ca20bdedf46d.png)
 <br>
 
 ![CT5_B](https://user-images.githubusercontent.com/74699119/143781754-22e25476-642e-4a9c-823a-a5105f54bc5f.png)
 
 
-- <b>O endereço submetido deve estar presente abaixo da opção "Entrega para" no cabeçalho</b><br> 
+- <b>O endereço submetido deve estar presente abaixo da opção "Entrega para" no cabeçalho - Sucesso</b><br> 
 
 ![CT5_C](https://user-images.githubusercontent.com/74699119/143781775-0757b5bc-06c0-4f6b-af8f-0235f829cfd0.png)
 
@@ -175,7 +175,7 @@ Após abrir e fechar
 
 <br>
 
-- <b>Caso o usuário tenha feito login em uma conta, o endereço escolhido deve ficar salvo e estar presente novamente quando acessar essa conta</b><br>
+- <b>Caso o usuário tenha feito login em uma conta, o endereço escolhido deve ficar salvo e estar presente novamente quando acessar essa conta - Sucesso</b><br>
 
 Login com outro usuário
 ![CT5_F](https://user-images.githubusercontent.com/74699119/143781690-4d94e056-f55d-4f1e-8727-2a7f8103b35d.png)
@@ -186,14 +186,28 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 ![CT5_G](https://user-images.githubusercontent.com/74699119/143781740-d10b1f9e-f184-4f81-ab29-a9dbe4375ebf.png)
 
 <br>
-<br>
+
+## Caso de teste 6
 
 | Caso de Teste         | Caso de Teste	CT-06 – Visualizar vendedores recomendados na página inicial |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer nas recomendações (clicar nas setas à esquerda ou direita para mostrar mais vendedores). <br> - Ao chegar no final da lista de vendedores, a lista deve começar a repetir (mostrar novamente o primeiro ou último vendedor da lista ao clicar novamente na seta direita ou esquerda, respectivamente).
+### Resultados obtidos
+<br>
+
+- <b>Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer nas recomendações (clicar nas setas à esquerda ou direita para mostrar mais vendedores) - Sucesso</b><br>
+
+![CT6_A](https://user-images.githubusercontent.com/74699119/143781947-a667c67c-13f9-4e9a-a7eb-4cf79ca5f3ef.png)
 
 <br>
+- <b>Ao chegar no final da lista de vendedores, a lista deve começar a repetir (mostrar novamente o primeiro ou último vendedor da lista ao clicar novamente na seta direita ou esquerda, respectivamente) - Sucesso</b><br>
+
+![CT6_B](https://user-images.githubusercontent.com/74699119/143781956-a730ef1d-857f-4f85-aa82-6db35a86872f.png)
+
+<br>
+
+## Caso de teste 7
 
 | Caso de Teste         | Caso de Teste	CT-07 – Buscar vendedores cadastrados |
 |-----------------------|--------------------------------------------------------|
