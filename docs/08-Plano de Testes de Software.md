@@ -124,6 +124,24 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 
 <br>
 
+| Caso de Teste         | Caso de Teste CT-14 – Salvar/remover vendedor nos favoritos |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-005 - O site deve permitir que o consumidor salve como favorito, produtos ou vendedores. |
+| Objetivo do Teste     | Verificar a funcionalidade de salvar páginas de vendedores nos favoritos |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar na opção "Fazer Login" presente no cabeçalho do site <br> 5) Preencher os campos de e-mail e senha e clicar na opção "Entrar". <br> 6) Clicar em algum vendedor recomendado na página inicial ou utilizar a funcionalidade "Buscar vendedores" e clicar nos vendedores listados <br> 7) Clicar em "favoritar vendedor" ná página do mini website do vendedor <br> 7) Clicar na opção "Minha conta" no cabeçalho e escolher a opção "Favoritos". <br> 8) Visualizar vendedores favoritos salvos no modal de favoritos. <br> 9) Clicar em "Ir para a página" para ser redirecionado para a página do vendedor <br> 10) Clicar em "Remover" para remover vendedor dos favoritos |
+| Critérios de Êxito    | -	Ser capaz de visualizar o vendedor no modal de favoritos após favorita-lo. <br> - Ser redirecionado para a página inicial do mini website do vendedor salvo ao clicar em "Ir para página". <br> - Ser capaz de remover o vendedor da lista de favoritos clicando em "remover". |
+
+<br>
+
+| Caso de Teste         | Caso de Teste CT-14 – Salvar/remover produto nos favoritos |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-005 - O site deve permitir que o consumidor salve como favorito, produtos ou vendedores. |
+| Objetivo do Teste     | Verificar a funcionalidade de salvar páginas de vendedores nos favoritos |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar na opção "Fazer Login" presente no cabeçalho do site <br> 5) Preencher os campos de e-mail e senha e clicar na opção "Entrar". <br> 6) Clicar em algum vendedor recomendado na página inicial ou utilizar a funcionalidade "Buscar vendedores" e clicar nos vendedores listados <br> 7) Clicar na aba "Produtos" no menu de navegação <br> 7) <br> 8) Clicar em "Mais detalhes" no produto escolhido para abrir o modal de mais detalhes do produto. <br> 9) Clicar em "favoritar produto" no modal de "mais detalhes" do produto <br> 10) Clicar na opção "Minha conta" no cabeçalho e escolher a opção "Favoritos". <br> 8) Visualizar produtos favoritos salvos no modal de favoritos. <br> 9) Clicar em "Ir para produto" para ser redirecionado para o modal de "mais detalhes" do produto <br> 10) Clicar em "Remover" para remover produto dos favoritos |
+| Critérios de Êxito    | -	Ser capaz de visualizar o produto no modal de favoritos após favorita-lo. <br> - Ser redirecionado para o modal de "mais detalhes" do produto salvo ao clicar em "Ir para página". <br> - Ser capaz de remover o produto da lista de favoritos clicando em "remover". |
+
+<br>
+
 | Caso de Teste         | Caso de Teste	CT-0? – Customizar informações do mini-website (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes <br> RF-007 - O site deve permitir que o microempreendedor submeta as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” <br> RF-009 - A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) |
