@@ -142,7 +142,7 @@ Após trocar
 Após abrir e fechar
 <br>
 
-![CT4_D](https://user-images.githubusercontent.com/74699119/143780815-6d43d1ee-faef-4481-86dc-82ea8c79fef8.png)
+![CT4_D](https://user-images.githubusercontent.com/74699119/143780921-0edfb05a-39ef-49b6-9cb2-546a9361caa2.png)
 
 <br>
 
