@@ -337,10 +337,6 @@ Após clicar novamente em "Adcionar ao carrinho"
 
 <br>
 
-![CT9_E](https://user-images.githubusercontent.com/74699119/143783234-8619a610-5238-4193-9209-ced1ce41f93c.png)
-
-<br>
-
 Após clicar em "cancelar"
 ![CT9_F](https://user-images.githubusercontent.com/74699119/143783245-4d16ad5f-10a5-4a07-a0a2-6eab69c2095b.png)
   
