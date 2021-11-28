@@ -287,11 +287,13 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 ![CT9_B](https://user-images.githubusercontent.com/74699119/143783214-418cf2f9-afb8-4156-9803-f98e06cf5a11.png)
 
 <br>
-  
+
+Após clicar em "Adcionar ao carrinho"
 ![CT9_C](https://user-images.githubusercontent.com/74699119/143783221-24e93b5c-c95d-4a9e-94db-9bcf29b298c0.png)
 
 <br>
   
+Após clicar novamente em "Adcionar ao carrinho"
 ![CT9_D](https://user-images.githubusercontent.com/74699119/143783229-e7940ccb-eac4-43a1-ac86-0385a2458989.png)
 
 <br>
