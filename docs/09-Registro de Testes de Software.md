@@ -340,7 +340,7 @@ Após clicar novamente em "Adcionar ao carrinho"
 Após clicar em "cancelar"
 ![CT9_F](https://user-images.githubusercontent.com/74699119/143783245-4d16ad5f-10a5-4a07-a0a2-6eab69c2095b.png)
   
-Adicionando outro produto diretametne da página do carrinho
+Adicionando outro produto diretamente da página do carrinho
 <br>
   
 ![CT9_G](https://user-images.githubusercontent.com/74699119/143783275-86bb96f9-afcc-4fa8-8769-ba1078ec9df2.png)
