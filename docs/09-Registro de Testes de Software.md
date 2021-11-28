@@ -810,15 +810,16 @@ Sair e voltar para a página
 ![CT19_I](https://user-images.githubusercontent.com/74699119/143789416-3cd3eec9-11f3-4778-ac51-14538429a14e.png)
 
 <br>
+<br>
 
 Antes
-
 ![CT19_ANTES1](https://user-images.githubusercontent.com/74699119/143789425-ee4c4235-eeac-43b1-ba28-f735423934a1.png)
 
 <br>
 
 ![CT19_ANTES2](https://user-images.githubusercontent.com/74699119/143789428-cf86d777-ef9a-484c-b93e-1da6e46c7b68.png)
 
+<br>
 <br>
 
 Depois
