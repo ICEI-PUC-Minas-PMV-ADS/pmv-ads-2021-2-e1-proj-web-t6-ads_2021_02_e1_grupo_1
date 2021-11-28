@@ -97,6 +97,33 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 
 <br>
 
+| Caso de Teste         | Caso de Teste CT-11 – Visualizar histórico de pedidos e repetir pedido |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-002 - O site deve permitir que o usuário crie uma conta para salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). |
+| Objetivo do Teste     | Verificar a função de visualizar histórico de pedidos |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar na opção "Fazer Login" presente no cabeçalho do site <br>5) Preencher os campos de e-mail e senha e clicar na opção "Entrar". <br> 5) Após o login bem sucedido, clicar na opção "Minha conta" no cabeçalho e escolher a opção "Histórico" <br> 6) Clicar em "mais detalhes" para visualizar os detalhes do pedido 7) Clicar em "Repetir este pedido" para repetir o pedido |
+| Critérios de Êxito    | -	Visualizar as informações dos pedidos feitos anteriormente com sucesso <br> - Ser redirecionado para a página do carrinho da loja contendo os itens do pedido a ser repetido ao clicar em "Repetir pedido" |
+
+<br>
+
+| Caso de Teste         | Caso de Teste CT-12 – Visualizar redes sociais do vendedor |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-004 - O site deve permitir ao usuário visualizar todas a redes sociais e contatos disponibilizados pelos vendedores |
+| Objetivo do Teste     | Verificar a função de visualizar as redes sociais do vendedor no mini website da loja |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar em algum vendedor recomendado na página inicial ou utilizar a funcionalidade "Buscar vendedores" e clicar nos vendedores listados <br> 5) Uma vez dentro do mini website da loja, clicar na aba de "Redes sociais" no menu de navegação. <br> 6) Clicar nos ícones de redes sociais mostrados na página para abrir uma nova aba no navegador redirecionando para a página |
+| Critérios de Êxito    | -	Visualizar os icones das redes sociais do vendedor na página. <br> - Ser redirecionado para as redes sociais em uma nova aba do navegador ao clicar nos icones (como os vendedores cadastrados são fictícios, clicar nessas redes sociais deve apenas redirecionar para a página inicial da rede social em questão) |
+
+<br>
+
+| Caso de Teste         | Caso de Teste CT-13 – Submeter mensagem para o vendedor |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-004 - O site deve permitir ao usuário visualizar todas a redes sociais e contatos disponibilizados pelos vendedores |
+| Objetivo do Teste     | Verificar a função de visualizar as redes sociais do vendedor no mini website da loja |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar em algum vendedor recomendado na página inicial ou utilizar a funcionalidade "Buscar vendedores" e clicar nos vendedores listados <br> 5) Uma vez dentro do mini website da loja, clicar na aba de "Contato" no menu de navegação. <br> 6) Preencher as informações dos formulários da página e clicar em "Enviar mensagem" |
+| Critérios de Êxito    | -	Submeter o formulário presente na página com sucesso (mensagem não é enviada para ninguém já que o aplicativo apenas simula este mecanismo no momento) |
+
+<br>
+
 | Caso de Teste         | Caso de Teste	CT-0? – Customizar informações do mini-website (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes <br> RF-007 - O site deve permitir que o microempreendedor submeta as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” <br> RF-009 - A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) |
