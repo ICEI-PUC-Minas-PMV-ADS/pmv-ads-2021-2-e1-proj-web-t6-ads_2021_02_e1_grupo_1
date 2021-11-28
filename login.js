@@ -26,13 +26,9 @@ function login() {
 
             enderecoAtual = JSON.parse(localStorage.getItem('enderecoAtual'));
             listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
-            if (enderecoAtual != "Selecionar endereço" && enderecoAtual != "") {
-                listaUsuarios[findIndex].endereco = enderecoAtual;
-                
-            }
-            else {
-                enderecoAtual = listaUsuarios[findIndex].endereco;
-            }
+            
+            enderecoAtual = listaUsuarios[findIndex].endereco;
+            window.alert(enderecoAtual);
             updateLocalStorage();
         } 
         else {
