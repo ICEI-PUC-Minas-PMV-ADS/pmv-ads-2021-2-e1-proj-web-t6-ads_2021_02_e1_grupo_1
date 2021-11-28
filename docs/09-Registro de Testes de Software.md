@@ -1,5 +1,6 @@
 # Registro de Testes de Software
-Os resultados obtidos nos testes de software realizados estão descritos a seguir. 
+
+Todos os testes de software foram realizados nos navegadores Google Chrome, Mozilla Firefox e Microsoft Edge e verificando a responsividade (encolhendo a janela na horizontal até a dimensão mínima aceita pelo navegador). Problemas de compatibilidade com o navegador ou responsividade, se presentes, são descritos na seção "Pontos que podem ser melhorados". Os resultados obtidos nos testes de software realizados estão descritos a seguir. 
 
 ## Caso de Teste 1
 
@@ -569,10 +570,20 @@ Clicar no icone das redes sociais abriu uma nova aba com o endereço da página 
 
 <br>
 
+# Caso de teste 17
 | Caso de Teste         | Caso de Teste	CT-17 – Customizar informações do mini-website (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	As informações alteradas devem permanecer após sair e voltar para a página de gerenciar loja <br> - As informações atualizadas deverão aparecer ao visualizar a loja do vendedor na seção de recomendação e busca e ao visitar o mini website da loja. |
+### Resultados obtidos
+
+- <b> As informações alteradas devem permanecer após sair e voltar para a página de gerenciar loja - Sucesso</b><br>
+
+<br>
+
+- <b> As informações atualizadas deverão aparecer ao visualizar a loja do vendedor na seção de recomendação e busca e ao visitar o mini website da loja - Sucesso</b><br>
+
+<br>
 
 <br>
 
