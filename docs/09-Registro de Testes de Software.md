@@ -519,10 +519,53 @@ Clicar no icone das redes sociais abriu uma nova aba com o endereço da página 
 
 <br>
 
+# Caso de teste 16
+
 | Caso de Teste         | Caso de Teste	CT-16 – Adicionar e remover formas de pagamento |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	O modal de pagamentos salvos deve ser visualizado <br> - Um novo cartão deve ser adicionado ao clicar em "adicionar cartão" e permanecer salvo ao fechar e abrir o modal <br> - Clicar em "remover" em um cartão salvo deve apagar o cartão da lista |
+### Resultados obtidos
+
+- <b> O modal de pagamentos salvos deve ser visualizado - Sucesso</b><br>
+
+![CT16_A](https://user-images.githubusercontent.com/74699119/143787038-3aec81ea-8ea6-46d4-b6b5-1e0bf4583651.png)
+
+<br>
+
+![CT16_B](https://user-images.githubusercontent.com/74699119/143787041-ae10dd2c-1875-411a-b6ef-9a28ca3e947a.png)
+
+<br>
+
+- <b> Um novo cartão deve ser adicionado ao clicar em "adicionar cartão" e permanecer salvo ao fechar e abrir o modal - Sucesso</b><br>
+
+![CT16_C](https://user-images.githubusercontent.com/74699119/143787052-553c1f85-be63-4ea2-9f6f-feb710289681.png)
+
+<br>
+
+![CT16_D](https://user-images.githubusercontent.com/74699119/143787057-1a389b51-3a34-4b7c-9f58-582ff1f3bc1e.png)
+
+<br>
+
+![CT16_E](https://user-images.githubusercontent.com/74699119/143787075-42f68e9f-4159-4c96-b459-223f309fe614.png)
+
+<br>
+
+![CT16_F](https://user-images.githubusercontent.com/74699119/143787079-713a37a4-cd48-461f-8398-3e0d466d6cb9.png)
+
+<br>
+
+![CT16_G](https://user-images.githubusercontent.com/74699119/143787083-df4f17f4-4374-4c0c-80eb-7e6222928572.png)
+
+<br>
+
+- <b> Clicar em "remover" em um cartão salvo deve apagar o cartão da lista - Sucesso</b><br>
+
+![CT16_H](https://user-images.githubusercontent.com/74699119/143787088-c9af3a38-a55a-4b30-a100-7f669f85cd4f.png)
+
+<br>
+
+![CT16_I](https://user-images.githubusercontent.com/74699119/143787093-3941e205-59e6-4510-8695-123310bf4cb2.png)
 
 <br>
 
