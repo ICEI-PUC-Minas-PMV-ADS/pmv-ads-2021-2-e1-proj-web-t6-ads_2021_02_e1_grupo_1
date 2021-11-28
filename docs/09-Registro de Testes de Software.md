@@ -157,15 +157,24 @@ Após abrir e fechar
 - <b>O modal de seleção de endereço deve aparecer após clicar em "Entrega para"</b><br> 
 ![CT5_A](https://user-images.githubusercontent.com/74699119/143781601-5ea6ab2f-5183-44b9-8ea2-ca20bdedf46d.png)
 <br>
-![CT5_B](https://user-images.githubusercontent.com/74699119/143781605-852446ff-705d-4228-a246-f89f6b526349.png)
+
+![CT5_B](https://user-images.githubusercontent.com/74699119/143781754-22e25476-642e-4a9c-823a-a5105f54bc5f.png)
+
 
 - <b>O endereço submetido deve estar presente abaixo da opção "Entrega para" no cabeçalho</b><br> 
-![CT5_C](https://user-images.githubusercontent.com/74699119/143781630-3d9cc14a-d090-4fc3-9293-d1d7fb8a7331.png)
+
+![CT5_C](https://user-images.githubusercontent.com/74699119/143781775-0757b5bc-06c0-4f6b-af8f-0235f829cfd0.png)
+
 <br>
-![CT5_D](https://user-images.githubusercontent.com/74699119/143781636-56ec432b-3830-4f81-9400-7f5c461a25a8.png)
+
+![CT5_D](https://user-images.githubusercontent.com/74699119/143781782-f1619e38-2605-4ed8-8b76-b28192dcd84d.png)
+
 <br>
-![CT5_E](https://user-images.githubusercontent.com/74699119/143781643-b1672f34-7d66-4a60-b3a1-68280b71f571.png)
+
+![CT5_E](https://user-images.githubusercontent.com/74699119/143781785-e56a2f8f-4f17-43b0-95b0-fa6ed69460f6.png)
+
 <br>
+
 - <b>Caso o usuário tenha feito login em uma conta, o endereço escolhido deve ficar salvo e estar presente novamente quando acessar essa conta</b><br>
 Login com outro usuário<br>
 
