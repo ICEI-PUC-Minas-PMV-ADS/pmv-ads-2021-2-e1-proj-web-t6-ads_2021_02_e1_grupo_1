@@ -1,13 +1,14 @@
 # Registro de Testes de Software
 Os resultados obtidos nos testes de software realizados estão descritos a seguir. 
 
+## Caso de Teste 1
 
 | Caso de Teste         | Caso de Teste	CT-01 – Cadastro de usuário (cliente) |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Realizar cadastro de dados pessoais. <br>- Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente. <br>- Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente. |
 
-## Resultados obtidos:
+### Resultados obtidos:
 
 -	<b> Realizar cadastro de dados pessoais - Sucesso</b><br>
   Ao preencher todos os campos requisitados com um e-mail e senha válidos (com um e-mail não utilizado anteriormente), uma mensagem de sucesso dizendo "Usuário cadastrado com sucesso!" foi exibida. Após fazer isto, verificou-se que as informações fornecidas haviam sido devidamente guardadas no localstorage.
@@ -20,11 +21,12 @@ Os resultados obtidos nos testes de software realizados estão descritos a segui
 - <b> Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente - Sucesso</b><br>
   Ao repetir os mesmos passos do primeiro teste, usando um e-mail ainda não cadastrado, porém preenchendo informações distintas no campo "senha" e "repetir senha", uma mensagem de erro dizendo "A senha digitada em "repita a senha" não bate com a do campo "senha"!" é exibida e nenhuma informaçõa nova é salva no local storage.
 
-## Pontos que podem ser melhorados:
+### Pontos que podem ser melhorados:
 
 Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando o local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de cadastro e login real deverá ser implementado.
 
 <br>
+## Caso de Teste 2
 
 | Caso de Teste         | Caso de Teste	CT-02 – Cadastro de usuário (Vendedor) |
 |-----------------------|--------------------------------------------------------|
