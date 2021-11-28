@@ -575,7 +575,7 @@ O sistema atual não considera a possibilidade de produtos serem removidos ou te
 
 - <b> O modal de pagamentos salvos deve ser visualizado - Sucesso</b><br>
 
-![CT16_A](https://user-images.githubusercontent.com/74699119/143787038-3aec81ea-8ea6-46d4-b6b5-1e0bf4583651.png)
+![CT16_A](https://user-images.githubusercontent.com/74699119/143790591-2fe3d675-115e-481a-a9d9-cdaea9e4bc8a.png)
 
 <br>
 
