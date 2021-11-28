@@ -131,7 +131,9 @@ Ao informar a senha errada para a troca de e-mail, uma mensagem de "senha incorr
 <br>
 - <b>As informações alteradas com exito devem ainda estar presentes após fechar e abrir a funcionalidade novamente - Sucesso</b><br>
 Antes de trocar
-![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
+
+![CT4_B](https://user-images.githubusercontent.com/74699119/143783721-7be4ba41-d50f-4a9c-ac1e-33f08558e3cf.png)
+
 <br>
 Após trocar
 <br>
@@ -243,7 +245,7 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 | Critérios de Êxito    | -	Visualizar a imagem do vendedor cadastrado, texto de descrição da loja e vídeo de apresentação (se presente para aquela loja) para as lojas cadastradas |
 ### Resultados obtidos
 
-- <b> Visualizar a imagem do vendedor cadastrado, texto de descrição da loja e vídeo de apresentação (se presente para aquela loja) para as lojas cadastradas - Sucesso<b><br>
+- <b> Visualizar a imagem do vendedor cadastrado, texto de descrição da loja e vídeo de apresentação (se presente para aquela loja) para as lojas cadastradas - Sucesso</b><br>
 
 ![CT8_A](https://user-images.githubusercontent.com/74699119/143782991-ff23a8ef-12a6-489d-ae01-92729c0503b6.png)
 
@@ -276,13 +278,13 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 | Critérios de Êxito    | -	Visualizar os produtos cadastrados. <br> - Visualizar o modal de detalhes do produto após clicar em "mais detalhes" <br> - Verificar que a ordem do produto foi corretamente adicionada ao carrinho <br> - Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar". |
 ### Resultados obtidos
 
-- <b>Visualizar os produtos cadastrados - Sucesso<b><br>
+- <b>Visualizar os produtos cadastrados - Sucesso</b><br>
 
 ![CT9_A](https://user-images.githubusercontent.com/74699119/143783206-f08d5699-aab2-46f6-baff-26d75c80a83b.png)
 
 <br>
 
-- <b>Visualizar o modal de detalhes do produto após clicar em "mais detalhes" - Sucesso<b><br>
+- <b>Visualizar o modal de detalhes do produto após clicar em "mais detalhes" - Sucesso</b><br>
   
 ![CT9_B](https://user-images.githubusercontent.com/74699119/143783214-418cf2f9-afb8-4156-9803-f98e06cf5a11.png)
 
@@ -298,13 +300,13 @@ Após clicar novamente em "Adcionar ao carrinho"
 
 <br>
 
-- <b>Verificar que a ordem do produto foi corretamente adicionada ao carrinho - Sucesso<b><br>
+- <b>Verificar que a ordem do produto foi corretamente adicionada ao carrinho - Sucesso</b><br>
   
 ![CT9_E](https://user-images.githubusercontent.com/74699119/143783234-8619a610-5238-4193-9209-ced1ce41f93c.png)
 
 <br>
   
-- <b>Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar" - Sucesso<b><br>
+- <b>Verificar que os produtos adicionados são removido do carrinho ao clicar em "cancelar" - Sucesso</b><br>
 
 ![CT9_E](https://user-images.githubusercontent.com/74699119/143783234-8619a610-5238-4193-9209-ced1ce41f93c.png)
 
