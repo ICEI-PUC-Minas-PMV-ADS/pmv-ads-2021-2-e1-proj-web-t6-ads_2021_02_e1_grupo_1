@@ -294,7 +294,7 @@ function mudarEndereco() {
 
 function atualizarEndereco () {
     idUsuarioLogado = JSON.parse(localStorage.getItem('idUsuarioLogado'));
-    if (idUsuarioLogado != -1) {
+    if (idUsuarioLogado != "-1") {
         listaUsuarios[idUsuarioLogado.id].endereco = enderecoAtual;
     }
     updateLocalStorage();
