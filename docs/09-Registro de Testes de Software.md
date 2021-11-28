@@ -399,14 +399,13 @@ Ao tentar submeter um pedido sem estar logado, uma mensagem dizendo "Faça login
 
 ![CT12_A](https://user-images.githubusercontent.com/74699119/143785620-a178f1bd-5bb2-4824-9b68-26ec1dd1d423.png)
 
-<br>
-
-- <br>Ser redirecionado para as redes sociais em uma nova aba do navegador ao clicar nos icones (como os vendedores cadastrados são fictícios, clicar nessas redes sociais deve apenas redirecionar para a página inicial da rede social em questão) - Sucesso</b><br>
+- <b> Ser redirecionado para as redes sociais em uma nova aba do navegador ao clicar nos icones (como os vendedores cadastrados são fictícios, clicar nessas redes sociais deve apenas redirecionar para a página inicial da rede social em questão) - Sucesso</b><br>
+- 
 Clicar no icone das redes sociais abriu uma nova aba com o endereço da página inicial da rede (Exemplo: Clicar no icone do facebook abre a página https://www.facebook.com).
 
 <br>
 
-#Caso de teste 13
+# Caso de teste 13
 
 | Caso de Teste         | Caso de Teste CT-13 – Submeter mensagem para o vendedor |
 |-----------------------|--------------------------------------------------------|
