@@ -76,9 +76,13 @@ Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando
 -	<b>Realizar o Login da conta - Sucesso</b><br>
 Ao informar o e-mail e senha corretamente e clicar em "entrar", uma mensagem dizendo "Login efetuado com sucesso!" foi mostrada e o nome do usuário referente a conta passou a aparecer no cabeçalho abaixo da opção "minha conta".
 <br>
-![CT3_posloginpng](https://user-images.githubusercontent.com/74699119/143779689-8ddf086b-ef1f-457d-9afa-d15c12dad88c.png)
+
+![CT3_prelogin](https://user-images.githubusercontent.com/74699119/143780418-f9d558dc-10b4-477f-bbb6-e111866f6390.png)
+
 <br>
-![CT3_prelogin](https://user-images.githubusercontent.com/74699119/143779699-98772c80-7ffe-407d-a5b0-e1da55176bbd.png)
+
+![CT3_poslogin](https://user-images.githubusercontent.com/74699119/143780420-0eea53af-b582-4647-bff5-fa16aa0fe418.png)
+
 <br>
 - <b>Login só pode ser bem sucedido com um e-mail cadastrado e informando a senha correta - Sucesso</b><br>
 Ao informar um e-mail não cadastrado, uma mensagem dizendo "Não há nenhum usuário cadastrado com o E-mail ada@ada! Crie uma conta." é exibida e o login não é efetuado. Ao informar um e-mail já cadastrado, mas a senha incorreta, uma mensagem dizendo "Senha incorreta!" é exibida e o login não é efetuado.
@@ -86,10 +90,13 @@ Ao informar um e-mail não cadastrado, uma mensagem dizendo "Não há nenhum usu
 - <b>Realizar logoff e verificar que a opção "Minha conta" voltou a ser "Fazer Login" após o logoff</b><br>
 Opção de logoff
 <br>
+
 ![CT3_prelogoff](https://user-images.githubusercontent.com/74699119/143779809-bdfa2c9b-8f08-4a79-819d-10bbebb46d31.png)
+
 <br>
 Resultado obtido ao clicar na opção
 <br>
+
 ![CT3_poslogoffpng](https://user-images.githubusercontent.com/74699119/143779815-8abb245f-8c9d-42f8-a365-baa314dc2b41.png)
 
 <br>
