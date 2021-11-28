@@ -332,7 +332,7 @@ Adicionando outro produto diretametne da página do carrinho
 | Critérios de Êxito    | -	Submeter o pedido com sucesso. <br> - O pedido só deve ser submetido caso o usuário esteja logado e tenha selecionado uma forma de pagamento e entrega. |
 ### Resultados obtidos
 
-- <b>Submeter o pedido com sucesso - Sucesso<b><br>
+- <b>Submeter o pedido com sucesso - Sucesso</b><br>
 
 ![CT10_A](https://user-images.githubusercontent.com/74699119/143783406-cf5e14c9-d9c7-4af0-acfc-0015ec287087.png)
   
@@ -347,6 +347,7 @@ Adicionando outro produto diretametne da página do carrinho
 <br>
 
 - <b>O pedido só deve ser submetido caso o usuário esteja logado e tenha selecionado uma forma de pagamento e entrega - Sucesso</b><br>
+  
 Ao tentar submeter um pedido sem estar logado, uma mensagem dizendo "Faça login para finalizar o pedido" é exibida ao clicar pela primeira vez no botão "adicionar carrinho" e o pedido não é submetido. Caso o carrinho esteja vazio, uma mensagem dizendo "Carrinho vazio!" é exibida e o pedido não é submetido. Caso uma forma de pagamento ou entrega não tenha sido selecionada, o formulário não é submetido ao clicar em "adicionar carrinho" e o navegador solicita que você selecione uma opção. No caso de uma loja não possuir nenhum método de pagamento ou entrega cadastrado (o que pode ocorrer em uma loja nova cadastrada por um usuário vendedor), as mensagens "Formas de pagamento indisponíveis no momento!" ou "Entrega indisponível no momento!" são exibidas respectivamente.
 
 <br>
