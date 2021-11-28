@@ -1180,6 +1180,7 @@
     #modal_mais_detalhes {
         width: 470px;
         min-height: 1120px;
+        max-height: 1600px;
         top: 0px;
         left: 50%;
         margin-left: -227px;
