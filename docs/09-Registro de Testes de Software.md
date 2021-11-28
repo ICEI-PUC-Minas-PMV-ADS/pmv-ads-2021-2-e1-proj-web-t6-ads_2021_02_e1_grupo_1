@@ -128,10 +128,16 @@ Modal de dados do usuário
 <br>
 - <b>Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha)</b><br>
 Ao informar a senha errada para a troca de e-mail, uma mensagem de "senha incorreta!" é exibida e o e-mail não é trocado. Ao tentar trocar a senha fornecendo a senha antiga incorreta ou não repetindo corretamente a nova senha, uma mensagem de "informações incorretas!" é exibida e a senha não é trocada
-
+<br>
 - <b>As informações alteradas com exito devem ainda estar presentes após fechar e abrir a funcionalidade novamente</b><br>
-Antes de fechar
+Antes de trocar
 ![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
+<br>
+Após trocar
+<br>
+
+![CT4_C](https://user-images.githubusercontent.com/74699119/143780872-9a73591d-ffd2-481a-b319-3f032cb9cb0b.png)
+
 <br>
 Após abrir e fechar
 <br>
