@@ -708,7 +708,7 @@ Sair e voltar da página
 
 <br>
 
-- <b> Os produtos cadastrados deverão aparecer ao visualizar a página de produtos da loja do vendedor e deve ser possível adiciona-los ao carrinho de compras e submeter um pedido - Sucesso</b><br>
+- <b> Os produtos cadastrados deverão aparecer ao visualizar a página de produtos da loja do vendedor e deve ser possível adiciona-los ao carrinho de compras - Sucesso</b><br>
 
 Mini website - Produtos<br>
 Antes
