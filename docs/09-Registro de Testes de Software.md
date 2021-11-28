@@ -734,6 +734,14 @@ Depois
 
 <br>
 
+![CT18DEPOIS_B2](https://user-images.githubusercontent.com/74699119/143789063-a710ef39-af95-4924-879b-a54bc3528da9.png)
+
+<br>
+
+![CT18DEPOIS_B3](https://user-images.githubusercontent.com/74699119/143789064-3d649c4b-f453-4300-9589-4c6ea90a8f02.png)
+
+<br>
+
 - <b> Os produtos devem ser removidos do mini-website ao clicar em "Remover" na aba de produtos da página de gerenciamento da loja ou ter suas informações alteradas ao clicar em "Editar produto" - Sucesso</b><br>
 
 Editar produto
@@ -760,3 +768,8 @@ Remover produto
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	As informações alteradas devem permanecer após sair e voltar para a aba de "Venda/Entrega". <br> - As informações atualizadas deverão aparecer ao tentar submeter um pedido de compra no mini website do vendedor em questão. |
+### Resultados obtidos
+
+- <b> As informações alteradas devem permanecer após sair e voltar para a aba de "Venda/Entrega" - Sucesso</b><br>
+
+- <b> As informações atualizadas deverão aparecer ao tentar submeter um pedido de compra no mini website do vendedor em questão - Sucesso</b><br>
