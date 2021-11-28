@@ -37,7 +37,7 @@ Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando
 -	<b> Realizar cadastro de dados pessoais - Sucesso</b><br>
   Ao preencher todos os campos requisitados com um e-mail e senha válidos (com um e-mail não utilizado anteriormente), uma mensagem de sucesso dizendo "Usuário cadastrado com sucesso!" foi exibida. Após fazer isto, verificou-se que as informações fornecidas haviam sido devidamente guardadas no localstorage.
 
-![CT2_localstoragea](https://user-images.githubusercontent.com/74699119/143779016-46722265-104d-4787-bc3a-4b2c232aa069.png)
+![CT2_localstorageAa](https://user-images.githubusercontent.com/74699119/143779304-1c89d902-fc54-4704-9c40-6d0f15b6b2f1.png)
 
 - <b> Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente - Sucesso</b><br> 
   Ao repetir os mesmos passos do primeiro teste, porém utilizando um e-mail já cadastrado, uma mensagem de erro dizendo "O e-mail email@email.com já foi cadastrado anteriormente! Use outro e-mail." é exibida e nenhuma informaçõa nova é salva no local storage.
@@ -47,8 +47,8 @@ Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando
 
 - <b>Uma nova loja deve ser criada após o cadastro ser confirmado (loja deve aparecer na recomendação ou busca de vendedores e ser acessível) - Sucesso</b><br>
   Após o cadastro do usuário como vendedor, uma nova loja foi adicionada a "listaVendedores" no local storage:
- 
-![CT2_localstorageAa](https://user-images.githubusercontent.com/74699119/143779288-782c8b49-9015-433a-b9b4-755dfe7da4dd.png)
+
+![CT2_localstorageb](https://user-images.githubusercontent.com/74699119/143779307-d4bccb17-6b9e-4aa2-a9b0-848c8eca7f98.png)
 
 Além disto, a nova pode pode ser visualizada no menu de recomendação de vendedores  e na lista de busca, sendo acessível ao clicar na imagem da loja:
 
