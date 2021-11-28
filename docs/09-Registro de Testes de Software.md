@@ -26,6 +26,7 @@ Os resultados obtidos nos testes de software realizados estão descritos a segui
 Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando o local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de cadastro e login real deverá ser implementado.
 
 <br>
+
 ## Caso de Teste 2
 
 | Caso de Teste         | Caso de Teste	CT-02 – Cadastro de usuário (Vendedor) |
@@ -63,21 +64,62 @@ Além disto, a nova pode pode ser visualizada no menu de recomendação de vende
 Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando o local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de cadastro e login real deverá ser implementado.
 
 <br>
+
 ## Caso de Teste 3
 
 | Caso de Teste         | Caso de Teste	CT-03 – Login e logoff de usuário |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Realizar o Login da conta. <br>- Login só pode ser bem sucedido com um e-mail cadastrado e informando a senha correta. <br> - Realizar logoff e verificar que a opção "Minha conta" voltou a ser "Fazer Login" após o logoff |
+### Resultados obtidos:
+
+-	<b>Realizar o Login da conta - Sucesso</b><br>
+Ao informar o e-mail e senha corretamente e clicar em "entrar", uma mensagem dizendo "Login efetuado com sucesso!" foi mostrada e o nome do usuário referente a conta passou a aparecer no cabeçalho abaixo da opção "minha conta".
+<br>
+![CT3_posloginpng](https://user-images.githubusercontent.com/74699119/143779689-8ddf086b-ef1f-457d-9afa-d15c12dad88c.png)
+<br>
+![CT3_prelogin](https://user-images.githubusercontent.com/74699119/143779699-98772c80-7ffe-407d-a5b0-e1da55176bbd.png)
+<br>
+- <b>Login só pode ser bem sucedido com um e-mail cadastrado e informando a senha correta - Sucesso</b><br>
+Ao informar um e-mail não cadastrado, uma mensagem dizendo "Não há nenhum usuário cadastrado com o E-mail ada@ada! Crie uma conta." é exibida e o login não é efetuado. Ao informar um e-mail já cadastrado, mas a senha incorreta, uma mensagem dizendo "Senha incorreta!" é exibida e o login não é efetuado.
+
+- <b>Realizar logoff e verificar que a opção "Minha conta" voltou a ser "Fazer Login" após o logoff</b><br>
+Opção de logoff
+<br>
+![CT3_prelogoff](https://user-images.githubusercontent.com/74699119/143779809-bdfa2c9b-8f08-4a79-819d-10bbebb46d31.png)
+<br>
+Resultado obtido ao clicar na opção
+<br>
+![CT3_poslogoffpng](https://user-images.githubusercontent.com/74699119/143779815-8abb245f-8c9d-42f8-a365-baa314dc2b41.png)
 
 <br>
+
+## Caso de Teste 4
 
 | Caso de Teste         | Caso de Teste	CT-04 – Visualizar e alterar dados do usuário |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	O modal de dados do usuário deve abrir e mostrar os dados do usuário. <br> - Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha). <br> - As informações alteradas com exito devem ainda estar presentes após fechar e abrir a funcionalidade novamente. |
+### Resultados obtidos:
 
+- <b>O modal de dados do usuário deve abrir e mostrar os dados do usuário</b><br> 
 <br>
+![CT4_A](https://user-images.githubusercontent.com/74699119/143780151-9cd4347d-a97d-44ff-8bc5-c66c21c7f588.png)
+<br>
+![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
+<br>
+- <b>Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha)</b><br>
+Ao informar a senha errada para a troca de e-mail, uma mensagem de "senha incorreta!" é exibida e o e-mail não é trocado. Ao tentar trocar a senha fornecendo a senha antiga incorreta ou não repetindo corretamente a nova senha, uma mensagem de "informações incorretas!" é exibida e a senha não é trocada
+
+- <b>As informações alteradas com exito devem ainda estar presentes após fechar e abrir a funcionalidade novamente</b><br>
+Antes de fechar
+![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
+<br>
+Após abrir e fechar
+![CT4_D](https://user-images.githubusercontent.com/74699119/143780326-1be1b1c1-ceb2-4adf-89a6-93752703f5bd.png)
+<br>
+
+## Caso de Teste 5
 
 | Caso de Teste         | Caso de Teste	CT-05 – Selecionar endereço |
 |-----------------------|--------------------------------------------------------|
