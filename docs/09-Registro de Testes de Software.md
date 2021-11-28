@@ -531,7 +531,7 @@ O sistema de envio de mensagens para o vendedor é apenas simulado. Nenhum e-mai
 
 <br>
 
-![CT15_C](https://user-images.githubusercontent.com/74699119/143786717-75306f9c-c8ec-4e7e-81b4-d85d02059fa8.png)
+![CT15_C](https://user-images.githubusercontent.com/74699119/143790542-bb8174bd-88ea-4876-a447-ddd22d47c3f1.png)
 
 <br>
 
