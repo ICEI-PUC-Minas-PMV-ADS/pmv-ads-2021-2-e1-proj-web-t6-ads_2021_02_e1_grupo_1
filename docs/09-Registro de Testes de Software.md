@@ -772,4 +772,64 @@ Remover produto
 
 - <b> As informações alteradas devem permanecer após sair e voltar para a aba de "Venda/Entrega" - Sucesso</b><br>
 
+![CT19_A](https://user-images.githubusercontent.com/74699119/143789359-9c14ff47-4db5-40d3-abd3-aab0c41e6356.png)
+
+<br>
+
+![CT19_B](https://user-images.githubusercontent.com/74699119/143789362-1ae10b71-d395-4128-8e51-92d77e83fb5c.png)
+
+<br>
+
+![CT19_C](https://user-images.githubusercontent.com/74699119/143789366-f64b61f0-2aa3-4cc9-a606-ed2d06fd087a.png)
+
+<br>
+
+![CT19_D](https://user-images.githubusercontent.com/74699119/143789368-40f75929-cf30-4982-9be5-96f9e8f70143.png)
+
+<br>
+
+![CT19_E](https://user-images.githubusercontent.com/74699119/143789374-895b7346-c162-4587-8df1-07ee97710aa7.png)
+
+<br>
+
+Sair e voltar para a página
+![CT19_F](https://user-images.githubusercontent.com/74699119/143789385-7f7d4f5b-d61b-456d-a9b4-ecd8b66491ab.png)
+
+<br>
+
+![CT19_G](https://user-images.githubusercontent.com/74699119/143789398-f20d32e3-5dfb-4087-9917-d43e97d895ca.png)
+
+<br>
+
+![CT19_H](https://user-images.githubusercontent.com/74699119/143789400-097556b0-bc71-436a-8023-b6746df92c5d.png)
+
+<br>
+
 - <b> As informações atualizadas deverão aparecer ao tentar submeter um pedido de compra no mini website do vendedor em questão - Sucesso</b><br>
+
+![CT19_I](https://user-images.githubusercontent.com/74699119/143789416-3cd3eec9-11f3-4778-ac51-14538429a14e.png)
+
+<br>
+
+Antes
+
+![CT19_ANTES1](https://user-images.githubusercontent.com/74699119/143789425-ee4c4235-eeac-43b1-ba28-f735423934a1.png)
+
+<br>
+
+![CT19_ANTES2](https://user-images.githubusercontent.com/74699119/143789428-cf86d777-ef9a-484c-b93e-1da6e46c7b68.png)
+
+<br>
+
+Depois
+![CT19_DEPOIS1](https://user-images.githubusercontent.com/74699119/143789433-d7e747e1-2189-40c6-a741-56698ebb9f7d.png)
+
+<br>
+
+![CT19_DEPOIS2](https://user-images.githubusercontent.com/74699119/143789437-a19ec84e-c9ea-43bf-ae5a-0f66b22d02b7.png)
+
+<br>
+
+![CT19_DEPOIS3](https://user-images.githubusercontent.com/74699119/143789440-93d66508-c715-4779-b2f1-c48ebb206088.png)
+
+<br>
