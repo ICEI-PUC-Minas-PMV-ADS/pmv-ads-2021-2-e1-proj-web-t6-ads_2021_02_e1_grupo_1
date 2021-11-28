@@ -201,6 +201,7 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 ![CT6_A](https://user-images.githubusercontent.com/74699119/143781947-a667c67c-13f9-4e9a-a7eb-4cf79ca5f3ef.png)
 
 <br>
+
 - <b>Ao chegar no final da lista de vendedores, a lista deve começar a repetir (mostrar novamente o primeiro ou último vendedor da lista ao clicar novamente na seta direita ou esquerda, respectivamente) - Sucesso</b><br>
 
 ![CT6_B](https://user-images.githubusercontent.com/74699119/143781956-a730ef1d-857f-4f85-aa82-6db35a86872f.png)
