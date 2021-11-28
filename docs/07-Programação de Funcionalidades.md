@@ -519,7 +519,7 @@ Página que exibe as informações sobre a loja selecionada, sendo elas a imagem
 http://localhost:5500/index.html
 5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
 
-# Mini website do vendedor - Aba de produtos (RF-03 e RF-05)
+# Mini website do vendedor - Aba de produtos (RF-03, RF-05 e RF-10)
 Página que exibe as informações sobre os produtos disponíveis na loja selecionada. Ao clicar no botão "Mais detalhes", um modal mostrando as informações detalhadas do produto é aberto.
 
 ![mini-website-produtos](https://user-images.githubusercontent.com/74699119/143669245-a70d2bbe-a48a-4f90-a628-902ab532cc1b.png)
@@ -527,6 +527,7 @@ Página que exibe as informações sobre os produtos disponíveis na loja seleci
 ### Requisitos atendidos
 -	RF-03
 -	RF-05
+-	RF-10
 
 ### Artefatos da funcionalidade
 -	mini-website-produtos.html
@@ -536,7 +537,7 @@ Página que exibe as informações sobre os produtos disponíveis na loja seleci
 -	busca.js
 -	style.css
 
-# Modal de "Mais detalhes" do produto (RF-03 e RF-05)
+# Modal de "Mais detalhes" do produto (RF-03, RF-05 e RF-10)
 Modal exibindo as informações detalhadas do produto selecionado. Além das informações de imagem, preço e descrição, são apresentados também os sabores disponíveis e uma seção de "outras informações" contendo outras informações relevantes fornecidas pelo vendedor. Ao clicar em "Adicionar ao carrinho" uma vez, uma janela é exibida onde o usuário pode informar o sabor e a quantidade do produto que deseja comprar, bem como adicionar comentários ao pedido. Após selecionadas estas opções, clicar novamente em "Adicionar ao carrinho" adiciona o produto ao carrinho de compras.
 
 ![modal_maisDetalhes](https://user-images.githubusercontent.com/74699119/143669485-698aead3-a18d-46c8-a511-29c3098fadeb.png)
@@ -545,6 +546,7 @@ Modal exibindo as informações detalhadas do produto selecionado. Além das inf
 ### Requisitos atendidos
 -	RF-03
 -	RF-05
+-	RF-10
 
 ### Artefatos da funcionalidade
 -	mini-website-produtos.html
@@ -616,7 +618,7 @@ http://localhost:5500/index.html
 5.	Na tela inicial, clique na imagem de um dos vendedores recomendados ou realize uma busca e clique na imagem de um dos vendedores mostrados na página de busca para ser redirecionado para a página inicial do mini website do vendedor selecionado.
 6.	Clique na opção "Contato" no menu de navegação do mini website para ser redirecionado para esta página.
 
-# Mini website do vendedor - Aba de carrinho (RF-03 e RF-05)
+# Mini website do vendedor - Aba de carrinho (RF-03, RF-05 e RF-10)
 Página que exibe os produtos adicionados ao carrinho pelo usuário, além de permitir a adição de mais produtos e favoritar produtos exibidos na página. Ao clicar uma vez na opção "Finalizar pedido", são apresentadas ao usuário as opções de pagamento e entrega de seu pedido. Uma vez selecionadas as opções de pagamento e entrega, clicar novamente na opção "Finalizar pedido" resulta na submissão do pedido e em sua adição ao histórico de pedidos (podendo ser visualizado mais tarde nesta aba do menu do usuário).
 
 ![mini-website-carrinho](https://user-images.githubusercontent.com/74699119/143670025-3247ff28-b114-404c-a685-7449d0261139.png)
@@ -625,6 +627,7 @@ Página que exibe os produtos adicionados ao carrinho pelo usuário, além de pe
 ### Requisitos atendidos
 -	RF-03
 -	RF-05
+-	RF-10
 
 ### Artefatos da funcionalidade
 -	mini-website-carrinho.html
