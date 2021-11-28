@@ -411,20 +411,111 @@ Clicar no icone das redes sociais abriu uma nova aba com o endereço da página 
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Submeter o formulário presente na página com sucesso (mensagem não é enviada para ninguém já que o aplicativo apenas simula este mecanismo no momento) |
+### Resultados obtidos
+
+- <b>Submeter o formulário presente na página com sucesso (mensagem não é enviada para ninguém já que o aplicativo apenas simula este mecanismo no momento) - Sucesso</b><br>
+
+![CT13_A](https://user-images.githubusercontent.com/74699119/143786156-089a51af-4f3f-4bd2-8407-3690d4297731.png)
 
 <br>
+
+![CT13_B](https://user-images.githubusercontent.com/74699119/143786163-c98ca79e-421e-460d-83cc-5fa6b7c484ca.png)
+
+<br>
+
+![CT13_C](https://user-images.githubusercontent.com/74699119/143786396-ffe01233-1f7e-4e49-92ce-e7a5a55c98ee.png)
+
+<br>
+
+## Caso de teste 14
 
 | Caso de Teste         | Caso de Teste CT-14 – Salvar/remover vendedor nos favoritos |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Ser capaz de visualizar o vendedor no modal de favoritos após favorita-lo. <br> - Ser redirecionado para a página inicial do mini website do vendedor salvo ao clicar em "Ir para página". <br> - Ser capaz de remover o vendedor da lista de favoritos clicando em "remover". |
+### Resultados obtidos
+
+- <b>Ser capaz de visualizar o vendedor no modal de favoritos após favorita-lo - Sucesso</b><br>
+
+![CT14_A](https://user-images.githubusercontent.com/74699119/143786425-075e87ec-f08e-4fc6-9baa-310fd9d449c2.png)
 
 <br>
+
+![CT14_B](https://user-images.githubusercontent.com/74699119/143786438-6cb4aa7a-9c14-4b67-b21d-4b4f54cdb8c1.png)
+
+<br>
+
+![CT14_C](https://user-images.githubusercontent.com/74699119/143786515-82409c37-2903-4a54-bec3-386e25e030d3.png)
+
+<br>
+
+![CT14_D](https://user-images.githubusercontent.com/74699119/143786519-8141f564-1f8d-47d2-b18e-e090b84b0ae6.png)
+
+<br>
+
+- <b>Ser redirecionado para a página inicial do mini website do vendedor salvo ao clicar em "Ir para página" - Sucesso</b><br>
+
+![CT14_E](https://user-images.githubusercontent.com/74699119/143786525-0c429a8b-115d-4997-bc7d-cf6e7dc8c17f.png)
+
+<br>
+
+![CT14_F](https://user-images.githubusercontent.com/74699119/143786528-952a23a8-595f-47e9-b82d-a25b877210ab.png)
+
+<br>
+
+- <b>Ser capaz de remover o vendedor da lista de favoritos clicando em "remover" - Sucesso</b><br>
+
+![CT14_G](https://user-images.githubusercontent.com/74699119/143786535-bb184bbd-2c26-4e96-8649-33fae0d72929.png)
+
+<br>
+
+![CT14_H](https://user-images.githubusercontent.com/74699119/143786541-1be86bb8-c73a-4f0c-aaee-3f206e4c2154.png)
+
+<br>
+
+# Caso de teste 15
 
 | Caso de Teste         | Caso de Teste CT-15 – Salvar/remover produto nos favoritos |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Ser capaz de visualizar o produto no modal de favoritos após favorita-lo. <br> - Ser redirecionado para o modal de "mais detalhes" do produto salvo ao clicar em "Ir para página". <br> - Ser capaz de remover o produto da lista de favoritos clicando em "remover". |
+### Resultados obtidos
+
+- <b> Ser capaz de visualizar o vendedor no modal de favoritos após favorita-lo - Sucesso</b><br>
+
+![CT15_A](https://user-images.githubusercontent.com/74699119/143786710-483e50b9-fc1b-4c6e-839c-0f686bb3004e.png)
+
+<br>
+
+![CT15_B](https://user-images.githubusercontent.com/74699119/143786714-08c73212-17b3-4dc4-9563-577e757f3b25.png)
+
+<br>
+
+![CT15_C](https://user-images.githubusercontent.com/74699119/143786717-75306f9c-c8ec-4e7e-81b4-d85d02059fa8.png)
+
+<br>
+
+![CT15_D](https://user-images.githubusercontent.com/74699119/143786720-ddda2fba-85e8-4721-85a4-adcb869b8b86.png)
+
+<br>
+
+- <b> Ser redirecionado para o modal de "mais detalhes" do produto salvo ao clicar em "Ir para página" - Sucesso</b><br>
+
+![CT15_E](https://user-images.githubusercontent.com/74699119/143786726-edab68ac-503b-465e-8388-bbf2271fa8e8.png)
+
+<br>
+
+![CT15_F](https://user-images.githubusercontent.com/74699119/143786731-ce037d9a-2e6c-48b8-a16a-03b566e44439.png)
+
+<br>
+  
+- <b> Ser capaz de remover o produto da lista de favoritos clicando em "remover" - Sucesso</b><br>
+
+![CT15_G](https://user-images.githubusercontent.com/74699119/143786738-96762816-c1eb-48dd-8276-bdb8682f76b1.png)
+
+<br>
+
+![CT15_H](https://user-images.githubusercontent.com/74699119/143786743-21228cba-2e24-4ff1-a6a8-80844ea8eaf7.png)
 
 <br>
 
