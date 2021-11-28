@@ -28,7 +28,6 @@ function login() {
             listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
             
             enderecoAtual = listaUsuarios[findIndex].endereco;
-            window.alert(enderecoAtual);
             updateLocalStorage();
         } 
         else {
