@@ -79,7 +79,11 @@ Antes do login
 <br>
 
 ![CT3_prelogin](https://user-images.githubusercontent.com/74699119/143780418-f9d558dc-10b4-477f-bbb6-e111866f6390.png)
+
+<br>
+
 Após login
+
 <br>
 
 ![CT3_poslogin](https://user-images.githubusercontent.com/74699119/143780420-0eea53af-b582-4647-bff5-fa16aa0fe418.png)
@@ -92,13 +96,13 @@ Ao informar um e-mail não cadastrado, uma mensagem dizendo "Não há nenhum usu
 Opção de logoff
 <br>
 
-![CT3_prelogoff](https://user-images.githubusercontent.com/74699119/143779809-bdfa2c9b-8f08-4a79-819d-10bbebb46d31.png)
+![CT3_C](https://user-images.githubusercontent.com/74699119/143780756-18c8a9ab-188c-459b-8ea8-9e05e419d160.png)
 
 <br>
 Resultado obtido ao clicar na opção
 <br>
 
-![CT3_poslogoffpng](https://user-images.githubusercontent.com/74699119/143779815-8abb245f-8c9d-42f8-a365-baa314dc2b41.png)
+![CT3_D](https://user-images.githubusercontent.com/74699119/143780769-7c83b97f-6000-42b5-8e55-8522a90825bd.png)
 
 <br>
 
