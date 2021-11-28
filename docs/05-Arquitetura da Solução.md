@@ -54,6 +54,8 @@ No diagrama a seguir, está a representação da interação entre usuário e a 
 ## Hospedagem:
 A hospedagem da plataforma será implementada via GitHub Pages na fase de desenvolvimento da solução. 
 
+https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2021-2-e1-proj-web-t6-ads_2021_02_e1_grupo_1/index.html
+
 ## Links Úteis: 
 https://github.com/ 
 
