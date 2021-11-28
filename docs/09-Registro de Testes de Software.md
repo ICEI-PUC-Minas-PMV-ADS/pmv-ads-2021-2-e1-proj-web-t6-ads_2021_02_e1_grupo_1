@@ -579,18 +579,77 @@ Clicar no icone das redes sociais abriu uma nova aba com o endereço da página 
 
 - <b> As informações alteradas devem permanecer após sair e voltar para a página de gerenciar loja - Sucesso</b><br>
 
+![CT17_A](https://user-images.githubusercontent.com/74699119/143788029-a5156a4a-a592-45e5-8d68-bea94a5d2f66.png)
+
+<br>
+
+![CT17_B](https://user-images.githubusercontent.com/74699119/143788035-15ae3223-093e-43b6-bd0d-6b644f08f73e.png)
+
+<br>
+
+![CT17_C](https://user-images.githubusercontent.com/74699119/143788040-0da120b0-70e4-4a0c-bdfe-2dc7ad203884.png)
+
+<br>
+
+![CT17_D](https://user-images.githubusercontent.com/74699119/143788045-cdc4f1f3-f538-495e-999c-d5c0e270800a.png)
+
+<br>
+
+Informações alteradas
+![CT17_E](https://user-images.githubusercontent.com/74699119/143788051-bc51a3dd-86f4-45cf-bbcd-b464521fd344.png)
+
+<br>
+
+Sair da página
+![CT17_F](https://user-images.githubusercontent.com/74699119/143788062-7815b340-d353-40f6-b51f-6c53141c290a.png)
+
+<br>
+
+Voltar para a página
+![CT17_G](https://user-images.githubusercontent.com/74699119/143788072-fa2861cf-6c0d-4f3d-8aa7-3681b4a9ebe5.png)
+
+![CT17_H](https://user-images.githubusercontent.com/74699119/143788077-831eba5a-50f9-492b-994b-b84e2738fd9a.png)
+
 <br>
 
 - <b> As informações atualizadas deverão aparecer ao visualizar a loja do vendedor na seção de recomendação e busca e ao visitar o mini website da loja - Sucesso</b><br>
 
-<br>
+Vendedores recomendados
+![CT17_I](https://user-images.githubusercontent.com/74699119/143788124-78f404a6-fafc-4904-bbc8-f58ac15de156.png)
 
 <br>
+
+Busca
+![CT17_J](https://user-images.githubusercontent.com/74699119/143788130-641f7087-4166-4b6e-9a31-fd4d11f3eb96.png)
+
+<br>
+
+Mini website - Quem somos
+Antes
+![CT17_ANTES_A](https://user-images.githubusercontent.com/74699119/143788152-4a4498c9-c4c2-4d32-b4d0-79153a0938c4.png)
+
+Depois
+![CT17_DEPOIS_A](https://user-images.githubusercontent.com/74699119/143788160-e7a7de32-5301-482e-b255-26ae2d1b7ce2.png)
+
+Mini webiste - Redes sociais
+Antes
+![CT17_ANTES_B](https://user-images.githubusercontent.com/74699119/143788173-a0281a17-689a-4869-b38d-153f50a5fba9.png)
+
+Depois
+![CT17_DEPOIS_B](https://user-images.githubusercontent.com/74699119/143788179-a8e783fc-5e2c-49a6-88c9-00ebcc94fb27.png)
+
+
+<br>
+
+# Caso de teste 18
 
 | Caso de Teste         | Caso de Teste	CT-18 – Cadastrar novo produto na loja (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	As informações cadastradas devem permanecer após sair e voltar para a página de produtos <br> - Os produtos cadastrados deverão aparecer ao visualizar a página de produtos da loja do vendedor e deve ser possível adiciona-los ao carrinho de compras e submeter um pedido. <br> - Os produtos devem ser removidos do mini-website ao clicar em "Remover" na aba de produtos da página de gerenciamento da loja ou ter suas informações alteradas ao clicar em "Editar produto". |
+### Resultados obtidos
+
+- <b> As informações alteradas devem permanecer após sair e voltar para a página de gerenciar loja - Sucesso</b><br>
 
 <br>
 
