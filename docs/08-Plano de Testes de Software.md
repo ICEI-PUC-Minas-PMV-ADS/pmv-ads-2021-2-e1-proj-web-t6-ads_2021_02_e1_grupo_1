@@ -142,7 +142,16 @@ Os testes funcionais a serem realizados no aplicativo estão descritos abaixo.
 
 <br>
 
-| Caso de Teste         | Caso de Teste	CT-0? – Customizar informações do mini-website (Vendedor) |
+| Caso de Teste         | Caso de Teste	CT-16 – Adicionar e remover formas de pagamento |
+|-----------------------|--------------------------------------------------------|
+| Requisitos Associados | RF-002 - O site deve permitir que o usuário crie uma conta de vendedor para criar sua loja e salvar suas informações (local de entrega, meios de pagamento, histórico de pedidos, etc). |
+| Objetivo do Teste     | Verificar a funcionalidade de salvar formas de pagamento do usuário |
+| Passos                | 1) Acessar o Navegador <br>2) Informar o endereço do Site <br>3) Visualizar a página principal <br>4) Clicar na opção "Fazer Login" presente no cabeçalho do site <br>5) Preencher os campos de e-mail e senha e clicar na opção "Entrar". <br> 5) Após o login bem sucedido, clicar na opção "Pagamentos" no cabeçalho e escolher a opção "Dados pessoais". <br> 6) Clicar em "adicionar cartão para adicionar um novo cartão" <br> 7) Clicar em "Remover" para remover um cartão. |
+| Critérios de Êxito    | -	O modal de pagamentos salvos deve ser visualizado <br> - Um novo cartão deve ser adicionado ao clicar em "adicionar cartão" e permanecer salvo ao fechar e abrir o modal <br> - Clicar em "remover" em um cartão salvo deve apagar o cartão da lista |
+
+<br>
+
+| Caso de Teste         | Caso de Teste	CT-17 – Customizar informações do mini-website (Vendedor) |
 |-----------------------|--------------------------------------------------------|
 | Requisitos Associados | RF-003 - O site deve apresentar uma página individual de cada microempreendedor com seus produtos e informações relevantes <br> RF-007 - O site deve permitir que o microempreendedor submeta as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” <br> RF-009 - A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) |
 | Objetivo do Teste     | Verificar a funcionalidade de customização das informações da loja pelo usuário cadastrado como vendedor/dono daquela loja |
