@@ -75,10 +75,11 @@ Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando
 
 -	<b>Realizar o Login da conta - Sucesso</b><br>
 Ao informar o e-mail e senha corretamente e clicar em "entrar", uma mensagem dizendo "Login efetuado com sucesso!" foi mostrada e o nome do usuário referente a conta passou a aparecer no cabeçalho abaixo da opção "minha conta".
+Antes do login
 <br>
 
 ![CT3_prelogin](https://user-images.githubusercontent.com/74699119/143780418-f9d558dc-10b4-477f-bbb6-e111866f6390.png)
-
+Após login
 <br>
 
 ![CT3_poslogin](https://user-images.githubusercontent.com/74699119/143780420-0eea53af-b582-4647-bff5-fa16aa0fe418.png)
@@ -111,8 +112,10 @@ Resultado obtido ao clicar na opção
 
 - <b>O modal de dados do usuário deve abrir e mostrar os dados do usuário</b><br> 
 <br>
+Menu do usuário<br>
 ![CT4_A](https://user-images.githubusercontent.com/74699119/143780151-9cd4347d-a97d-44ff-8bc5-c66c21c7f588.png)
 <br>
+Modal de dados do usuário
 ![CT4_B](https://user-images.githubusercontent.com/74699119/143780152-b19d1ff8-f8fa-456b-907b-20c08684d2e1.png)
 <br>
 - <b>Os campos de "E-mail" e "Senha" só poderão ser alterados caso a senha atual seja informada (e a senha nova repetida no campo "repetir senha" para o caso da alteração de senha)</b><br>
