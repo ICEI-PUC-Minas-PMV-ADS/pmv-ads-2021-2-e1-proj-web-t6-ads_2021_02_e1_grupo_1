@@ -71,6 +71,7 @@ A tabela abaixo contém os requisitos funcionais do projeto e a prioridade com a
 |RF-007| O site deve permitir que o microempreendedor submeta as informações sobre seu modelo de negócio, redes sociais e informações de contato para serem mostradas no “mini-website” | ALTA|
 |RF-008| O site deve permitir que microempreendedor cadastre seus produtos e forneça possíveis informações relevantes sobre os mesmos para constar na descrição | ALTA |
 |RF-009| A plataforma deve fornecer ao microempreendedor opções de customização para seu “mini-website”, como a inserção de fotos de apresentação dos produtos, e de um vídeo-apresentação do negócio (podendo ser inserido por meio de link para vídeo hospedado em plataforma de vídeo) | MÉDIA |
+|RF-010| O site deve permitir que o usuário cadastrado adicione os produtos de um vendedor a um carrinho de compras e submeta um pedido de compra. | ALTA |
 
 ### Requisitos não Funcionais
 
