@@ -365,11 +365,11 @@ Adicionando outro produto diretamente da página do carrinho
   
 <br>
 
-![CT10_B](https://user-images.githubusercontent.com/74699119/143783412-3feb8026-96bd-4027-92df-dfabb3af083c.png)
+![CT10_B](https://user-images.githubusercontent.com/74699119/143790484-49692437-79ae-463b-a041-86904e749a11.png)
   
 <br>
 
-![CT10_C](https://user-images.githubusercontent.com/74699119/143783421-9bd98608-2754-4e78-a9cf-6a9b0806ac4d.png)
+![CT10_C](https://user-images.githubusercontent.com/74699119/143790489-cef5470e-594d-420b-a336-a07b5500de93.png)
   
 <br>
 
