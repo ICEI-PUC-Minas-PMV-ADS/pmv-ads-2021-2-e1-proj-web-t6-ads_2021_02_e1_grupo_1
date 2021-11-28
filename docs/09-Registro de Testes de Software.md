@@ -9,15 +9,15 @@ Os resultados obtidos nos testes de software realizados estão descritos a segui
 
 Resultados obtidos:
 
--	Realizar cadastro de dados pessoais - Sucesso
+-	Realizar cadastro de dados pessoais - Sucesso<br>
   Ao preencher todos os campos requisitados com um e-mail e senha válidos (com um e-mail não utilizado anteriormente), uma mensagem de sucesso dizendo "Usuário cadastrado com sucesso!" foi exibida. Após fazer isto, verificou-se que as informações fornecidas haviam sido devidamente guardadas no localstorage.
 
 ![CT1_localstorage](https://user-images.githubusercontent.com/74699119/143775825-581e0c77-9109-402e-ba07-1bd2381e5f54.png)
 
-- Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente. 
+- Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente - Sucesso<br> 
   Ao repetir os mesmos passos do primeiro teste, porém utilizando um e-mail já cadastrado, uma mensagem de erro dizendo "O e-mail email@email.com já foi cadastrado anteriormente! Use outro e-mail." é exibida e nenhuma informaçõa nova é salva no local storage.
   
-- Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente. |
+- Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente - Sucesso<br>
   Ao repetir os mesmos passos do primeiro teste, usando um e-mail ainda não cadastrado, porém preenchendo informações distintas no campo "senha" e "repetir senha", uma mensagem de erro dizendo "A senha digitada em "repita a senha" não bate com a do campo "senha"!" é exibida e nenhuma informaçõa nova é salva no local storage.
 
 <br>
