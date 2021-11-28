@@ -107,6 +107,10 @@ Resultado obtido ao clicar na opção
 
 <br>
 
+### Pontos que podem ser melhorados:
+
+Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando o local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de cadastro e login real deverá ser implementado.
+
 ## Caso de Teste 4
 
 | Caso de Teste         | Caso de Teste	CT-04 – Visualizar e alterar dados do usuário |
@@ -149,6 +153,10 @@ Após abrir e fechar
 
 <br>
 
+### Pontos que podem ser melhorados:
+
+Na etapa atual, os dados do usuário ficam salvos no local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de cadastro e login real deverá ser implementado.
+
 ## Caso de Teste 5
 
 | Caso de Teste         | Caso de Teste	CT-05 – Selecionar endereço |
@@ -190,6 +198,10 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 
 <br>
 
+### Pontos que podem ser melhorados:
+
+Na etapa atual, o sistema de busca de vendedores e entregas é apenas simulado e não utiliza a informação da localização do usuário. Além disto, o usuário pode digitar qualquer informação que deseje como seu endereço ao em vez de utilizar um serviço que o permita selecionar um endereço real. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de seleção de endereço real deverá ser implementado.
+
 ## Caso de teste 6
 
 | Caso de Teste         | Caso de Teste	CT-06 – Visualizar vendedores recomendados na página inicial |
@@ -210,6 +222,11 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 ![CT6_B](https://user-images.githubusercontent.com/74699119/143781956-a730ef1d-857f-4f85-aa82-6db35a86872f.png)
 
 <br>
+
+### Pontos que podem ser melhorados:
+
+Na etapa atual, o sistema de busca de vendedores e entregas é apenas simulado e não utiliza a informação da localização do usuário, portanto, todos os vendedores cadastrados são listados na lista de vendedores recomendados, e não somente aqueles que realizam entregas para a região do usuário. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de seleção de endereço real deverá ser implementado.
+
 
 ## Caso de teste 7
 
@@ -235,6 +252,12 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 - <b>Clicar na imagem dos vendedores cadastrados deve redirecionar o usuário para a página de "mini website" do vendedor - Sucesso</b><br>
 
 ![CT7_C](https://user-images.githubusercontent.com/74699119/143782868-e62d0956-4de3-49c3-ade4-af6f3af5fbda.png)
+
+<br>
+
+### Pontos que podem ser melhorados:
+
+Na etapa atual, o sistema de busca de vendedores utiliza o local storage e não possui um backend real, além disto, os vendedores possuem poucos produtos e a maior parte das descrições são placeholders "lorem ipsum". Desta forma, o input da barra de busca não possui efeito sobre quais vendedores são listados (qualquer coisa digitada na busca mostrará sempre todos os vendedores como resultado, em vez de selecionar aqueles que melhor se encaixam nas palavras chave). Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de busca por palavras chave real deverá ser implementado.
 
 <br>
 
@@ -269,10 +292,6 @@ Endereço mostrado após voltar para o primeiro usuário<br>
 <br>
 
 ## Caso de teste 9
-  
-- <b>Os vendedores cadastrados no website (Doces caseiros, Massas congeladas, Marmitas vegan, Cupcakes variados e novas lojas criadas ao cadastrar usuários como vendedores) devem aparecer na lista de resultados - Sucesso</b><br>
-<br>
-
 | Caso de Teste         | Caso de Teste CT-09 – Adicionar e remover produtos de uma loja ao carrinho de compras |
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
@@ -355,6 +374,12 @@ Ao tentar submeter um pedido sem estar logado, uma mensagem dizendo "Faça login
 
 <br>
 
+### Pontos que podem ser melhorados:
+
+Na etapa atual, o sistema de compra de produtos é apenas simulado e não envia o pedido para o e-mail/Whatsapp do vendedor e nem possui um sistema interno de cobrança. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de compra de produtos mais próximo de um sistema real deverá ser implementado.
+
+<br>
+
 ## Caso de teste 11
   
 | Caso de Teste         | Caso de Teste CT-11 – Visualizar histórico de pedidos e repetir pedido |
@@ -385,6 +410,8 @@ Ao tentar submeter um pedido sem estar logado, uma mensagem dizendo "Faça login
 <br>
 
 ![CT11_E](https://user-images.githubusercontent.com/74699119/143785525-79357348-18fb-4799-9cb0-3c12147ba4bf.png)
+
+<br>
 
 <br>
 
@@ -427,6 +454,13 @@ Clicar no icone das redes sociais abriu uma nova aba com o endereço da página 
 ![CT13_C](https://user-images.githubusercontent.com/74699119/143786396-ffe01233-1f7e-4e49-92ce-e7a5a55c98ee.png)
 
 <br>
+
+
+### Pontos que podem ser melhorados:
+
+O sistema de envio de mensagens para o vendedor é apenas simulado. Nenhum e-mail ou mensagem de Whatsapp é realmente enviada para o contato do vendedor. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, esta funcionalidade deverá ser revisitada de modo a realmente enviar uma mensagem para o e-mail/Whatsapp cadastrado pelo vendedor.
+
+<br> 
 
 ## Caso de teste 14
 
@@ -520,6 +554,12 @@ Clicar no icone das redes sociais abriu uma nova aba com o endereço da página 
 
 <br>
 
+### Pontos que podem ser melhorados:
+
+O sistema atual não considera a possibilidade de produtos serem removidos ou terem seus preços alterados, além de não levar em consideração a quantidade de estoque que o vendedor possui na hora de repetir um pedido. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, esta funcionalidade deverá ser revisitada de modo a atualizar as informações dos favoritos de modo a remover produtos que não existem mais, atualizar informações e também verificar se é possível repetir o pedido antes de redirecionar para a página do carrinho.
+
+<br>
+
 # Caso de teste 16
 
 | Caso de Teste         | Caso de Teste	CT-16 – Adicionar e remover formas de pagamento |
@@ -569,6 +609,10 @@ Clicar no icone das redes sociais abriu uma nova aba com o endereço da página 
 ![CT16_I](https://user-images.githubusercontent.com/74699119/143787093-3941e205-59e6-4510-8695-123310bf4cb2.png)
 
 <br>
+
+### Pontos que podem ser melhorados:
+
+O sistema atual apenas simula a adição de informações de cartão de crédito, mas não salva informações reais e não as utiliza os cartões salvos durante o processo de compra de produtos (uma vez que o sistema de vendas também é simulado). Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, esta funcionalidade deverá ser revisitada de modo a se aproximar mais de um sistema de pagamentos real.
 
 # Caso de teste 17
 | Caso de Teste         | Caso de Teste	CT-17 – Customizar informações do mini-website (Vendedor) |
@@ -638,6 +682,12 @@ Antes
 Depois
 ![CT17_DEPOIS_B](https://user-images.githubusercontent.com/74699119/143788179-a8e783fc-5e2c-49a6-88c9-00ebcc94fb27.png)
 
+
+<br>
+
+### Pontos que podem ser melhorados:
+
+As informações submetidas nesta funcionalidade ficam todas salvas no local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um banco de dados real deverá ser implementado.
 
 <br>
 
@@ -762,6 +812,12 @@ Remover produto
 
 <br>
 
+### Pontos que podem ser melhorados:
+
+As informações submetidas nesta funcionalidade ficam todas salvas no local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um banco de dados real deverá ser implementado.
+
+<br>
+
 # Caso de teste 19
 
 | Caso de Teste         | Caso de Teste	CT-19 – Customizar opções de pagamento do mini-website (Vendedor) |
@@ -832,5 +888,11 @@ Depois
 <br>
 
 ![CT19_DEPOIS3](https://user-images.githubusercontent.com/74699119/143789440-93d66508-c715-4779-b2f1-c48ebb206088.png)
+
+<br>
+
+### Pontos que podem ser melhorados:
+
+O sistema da pagamentos e entrega são apenas simulados. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de pagamentos e entrega mais próximo de um sistema real deverá ser implementado.
 
 <br>
