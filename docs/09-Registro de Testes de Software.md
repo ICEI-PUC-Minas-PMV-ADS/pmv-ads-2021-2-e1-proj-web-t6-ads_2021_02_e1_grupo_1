@@ -176,8 +176,8 @@ Após abrir e fechar
 <br>
 
 - <b>Caso o usuário tenha feito login em uma conta, o endereço escolhido deve ficar salvo e estar presente novamente quando acessar essa conta</b><br>
-Login com outro usuário<br>
 
+Login com outro usuário
 ![CT5_F](https://user-images.githubusercontent.com/74699119/143781690-4d94e056-f55d-4f1e-8727-2a7f8103b35d.png)
 
 <br>
