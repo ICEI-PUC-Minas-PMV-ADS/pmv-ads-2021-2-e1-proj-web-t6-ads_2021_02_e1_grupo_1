@@ -1,6 +1,6 @@
 # Registro de Testes de Software
 
-Todos os testes de software foram realizados nos navegadores Google Chrome, Mozilla Firefox e Microsoft Edge e verificando a responsividade (encolhendo a janela na horizontal até a dimensão mínima aceita pelo navegador). Problemas de compatibilidade com o navegador ou responsividade, se presentes, são descritos na seção "Pontos que podem ser melhorados". Os resultados obtidos nos testes de software realizados estão descritos a seguir. 
+Todos os testes de software foram realizados nos navegadores Google Chrome, Mozilla Firefox e Microsoft Edge e verificando a responsividade (encolhendo a janela na horizontal até a dimensão mínima aceita pelo navegador). Problemas de compatibilidade com o navegador ou responsividade, se presentes, estarão descritos na seção "Pontos que podem ser melhorados". Os resultados obtidos nos testes de software realizados estão descritos a seguir. 
 
 ## Caso de Teste 1
 
