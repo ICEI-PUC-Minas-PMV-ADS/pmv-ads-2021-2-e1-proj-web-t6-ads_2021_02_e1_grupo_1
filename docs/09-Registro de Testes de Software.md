@@ -32,8 +32,38 @@ Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	Realizar cadastro de dados pessoais. <br>- Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente. <br>- Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente. <br>- Uma nova loja deve ser criada após o cadastro ser confirmado (loja deve aparecer na recomendação ou busca de vendedores e ser acessível). |
+### Resultados obtidos:
+
+-	<b> Realizar cadastro de dados pessoais - Sucesso</b><br>
+  Ao preencher todos os campos requisitados com um e-mail e senha válidos (com um e-mail não utilizado anteriormente), uma mensagem de sucesso dizendo "Usuário cadastrado com sucesso!" foi exibida. Após fazer isto, verificou-se que as informações fornecidas haviam sido devidamente guardadas no localstorage.
+
+![CT2_localstoragea](https://user-images.githubusercontent.com/74699119/143779016-46722265-104d-4787-bc3a-4b2c232aa069.png)
+
+- <b> Cadastro só pode ser bem sucedido caso o e-mail não tenha sido cadastrado anteriormente - Sucesso</b><br> 
+  Ao repetir os mesmos passos do primeiro teste, porém utilizando um e-mail já cadastrado, uma mensagem de erro dizendo "O e-mail email@email.com já foi cadastrado anteriormente! Use outro e-mail." é exibida e nenhuma informaçõa nova é salva no local storage.
+  
+- <b> Cadastro só pode ser bem sucedido caso a senha tenha sido repetida corretamente - Sucesso</b><br>
+  Ao repetir os mesmos passos do primeiro teste, usando um e-mail ainda não cadastrado, porém preenchendo informações distintas no campo "senha" e "repetir senha", uma mensagem de erro dizendo "A senha digitada em "repita a senha" não bate com a do campo "senha"!" é exibida e nenhuma informaçõa nova é salva no local storage.
+
+- <b>Uma nova loja deve ser criada após o cadastro ser confirmado (loja deve aparecer na recomendação ou busca de vendedores e ser acessível) - Sucesso</b><br>
+  Após o cadastro do usuário como vendedor, uma nova loja foi adicionada a "listaVendedores" no local storage:
+  
+  ![CT2_localstorageb](https://user-images.githubusercontent.com/74699119/143779050-ae5ce271-6bbb-483c-8474-a32d74b31234.png)
+
+Além disto, a nova pode pode ser visualizada no menu de recomendação de vendedores  e na lista de busca, sendo acessível ao clicar na imagem da loja:
+
+![CT2_localstorageA](https://user-images.githubusercontent.com/74699119/143779247-8e8f4863-f593-41d0-a939-504f59178452.png)
+<br>
+![CT2_busca](https://user-images.githubusercontent.com/74699119/143779145-9d63b878-cddd-494b-83b1-8c775789d015.png)
+<br>
+![CT2_loja](https://user-images.githubusercontent.com/74699119/143779178-a6e6408e-96f2-4745-93c7-9789cd86828b.png)
+<br>
+### Pontos que podem ser melhorados:
+
+Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando o local storage. Caso o projeto venha a ser reaproveitado na etapa de desenvolvimento backend, um sistema de cadastro e login real deverá ser implementado.
 
 <br>
+## Caso de Teste 3
 
 | Caso de Teste         | Caso de Teste	CT-03 – Login e logoff de usuário |
 |-----------------------|--------------------------------------------------------|
