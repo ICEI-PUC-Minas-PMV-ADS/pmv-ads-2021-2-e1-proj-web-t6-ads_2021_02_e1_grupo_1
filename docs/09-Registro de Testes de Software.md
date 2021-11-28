@@ -47,12 +47,12 @@ Na etapa atual, o sistema de cadastro login é apenas uma simulação utilizando
 
 - <b>Uma nova loja deve ser criada após o cadastro ser confirmado (loja deve aparecer na recomendação ou busca de vendedores e ser acessível) - Sucesso</b><br>
   Após o cadastro do usuário como vendedor, uma nova loja foi adicionada a "listaVendedores" no local storage:
-  
-  ![CT2_localstorageb](https://user-images.githubusercontent.com/74699119/143779050-ae5ce271-6bbb-483c-8474-a32d74b31234.png)
+ 
+![CT2_localstorageAa](https://user-images.githubusercontent.com/74699119/143779288-782c8b49-9015-433a-b9b4-755dfe7da4dd.png)
 
 Além disto, a nova pode pode ser visualizada no menu de recomendação de vendedores  e na lista de busca, sendo acessível ao clicar na imagem da loja:
 
-![CT2_localstorageA](https://user-images.githubusercontent.com/74699119/143779247-8e8f4863-f593-41d0-a939-504f59178452.png)
+![CT2_recomendacao](https://user-images.githubusercontent.com/74699119/143779296-00ef78f9-7274-481f-acd8-87140fd98a19.png)
 <br>
 ![CT2_busca](https://user-images.githubusercontent.com/74699119/143779145-9d63b878-cddd-494b-83b1-8c775789d015.png)
 <br>
