@@ -152,7 +152,31 @@ Após abrir e fechar
 |-----------------------|--------------------------------------------------------|
 | Resultado do teste    | Concluído com sucesso |
 | Critérios de Êxito    | -	O modal de seleção de endereço deve aparecer após clicar em "Entrega para". <br> - O endereço submetido deve estar presente abaixo da opção "Entrega para" no cabeçalho. <br> - Caso o usuário tenha feito login em uma conta, o endereço escolhido deve ficar salvo e estar presente novamente quando acessar essa conta |
+### Resultados obtidos:
 
+- <b>O modal de seleção de endereço deve aparecer após clicar em "Entrega para"</b><br> 
+![CT5_A](https://user-images.githubusercontent.com/74699119/143781601-5ea6ab2f-5183-44b9-8ea2-ca20bdedf46d.png)
+<br>
+![CT5_B](https://user-images.githubusercontent.com/74699119/143781605-852446ff-705d-4228-a246-f89f6b526349.png)
+
+- <b>O endereço submetido deve estar presente abaixo da opção "Entrega para" no cabeçalho</b><br> 
+![CT5_C](https://user-images.githubusercontent.com/74699119/143781630-3d9cc14a-d090-4fc3-9293-d1d7fb8a7331.png)
+<br>
+![CT5_D](https://user-images.githubusercontent.com/74699119/143781636-56ec432b-3830-4f81-9400-7f5c461a25a8.png)
+<br>
+![CT5_E](https://user-images.githubusercontent.com/74699119/143781643-b1672f34-7d66-4a60-b3a1-68280b71f571.png)
+<br>
+- <b>Caso o usuário tenha feito login em uma conta, o endereço escolhido deve ficar salvo e estar presente novamente quando acessar essa conta</b><br>
+Login com outro usuário<br>
+
+![CT5_F](https://user-images.githubusercontent.com/74699119/143781690-4d94e056-f55d-4f1e-8727-2a7f8103b35d.png)
+
+<br>
+Endereço mostrado após voltar para o primeiro usuário<br>
+
+![CT5_G](https://user-images.githubusercontent.com/74699119/143781740-d10b1f9e-f184-4f81-ab29-a9dbe4375ebf.png)
+
+<br>
 <br>
 
 | Caso de Teste         | Caso de Teste	CT-06 – Visualizar vendedores recomendados na página inicial |
