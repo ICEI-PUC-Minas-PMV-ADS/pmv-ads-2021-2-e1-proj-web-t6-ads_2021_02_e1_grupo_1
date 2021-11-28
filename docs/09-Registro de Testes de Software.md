@@ -624,14 +624,14 @@ Busca
 
 <br>
 
-Mini website - Quem somos
+Mini website - Quem somos<br>
 Antes
 ![CT17_ANTES_A](https://user-images.githubusercontent.com/74699119/143788152-4a4498c9-c4c2-4d32-b4d0-79153a0938c4.png)
 
 Depois
 ![CT17_DEPOIS_A](https://user-images.githubusercontent.com/74699119/143788160-e7a7de32-5301-482e-b255-26ae2d1b7ce2.png)
 
-Mini webiste - Redes sociais
+Mini webiste - Redes sociais<br>
 Antes
 ![CT17_ANTES_B](https://user-images.githubusercontent.com/74699119/143788173-a0281a17-689a-4869-b38d-153f50a5fba9.png)
 
